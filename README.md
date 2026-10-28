@@ -29,6 +29,14 @@ type. Rules (checked by `npm test`):
 
 A new dive goes live at midnight New York time. Days after today are never served.
 
+## Autocomplete
+
+The guess box suggests close matches from `GET /api/names`: every answer name in `data/days.json` plus
+`data/names.json`, a generic list that keeps suggestions from giving answers away. `names.json` holds the block, item,
+mob, biome, enchantment, effect, potion, music disc, painting, trim, goat horn, profession and advancement names from
+the Minecraft 26.3 client jar's `assets/minecraft/lang/en_us.json`, minus technical blocks, spawn eggs and wall
+variants. Ranking lives in `suggest()` in `public/match.js`.
+
 ## Deploy
 
 ```sh
@@ -44,5 +52,6 @@ npx wrangler deploy
 | `GET /api/days/:date` | `{ date, number, prompts: [{ category, text }] }` |
 | `POST /api/days/:date/:round/guess` `{ guess }` | `{ accepted: true, answer, tier, points }`, `{ accepted: false, suggestion }` for a typo, or `{ accepted: false }` |
 | `GET /api/days/:date/:round/answers` | `{ answers: { dirt: [...], ... } }` canonical names by tier |
+| `GET /api/names` | `{ names: [...] }` every name the guess box can suggest, sorted |
 
 Rounds are 1 to 7. Future or unknown dates are 404.

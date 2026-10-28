@@ -1,4 +1,8 @@
 import data from "../data/days.json" with { type: "json" };
+import genericNames from "../data/names.json" with { type: "json" };
+import { normalize, edits } from "../public/match.js";
+
+export { normalize };
 
 export const TIERS = [
   { key: "dirt", name: "Dirt", points: 10, emoji: "🟫", line: "The answer everyone digs up first." },
@@ -19,26 +23,6 @@ const nyDate = new Intl.DateTimeFormat("en-CA", {
   day: "2-digit",
 });
 
-export function normalize(text) {
-  return text
-    .normalize("NFKD")
-    .replace(/\p{M}/gu, "")
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}\s]/gu, "")
-    .trim()
-    .replace(/^(the|a|an)\s+/, "")
-    .replace(/\s+/g, "")
-    .replace(/s$/, "");
-}
-
-function withinOneEdit(a, b) {
-  if (Math.abs(a.length - b.length) > 1) return false;
-  let i = 0;
-  while (i < a.length && a[i] === b[i]) i++;
-  if (a.length === b.length) return a.slice(i + 1) === b.slice(i + 1);
-  return a.length > b.length ? a.slice(i + 1) === b.slice(i) : a.slice(i) === b.slice(i + 1);
-}
-
 export function matchAnswer(prompt, guess) {
   const key = normalize(guess);
   if (!key) return null;
@@ -50,9 +34,16 @@ export function matchAnswer(prompt, guess) {
   );
   const exact = entries.find((e) => e.keys.includes(key));
   if (exact) return { answer: exact.answer, tier: exact.tier, exact: true };
-  const close = entries.filter((e) => e.keys.some((k) => k.length >= MIN_TYPO_CHARS && withinOneEdit(k, key)));
+  const close = entries.filter((e) => e.keys.some((k) => k.length >= MIN_TYPO_CHARS && edits(k, key, 1) <= 1));
   return close.length === 1 ? { answer: close[0].answer, tier: close[0].tier, exact: false } : null;
 }
+
+const answerNames = data.days.flatMap((d) =>
+  d.prompts.flatMap((p) => Object.values(p.answers).flat().map((a) => [].concat(a)[0])),
+);
+const names = [...new Map([...genericNames, ...answerNames].map((n) => [normalize(n), n])).values()].sort((a, b) =>
+  a.localeCompare(b),
+);
 
 const json = (body, status = 200, cache = "no-store") =>
   Response.json(body, { status, headers: { "cache-control": cache } });
@@ -65,6 +56,10 @@ export default {
     const today = nyDate.format(new Date());
     const playable = data.days.filter((d) => d.date <= today);
 
+    if (parts[0] === "names" && parts.length === 1) {
+      if (request.method !== "GET") return json({ error: "method not allowed" }, 405);
+      return json({ names }, 200, "public, max-age=3600");
+    }
     if (parts[0] !== "days" || parts.length > 4) return notFound();
     if (parts.length === 1) {
       if (request.method !== "GET") return json({ error: "method not allowed" }, 405);

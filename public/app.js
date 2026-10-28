@@ -3,6 +3,7 @@ import {
   depthY, bandOf, totalScore, isFinished, diveOf, shareText, loadStore,
   startRound, finishRound, expireRound, stats, msUntilNextDive,
 } from "./game.js";
+import { suggest } from "./match.js";
 
 const PX_PER_Y = 120;
 const TOP_Y = 76;
@@ -36,6 +37,7 @@ const menu = document.getElementById("menu");
 let store = loadStore(localStorage.getItem(STORE_KEY));
 let meta = null;
 const dayCache = new Map();
+let namesLoad = null;
 let cleanup = () => {};
 let renders = 0;
 
@@ -147,6 +149,17 @@ function loadDay(date) {
   return dayCache.get(date);
 }
 
+function loadNames() {
+  namesLoad ??= api("/names").then(
+    (body) => body.names,
+    () => {
+      namesLoad = null;
+      return [];
+    },
+  );
+  return namesLoad;
+}
+
 function countdown(el) {
   const tick = () => {
     const ms = msUntilNextDive(Date.now());
@@ -222,7 +235,9 @@ function round(day) {
         <form class="guess" autocomplete="off">
           <div class="dial"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" /><circle class="sweep" cx="18" cy="18" r="16" pathLength="100" /></svg><b></b></div>
           <div class="field">
-            <input name="guess" maxlength="100" placeholder="type one answer…" autocapitalize="off" spellcheck="false" aria-label="Your answer" />
+            <ul class="suggest" id="suggest" role="listbox" aria-label="Suggestions" hidden></ul>
+            <input name="guess" maxlength="100" placeholder="type one answer…" autocapitalize="off" spellcheck="false" aria-label="Your answer"
+              role="combobox" aria-autocomplete="list" aria-controls="suggest" aria-expanded="false" />
             <div class="bar"><i></i></div>
           </div>
           <button class="btn btn-dig">DIG</button>
@@ -236,11 +251,60 @@ function round(day) {
   const sweep = app.querySelector(".sweep");
   const secs = app.querySelector(".dial b");
   const bar = app.querySelector(".bar i");
+  const list = app.querySelector(".suggest");
   let over = false;
   let busy = false;
+  let names = [];
+  let options = [];
+  let active = -1;
+  const showOptions = (next, highlight = -1) => {
+    options = over ? [] : next;
+    active = highlight;
+    list.innerHTML = options
+      .map((name, i) => `<li role="option" id="suggest-${i}" aria-selected="${i === active}">${esc(name)}</li>`)
+      .join("");
+    list.hidden = !options.length;
+    input.setAttribute("aria-expanded", String(!list.hidden));
+    if (active < 0) input.removeAttribute("aria-activedescendant");
+    else input.setAttribute("aria-activedescendant", `suggest-${active}`);
+  };
+  const closeOptions = () => showOptions([]);
+  const refresh = () => showOptions(suggest(names, input.value));
+  loadNames().then((loaded) => {
+    names = loaded;
+    if (document.activeElement === input) refresh();
+  });
+
+  input.addEventListener("input", refresh);
+  input.addEventListener("blur", closeOptions);
+  input.addEventListener("keydown", (event) => {
+    if (!options.length) return;
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      const n = options.length;
+      showOptions(options, event.key === "ArrowDown" ? (active + 1) % n : (active <= 0 ? n : active) - 1);
+    } else if (event.key === "Tab" && !event.shiftKey) {
+      event.preventDefault();
+      input.value = options[Math.max(active, 0)];
+      closeOptions();
+    } else if (event.key === "Escape") {
+      event.preventDefault();
+      closeOptions();
+    } else if (event.key === "Enter" && active >= 0) {
+      input.value = options[active];
+    }
+  });
+  list.addEventListener("pointerdown", (event) => event.preventDefault());
+  list.addEventListener("click", (event) => {
+    const option = event.target.closest("[role=option]");
+    if (!option) return;
+    input.value = option.textContent;
+    form.requestSubmit();
+  });
 
   const end = () => {
     over = true;
+    closeOptions();
     clearInterval(timer);
     document.body.classList.remove("low");
   };
@@ -264,6 +328,7 @@ function round(day) {
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
+    closeOptions();
     const guess = input.value.trim();
     if (!guess || busy || over) return;
     busy = true;

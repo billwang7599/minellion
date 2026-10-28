@@ -1,6 +1,7 @@
 import { test, before, after, mock } from "node:test";
 import assert from "node:assert/strict";
 import worker, { TIERS, matchAnswer } from "../src/worker.js";
+import { normalize } from "../public/match.js";
 import data from "../data/days.json" with { type: "json" };
 
 const [past, today, future] = data.days;
@@ -97,8 +98,23 @@ test("GET answers groups canonical names by tier", async () => {
   assert.deepEqual(await res.json(), { answers: expected });
 });
 
+test("GET /api/names lists generic names plus every answer, deduped, with nothing else", async () => {
+  const res = await call("/api/names");
+  assert.equal(res.status, 200);
+  const body = await res.json();
+  assert.deepEqual(Object.keys(body), ["names"]);
+  assert.ok(body.names.every((name) => typeof name === "string"));
+  assert.ok(body.names.includes(firstDirt));
+  assert.ok(body.names.includes(firstName(future.prompts.at(-1).answers.dirt.at(-1))));
+  assert.ok(body.names.includes("Creeper"));
+  const keys = body.names.map(normalize);
+  assert.equal(new Set(keys).size, keys.length);
+  assert.deepEqual(body.names, [...body.names].sort((a, b) => a.localeCompare(b)));
+});
+
 test("wrong methods and unknown api paths", async () => {
   assert.equal((await call("/api/days", { method: "POST" })).status, 405);
+  assert.equal((await call("/api/names", { method: "POST" })).status, 405);
   assert.equal((await call(`/api/days/${today.date}/1/guess`)).status, 405);
   assert.equal((await call("/api/nope")).status, 404);
 });
