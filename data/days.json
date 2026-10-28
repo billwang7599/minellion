@@ -1,0 +1,264 @@
+{
+  "$schema": "./days.schema.json",
+  "days": [
+    {
+      "date": "2026-10-26",
+      "prompts": [
+        {
+          "category": "Mobs",
+          "text": "Name a mob that spawns in the Nether",
+          "answers": {
+            "dirt": ["Ghast", ["Zombified Piglin", "Zombie Pigman", "Pigman"], "Blaze"],
+            "coal": ["Piglin", "Magma Cube", "Wither Skeleton"],
+            "iron": ["Hoglin", "Strider", "Enderman"],
+            "gold": ["Piglin Brute"],
+            "diamond": ["Skeleton"],
+            "netherite": ["Chicken"]
+          }
+        },
+        {
+          "category": "Ores",
+          "text": "Name an ore block found in the Overworld",
+          "answers": {
+            "dirt": ["Coal Ore", "Iron Ore", "Diamond Ore"],
+            "coal": ["Gold Ore", "Redstone Ore", ["Lapis Lazuli Ore", "Lapis Ore"]],
+            "iron": ["Copper Ore", "Emerald Ore"],
+            "gold": ["Deepslate Diamond Ore", "Deepslate Iron Ore"],
+            "diamond": ["Deepslate Emerald Ore", "Deepslate Copper Ore"]
+          }
+        },
+        {
+          "category": "Food",
+          "text": "Name a food item you can eat",
+          "answers": {
+            "dirt": ["Bread", "Apple", ["Steak", "Cooked Beef"]],
+            "coal": ["Golden Apple", "Cooked Chicken", "Cookie", "Carrot"],
+            "iron": ["Baked Potato", "Pumpkin Pie", ["Melon Slice", "Melon"], "Golden Carrot"],
+            "gold": ["Rabbit Stew", "Beetroot Soup", "Mushroom Stew"],
+            "diamond": ["Dried Kelp", "Glow Berries", "Honey Bottle"],
+            "netherite": ["Chorus Fruit", "Suspicious Stew", ["Enchanted Golden Apple", "Notch Apple"]]
+          }
+        },
+        {
+          "category": "Biomes",
+          "text": "Name an Overworld biome",
+          "answers": {
+            "dirt": ["Plains", "Desert", "Forest"],
+            "coal": ["Jungle", "Taiga", "Savanna", "Swamp"],
+            "iron": [["Badlands", "Mesa"], ["Mushroom Fields", "Mushroom Island"], "Snowy Plains"],
+            "gold": ["Cherry Grove", "Dark Forest", "Birch Forest"],
+            "diamond": ["Deep Dark", "Lush Caves", "Dripstone Caves", "Mangrove Swamp"],
+            "netherite": ["Pale Garden", "Ice Spikes", "Stony Peaks", "Windswept Savanna"]
+          }
+        },
+        {
+          "category": "Tools",
+          "text": "Name a craftable tool or weapon",
+          "answers": {
+            "dirt": ["Pickaxe", "Sword", "Axe"],
+            "coal": ["Shovel", "Hoe", "Bow"],
+            "iron": ["Crossbow", "Fishing Rod", "Shears"],
+            "gold": ["Flint and Steel", "Shield"],
+            "diamond": ["Brush", "Spyglass", "Carrot on a Stick"],
+            "netherite": ["Warped Fungus on a Stick", "Mace"]
+          }
+        },
+        {
+          "category": "Brewing",
+          "text": "Name an ingredient you can put in a brewing stand",
+          "answers": {
+            "dirt": ["Nether Wart", "Blaze Powder", ["Redstone", "Redstone Dust"]],
+            "coal": [["Glowstone Dust", "Glowstone"], "Gunpowder", "Sugar", "Spider Eye"],
+            "iron": ["Magma Cream", "Ghast Tear", "Fermented Spider Eye", ["Glistering Melon Slice", "Glistering Melon"]],
+            "gold": ["Golden Carrot", "Rabbit's Foot", "Dragon's Breath"],
+            "diamond": ["Pufferfish", ["Turtle Shell", "Turtle Helmet"], "Phantom Membrane"],
+            "netherite": ["Breeze Rod", "Slime Block", "Cobweb", "Stone"]
+          }
+        },
+        {
+          "category": "The End",
+          "text": "Name a block that generates naturally in the End",
+          "answers": {
+            "dirt": ["End Stone", "Obsidian", "Chorus Plant"],
+            "coal": ["Purpur Block", "End Rod", "Chorus Flower"],
+            "iron": ["Bedrock", "Dragon Egg", "Ender Chest"],
+            "gold": ["Purpur Pillar", "Purpur Stairs", "End Stone Bricks"],
+            "diamond": ["Iron Bars", "Brewing Stand", "End Gateway", "Torch"],
+            "netherite": ["Dragon Head", "Magenta Stained Glass", "Purpur Slab", "Ladder"]
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "prompts": [
+        {
+          "category": "Mobs",
+          "text": "Name a passive mob",
+          "answers": {
+            "dirt": ["Cow", "Pig", "Sheep", "Chicken"],
+            "coal": ["Horse", "Rabbit", "Villager", "Cat", "Camel"],
+            "iron": ["Parrot", "Turtle", "Squid", "Axolotl"],
+            "gold": ["Mooshroom", "Strider", "Allay"],
+            "diamond": ["Sniffer", "Armadillo", "Glow Squid"],
+            "netherite": ["Skeleton Horse", "Mule"]
+          }
+        },
+        {
+          "category": "Crafting",
+          "text": "Name an item crafted using sticks",
+          "answers": {
+            "dirt": ["Torch", "Ladder", "Fence", "Pickaxe", "Sword"],
+            "coal": ["Sign", "Bow", "Arrow", "Fishing Rod", "Axe", "Shovel"],
+            "iron": ["Lever", "Painting", "Item Frame", "Rail", "Hoe"],
+            "gold": ["Armor Stand", "Crossbow", "Tripwire Hook", "Activator Rail", "Powered Rail"],
+            "diamond": ["Banner", "Redstone Torch", "Fence Gate"],
+            "netherite": ["Campfire", "Soul Torch", "Brush"]
+          }
+        },
+        {
+          "category": "Structures",
+          "text": "Name a structure that generates in the Overworld",
+          "answers": {
+            "dirt": ["Village", ["Mineshaft", "Abandoned Mineshaft"], "Stronghold"],
+            "coal": [["Desert Pyramid", "Desert Temple"], ["Jungle Pyramid", "Jungle Temple"], "Ocean Monument", "Shipwreck"],
+            "iron": [["Woodland Mansion", "Mansion"], ["Pillager Outpost", "Outpost"], "Igloo", ["Swamp Hut", "Witch Hut"]],
+            "gold": ["Ancient City", "Ruined Portal", "Buried Treasure", ["Dungeon", "Monster Room"]],
+            "diamond": ["Ocean Ruins", "Trail Ruins", "Trial Chambers", ["Amethyst Geode", "Geode"]],
+            "netherite": ["Desert Well", "Fossil"]
+          }
+        },
+        {
+          "category": "Redstone",
+          "text": "Name a redstone component",
+          "answers": {
+            "dirt": ["Redstone Torch", "Lever", ["Repeater", "Redstone Repeater"], "Piston"],
+            "coal": [["Comparator", "Redstone Comparator"], "Button", "Pressure Plate", "Hopper"],
+            "iron": ["Observer", "Sticky Piston", "Dispenser", "Dropper"],
+            "gold": [["Daylight Detector", "Daylight Sensor"], "Note Block", ["Target", "Target Block"], "Tripwire Hook"],
+            "diamond": ["Redstone Lamp", "Sculk Sensor", "Lectern", "Trapped Chest"],
+            "netherite": ["Calibrated Sculk Sensor", "Crafter", "Lightning Rod", "Copper Bulb"]
+          }
+        },
+        {
+          "category": "Enchanting",
+          "text": "Name an enchantment",
+          "answers": {
+            "dirt": ["Sharpness", "Efficiency", "Unbreaking", "Fortune"],
+            "coal": ["Protection", "Mending", "Silk Touch", "Looting"],
+            "iron": ["Power", "Feather Falling", "Fire Aspect", "Smite"],
+            "gold": ["Respiration", "Aqua Affinity", "Depth Strider", "Infinity"],
+            "diamond": ["Thorns", "Knockback", "Riptide", "Loyalty"],
+            "netherite": ["Swift Sneak", "Wind Burst", "Density", "Breach", "Impaling", "Channeling"]
+          }
+        },
+        {
+          "category": "Dyes",
+          "text": "Name a dye color",
+          "answers": {
+            "dirt": ["Red", "Blue", "Green", "Black", "White"],
+            "coal": ["Yellow", "Orange", "Purple", "Pink"],
+            "iron": ["Lime", "Cyan", ["Gray", "Grey"], "Brown"],
+            "gold": ["Light Blue", "Magenta"],
+            "diamond": [["Light Gray", "Light Grey", "Silver"]]
+          }
+        },
+        {
+          "category": "The Nether",
+          "text": "Name a block that generates naturally in the Nether",
+          "answers": {
+            "dirt": ["Netherrack", "Soul Sand", "Glowstone", "Magma Block"],
+            "coal": [["Nether Quartz Ore", "Quartz Ore"], "Basalt", "Blackstone", "Soul Soil"],
+            "iron": ["Nether Gold Ore", "Ancient Debris", "Crimson Nylium", "Warped Nylium", "Nether Bricks"],
+            "gold": ["Shroomlight", "Nether Wart Block", "Warped Wart Block", "Crimson Stem", "Warped Stem"],
+            "diamond": ["Gilded Blackstone", "Bone Block", "Weeping Vines", "Twisting Vines"],
+            "netherite": ["Chain", ["Block of Gold", "Gold Block"], "Polished Blackstone Bricks", "Crying Obsidian"]
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "prompts": [
+        {
+          "category": "Mobs",
+          "text": "Name a hostile mob",
+          "answers": {
+            "dirt": ["Zombie", "Skeleton", "Creeper", "Spider"],
+            "coal": ["Witch", "Slime", "Phantom", "Drowned"],
+            "iron": ["Husk", "Stray", "Pillager", "Guardian", "Cave Spider"],
+            "gold": ["Vindicator", "Evoker", "Ravager", "Silverfish", "Blaze"],
+            "diamond": ["Elder Guardian", "Shulker", "Endermite", "Vex", "Bogged", "Breeze"],
+            "netherite": ["Warden", "Wither", "Ender Dragon", "Creaking"]
+          }
+        },
+        {
+          "category": "Smelting",
+          "text": "Name something you can make in a furnace",
+          "answers": {
+            "dirt": ["Iron Ingot", "Glass", "Gold Ingot", "Charcoal"],
+            "coal": ["Stone", "Smooth Stone", "Brick", ["Steak", "Cooked Beef"]],
+            "iron": ["Cooked Chicken", "Baked Potato", "Dried Kelp", "Copper Ingot"],
+            "gold": ["Terracotta", "Netherite Scrap", "Green Dye", "Lime Dye"],
+            "diamond": ["Cracked Stone Bricks", "Sponge", "Popped Chorus Fruit", "Nether Brick"],
+            "netherite": ["Deepslate", ["Smooth Quartz Block", "Smooth Quartz"], "Iron Nugget", "Gold Nugget"]
+          }
+        },
+        {
+          "category": "Wood",
+          "text": "Name a type of wood",
+          "answers": {
+            "dirt": ["Oak", "Birch", "Spruce"],
+            "coal": ["Jungle", "Acacia", "Dark Oak"],
+            "iron": ["Mangrove", "Cherry", "Crimson", "Warped"],
+            "gold": ["Bamboo"],
+            "diamond": ["Pale Oak"]
+          }
+        },
+        {
+          "category": "Gear",
+          "text": "Name something a player can wear",
+          "answers": {
+            "dirt": ["Helmet", "Chestplate", "Leggings", "Boots"],
+            "coal": ["Elytra", "Carved Pumpkin"],
+            "iron": [["Turtle Shell", "Turtle Helmet"], "Creeper Head"],
+            "gold": ["Zombie Head", "Skeleton Skull", "Dragon Head"],
+            "diamond": ["Wither Skeleton Skull", "Piglin Head"],
+            "netherite": ["Player Head"]
+          }
+        },
+        {
+          "category": "Blocks",
+          "text": "Name a block that falls when nothing is under it",
+          "answers": {
+            "dirt": ["Sand", "Gravel", "Anvil"],
+            "coal": ["Red Sand", "Concrete Powder"],
+            "iron": ["Dragon Egg", "Scaffolding", "Pointed Dripstone"],
+            "gold": ["Suspicious Sand", "Suspicious Gravel"],
+            "diamond": ["Chipped Anvil", "Damaged Anvil"]
+          }
+        },
+        {
+          "category": "Taming",
+          "text": "Name a mob you can tame",
+          "answers": {
+            "dirt": [["Wolf", "Dog"], "Cat", "Horse"],
+            "coal": ["Parrot", "Donkey", "Mule", "Llama"],
+            "iron": ["Camel", "Trader Llama", "Skeleton Horse"]
+          }
+        },
+        {
+          "category": "Farming",
+          "text": "Name a crop you can plant",
+          "answers": {
+            "dirt": [["Wheat", "Wheat Seeds", "Seeds"], "Carrot", "Potato"],
+            "coal": ["Beetroot", "Pumpkin", "Melon", "Sugar Cane"],
+            "iron": ["Nether Wart", ["Cocoa Beans", "Cocoa"], "Sweet Berries", "Bamboo"],
+            "gold": ["Cactus", "Kelp", "Chorus Flower"],
+            "diamond": ["Torchflower", ["Pitcher Plant", "Pitcher Pod"], "Glow Berries"]
+          }
+        }
+      ]
+    }
+  ]
+}
