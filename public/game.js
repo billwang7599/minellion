@@ -1,6 +1,5 @@
 export const ROUNDS = 7;
 export const ROUND_MS = 25_000;
-export const PREVIEW_MS = 3_000;
 export const MAX_SCORE = 700;
 export const SURFACE_Y = 64;
 export const BEDROCK_Y = -64;
@@ -59,7 +58,7 @@ const withDive = (store, date, dive) => ({ ...store, dives: { ...store.dives, [d
 export function startRound(store, date, nowMs) {
   const dive = diveOf(store, date);
   if (isFinished(dive) || dive.deadline) return store;
-  return withDive(store, date, { ...dive, deadline: nowMs + PREVIEW_MS + ROUND_MS });
+  return withDive(store, date, { ...dive, deadline: nowMs + ROUND_MS });
 }
 
 export function finishRound(store, date, result) {

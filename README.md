@@ -1,7 +1,6 @@
 # Minellion
 
-Krillion, but for Minecraft: a daily rare-answer trivia dig. Seven prompts a day, 25 seconds each, after a 3 second
-look at the prompt. Name an answer that fits; a miss costs nothing but time, so keep trying. The rarer the answer, the
+Krillion, but for Minecraft: a daily rare-answer trivia dig. Seven prompts a day, 25 seconds each. Name an answer that fits; a miss costs nothing but time, so keep trying. The rarer the answer, the
 more points you score and the deeper you dig, from the surface at Y 64 down to bedrock at Y -64 (700 points).
 
 It's one Cloudflare Worker with static assets: no database and no build step. Prompts and answers live in

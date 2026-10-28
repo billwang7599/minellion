@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
-  ROUNDS, ROUND_MS, PREVIEW_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, MISS, MISS_EMOJI, BANDS,
+  ROUNDS, ROUND_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, MISS, MISS_EMOJI, BANDS,
   depthY, bandOf, totalScore, shareText, loadStore, startRound, finishRound, expireRound, stats,
   msUntilNextDive,
 } from "../public/game.js";
@@ -52,9 +52,9 @@ test("loadStore tolerates missing or corrupt data", () => {
   assert.deepEqual(loadStore('{"dives":{"x":{"rounds":[]}}}'), { dives: { x: { rounds: [] } } });
 });
 
-test("startRound sets a deadline once, after the preview, so a refresh can't reset the clock", () => {
+test("startRound starts the clock at once and only once, so a refresh can't reset it", () => {
   const started = startRound(loadStore(null), DATE, 1000);
-  assert.deepEqual(started.dives[DATE], { rounds: [], deadline: 1000 + PREVIEW_MS + ROUND_MS });
+  assert.deepEqual(started.dives[DATE], { rounds: [], deadline: 1000 + ROUND_MS });
   assert.equal(startRound(started, DATE, 5000), started);
 });
 

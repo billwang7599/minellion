@@ -265,7 +265,12 @@ input {
 
 .card.gone {
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 0.2s;
+}
+
+#lines.out {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 body.low .scene::after {
@@ -556,9 +561,19 @@ main {
   clip-path: var(--notch);
 }
 
+.round .prompt {
+  animation: fade-in 0.15s ease-out;
+}
+
 .prompt.faded {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.15s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 }
 
 .prompt h1 {
@@ -568,27 +583,6 @@ main {
   line-height: 1.1;
 }
 
-.pill {
-  position: fixed;
-  bottom: 110px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 8px 18px;
-  background: var(--panel);
-  clip-path: var(--notch);
-  font-size: 17px;
-  letter-spacing: 0.15em;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.pill b {
-  font-weight: 400;
-  color: var(--amber);
-}
-
-.pill[hidden],
 .dock[hidden] {
   display: none;
 }
@@ -736,13 +730,20 @@ body.low .bar i {
   width: min(560px, calc(100% - 24px));
   transform: translateX(-50%);
   text-align: center;
-  animation: rise 0.4s ease-out;
+  animation: rise 0.18s ease-out;
 }
 
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translate(-50%, 12px);
+    transform: translate(-50%, 6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .round .prompt,
+  .reveal {
+    animation: none;
   }
 }
 

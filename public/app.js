@@ -10,7 +10,7 @@ const BOTTOM_Y = -72;
 const LOW_TIME_MS = 5000;
 const ROUND_ANCHOR = 0.34;
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const DIG_MS = reducedMotion ? 200 : 1800;
+const DIG_MS = reducedMotion ? 200 : 900;
 
 const LAYERS = [
   [76, "#8fb8d4"], [66, "#c9dbe4"], [64, "#dfe8ea"],
@@ -138,8 +138,12 @@ async function api(path, init) {
   return res.json();
 }
 
-async function loadDay(date) {
-  if (!dayCache.has(date)) dayCache.set(date, await api(`/days/${date}`));
+function loadDay(date) {
+  if (!dayCache.has(date)) {
+    const day = api(`/days/${date}`);
+    day.catch(() => dayCache.delete(date));
+    dayCache.set(date, day);
+  }
   return dayCache.get(date);
 }
 
@@ -202,7 +206,9 @@ function round(day) {
   const score = totalScore(dive);
   setHud(day, index, score);
   setDepth(score, { anchor: ROUND_ANCHOR });
-  document.getElementById("lines").innerHTML = "";
+  const lines = document.getElementById("lines");
+  lines.innerHTML = "";
+  lines.className = "";
   document.getElementById("card").className = "card";
   app.innerHTML = `
     <section class="round">
@@ -211,8 +217,7 @@ function round(day) {
         <h1>${esc(prompt.text)}</h1>
         <p class="label">▼ rarer answers dig deeper ▼</p>
       </div>
-      <p class="pill" data-preview>digging down · the clock starts in <b></b></p>
-      <div class="dock" hidden>
+      <div class="dock">
         <p class="feedback" role="status"></p>
         <form class="guess" autocomplete="off">
           <div class="dial"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" /><circle class="sweep" cx="18" cy="18" r="16" pathLength="100" /></svg><b></b></div>
@@ -224,7 +229,6 @@ function round(day) {
         </form>
       </div>
     </section>`;
-  const preview = app.querySelector("[data-preview]");
   const dock = app.querySelector(".dock");
   const form = app.querySelector("form");
   const input = form.elements.guess;
@@ -247,16 +251,7 @@ function round(day) {
       save(expireRound(store, date, Date.now()));
       return reveal(day, index);
     }
-    if (left > ROUND_MS) {
-      preview.querySelector("b").textContent = Math.ceil((left - ROUND_MS) / 1000);
-      return;
-    }
-    if (dock.hidden) {
-      preview.hidden = true;
-      dock.hidden = false;
-      input.focus();
-    }
-    const frac = left / ROUND_MS;
+    const frac = Math.min(1, left / ROUND_MS);
     sweep.style.strokeDashoffset = 100 - frac * 100;
     bar.style.width = `${frac * 100}%`;
     secs.textContent = Math.ceil(left / 1000);
@@ -265,6 +260,7 @@ function round(day) {
   const timer = setInterval(tick, 100);
   cleanup = end;
   tick();
+  if (!over) input.focus();
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -326,7 +322,6 @@ async function dig(day, fromScore, result) {
   await sleep(DIG_MS);
   lines.querySelector(`.t-${result.tier}`)?.classList.add("lit");
   card.className = "card gone";
-  await sleep(reducedMotion ? 0 : 450);
 }
 
 function reveal(day, index) {
@@ -338,7 +333,7 @@ function reveal(day, index) {
   const last = index === ROUNDS - 1;
   setHud(day, index + 1, score);
   setDepth(score, { anchor: ROUND_ANCHOR });
-  document.getElementById("lines").innerHTML = "";
+  document.getElementById("lines").className = "out";
   const blocks = depthY(before) - depthY(score);
   app.innerHTML = `
     <section class="reveal ${tier ? `t-${tier.key}` : "t-miss"}">
@@ -358,7 +353,17 @@ function reveal(day, index) {
     <div class="dock dock-next"><button class="btn btn-next" data-next>${last ? "SURFACE ▲" : "DIG ▼"}</button></div>`;
   const next = app.querySelector("[data-next]");
   next.focus();
+  const onKey = (event) => {
+    if (event.key !== "Enter" || menu.open || event.target.closest?.("a, button:not([data-next])")) return;
+    event.preventDefault();
+    // A held Enter from the guess would otherwise skip straight past the reveal.
+    if (!event.repeat) next.click();
+  };
+  document.addEventListener("keydown", onKey);
+  cleanup = () => document.removeEventListener("keydown", onKey);
   next.addEventListener("click", () => {
+    cleanup();
+    cleanup = () => {};
     if (last) return results(day);
     save(startRound(store, day.date, Date.now()));
     round(day);
@@ -512,9 +517,10 @@ async function render() {
   cleanup = () => {};
   menu.close();
   const path = location.pathname.replace(/\/+$/, "") || "/";
+  const dayMatch = path.match(/^\/day\/(\d{4}-\d{2}-\d{2})$/);
+  if (dayMatch && !meta) loadDay(dayMatch[1]);
   try {
     meta ??= await api("/days", { cache: "no-cache" });
-    const dayMatch = path.match(/^\/day\/(\d{4}-\d{2}-\d{2})$/);
     if (path === "/") {
       if (meta.days.some((d) => d.date === meta.today)) await dayView(meta.today);
       else intro(null);
