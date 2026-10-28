@@ -1,15 +1,43 @@
 import {
-  ROUNDS, ROUND_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, LANDMARKS, STORE_KEY, MISS_EMOJI,
-  depthY, layerName, totalScore, isFinished, diveOf, shareText, loadStore,
+  ROUNDS, ROUND_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, MARKERS, BANDS, STORE_KEY,
+  depthY, bandOf, totalScore, isFinished, diveOf, shareText, loadStore,
   startRound, finishRound, expireRound, stats, msUntilNextDive,
 } from "./game.js";
 
+const PX_PER_Y = 120;
+const TOP_Y = 76;
+const BOTTOM_Y = -72;
+const LOW_TIME_MS = 5000;
+const ROUND_ANCHOR = 0.34;
+const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const DIG_MS = reducedMotion ? 200 : 1800;
+
+const LAYERS = [
+  [76, "#8fb8d4"], [66, "#c9dbe4"], [64, "#dfe8ea"],
+  [64, "#557236"], [63.85, "#4a6530"], [63.85, "#3e3026"], [60, "#2f251d"],
+  [60, "#3a3e44"], [30, "#2a2d32"], [2, "#1e2125"],
+  [0, "#1b1e24"], [-40, "#0f1217"], [-60, "#0a0c10"],
+  [-60, "#070809"], [-72, "#020203"],
+];
+const ORE = {
+  dirt: ["#5a4232", "#8a6446"],
+  coal: ["#3b3f45", "#0d0e10"],
+  iron: ["#3b3f45", "#d9b08f"],
+  gold: ["#3b3f45", "#f5cf3c"],
+  diamond: ["#1d2027", "#5ff2e6"],
+  netherite: ["#2f2427", "#b892ff"],
+};
+const SPECKS = [[1, 1], [2, 1], [5, 2], [6, 3], [2, 4], [3, 5], [5, 5], [6, 6], [1, 6]];
+
 const app = document.getElementById("app");
-const shaft = document.getElementById("shaft");
+const world = document.getElementById("world");
+const hud = document.getElementById("hud");
+const menu = document.getElementById("menu");
 let store = loadStore(localStorage.getItem(STORE_KEY));
 let meta = null;
 const dayCache = new Map();
 let cleanup = () => {};
+let renders = 0;
 
 const save = (next) => {
   store = next;
@@ -18,12 +46,91 @@ const save = (next) => {
 
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-
-const fmtY = (y) => `Y ${y}`;
-const fmtDate = (date, opts = { weekday: "long", month: "long", day: "numeric", year: "numeric" }) =>
-  new Date(`${date}T00:00:00Z`).toLocaleDateString("en-US", { timeZone: "UTC", ...opts });
+const fmtDate = (date) =>
+  new Date(`${date}T00:00:00Z`)
+    .toLocaleDateString("en-US", { timeZone: "UTC", weekday: "short", month: "short", day: "numeric" })
+    .toUpperCase();
 const tierOf = (key) => meta.tiers.find((t) => t.key === key);
-const emojiRow = (dive) => dive.rounds.map((r) => tierOf(r.tier)?.emoji ?? MISS_EMOJI).join("");
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const sceneY = (score) => SURFACE_Y - (score * (SURFACE_Y - BEDROCK_Y)) / MAX_SCORE;
+const yPx = (y) => (TOP_Y - y) * PX_PER_Y;
+
+function ore(key) {
+  if (!ORE[key]) return `<svg class="ore" viewBox="0 0 8 8"><rect x=".5" y=".5" width="7" height="7" fill="none" stroke="#3d4654" stroke-dasharray="1 1"/></svg>`;
+  const [base, speck] = ORE[key];
+  return `<svg class="ore ore-${key}" viewBox="0 0 8 8" shape-rendering="crispEdges"><rect width="8" height="8" fill="${base}"/>${SPECKS.map(
+    ([x, y]) => `<rect x="${x}" y="${y}" width="1" height="1" fill="${speck}"/>`,
+  ).join("")}</svg>`;
+}
+
+const TORCH = `<svg viewBox="0 0 4 12" shape-rendering="crispEdges"><rect x="1" y="0" width="2" height="1" fill="#ff9f43"/><rect x="0" y="1" width="4" height="2" fill="#ffb347"/><rect x="1" y="1" width="2" height="2" fill="#fff1b8"/><rect x="1" y="3" width="2" height="9" fill="#6b4c35"/><rect x="1" y="3" width="1" height="9" fill="#82603f"/></svg>`;
+const CLOUD = `<svg viewBox="0 0 32 8" shape-rendering="crispEdges"><rect x="9" y="0" width="8" height="2" fill="#fff"/><rect x="5" y="2" width="18" height="2" fill="#fff"/><rect x="20" y="2" width="6" height="2" fill="#f4f7f9"/><rect x="1" y="4" width="29" height="2" fill="#fff"/><rect x="0" y="6" width="32" height="2" fill="#dde6ec"/></svg>`;
+
+function buildWorld() {
+  const total = (TOP_Y - BOTTOM_Y) * PX_PER_Y;
+  world.style.height = `${total}px`;
+  world.style.setProperty("--grass-px", `${yPx(SURFACE_Y)}px`);
+  world.style.background = `linear-gradient(${LAYERS.map(([y, c]) => `${c} ${yPx(y)}px`).join(", ")})`;
+  const ruler = [];
+  for (let y = SURFACE_Y; y >= BEDROCK_Y; y -= 4) {
+    ruler.push(`<span class="tick${y % 16 === 0 ? " major" : ""}" style="top:${yPx(y)}px">${y % 16 === 0 ? y : ""}</span>`);
+  }
+  world.innerHTML = `
+    <div class="sun" style="top:${yPx(72)}px"></div>
+    <div class="cloud" style="top:${yPx(73)}px;left:4%;width:320px">${CLOUD}</div>
+    <div class="cloud" style="top:${yPx(71.5)}px;right:6%;width:260px">${CLOUD}</div>
+    <div class="cloud" style="top:${yPx(68.5)}px;left:-60px;width:200px">${CLOUD}</div>
+    <div class="cloud" style="top:${yPx(67.5)}px;right:-40px;width:180px">${CLOUD}</div>
+    <div class="texture" style="top:${yPx(63.85)}px"></div>
+    <div class="glow-lava" style="top:${yPx(-53)}px"></div>
+    ${MARKERS.map(
+      (m, i) => `<p class="marker ${i % 2 ? "right" : "left"}" style="top:${yPx(m.y)}px">${esc(m.text)}</p>`,
+    ).join("")}
+    <div class="ruler">${ruler.join("")}<span class="you" id="you">◂ YOU</span></div>
+    <div id="lines"></div>
+    <div class="card" id="card"></div>
+    <div class="torch" id="torch">${TORCH}</div>`;
+}
+
+let cameraScore = 0;
+function setDepth(score, { anchor = 0.5, instant = false } = {}) {
+  cameraScore = score;
+  const px = yPx(sceneY(score));
+  world.classList.toggle("instant", instant);
+  world.style.transform = `translateY(${Math.round(innerHeight * anchor - px)}px)`;
+  world.dataset.anchor = anchor;
+  document.getElementById("torch").style.top = `${px}px`;
+  document.getElementById("you").style.top = `${px}px`;
+  if (instant) requestAnimationFrame(() => requestAnimationFrame(() => world.classList.remove("instant")));
+}
+addEventListener("resize", () => setDepth(cameraScore, { anchor: Number(world.dataset.anchor), instant: true }));
+
+function setHud(day, round, score) {
+  if (!day) {
+    hud.hidden = true;
+    return;
+  }
+  hud.hidden = false;
+  const dive = diveOf(store, day.date);
+  document.getElementById("hud-y").textContent = depthY(score);
+  document.getElementById("hud-score").textContent = score;
+  document.getElementById("hud-round").textContent = round < ROUNDS ? `PROMPT ${round + 1} OF ${ROUNDS}` : "DIG COMPLETE";
+  document.getElementById("hud-steps").innerHTML = Array.from({ length: ROUNDS }, (_, i) => {
+    const r = dive.rounds[i];
+    const cls = r ? `done t-${r.tier ?? "miss"}` : i === round ? "now" : "";
+    return `<i class="${cls}"></i>`;
+  }).join("");
+}
+
+function countUp(el, from, to, ms) {
+  const start = performance.now();
+  const step = (now) => {
+    const t = Math.min(1, (now - start) / ms);
+    el.textContent = Math.round(from + (to - from) * t * t);
+    if (t < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
 
 async function api(path, init) {
   const res = await fetch(`/api${path}`, init);
@@ -34,25 +141,6 @@ async function api(path, init) {
 async function loadDay(date) {
   if (!dayCache.has(date)) dayCache.set(date, await api(`/days/${date}`));
   return dayCache.get(date);
-}
-
-function buildShaft() {
-  const pct = (y) => ((SURFACE_Y - y) / (SURFACE_Y - BEDROCK_Y)) * 100;
-  shaft.innerHTML = `
-    <div class="shaft-bar">
-      ${LANDMARKS.map(
-        (l) => `<div class="landmark lm-${l.name.split(/\W/)[0].toLowerCase()}" style="top:${pct(l.y)}%" title="${esc(l.name)}">
-          <span class="lm-label">${fmtY(l.y)} <b>${esc(l.name)}</b></span></div>`,
-      ).join("")}
-      <div class="player" id="player"><span class="player-y"></span></div>
-    </div>`;
-}
-
-function setDepth(score) {
-  const player = document.getElementById("player");
-  const y = depthY(score);
-  player.style.top = `${((SURFACE_Y - y) / (SURFACE_Y - BEDROCK_Y)) * 100}%`;
-  player.querySelector(".player-y").textContent = fmtY(y);
 }
 
 function countdown(el) {
@@ -67,178 +155,90 @@ function countdown(el) {
   return () => clearInterval(id);
 }
 
-function shareBlock(dive) {
-  return `
-    <div class="share">
-      <div class="emoji-row">${emojiRow(dive)}</div>
-      <button class="btn btn-green" data-share>Share</button>
-      <p class="share-note" data-share-note></p>
-    </div>`;
-}
-
-function wireShare(day, dive) {
-  const button = app.querySelector("[data-share]");
-  if (!button) return;
-  button.addEventListener("click", async () => {
-    const text = shareText({ number: day.number, dive, tiers: meta.tiers, url: `${location.origin}/` });
-    const note = app.querySelector("[data-share-note]");
-    try {
-      await navigator.clipboard.writeText(text);
-      note.textContent = "Copied to clipboard!";
-    } catch {
-      note.innerHTML = `<textarea readonly rows="4">${esc(text)}</textarea>`;
-      note.querySelector("textarea").select();
-    }
-  });
-}
-
-function home() {
-  const todayDay = meta.days.find((d) => d.date === meta.today);
-  const s = stats(store);
-  const legend = `
-    <h2>Scoring</h2>
-    <ul class="legend">
-      ${meta.tiers.map((t) => `<li><span class="chip chip-${t.key}"></span>${esc(t.name)}<b>${t.points}</b></li>`).join("")}
-    </ul>
-    <p class="hint">Reach ${MAX_SCORE} points to hit bedrock at ${fmtY(BEDROCK_Y)}.</p>`;
-  const statsHtml = `
-    <div class="stats">
-      <div><b>${s.played}</b><span>Dives</span></div>
-      <div><b>${s.bestY === null ? "–" : fmtY(s.bestY)}</b><span>Best depth</span></div>
-      <div><b>${s.averageY === null ? "–" : fmtY(s.averageY)}</b><span>Average</span></div>
-    </div>`;
-
-  if (!todayDay) {
-    setDepth(0);
-    app.innerHTML = `
-      <section class="panel">
-        <h1>No dive today</h1>
-        <p>There's no dive scheduled for ${esc(fmtDate(meta.today))}. Dig through the <a href="/archive">archive</a> instead.</p>
-      </section>
-      <section class="panel">${legend}${statsHtml}</section>`;
-    return;
-  }
-
-  const dive = diveOf(store, todayDay.date);
-  setDepth(totalScore(dive));
-  let action;
-  if (isFinished(dive)) {
-    const score = totalScore(dive);
-    action = `
-      <div class="final">
-        <div class="final-y">${fmtY(depthY(score))}</div>
-        <div class="final-layer">${layerName(depthY(score))} · ${score}/${MAX_SCORE}</div>
-      </div>
-      ${shareBlock(dive)}
-      <p class="next">Next dive in <span data-countdown></span></p>
-      <p><a href="/day/${todayDay.date}">See your rounds</a></p>`;
-  } else {
-    const label = dive.rounds.length || dive.deadline ? `Continue · round ${dive.rounds.length + 1}/${ROUNDS}` : "Start digging";
-    action = `<button class="btn btn-green btn-big" data-start>${label}</button>`;
-  }
-  app.innerHTML = `
-    <section class="panel hero">
-      <p class="eyebrow">${esc(fmtDate(todayDay.date))}</p>
-      <h1>Dive #${todayDay.number}</h1>
-      <p>${ROUNDS} prompts, ${ROUND_MS / 1000} seconds each. Name an answer that fits. The rarer it is, the deeper you dig.</p>
-      ${action}
-    </section>
-    <section class="panel">${legend}${statsHtml}<p><a href="/archive">Play past dives in the archive →</a></p></section>`;
-
-  app.querySelector("[data-start]")?.addEventListener("click", () => {
-    save(startRound(store, todayDay.date, Date.now()));
-    navigate(`/day/${todayDay.date}`);
-  });
-  wireShare(todayDay, dive);
-  const cd = app.querySelector("[data-countdown]");
-  if (cd) cleanup = countdown(cd);
-}
-
-function archive() {
-  setDepth(0);
-  const rows = [...meta.days].reverse().map((d) => {
-    const dive = diveOf(store, d.date);
-    const score = totalScore(dive);
-    const status = isFinished(dive)
-      ? `<span class="arch-result"><span class="arch-y">${fmtY(depthY(score))}</span> ${emojiRow(dive)}</span>`
-      : dive.rounds.length || dive.deadline
-        ? `<span class="arch-play">Continue ${dive.rounds.length}/${ROUNDS}</span>`
-        : `<span class="arch-play">Play</span>`;
-    return `<li><a href="/day/${d.date}"><b>#${d.number}</b><span class="arch-date">${esc(
-      fmtDate(d.date, { weekday: "short", month: "short", day: "numeric" }),
-    )}${d.date === meta.today ? " · Today" : ""}</span>${status}</a></li>`;
-  });
-  app.innerHTML = `
-    <section class="panel">
-      <h1>Archive</h1>
-      ${rows.length ? `<ul class="archive">${rows.join("")}</ul>` : "<p>No dives yet.</p>"}
-    </section>`;
-}
-
-async function dayView(date) {
-  const entry = meta.days.find((d) => d.date === date);
-  if (!entry) return notFound(`There's no dive for ${esc(date)}. It may not have been dug yet.`);
-  const day = await loadDay(date);
-  const before = diveOf(store, date).rounds.length;
-  save(expireRound(store, date, Date.now()));
-  const dive = diveOf(store, date);
-  setDepth(totalScore(dive));
-  if (dive.rounds.length > before) return reveal(day, dive.rounds.length - 1);
-  if (isFinished(dive)) return results(day);
-  if (dive.deadline) return round(day);
-  intro(day);
-}
+const HOW_TO = [
+  "7 prompts a day. Same for everyone.",
+  "25 seconds to name one thing.",
+  "Rare answers dig deep. Obvious ones stay in the dirt.",
+  "The pick that feels clever? Half the server thought of it too.",
+  `${MAX_SCORE} points takes you from Y ${SURFACE_Y} to bedrock.`,
+  "One dig per day. No respawns.",
+];
 
 function intro(day) {
-  const dive = diveOf(store, day.date);
-  const isToday = day.date === meta.today;
+  setHud(null);
+  setDepth(0, { anchor: 0.56 });
+  const label = day ? `DIG #${day.number} · ${fmtDate(day.date)}${day.date === meta.today ? " · TODAY" : ""}` : "";
   app.innerHTML = `
-    <section class="panel hero">
-      <p class="eyebrow">${esc(fmtDate(day.date))}${isToday ? " · Today" : ""}</p>
-      <h1>Dive #${day.number}</h1>
-      <p>${ROUNDS} prompts, ${ROUND_MS / 1000} seconds each. The rarer your answer, the deeper you dig.</p>
-      <button class="btn btn-green btn-big" data-start>${
-        dive.rounds.length ? `Continue · round ${dive.rounds.length + 1}/${ROUNDS}` : "Start digging"
-      }</button>
+    <section class="intro">
+      <div class="title">
+        <h1 class="logo big" data-text="MINELLION">MINELLION</h1>
+        <p class="subtitle">THE DAILY DIG</p>
+        <p class="tagline">${ROUNDS} prompts · ${ROUND_MS / 1000} seconds each · rarer answers dig deeper</p>
+      </div>
+      <div class="start">
+        <details class="howto"><summary>HOW TO PLAY</summary><ul>${HOW_TO.map((l) => `<li>${esc(l)}</li>`).join("")}</ul></details>
+        ${
+          day
+            ? `<button class="btn btn-begin" data-start>▼ BEGIN DIGGING ▼</button>`
+            : `<p class="empty">no dig scheduled for today. the archive is still open.</p>`
+        }
+        <div class="start-foot"><span class="label">${label}</span><a class="btn btn-small" href="/archive">ARCHIVE ⟲</a></div>
+      </div>
     </section>`;
-  app.querySelector("[data-start]").addEventListener("click", () => {
+  const begin = app.querySelector("[data-start]");
+  begin?.focus();
+  begin?.addEventListener("click", () => {
     save(startRound(store, day.date, Date.now()));
+    if (location.pathname !== `/day/${day.date}`) history.pushState(null, "", `/day/${day.date}`);
     round(day);
   });
 }
 
 function round(day) {
   const date = day.date;
-  const index = diveOf(store, date).rounds.length;
+  const dive = diveOf(store, date);
+  const index = dive.rounds.length;
   const prompt = day.prompts[index];
-  const score = totalScore(diveOf(store, date));
+  const score = totalScore(dive);
+  setHud(day, index, score);
+  setDepth(score, { anchor: ROUND_ANCHOR });
+  document.getElementById("lines").innerHTML = "";
+  document.getElementById("card").className = "card";
   app.innerHTML = `
-    <section class="panel round">
-      <div class="round-head">
-        <span>Round ${index + 1}/${ROUNDS}</span>
-        <span class="category">${esc(prompt.category)}</span>
-        <span>${score} pts</span>
+    <section class="round">
+      <div class="prompt panel">
+        <p class="label accent">PROMPT ${index + 1} OF ${ROUNDS} · ${esc(prompt.category.toUpperCase())}</p>
+        <h1>${esc(prompt.text)}</h1>
+        <p class="label">▼ rarer answers dig deeper ▼</p>
       </div>
-      <h1 class="prompt">${esc(prompt.text)}</h1>
-      <div class="timer"><div class="timer-fill"></div><span class="timer-secs"></span></div>
-      <form class="guess" autocomplete="off">
-        <input name="guess" maxlength="100" placeholder="Type an answer" autocapitalize="off" spellcheck="false" aria-label="Your answer" />
-        <button class="btn btn-green">Mine</button>
-      </form>
-      <p class="feedback" role="status"></p>
+      <p class="pill" data-preview>digging down · the clock starts in <b></b></p>
+      <div class="dock" hidden>
+        <p class="feedback" role="status"></p>
+        <form class="guess" autocomplete="off">
+          <div class="dial"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" /><circle class="sweep" cx="18" cy="18" r="16" pathLength="100" /></svg><b></b></div>
+          <div class="field">
+            <input name="guess" maxlength="100" placeholder="type one answer…" autocapitalize="off" spellcheck="false" aria-label="Your answer" />
+            <div class="bar"><i></i></div>
+          </div>
+          <button class="btn btn-dig">DIG</button>
+        </form>
+      </div>
     </section>`;
+  const preview = app.querySelector("[data-preview]");
+  const dock = app.querySelector(".dock");
   const form = app.querySelector("form");
   const input = form.elements.guess;
   const feedback = app.querySelector(".feedback");
-  const fill = app.querySelector(".timer-fill");
-  const secs = app.querySelector(".timer-secs");
+  const sweep = app.querySelector(".sweep");
+  const secs = app.querySelector(".dial b");
+  const bar = app.querySelector(".bar i");
   let over = false;
   let busy = false;
-  input.focus();
 
   const end = () => {
     over = true;
     clearInterval(timer);
+    document.body.classList.remove("low");
   };
   const tick = () => {
     const left = diveOf(store, date).deadline - Date.now();
@@ -247,9 +247,20 @@ function round(day) {
       save(expireRound(store, date, Date.now()));
       return reveal(day, index);
     }
-    fill.style.width = `${(left / ROUND_MS) * 100}%`;
-    fill.classList.toggle("low", left < 5000);
+    if (left > ROUND_MS) {
+      preview.querySelector("b").textContent = Math.ceil((left - ROUND_MS) / 1000);
+      return;
+    }
+    if (dock.hidden) {
+      preview.hidden = true;
+      dock.hidden = false;
+      input.focus();
+    }
+    const frac = left / ROUND_MS;
+    sweep.style.strokeDashoffset = 100 - frac * 100;
+    bar.style.width = `${frac * 100}%`;
     secs.textContent = Math.ceil(left / 1000);
+    document.body.classList.toggle("low", left < LOW_TIME_MS);
   };
   const timer = setInterval(tick, 100);
   cleanup = end;
@@ -270,40 +281,81 @@ function round(day) {
       if (result.accepted) {
         end();
         save(finishRound(store, date, { guess, answer: result.answer, tier: result.tier, points: result.points }));
-        return reveal(day, index);
+        dock.hidden = true;
+        app.querySelector(".prompt").classList.add("faded");
+        const at = renders;
+        await dig(day, score, result);
+        if (at === renders) reveal(day, index);
+        return;
       }
-      feedback.textContent = `“${guess}” is not in the bank. Keep digging!`;
-      form.classList.remove("shake");
-      void form.offsetWidth;
-      form.classList.add("shake");
-      input.select();
+      if (result.suggestion) {
+        feedback.className = "feedback suggest";
+        feedback.innerHTML = `“${esc(guess)}” → <b>“${esc(result.suggestion)}”</b><small>submit again to confirm · or edit</small>`;
+        input.value = result.suggestion;
+      } else {
+        feedback.className = "feedback";
+        feedback.textContent = `“${guess}”: just stone. try again`;
+        input.select();
+      }
     } catch {
-      feedback.textContent = "Couldn't reach the server. Try again.";
+      feedback.className = "feedback";
+      feedback.textContent = "couldn't reach the server. try again";
     } finally {
       busy = false;
     }
   });
 }
 
-async function reveal(day, index) {
+async function dig(day, fromScore, result) {
+  const lines = document.getElementById("lines");
+  const card = document.getElementById("card");
+  lines.innerHTML = meta.tiers
+    .map(
+      (t) => `<div class="tline t-${t.key}" style="top:${yPx(sceneY(fromScore + t.points))}px">
+        <span>${ore(t.key)} ${esc(t.name.toUpperCase())} · ${t.points}</span></div>`,
+    )
+    .join("");
+  card.className = "card";
+  card.style.top = `${yPx(sceneY(fromScore))}px`;
+  card.innerHTML = `“${esc(result.answer.toUpperCase())}” ▼`;
+  card.getBoundingClientRect();
+  card.className = "card sinking";
+  card.style.top = `${yPx(sceneY(fromScore + result.points))}px`;
+  setDepth(fromScore + result.points, { anchor: ROUND_ANCHOR });
+  countUp(document.getElementById("hud-y"), depthY(fromScore), depthY(fromScore + result.points), DIG_MS);
+  await sleep(DIG_MS);
+  lines.querySelector(`.t-${result.tier}`)?.classList.add("lit");
+  card.className = "card gone";
+  await sleep(reducedMotion ? 0 : 450);
+}
+
+function reveal(day, index) {
   const dive = diveOf(store, day.date);
   const result = dive.rounds[index];
-  const prompt = day.prompts[index];
-  setDepth(totalScore(dive));
+  const score = totalScore(dive);
+  const before = score - result.points;
   const tier = tierOf(result.tier);
   const last = index === ROUNDS - 1;
+  setHud(day, index + 1, score);
+  setDepth(score, { anchor: ROUND_ANCHOR });
+  document.getElementById("lines").innerHTML = "";
+  const blocks = depthY(before) - depthY(score);
   app.innerHTML = `
-    <section class="panel reveal">
-      <div class="round-head"><span>Round ${index + 1}/${ROUNDS}</span><span class="category">${esc(prompt.category)}</span></div>
-      <h1 class="prompt">${esc(prompt.text)}</h1>
+    <section class="reveal ${tier ? `t-${tier.key}` : "t-miss"}">
       ${
         tier
-          ? `<p class="verdict"><span class="chip chip-${tier.key}"></span>${esc(result.answer)} · ${esc(tier.name)} <b>+${result.points}</b></p>`
-          : `<p class="verdict miss">⏱ Time's up! <b>+0</b></p>`
+          ? `<div class="sprite">${ore(tier.key)}</div>
+             <h1 class="tier-name">${esc(tier.name.toUpperCase())}</h1>
+             <p class="answer">“${esc(result.answer)}”</p>
+             <p class="gain"><b>+${result.points} PTS</b> · ${blocks} block${blocks === 1 ? "" : "s"} down</p>
+             <p class="quip">${esc(tier.line)}</p>`
+          : `<h1 class="tier-name">NOTHING MINED</h1>
+             <p class="answer">—</p>
+             <p class="gain"><b>+0 PTS</b></p>
+             <p class="quip">the clock beat your pickaxe.</p>`
       }
-      <div class="bank"><p class="hint">Loading the bank…</p></div>
-      <button class="btn btn-green btn-big" data-next>${last ? "See results" : "Next round"}</button>
-    </section>`;
+    </section>
+    <div class="dock dock-next"><button class="btn btn-next" data-next>${last ? "SURFACE ▲" : "DIG ▼"}</button></div>`;
   const next = app.querySelector("[data-next]");
   next.focus();
   next.addEventListener("click", () => {
@@ -311,81 +363,168 @@ async function reveal(day, index) {
     save(startRound(store, day.date, Date.now()));
     round(day);
   });
-  try {
-    const { answers } = await api(`/days/${day.date}/${index + 1}/answers`);
-    app.querySelector(".bank").innerHTML = meta.tiers
-      .filter((t) => answers[t.key].length)
-      .map(
-        (t) => `
-        <div class="bank-tier">
-          <h3><span class="chip chip-${t.key}"></span>${esc(t.name)} <b>${t.points}</b></h3>
-          <ul>${answers[t.key].map((a) => `<li${a === result.answer ? ' class="mine"' : ""}>${esc(a)}</li>`).join("")}</ul>
-        </div>`,
-      )
-      .join("");
-  } catch {
-    app.querySelector(".bank").innerHTML = `<p class="hint">Couldn't load the answers.</p>`;
-  }
 }
 
 function results(day) {
   const dive = diveOf(store, day.date);
   const score = totalScore(dive);
-  const y = depthY(score);
-  setDepth(score);
+  const band = bandOf(score);
+  const s = stats(store);
+  setHud(null);
+  setDepth(score, { anchor: 0.5 });
+  document.getElementById("lines").innerHTML = "";
   const isToday = day.date === meta.today;
+  const logCols = dive.rounds
+    .map((r, i) => {
+      const h = (r.points / 100) * 100;
+      return `<div class="col t-${r.tier ?? "miss"}"><i style="height:${h}%"></i><span style="top:${h}%">${ore(r.tier)}</span><em>${i + 1}</em></div>`;
+    })
+    .join("");
   app.innerHTML = `
-    <section class="panel hero">
-      <p class="eyebrow">${esc(fmtDate(day.date))}</p>
-      <h1>Dive #${day.number} complete</h1>
-      <div class="final">
-        <div class="final-y">${fmtY(y)}</div>
-        <div class="final-layer">${layerName(y)} · ${score}/${MAX_SCORE}</div>
+    <section class="sheet">
+      <div class="sheet-inner">
+        <header class="sheet-head"><span class="logo">MINELLION</span><span class="label">DIG #${day.number} COMPLETE · ${fmtDate(day.date)}</span></header>
+        <div class="final"><b>${score}</b><span>Y ${depthY(score)}</span></div>
+        <p class="rule"><span>DIG LOG</span><small>DEEPER = RARER</small></p>
+        <div class="log">${logCols}</div>
+        <p class="rule"><span>THE BEARING</span></p>
+        <ul class="bearing">${BANDS.map((b, i) => {
+          const next = BANDS[i + 1];
+          const range = next ? `${b.min}–${next.min - 1}` : `${b.min}+`;
+          return `<li class="${b === band ? "mine" : ""}"><span class="range">${range}</span><span>${esc(b.name)}. ${esc(b.text)}</span></li>`;
+        }).join("")}</ul>
+        <button class="btn btn-copy" data-share>COPY RESULT</button>
+        <p class="share-fallback" data-share-note></p>
+        <a class="btn btn-small" href="/archive">ARCHIVE ⟲</a>
+        <p class="rule"><span>THE HAUL</span><small>TAP A ROUND FOR EVERY ANSWER</small></p>
+        <ol class="haul">${dive.rounds
+          .map((r, i) => {
+            const t = tierOf(r.tier);
+            return `<li class="t-${r.tier ?? "miss"}">
+              <button class="haul-row" data-round="${i + 1}" aria-expanded="false">
+                <span class="n">${i + 1}</span>${ore(r.tier)}
+                <span class="haul-text"><small>${esc(day.prompts[i].text.toUpperCase())}</small><b>${t ? esc(r.answer) : "—"}</b></span>
+                <span class="pts">${r.points}</span><span class="plus">+</span>
+              </button>
+              <div class="bank" hidden></div>
+            </li>`;
+          })
+          .join("")}</ol>
+        <p class="rule"><span>LOGBOOK</span></p>
+        <p class="label logbook">PLAYED ${s.played} · AVG ${s.average ?? "–"} · BEST ${s.best ?? "–"}</p>
+        ${isToday ? `<p class="label next">NEXT DIG IN <b data-countdown></b></p>` : ""}
+        <p class="fine">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
       </div>
-      ${shareBlock(dive)}
-      ${isToday ? `<p class="next">Next dive in <span data-countdown></span></p>` : ""}
-      <p><a href="/archive">More dives in the archive →</a></p>
-    </section>
-    <section class="panel">
-      <table class="rounds">
-        <thead><tr><th>#</th><th>Prompt</th><th>Your answer</th><th>Pts</th></tr></thead>
-        <tbody>
-          ${dive.rounds
-            .map((r, i) => {
-              const t = tierOf(r.tier);
-              return `<tr><td>${i + 1}</td><td>${esc(day.prompts[i].text)}</td>
-                <td><span class="answer">${t ? `<span class="chip chip-${t.key}"></span>${esc(r.answer)}` : `${MISS_EMOJI} Time's up`}</span></td>
-                <td>${r.points}</td></tr>`;
-            })
-            .join("")}
-        </tbody>
-      </table>
     </section>`;
-  wireShare(day, dive);
+
+  const share = app.querySelector("[data-share]");
+  share.addEventListener("click", async () => {
+    const text = shareText({ number: day.number, dive, tiers: meta.tiers, url: `${location.origin}/` });
+    try {
+      await navigator.clipboard.writeText(text);
+      share.textContent = "COPIED ✓";
+    } catch {
+      const note = app.querySelector("[data-share-note]");
+      note.innerHTML = `<textarea readonly rows="5">${esc(text)}</textarea>`;
+      note.querySelector("textarea").select();
+    }
+  });
+  app.querySelectorAll(".haul-row").forEach((row) =>
+    row.addEventListener("click", () => toggleBank(day, dive, row)),
+  );
   const cd = app.querySelector("[data-countdown]");
   if (cd) cleanup = countdown(cd);
 }
 
-function notFound(message = "This tunnel leads nowhere.") {
-  setDepth(0);
-  app.innerHTML = `<section class="panel"><h1>Lost in the caves</h1><p>${message}</p><p><a href="/">Back to the surface</a></p></section>`;
+async function toggleBank(day, dive, row) {
+  const bank = row.nextElementSibling;
+  const open = row.getAttribute("aria-expanded") !== "true";
+  row.setAttribute("aria-expanded", open);
+  row.querySelector(".plus").textContent = open ? "−" : "+";
+  bank.hidden = !open;
+  if (!open || bank.dataset.loaded) return;
+  bank.innerHTML = `<p class="label">digging…</p>`;
+  const index = Number(row.dataset.round) - 1;
+  try {
+    const { answers } = await api(`/days/${day.date}/${index + 1}/answers`);
+    bank.dataset.loaded = "1";
+    const mine = dive.rounds[index].answer;
+    bank.innerHTML = [...meta.tiers]
+      .reverse()
+      .filter((t) => answers[t.key].length)
+      .map(
+        (t) => `<div class="bank-tier t-${t.key}"><p class="label">${ore(t.key)} ${esc(t.name.toUpperCase())} · ${t.points}</p>
+          <p>${answers[t.key].map((a) => `<span${a === mine ? ' class="mine"' : ""}>${esc(a)}</span>`).join(" · ")}</p></div>`,
+      )
+      .join("");
+  } catch {
+    bank.innerHTML = `<p class="label">couldn't load the answers.</p>`;
+  }
+}
+
+function archive() {
+  setHud(null);
+  setDepth(0, { anchor: 0.3 });
+  const rows = [...meta.days].reverse().map((d) => {
+    const dive = diveOf(store, d.date);
+    const score = totalScore(dive);
+    const status = isFinished(dive)
+      ? `<span class="arch-score">${score}</span><span class="arch-ores">${dive.rounds.map((r) => ore(r.tier)).join("")}</span>`
+      : `<span class="arch-play">${dive.rounds.length || dive.deadline ? `CONTINUE ${dive.rounds.length}/${ROUNDS}` : "DIG ▼"}</span>`;
+    return `<li><a href="/day/${d.date}"><b>#${d.number}</b><span class="arch-date">${fmtDate(d.date)}${
+      d.date === meta.today ? " · TODAY" : ""
+    }</span>${status}</a></li>`;
+  });
+  app.innerHTML = `
+    <section class="sheet">
+      <div class="sheet-inner">
+        <header class="sheet-head"><a class="logo" href="/">MINELLION</a><span class="label">THE ARCHIVE</span></header>
+        <p class="rule"><span>EVERY DIG SO FAR</span></p>
+        ${rows.length ? `<ul class="archive">${rows.join("")}</ul>` : `<p class="empty">no digs yet.</p>`}
+      </div>
+    </section>`;
+}
+
+function lost(message) {
+  setHud(null);
+  setDepth(MAX_SCORE, { anchor: 0.5 });
+  app.innerHTML = `<section class="reveal t-miss"><h1 class="tier-name">LOST IN THE CAVES</h1><p class="quip">${message}</p>
+    <p><a class="btn btn-small" href="/">BACK TO THE SURFACE ▲</a></p></section>`;
+}
+
+async function dayView(date) {
+  const entry = meta.days.find((d) => d.date === date);
+  if (!entry) return lost(`there's no dig for ${esc(date)}. it may not have been dug yet.`);
+  const day = await loadDay(date);
+  const before = diveOf(store, date).rounds.length;
+  save(expireRound(store, date, Date.now()));
+  const dive = diveOf(store, date);
+  if (dive.rounds.length > before) return reveal(day, dive.rounds.length - 1);
+  if (isFinished(dive)) return results(day);
+  if (dive.deadline) return round(day);
+  if (dive.rounds.length) return reveal(day, dive.rounds.length - 1);
+  intro(day);
 }
 
 async function render() {
+  renders++;
   cleanup();
   cleanup = () => {};
+  menu.close();
   const path = location.pathname.replace(/\/+$/, "") || "/";
   try {
     meta ??= await api("/days", { cache: "no-cache" });
     const dayMatch = path.match(/^\/day\/(\d{4}-\d{2}-\d{2})$/);
-    if (path === "/") home();
-    else if (path === "/archive") archive();
+    if (path === "/") {
+      if (meta.days.some((d) => d.date === meta.today)) await dayView(meta.today);
+      else intro(null);
+    } else if (path === "/archive") archive();
     else if (dayMatch) await dayView(dayMatch[1]);
-    else notFound();
+    else lost("this tunnel leads nowhere.");
   } catch (error) {
-    app.innerHTML = `<section class="panel"><h1>Cave-in!</h1><p>Couldn't load Minellion (${esc(error.message)}). Try reloading.</p></section>`;
+    setHud(null);
+    app.innerHTML = `<section class="reveal t-miss"><h1 class="tier-name">CAVE-IN</h1><p class="quip">couldn't load minellion (${esc(error.message)}). try reloading.</p></section>`;
   }
-  window.scrollTo(0, 0);
 }
 
 function navigate(path) {
@@ -399,7 +538,10 @@ document.addEventListener("click", (event) => {
   event.preventDefault();
   navigate(link.getAttribute("href"));
 });
+document.getElementById("menu-btn").addEventListener("click", () => menu.showModal());
 addEventListener("popstate", render);
 
-buildShaft();
+document.documentElement.style.setProperty("--dig-ms", `${DIG_MS}ms`);
+buildWorld();
+setDepth(0, { anchor: 0.56, instant: true });
 render();

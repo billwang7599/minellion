@@ -2,32 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Minellion</title>
-    <meta name="description" content="A daily Minecraft trivia dive. Name the rarest answers and mine down to bedrock." />
-    <meta name="theme-color" content="#1b1b1c" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>" />
+    <meta name="description" content="The daily Minecraft dig. Seven prompts, 25 seconds each. Rarer answers dig deeper." />
+    <meta name="theme-color" content="#07090c" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 12' shape-rendering='crispEdges'><rect x='1' y='0' width='2' height='3' fill='%23ffd166'/><rect x='1' y='3' width='2' height='9' fill='%236b4c35'/></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=Press+Start+2P&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" />
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="/app.js"></script>
   </head>
   <body>
-    <header class="top">
-      <a href="/" class="logo">Minellion</a>
-      <nav><a href="/archive">Archive</a></nav>
-    </header>
-    <div class="layout">
-      <main id="app" aria-live="polite"></main>
-      <aside class="shaft" id="shaft" aria-label="Depth"></aside>
+    <div class="scene" aria-hidden="true">
+      <div class="world" id="world"></div>
     </div>
-    <footer>
-      <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
-      <p><a href="https://krillion.io" target="_blank" rel="noopener">Inspired by Krillion</a></p>
-    </footer>
+    <header class="hud" id="hud" hidden>
+      <div class="gauge"><span class="label">Y LEVEL</span><b id="hud-y">64</b></div>
+      <div class="progress"><div id="hud-steps"></div><span class="label" id="hud-round"></span></div>
+      <div class="gauge gauge-score"><span class="label">SCORE</span><b id="hud-score">0</b></div>
+    </header>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menu">≡</button>
+    <main id="app" aria-live="polite"></main>
+    <dialog class="menu" id="menu">
+      <p class="label">MINELLION</p>
+      <h2 class="logo">MENU</h2>
+      <form method="dialog"><button class="icon-btn menu-close" aria-label="Close">×</button></form>
+      <p class="rule"><span>DIG IN</span></p>
+      <nav class="tiles">
+        <a href="/" class="tile">↓<span>DAILY DIG</span></a>
+        <a href="/archive" class="tile">⟲<span>ARCHIVE</span></a>
+      </nav>
+      <p class="fine">
+        Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+        <a href="https://krillion.io" target="_blank" rel="noopener">Inspired by Krillion.</a>
+      </p>
+      <p class="fine">one in a minellion.</p>
+    </dialog>
   </body>
 </html>

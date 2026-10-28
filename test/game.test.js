@@ -1,8 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
-  ROUNDS, ROUND_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, MISS,
-  depthY, layerName, totalScore, shareText, loadStore, startRound, finishRound, expireRound, stats, msUntilNextDive,
+  ROUNDS, ROUND_MS, PREVIEW_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, MISS, MISS_EMOJI, BANDS,
+  depthY, bandOf, totalScore, shareText, loadStore, startRound, finishRound, expireRound, stats,
+  msUntilNextDive,
 } from "../public/game.js";
 import { TIERS } from "../src/worker.js";
 
@@ -17,29 +18,32 @@ test("depth runs from the surface to bedrock at max score", () => {
   assert.equal(depthY(412), SURFACE_Y - Math.round((412 * (SURFACE_Y - BEDROCK_Y)) / MAX_SCORE));
 });
 
-test("layer names", () => {
-  assert.equal(layerName(64), "Surface");
-  assert.equal(layerName(61), "Dirt");
-  assert.equal(layerName(30), "Stone");
-  assert.equal(layerName(0), "Deepslate");
-  assert.equal(layerName(-63), "Deepslate");
-  assert.equal(layerName(-64), "Bedrock");
-});
-
-test("share text has the number, depth, emoji row, score and url but no answers", () => {
+test("share text has the number, score, depth and emoji row but no answers", () => {
   const rounds = [hit("dirt", "Zombie"), hit("coal"), MISS, hit("iron"), hit("gold"), hit("diamond"), hit("netherite")];
   const score = totalScore({ rounds });
   const text = shareText({ number: 12, dive: { rounds }, tiers: TIERS, url: "https://minellion.test" });
   assert.equal(
     text,
     [
-      `Minellion #12 ⛏️ Y ${depthY(score)}`,
-      ["dirt", "coal", null, "iron", "gold", "diamond", "netherite"].map((k) => (k ? tier(k).emoji : "❌")).join(""),
-      `${score}/${MAX_SCORE}`,
+      "Minellion #12 ⛏️",
+      `${score} · Y ${depthY(score)}`,
+      "",
+      ["dirt", "coal", null, "iron", "gold", "diamond", "netherite"].map((k) => (k ? tier(k).emoji : MISS_EMOJI)).join(""),
       "https://minellion.test",
     ].join("\n"),
   );
   assert.ok(!text.includes("Zombie"));
+});
+
+test("bands cover every score from 0 to the max", () => {
+  assert.equal(bandOf(0), BANDS[0]);
+  assert.equal(bandOf(MAX_SCORE), BANDS.at(-1));
+  for (let score = 0; score <= MAX_SCORE; score++) {
+    const band = bandOf(score);
+    assert.ok(score >= band.min, `${score} below ${band.min}`);
+    const next = BANDS[BANDS.indexOf(band) + 1];
+    assert.ok(!next || score < next.min, `${score} belongs to the next band`);
+  }
 });
 
 test("loadStore tolerates missing or corrupt data", () => {
@@ -48,9 +52,9 @@ test("loadStore tolerates missing or corrupt data", () => {
   assert.deepEqual(loadStore('{"dives":{"x":{"rounds":[]}}}'), { dives: { x: { rounds: [] } } });
 });
 
-test("startRound sets a deadline once, so a refresh can't reset the clock", () => {
+test("startRound sets a deadline once, after the preview, so a refresh can't reset the clock", () => {
   const started = startRound(loadStore(null), DATE, 1000);
-  assert.deepEqual(started.dives[DATE], { rounds: [], deadline: 1000 + ROUND_MS });
+  assert.deepEqual(started.dives[DATE], { rounds: [], deadline: 1000 + PREVIEW_MS + ROUND_MS });
   assert.equal(startRound(started, DATE, 5000), started);
 });
 
@@ -61,8 +65,9 @@ test("finishRound records the result and clears the deadline", () => {
 
 test("expireRound records a miss only once the deadline has passed", () => {
   const started = startRound(loadStore(null), DATE, 0);
-  assert.equal(expireRound(started, DATE, ROUND_MS - 1), started);
-  assert.deepEqual(expireRound(started, DATE, ROUND_MS).dives[DATE], { rounds: [MISS] });
+  const deadline = started.dives[DATE].deadline;
+  assert.equal(expireRound(started, DATE, deadline - 1), started);
+  assert.deepEqual(expireRound(started, DATE, deadline).dives[DATE], { rounds: [MISS] });
   const idle = loadStore(null);
   assert.equal(expireRound(idle, DATE, 10 ** 15), idle);
 });
@@ -75,15 +80,18 @@ test("a finished dive takes no more rounds", () => {
   assert.equal(finishRound(store, DATE, MISS), store);
 });
 
-test("stats count finished dives with best and average depth", () => {
-  assert.deepEqual(stats(loadStore(null)), { played: 0, bestY: null, averageY: null });
+test("stats count finished dives with best and average score", () => {
+  assert.deepEqual(stats(loadStore(null)), { played: 0, best: null, average: null });
   const full = (points) => ({ rounds: Array.from({ length: ROUNDS }, () => ({ ...MISS, points })) });
-  const store = { dives: { a: full(10), b: full(100), c: { rounds: [hit("netherite")] } } };
-  assert.deepEqual(stats(store), {
-    played: 2,
-    bestY: depthY(700),
-    averageY: Math.round((depthY(70) + depthY(700)) / 2),
-  });
+  const store = { dives: { a: full(10), b: full(15), c: { rounds: [hit("netherite")] } } };
+  assert.deepEqual(stats(store), { played: 2, best: 105, average: Math.round((70 + 105) / 2) });
+});
+
+test("old saves without deadlines or with stray fields still load", () => {
+  const store = loadStore('{"dives":{"2026-10-26":{"rounds":[{"guess":"x","answer":"X","tier":"coal","points":20}]}}}');
+  assert.equal(totalScore(store.dives["2026-10-26"]), 20);
+  assert.deepEqual(loadStore('{"dives":null}'), { dives: {} });
+  assert.deepEqual(loadStore("[]"), { dives: {} });
 });
 
 test("next dive is at New York midnight, across DST changes", () => {

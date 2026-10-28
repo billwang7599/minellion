@@ -1,12 +1,12 @@
 import data from "../data/days.json" with { type: "json" };
 
 export const TIERS = [
-  { key: "dirt", name: "Dirt", points: 10, emoji: "🟫" },
-  { key: "coal", name: "Coal", points: 20, emoji: "⬛" },
-  { key: "iron", name: "Iron", points: 35, emoji: "⬜" },
-  { key: "gold", name: "Gold", points: 60, emoji: "🟨" },
-  { key: "diamond", name: "Diamond", points: 85, emoji: "🟦" },
-  { key: "netherite", name: "One in a Minellion", points: 100, emoji: "🟪" },
+  { key: "dirt", name: "Dirt", points: 10, emoji: "🟫", line: "The answer everyone digs up first." },
+  { key: "coal", name: "Coal", points: 15, emoji: "⚫", line: "Felt clever. Half the server thought of it too." },
+  { key: "iron", name: "Iron", points: 30, emoji: "⚪", line: "Solid. Mining with the crowd." },
+  { key: "gold", name: "Gold", points: 60, emoji: "🟨", line: "Genuinely uncommon. Nice find." },
+  { key: "diamond", name: "Diamond", points: 85, emoji: "💎", line: "A deep cut. Most never dig this far." },
+  { key: "netherite", name: "One in a Minellion", points: 100, emoji: "🟪", line: "Ancient debris. Absurd." },
 ];
 const ROUNDS = 7;
 const MAX_GUESS_CHARS = 100;
@@ -49,9 +49,9 @@ export function matchAnswer(prompt, guess) {
     }),
   );
   const exact = entries.find((e) => e.keys.includes(key));
+  if (exact) return { answer: exact.answer, tier: exact.tier, exact: true };
   const close = entries.filter((e) => e.keys.some((k) => k.length >= MIN_TYPO_CHARS && withinOneEdit(k, key)));
-  const found = exact ?? (close.length === 1 ? close[0] : null);
-  return found && { answer: found.answer, tier: found.tier };
+  return close.length === 1 ? { answer: close[0].answer, tier: close[0].tier, exact: false } : null;
 }
 
 const json = (body, status = 200, cache = "no-store") =>
@@ -102,8 +102,9 @@ export default {
       if (typeof guess !== "string" || guess.length > MAX_GUESS_CHARS) return json({ error: "bad guess" }, 400);
       const match = matchAnswer(prompt, guess);
       if (!match) return json({ accepted: false });
+      if (!match.exact) return json({ accepted: false, suggestion: match.answer });
       const points = TIERS.find((t) => t.key === match.tier).points;
-      return json({ accepted: true, ...match, points });
+      return json({ accepted: true, answer: match.answer, tier: match.tier, points });
     }
 
     return notFound();

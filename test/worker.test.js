@@ -70,6 +70,12 @@ test("POST guess accepts a bank answer with its tier and points", async () => {
   assert.deepEqual(await res.json(), { accepted: true, answer: firstDirt, tier: "dirt", points: TIERS[0].points });
 });
 
+test("POST guess suggests the bank answer for a typo instead of accepting it", async () => {
+  const long = Object.values(today.prompts[0].answers).flat().map(firstName).find((name) => /^[a-z]{6,}$/i.test(name));
+  const res = await guess(`/api/days/${today.date}/1/guess`, { guess: `${long.slice(0, -1)}q` });
+  assert.deepEqual(await res.json(), { accepted: false, suggestion: long });
+});
+
 test("POST guess rejects answers not in the bank", async () => {
   const res = await guess(`/api/days/${today.date}/1/guess`, { guess: "zzzz qqqq xxxx" });
   assert.deepEqual(await res.json(), { accepted: false });
@@ -121,7 +127,7 @@ test("matching ignores case, diacritics, punctuation, spacing, articles and a pl
   ]) {
     assert.equal(matchAnswer(prompt, input)?.answer, answer, input);
   }
-  assert.deepEqual(matchAnswer(prompt, "Stray"), { answer: "Stray", tier: "diamond" });
+  assert.deepEqual(matchAnswer(prompt, "Stray"), { answer: "Stray", tier: "diamond", exact: true });
 });
 
 test("one typo is forgiven only for long answers with a single close match", () => {
@@ -129,6 +135,7 @@ test("one typo is forgiven only for long answers with a single close match", () 
   assert.equal(matchAnswer(prompt, "zombiee")?.answer, "Zombie");
   assert.equal(matchAnswer(prompt, "zombified piglen")?.answer, "Zombified Piglin");
   assert.equal(matchAnswer(prompt, "strax")?.answer, "Stray");
+  assert.equal(matchAnswer(prompt, "strax").exact, false);
   assert.equal(matchAnswer(prompt, "endermon"), null);
   assert.equal(matchAnswer(prompt, "be"), null);
   assert.equal(matchAnswer(prompt, "zomb"), null);
