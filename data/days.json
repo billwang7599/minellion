@@ -1,264 +1,6381 @@
 {
-  "$schema": "./days.schema.json",
-  "days": [
+ "$schema": "./days.schema.json",
+ "days": [
+  {
+   "date": "2026-10-22",
+   "prompts": [
     {
-      "date": "2026-10-26",
-      "prompts": [
-        {
-          "category": "Mobs",
-          "text": "Name a mob that spawns in the Nether",
-          "answers": {
-            "dirt": ["Ghast", ["Zombified Piglin", "Zombie Pigman", "Pigman"], "Blaze"],
-            "coal": ["Piglin", "Magma Cube", "Wither Skeleton"],
-            "iron": ["Hoglin", "Strider", "Enderman"],
-            "gold": ["Piglin Brute"],
-            "diamond": ["Skeleton"],
-            "netherite": ["Chicken"]
-          }
-        },
-        {
-          "category": "Ores",
-          "text": "Name an ore block found in the Overworld",
-          "answers": {
-            "dirt": ["Coal Ore", "Iron Ore", "Diamond Ore"],
-            "coal": ["Gold Ore", "Redstone Ore", ["Lapis Lazuli Ore", "Lapis Ore"]],
-            "iron": ["Copper Ore", "Emerald Ore"],
-            "gold": ["Deepslate Diamond Ore", "Deepslate Iron Ore"],
-            "diamond": ["Deepslate Emerald Ore", "Deepslate Copper Ore"]
-          }
-        },
-        {
-          "category": "Food",
-          "text": "Name a food item you can eat",
-          "answers": {
-            "dirt": ["Bread", "Apple", ["Steak", "Cooked Beef"]],
-            "coal": ["Golden Apple", "Cooked Chicken", "Cookie", "Carrot"],
-            "iron": ["Baked Potato", "Pumpkin Pie", ["Melon Slice", "Melon"], "Golden Carrot"],
-            "gold": ["Rabbit Stew", "Beetroot Soup", "Mushroom Stew"],
-            "diamond": ["Dried Kelp", "Glow Berries", "Honey Bottle"],
-            "netherite": ["Chorus Fruit", "Suspicious Stew", ["Enchanted Golden Apple", "Notch Apple"]]
-          }
-        },
-        {
-          "category": "Biomes",
-          "text": "Name an Overworld biome",
-          "answers": {
-            "dirt": ["Plains", "Desert", "Forest"],
-            "coal": ["Jungle", "Taiga", "Savanna", "Swamp"],
-            "iron": [["Badlands", "Mesa"], ["Mushroom Fields", "Mushroom Island"], "Snowy Plains"],
-            "gold": ["Cherry Grove", "Dark Forest", "Birch Forest"],
-            "diamond": ["Deep Dark", "Lush Caves", "Dripstone Caves", "Mangrove Swamp"],
-            "netherite": ["Pale Garden", "Ice Spikes", "Stony Peaks", "Windswept Savanna"]
-          }
-        },
-        {
-          "category": "Tools",
-          "text": "Name a craftable tool or weapon",
-          "answers": {
-            "dirt": ["Pickaxe", "Sword", "Axe"],
-            "coal": ["Shovel", "Hoe", "Bow"],
-            "iron": ["Crossbow", "Fishing Rod", "Shears"],
-            "gold": ["Flint and Steel", "Shield"],
-            "diamond": ["Brush", "Spyglass", "Carrot on a Stick"],
-            "netherite": ["Warped Fungus on a Stick", "Mace"]
-          }
-        },
-        {
-          "category": "Brewing",
-          "text": "Name an ingredient you can put in a brewing stand",
-          "answers": {
-            "dirt": ["Nether Wart", "Blaze Powder", ["Redstone", "Redstone Dust"]],
-            "coal": [["Glowstone Dust", "Glowstone"], "Gunpowder", "Sugar", "Spider Eye"],
-            "iron": ["Magma Cream", "Ghast Tear", "Fermented Spider Eye", ["Glistering Melon Slice", "Glistering Melon"]],
-            "gold": ["Golden Carrot", "Rabbit's Foot", "Dragon's Breath"],
-            "diamond": ["Pufferfish", ["Turtle Shell", "Turtle Helmet"], "Phantom Membrane"],
-            "netherite": ["Breeze Rod", "Slime Block", "Cobweb", "Stone"]
-          }
-        },
-        {
-          "category": "The End",
-          "text": "Name a block that generates naturally in the End",
-          "answers": {
-            "dirt": ["End Stone", "Obsidian", "Chorus Plant"],
-            "coal": ["Purpur Block", "End Rod", "Chorus Flower"],
-            "iron": ["Bedrock", "Dragon Egg", "Ender Chest"],
-            "gold": ["Purpur Pillar", "Purpur Stairs", "End Stone Bricks"],
-            "diamond": ["Iron Bars", "Brewing Stand", "End Gateway", "Torch"],
-            "netherite": ["Dragon Head", "Magenta Stained Glass", "Purpur Slab", "Ladder"]
-          }
-        }
+     "category": "Mobs",
+     "text": "Name a mob that spawns naturally in the Nether",
+     "answers": {
+      "dirt": [
+       "Ghast",
+       [
+        "Zombified Piglin",
+        "Zombie Pigman",
+        "Pigman"
+       ]
+      ],
+      "coal": [
+       "Blaze",
+       "Piglin",
+       [
+        "Magma Cube",
+        "Magma Slime",
+        "Lava Slime"
+       ]
+      ],
+      "iron": [
+       "Wither Skeleton",
+       "Hoglin",
+       "Enderman"
+      ],
+      "gold": [
+       "Strider",
+       "Piglin Brute",
+       "Skeleton"
+      ],
+      "netherite": [
+       "Chicken"
       ]
+     }
     },
     {
-      "date": "2026-10-27",
-      "prompts": [
-        {
-          "category": "Mobs",
-          "text": "Name a passive mob",
-          "answers": {
-            "dirt": ["Cow", "Pig", "Sheep", "Chicken"],
-            "coal": ["Horse", "Rabbit", "Villager", "Cat", "Camel"],
-            "iron": ["Parrot", "Turtle", "Squid", "Axolotl"],
-            "gold": ["Mooshroom", "Strider", "Allay"],
-            "diamond": ["Sniffer", "Armadillo", "Glow Squid"],
-            "netherite": ["Skeleton Horse", "Mule"]
-          }
-        },
-        {
-          "category": "Crafting",
-          "text": "Name an item crafted using sticks",
-          "answers": {
-            "dirt": ["Torch", "Ladder", "Fence", "Pickaxe", "Sword"],
-            "coal": ["Sign", "Bow", "Arrow", "Fishing Rod", "Axe", "Shovel"],
-            "iron": ["Lever", "Painting", "Item Frame", "Rail", "Hoe"],
-            "gold": ["Armor Stand", "Crossbow", "Tripwire Hook", "Activator Rail", "Powered Rail"],
-            "diamond": ["Banner", "Redstone Torch", "Fence Gate"],
-            "netherite": ["Campfire", "Soul Torch", "Brush"]
-          }
-        },
-        {
-          "category": "Structures",
-          "text": "Name a structure that generates in the Overworld",
-          "answers": {
-            "dirt": ["Village", ["Mineshaft", "Abandoned Mineshaft"], "Stronghold"],
-            "coal": [["Desert Pyramid", "Desert Temple"], ["Jungle Pyramid", "Jungle Temple"], "Ocean Monument", "Shipwreck"],
-            "iron": [["Woodland Mansion", "Mansion"], ["Pillager Outpost", "Outpost"], "Igloo", ["Swamp Hut", "Witch Hut"]],
-            "gold": ["Ancient City", "Ruined Portal", "Buried Treasure", ["Dungeon", "Monster Room"]],
-            "diamond": ["Ocean Ruins", "Trail Ruins", "Trial Chambers", ["Amethyst Geode", "Geode"]],
-            "netherite": ["Desert Well", "Fossil"]
-          }
-        },
-        {
-          "category": "Redstone",
-          "text": "Name a redstone component",
-          "answers": {
-            "dirt": ["Redstone Torch", "Lever", ["Repeater", "Redstone Repeater"], "Piston"],
-            "coal": [["Comparator", "Redstone Comparator"], "Button", "Pressure Plate", "Hopper"],
-            "iron": ["Observer", "Sticky Piston", "Dispenser", "Dropper"],
-            "gold": [["Daylight Detector", "Daylight Sensor"], "Note Block", ["Target", "Target Block"], "Tripwire Hook"],
-            "diamond": ["Redstone Lamp", "Sculk Sensor", "Lectern", "Trapped Chest"],
-            "netherite": ["Calibrated Sculk Sensor", "Crafter", "Lightning Rod", "Copper Bulb"]
-          }
-        },
-        {
-          "category": "Enchanting",
-          "text": "Name an enchantment",
-          "answers": {
-            "dirt": ["Sharpness", "Efficiency", "Unbreaking", "Fortune"],
-            "coal": ["Protection", "Mending", "Silk Touch", "Looting"],
-            "iron": ["Power", "Feather Falling", "Fire Aspect", "Smite"],
-            "gold": ["Respiration", "Aqua Affinity", "Depth Strider", "Infinity"],
-            "diamond": ["Thorns", "Knockback", "Riptide", "Loyalty"],
-            "netherite": ["Swift Sneak", "Wind Burst", "Density", "Breach", "Impaling", "Channeling"]
-          }
-        },
-        {
-          "category": "Dyes",
-          "text": "Name a dye color",
-          "answers": {
-            "dirt": ["Red", "Blue", "Green", "Black", "White"],
-            "coal": ["Yellow", "Orange", "Purple", "Pink"],
-            "iron": ["Lime", "Cyan", ["Gray", "Grey"], "Brown"],
-            "gold": ["Light Blue", "Magenta"],
-            "diamond": [["Light Gray", "Light Grey", "Silver"]]
-          }
-        },
-        {
-          "category": "The Nether",
-          "text": "Name a block that generates naturally in the Nether",
-          "answers": {
-            "dirt": ["Netherrack", "Soul Sand", "Glowstone", "Magma Block"],
-            "coal": [["Nether Quartz Ore", "Quartz Ore"], "Basalt", "Blackstone", "Soul Soil"],
-            "iron": ["Nether Gold Ore", "Ancient Debris", "Crimson Nylium", "Warped Nylium", "Nether Bricks"],
-            "gold": ["Shroomlight", "Nether Wart Block", "Warped Wart Block", "Crimson Stem", "Warped Stem"],
-            "diamond": ["Gilded Blackstone", "Bone Block", "Weeping Vines", "Twisting Vines"],
-            "netherite": ["Chain", ["Block of Gold", "Gold Block"], "Polished Blackstone Bricks", "Crying Obsidian"]
-          }
-        }
+     "category": "Biomes",
+     "text": "Name an Overworld biome",
+     "answers": {
+      "dirt": [
+       "Plains",
+       "Desert",
+       "Forest",
+       "Jungle",
+       "Taiga",
+       "Ocean",
+       [
+        "Swamp",
+        "Swampland"
+       ]
+      ],
+      "coal": [
+       "Savanna",
+       [
+        "Badlands",
+        "Mesa"
+       ],
+       [
+        "Snowy Plains",
+        "Snowy Tundra",
+        "Ice Plains"
+       ],
+       "Birch Forest",
+       [
+        "Dark Forest",
+        "Roofed Forest"
+       ],
+       [
+        "Mushroom Fields",
+        "Mushroom Island"
+       ],
+       "River",
+       "Beach",
+       "Cherry Grove",
+       "Flower Forest",
+       [
+        "Ice Spikes",
+        "Ice Plains Spikes"
+       ],
+       "Deep Ocean",
+       "Lush Caves",
+       "Deep Dark",
+       [
+        "Snowy Taiga",
+        "Cold Taiga"
+       ],
+       "Mangrove Swamp",
+       "Meadow",
+       "Bamboo Jungle",
+       "Dripstone Caves"
+      ],
+      "iron": [
+       "Sunflower Plains",
+       "Warm Ocean",
+       "Frozen Ocean",
+       "Cold Ocean",
+       "Lukewarm Ocean",
+       "Pale Garden",
+       [
+        "Windswept Hills",
+        "Mountains",
+        "Extreme Hills"
+       ],
+       "Grove",
+       "Snowy Slopes",
+       "Jagged Peaks",
+       "Frozen Peaks",
+       "Stony Peaks",
+       "Frozen River",
+       [
+        "Snowy Beach",
+        "Cold Beach"
+       ],
+       [
+        "Old Growth Spruce Taiga",
+        "Giant Spruce Taiga",
+        "Mega Spruce Taiga"
+       ],
+       [
+        "Old Growth Pine Taiga",
+        "Giant Tree Taiga",
+        "Mega Taiga"
+       ],
+       [
+        "Old Growth Birch Forest",
+        "Tall Birch Forest"
+       ],
+       [
+        "Eroded Badlands",
+        "Eroded Mesa"
+       ],
+       [
+        "Wooded Badlands",
+        "Wooded Badlands Plateau"
+       ],
+       "Savanna Plateau",
+       [
+        "Sparse Jungle",
+        "Jungle Edge"
+       ]
+      ],
+      "gold": [
+       [
+        "Windswept Forest",
+        "Wooded Mountains"
+       ],
+       [
+        "Windswept Gravelly Hills",
+        "Gravelly Mountains"
+       ],
+       [
+        "Windswept Savanna",
+        "Shattered Savanna"
+       ],
+       [
+        "Stony Shore",
+        "Stone Shore"
+       ],
+       "Deep Cold Ocean",
+       "Deep Frozen Ocean",
+       "Deep Lukewarm Ocean",
+       "Sulfur Caves",
+       "Dappled Forest"
       ]
+     }
     },
     {
-      "date": "2026-10-28",
-      "prompts": [
-        {
-          "category": "Mobs",
-          "text": "Name a hostile mob",
-          "answers": {
-            "dirt": ["Zombie", "Skeleton", "Creeper", "Spider"],
-            "coal": ["Witch", "Slime", "Phantom", "Drowned"],
-            "iron": ["Husk", "Stray", "Pillager", "Guardian", "Cave Spider"],
-            "gold": ["Vindicator", "Evoker", "Ravager", "Silverfish", "Blaze"],
-            "diamond": ["Elder Guardian", "Shulker", "Endermite", "Vex", "Bogged", "Breeze"],
-            "netherite": ["Warden", "Wither", "Ender Dragon", "Creaking"]
-          }
-        },
-        {
-          "category": "Smelting",
-          "text": "Name something you can make in a furnace",
-          "answers": {
-            "dirt": ["Iron Ingot", "Glass", "Gold Ingot", "Charcoal"],
-            "coal": ["Stone", "Smooth Stone", "Brick", ["Steak", "Cooked Beef"]],
-            "iron": ["Cooked Chicken", "Baked Potato", "Dried Kelp", "Copper Ingot"],
-            "gold": ["Terracotta", "Netherite Scrap", "Green Dye", "Lime Dye"],
-            "diamond": ["Cracked Stone Bricks", "Sponge", "Popped Chorus Fruit", "Nether Brick"],
-            "netherite": ["Deepslate", ["Smooth Quartz Block", "Smooth Quartz"], "Iron Nugget", "Gold Nugget"]
-          }
-        },
-        {
-          "category": "Wood",
-          "text": "Name a type of wood",
-          "answers": {
-            "dirt": ["Oak", "Birch", "Spruce"],
-            "coal": ["Jungle", "Acacia", "Dark Oak"],
-            "iron": ["Mangrove", "Cherry", "Crimson", "Warped"],
-            "gold": ["Bamboo"],
-            "diamond": ["Pale Oak"]
-          }
-        },
-        {
-          "category": "Gear",
-          "text": "Name something a player can wear",
-          "answers": {
-            "dirt": ["Helmet", "Chestplate", "Leggings", "Boots"],
-            "coal": ["Elytra", "Carved Pumpkin"],
-            "iron": [["Turtle Shell", "Turtle Helmet"], "Creeper Head"],
-            "gold": ["Zombie Head", "Skeleton Skull", "Dragon Head"],
-            "diamond": ["Wither Skeleton Skull", "Piglin Head"],
-            "netherite": ["Player Head"]
-          }
-        },
-        {
-          "category": "Blocks",
-          "text": "Name a block that falls when nothing is under it",
-          "answers": {
-            "dirt": ["Sand", "Gravel", "Anvil"],
-            "coal": ["Red Sand", "Concrete Powder"],
-            "iron": ["Dragon Egg", "Scaffolding", "Pointed Dripstone"],
-            "gold": ["Suspicious Sand", "Suspicious Gravel"],
-            "diamond": ["Chipped Anvil", "Damaged Anvil"]
-          }
-        },
-        {
-          "category": "Taming",
-          "text": "Name a mob you can tame",
-          "answers": {
-            "dirt": [["Wolf", "Dog"], "Cat", "Horse"],
-            "coal": ["Parrot", "Donkey", "Mule", "Llama"],
-            "iron": ["Camel", "Trader Llama", "Skeleton Horse"]
-          }
-        },
-        {
-          "category": "Farming",
-          "text": "Name a crop you can plant",
-          "answers": {
-            "dirt": [["Wheat", "Wheat Seeds", "Seeds"], "Carrot", "Potato"],
-            "coal": ["Beetroot", "Pumpkin", "Melon", "Sugar Cane"],
-            "iron": ["Nether Wart", ["Cocoa Beans", "Cocoa"], "Sweet Berries", "Bamboo"],
-            "gold": ["Cactus", "Kelp", "Chorus Flower"],
-            "diamond": ["Torchflower", ["Pitcher Plant", "Pitcher Pod"], "Glow Berries"]
-          }
-        }
+     "category": "Names",
+     "text": "Name a block or item with 'Gold' or 'Golden' in its name",
+     "answers": {
+      "dirt": [
+       [
+        "Block of Gold",
+        "Gold Block"
+       ],
+       "Gold Ingot",
+       "Gold Ore",
+       "Golden Apple",
+       "Golden Pickaxe",
+       "Golden Sword"
+      ],
+      "coal": [
+       [
+        "Enchanted Golden Apple",
+        "Notch Apple",
+        "God Apple"
+       ],
+       "Gold Nugget",
+       "Golden Axe",
+       "Golden Boots",
+       "Golden Carrot",
+       "Golden Chestplate",
+       "Golden Helmet",
+       [
+        "Golden Horse Armor",
+        "Gold Horse Armor"
+       ],
+       "Golden Leggings",
+       "Golden Shovel",
+       "Nether Gold Ore",
+       "Raw Gold"
+      ],
+      "iron": [
+       [
+        "Block of Raw Gold",
+        "Raw Gold Block"
+       ],
+       "Deepslate Gold Ore",
+       "Golden Hoe"
+      ],
+      "gold": [
+       "Golden Dandelion",
+       "Golden Spear"
+      ],
+      "diamond": [
+       "Golden Nautilus Armor"
       ]
+     }
+    },
+    {
+     "category": "Wood",
+     "text": "Name a type of wood (one that has its own planks)",
+     "answers": {
+      "dirt": [
+       "Oak",
+       "Spruce",
+       "Birch"
+      ],
+      "coal": [
+       "Jungle",
+       "Acacia",
+       "Dark Oak"
+      ],
+      "iron": [
+       "Cherry",
+       "Mangrove"
+      ],
+      "gold": [
+       "Crimson",
+       "Warped",
+       "Bamboo",
+       "Pale Oak"
+      ],
+      "diamond": [
+       "Poplar"
+      ]
+     }
+    },
+    {
+     "category": "Food",
+     "text": "Name a food you can eat",
+     "answers": {
+      "dirt": [
+       "Apple",
+       "Bread",
+       [
+        "Steak",
+        "Cooked Beef"
+       ],
+       [
+        "Cooked Porkchop",
+        "Cooked Pork"
+       ],
+       "Golden Apple",
+       "Carrot"
+      ],
+      "coal": [
+       "Cooked Chicken",
+       "Potato",
+       "Baked Potato",
+       "Cookie",
+       [
+        "Melon Slice",
+        "Melon"
+       ],
+       "Cake",
+       "Pumpkin Pie",
+       [
+        "Raw Beef",
+        "Beef"
+       ],
+       [
+        "Raw Porkchop",
+        "Porkchop"
+       ],
+       "Raw Chicken",
+       "Golden Carrot",
+       "Rotten Flesh",
+       [
+        "Mushroom Stew",
+        "Mushroom Soup"
+       ]
+      ],
+      "iron": [
+       "Cooked Mutton",
+       [
+        "Raw Mutton",
+        "Mutton"
+       ],
+       "Cooked Salmon",
+       [
+        "Cooked Cod",
+        "Cooked Fish"
+       ],
+       [
+        "Raw Cod",
+        "Cod",
+        "Raw Fish"
+       ],
+       [
+        "Raw Salmon",
+        "Salmon"
+       ],
+       "Sweet Berries",
+       "Beetroot",
+       "Beetroot Soup",
+       "Rabbit Stew",
+       "Cooked Rabbit",
+       "Raw Rabbit",
+       [
+        "Enchanted Golden Apple",
+        "Notch Apple",
+        "God Apple"
+       ],
+       "Spider Eye",
+       "Honey Bottle",
+       "Dried Kelp"
+      ],
+      "gold": [
+       "Glow Berries",
+       "Chorus Fruit",
+       [
+        "Pufferfish",
+        "Blowfish"
+       ],
+       [
+        "Tropical Fish",
+        "Clownfish"
+       ],
+       "Poisonous Potato",
+       "Suspicious Stew"
+      ]
+     }
+    },
+    {
+     "category": "Blocks",
+     "text": "Name an ore block",
+     "answers": {
+      "dirt": [
+       [
+        "Diamond Ore",
+        "Diamond"
+       ],
+       [
+        "Iron Ore",
+        "Iron"
+       ],
+       [
+        "Coal Ore",
+        "Coal"
+       ],
+       [
+        "Gold Ore",
+        "Gold"
+       ]
+      ],
+      "coal": [
+       [
+        "Redstone Ore",
+        "Redstone"
+       ],
+       [
+        "Lapis Lazuli Ore",
+        "Lapis Ore",
+        "Lapis Lazuli",
+        "Lapis"
+       ],
+       [
+        "Emerald Ore",
+        "Emerald"
+       ],
+       [
+        "Copper Ore",
+        "Copper"
+       ]
+      ],
+      "iron": [
+       [
+        "Nether Quartz Ore",
+        "Quartz Ore",
+        "Nether Quartz",
+        "Quartz"
+       ],
+       [
+        "Ancient Debris",
+        "Netherite"
+       ],
+       [
+        "Nether Gold Ore",
+        "Nether Gold"
+       ]
+      ],
+      "gold": [
+       [
+        "Deepslate Diamond Ore",
+        "Deepslate Diamond"
+       ],
+       [
+        "Deepslate Iron Ore",
+        "Deepslate Iron"
+       ]
+      ],
+      "diamond": [
+       [
+        "Deepslate Coal Ore",
+        "Deepslate Coal"
+       ],
+       [
+        "Deepslate Gold Ore",
+        "Deepslate Gold"
+       ],
+       [
+        "Deepslate Redstone Ore",
+        "Deepslate Redstone"
+       ],
+       [
+        "Deepslate Lapis Lazuli Ore",
+        "Deepslate Lapis Ore",
+        "Deepslate Lapis"
+       ],
+       [
+        "Deepslate Emerald Ore",
+        "Deepslate Emerald"
+       ],
+       [
+        "Deepslate Copper Ore",
+        "Deepslate Copper"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Enchanting",
+     "text": "Name an enchantment",
+     "answers": {
+      "dirt": [
+       "Sharpness",
+       "Efficiency",
+       "Unbreaking",
+       "Mending",
+       "Fortune",
+       "Protection",
+       "Silk Touch",
+       "Looting"
+      ],
+      "coal": [
+       "Fire Aspect",
+       "Power",
+       "Infinity",
+       "Feather Falling",
+       "Knockback",
+       "Smite",
+       "Thorns",
+       "Flame",
+       "Punch",
+       "Respiration",
+       "Depth Strider",
+       "Aqua Affinity",
+       "Bane of Arthropods",
+       [
+        "Sweeping Edge",
+        "Sweeping"
+       ],
+       "Fire Protection",
+       "Blast Protection",
+       "Projectile Protection",
+       [
+        "Curse of Vanishing",
+        "Vanishing"
+       ],
+       [
+        "Curse of Binding",
+        "Binding"
+       ],
+       "Frost Walker",
+       "Loyalty",
+       "Riptide",
+       "Channeling"
+      ],
+      "iron": [
+       "Lure",
+       "Luck of the Sea",
+       "Impaling",
+       "Multishot",
+       "Piercing",
+       "Quick Charge",
+       "Soul Speed",
+       "Swift Sneak",
+       "Density",
+       "Breach",
+       "Wind Burst"
+      ],
+      "gold": [
+       "Lunge"
+      ]
+     }
     }
-  ]
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a passive mob",
+     "answers": {
+      "dirt": [
+       "Cow",
+       "Pig",
+       "Sheep",
+       "Chicken"
+      ],
+      "coal": [
+       "Horse",
+       "Rabbit",
+       "Villager",
+       "Cat",
+       "Squid",
+       "Bat"
+      ],
+      "iron": [
+       "Donkey",
+       "Mule",
+       "Parrot",
+       "Turtle",
+       [
+        "Mooshroom",
+        "Mushroom Cow"
+       ],
+       "Ocelot",
+       "Axolotl",
+       "Cod",
+       "Salmon",
+       [
+        "Tropical Fish",
+        "Clownfish"
+       ],
+       [
+        "Snow Golem",
+        "Snowman"
+       ],
+       "Glow Squid",
+       "Allay",
+       "Wandering Trader"
+      ],
+      "gold": [
+       "Frog",
+       "Strider",
+       "Camel",
+       "Sniffer",
+       "Armadillo",
+       "Tadpole",
+       "Skeleton Horse",
+       [
+        "Happy Ghast",
+        "Ghastling"
+       ]
+      ],
+      "diamond": [
+       "Copper Golem",
+       "Zombie Horse",
+       "Sulfur Cube"
+      ],
+      "netherite": [
+       "Camel Husk"
+      ]
+     }
+    },
+    {
+     "category": "Effects",
+     "text": "Name a status effect",
+     "answers": {
+      "dirt": [
+       [
+        "Speed",
+        "Swiftness"
+       ],
+       "Strength",
+       [
+        "Regeneration",
+        "Regen"
+       ],
+       "Poison",
+       "Invisibility",
+       "Night Vision",
+       "Fire Resistance"
+      ],
+      "coal": [
+       "Slowness",
+       "Weakness",
+       [
+        "Instant Health",
+        "Healing"
+       ],
+       [
+        "Instant Damage",
+        "Harming"
+       ],
+       [
+        "Jump Boost",
+        "Leaping"
+       ],
+       "Water Breathing",
+       "Haste",
+       "Mining Fatigue",
+       "Wither",
+       [
+        "Nausea",
+        "Confusion"
+       ],
+       "Blindness",
+       "Hunger",
+       "Absorption",
+       "Resistance",
+       "Levitation",
+       "Slow Falling",
+       "Saturation",
+       "Glowing"
+      ],
+      "iron": [
+       "Bad Omen",
+       "Hero of the Village",
+       "Darkness",
+       "Conduit Power",
+       "Dolphin's Grace",
+       "Health Boost",
+       "Luck"
+      ],
+      "gold": [
+       [
+        "Bad Luck",
+        "Unluck"
+       ],
+       "Raid Omen",
+       "Trial Omen",
+       "Wind Charged",
+       "Weaving",
+       "Oozing",
+       "Infested"
+      ],
+      "diamond": [
+       "Breath of the Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'Nether' in its name (Netherite counts)",
+     "answers": {
+      "dirt": [
+       [
+        "Block of Netherite",
+        "Netherite Block"
+       ],
+       "Nether Bricks",
+       "Nether Portal",
+       "Nether Star",
+       "Nether Wart",
+       "Netherite Ingot",
+       "Netherite Pickaxe",
+       "Netherite Sword",
+       "Netherrack"
+      ],
+      "coal": [
+       "Nether Brick Fence",
+       "Nether Brick Slab",
+       "Nether Brick Stairs",
+       "Nether Gold Ore",
+       "Nether Quartz",
+       "Nether Quartz Ore",
+       "Nether Wart Block",
+       "Netherite Axe",
+       "Netherite Boots",
+       "Netherite Chestplate",
+       "Netherite Helmet",
+       "Netherite Hoe",
+       "Netherite Leggings",
+       "Netherite Scrap",
+       "Netherite Shovel",
+       "Red Nether Bricks"
+      ],
+      "iron": [
+       "Chiseled Nether Bricks",
+       "Cracked Nether Bricks",
+       "Nether Brick Wall",
+       "Nether Sprouts",
+       "Red Nether Brick Slab",
+       "Red Nether Brick Stairs",
+       "Red Nether Brick Wall",
+       [
+        "Netherite Upgrade",
+        "Netherite Upgrade Smithing Template"
+       ]
+      ],
+      "gold": [
+       "Netherite Horse Armor",
+       "Netherite Nautilus Armor",
+       "Netherite Spear"
+      ]
+     }
+    },
+    {
+     "category": "Plants",
+     "text": "Name a flower",
+     "answers": {
+      "dirt": [
+       [
+        "Poppy",
+        "Rose"
+       ],
+       "Dandelion"
+      ],
+      "coal": [
+       "Sunflower",
+       [
+        "Blue Orchid",
+        "Orchid"
+       ],
+       [
+        "Red Tulip",
+        "Tulip"
+       ],
+       [
+        "Oxeye Daisy",
+        "Daisy"
+       ],
+       "Cornflower",
+       "Allium",
+       [
+        "Azure Bluet",
+        "Bluet"
+       ],
+       "Lilac",
+       "Rose Bush",
+       "Peony",
+       "Lily of the Valley",
+       "White Tulip",
+       "Orange Tulip",
+       "Pink Tulip"
+      ],
+      "iron": [
+       "Wither Rose",
+       "Torchflower",
+       "Pink Petals",
+       "Spore Blossom",
+       "Pitcher Plant"
+      ],
+      "gold": [
+       [
+        "Open Eyeblossom",
+        "Eyeblossom"
+       ],
+       "Closed Eyeblossom",
+       "Wildflowers",
+       "Cactus Flower",
+       "Chorus Flower",
+       "Flowering Azalea",
+       "Golden Dandelion"
+      ],
+      "diamond": [
+       "Mangrove Propagule",
+       [
+        "Cherry Leaves",
+        "Cherry Blossom"
+       ],
+       "Flowering Azalea Leaves"
+      ]
+     }
+    },
+    {
+     "category": "Music",
+     "text": "Name a music disc",
+     "answers": {
+      "dirt": [
+       "13",
+       [
+        "Cat",
+        "Music Disc Cat",
+        "Cat Disc"
+       ],
+       [
+        "Pigstep",
+        "Music Disc Pigstep",
+        "Pigstep Disc"
+       ]
+      ],
+      "coal": [
+       [
+        "Otherside",
+        "Music Disc Otherside",
+        "Otherside Disc"
+       ],
+       [
+        "Blocks",
+        "Music Disc Blocks",
+        "Blocks Disc"
+       ],
+       [
+        "Chirp",
+        "Music Disc Chirp",
+        "Chirp Disc"
+       ],
+       "11",
+       [
+        "Far",
+        "Music Disc Far",
+        "Far Disc"
+       ],
+       [
+        "Mall",
+        "Music Disc Mall",
+        "Mall Disc"
+       ],
+       [
+        "Mellohi",
+        "Music Disc Mellohi",
+        "Mellohi Disc"
+       ],
+       [
+        "Stal",
+        "Music Disc Stal",
+        "Stal Disc"
+       ],
+       [
+        "Strad",
+        "Music Disc Strad",
+        "Strad Disc"
+       ],
+       [
+        "Ward",
+        "Music Disc Ward",
+        "Ward Disc"
+       ],
+       [
+        "Wait",
+        "Music Disc Wait",
+        "Wait Disc"
+       ]
+      ],
+      "iron": [
+       [
+        "Relic",
+        "Music Disc Relic",
+        "Relic Disc"
+       ],
+       [
+        "5",
+        "Music Disc 5",
+        "5 Disc"
+       ]
+      ],
+      "gold": [
+       [
+        "Creator",
+        "Music Disc Creator",
+        "Creator Disc"
+       ],
+       [
+        "Precipice",
+        "Music Disc Precipice",
+        "Precipice Disc"
+       ],
+       [
+        "Lava Chicken",
+        "Music Disc Lava Chicken",
+        "Lava Chicken Disc"
+       ]
+      ],
+      "diamond": [
+       [
+        "Creator (Music Box)",
+        "Music Disc Creator (Music Box)",
+        "Creator (Music Box) Disc"
+       ],
+       [
+        "Tears",
+        "Music Disc Tears",
+        "Tears Disc"
+       ],
+       [
+        "Bounce",
+        "Music Disc Bounce",
+        "Bounce Disc"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Dyes",
+     "text": "Name a dye color",
+     "answers": {
+      "dirt": [
+       [
+        "Red",
+        "Red Dye"
+       ],
+       [
+        "Blue",
+        "Blue Dye"
+       ],
+       [
+        "Green",
+        "Green Dye"
+       ],
+       [
+        "Yellow",
+        "Yellow Dye"
+       ],
+       [
+        "Black",
+        "Black Dye"
+       ],
+       [
+        "White",
+        "White Dye"
+       ]
+      ],
+      "coal": [
+       [
+        "Orange",
+        "Orange Dye"
+       ],
+       [
+        "Purple",
+        "Purple Dye"
+       ],
+       [
+        "Pink",
+        "Pink Dye"
+       ],
+       [
+        "Brown",
+        "Brown Dye"
+       ]
+      ],
+      "iron": [
+       [
+        "Light Blue",
+        "Light Blue Dye"
+       ],
+       [
+        "Lime",
+        "Lime Dye"
+       ],
+       [
+        "Gray",
+        "Gray Dye",
+        "Grey",
+        "Grey Dye"
+       ],
+       [
+        "Cyan",
+        "Cyan Dye"
+       ],
+       [
+        "Magenta",
+        "Magenta Dye"
+       ]
+      ],
+      "gold": [
+       [
+        "Light Gray",
+        "Light Gray Dye",
+        "Light Grey",
+        "Light Grey Dye",
+        "Silver",
+        "Silver Dye"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'Diamond' in its name",
+     "answers": {
+      "dirt": [
+       [
+        "Block of Diamond",
+        "Diamond Block"
+       ],
+       "Diamond",
+       "Diamond Ore",
+       "Diamond Pickaxe",
+       "Diamond Sword"
+      ],
+      "coal": [
+       "Deepslate Diamond Ore",
+       "Diamond Axe",
+       "Diamond Boots",
+       "Diamond Chestplate",
+       "Diamond Helmet",
+       "Diamond Hoe",
+       "Diamond Horse Armor",
+       "Diamond Leggings",
+       "Diamond Shovel"
+      ],
+      "gold": [
+       "Diamond Spear"
+      ],
+      "diamond": [
+       "Diamond Nautilus Armor"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob you can tame",
+     "answers": {
+      "dirt": [
+       [
+        "Wolf",
+        "Dog"
+       ],
+       "Cat"
+      ],
+      "coal": [
+       "Horse",
+       "Parrot"
+      ],
+      "iron": [
+       "Donkey",
+       "Llama"
+      ],
+      "gold": [
+       "Mule",
+       "Ocelot",
+       "Fox"
+      ],
+      "diamond": [
+       "Skeleton Horse",
+       "Trader Llama",
+       "Nautilus"
+      ],
+      "netherite": [
+       "Zombie Horse",
+       "Zombie Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Structures",
+     "text": "Name a structure that generates in the world",
+     "answers": {
+      "dirt": [
+       "Village",
+       "Stronghold",
+       [
+        "Nether Fortress",
+        "Fortress"
+       ],
+       [
+        "Desert Pyramid",
+        "Desert Temple"
+       ]
+      ],
+      "coal": [
+       [
+        "Woodland Mansion",
+        "Mansion"
+       ],
+       [
+        "Ocean Monument",
+        "Monument"
+       ],
+       [
+        "Jungle Pyramid",
+        "Jungle Temple"
+       ],
+       [
+        "Mineshaft",
+        "Abandoned Mineshaft"
+       ],
+       "End City",
+       [
+        "Bastion Remnant",
+        "Bastion"
+       ],
+       "Shipwreck",
+       "Ancient City",
+       [
+        "Pillager Outpost",
+        "Outpost"
+       ],
+       [
+        "Swamp Hut",
+        "Witch Hut"
+       ],
+       "Igloo",
+       "Ruined Portal",
+       "Trial Chambers",
+       [
+        "Dungeon",
+        "Monster Room"
+       ]
+      ],
+      "iron": [
+       "Ocean Ruins",
+       "Buried Treasure",
+       "Trail Ruins",
+       "Nether Fossil",
+       "End Ship",
+       "Desert Well"
+      ],
+      "gold": [
+       "Fossil",
+       [
+        "Amethyst Geode",
+        "Geode"
+       ],
+       "Abandoned Camp"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'Brick' in its name",
+     "answers": {
+      "dirt": [
+       "Bricks",
+       "Nether Bricks",
+       "Stone Bricks"
+      ],
+      "coal": [
+       "Brick Slab",
+       "Brick Stairs",
+       "Brick Wall",
+       "Chiseled Stone Bricks",
+       "Cracked Stone Bricks",
+       "Deepslate Bricks",
+       "End Stone Bricks",
+       "Mossy Stone Bricks",
+       "Mud Bricks",
+       "Nether Brick Fence",
+       "Prismarine Bricks",
+       "Quartz Bricks",
+       "Red Nether Bricks",
+       "Stone Brick Slab",
+       "Stone Brick Stairs",
+       "Stone Brick Wall"
+      ],
+      "iron": [
+       "Deepslate Brick Slab",
+       "Deepslate Brick Stairs",
+       "Deepslate Brick Wall",
+       "End Stone Brick Slab",
+       "End Stone Brick Stairs",
+       "End Stone Brick Wall",
+       "Mossy Stone Brick Slab",
+       "Mossy Stone Brick Stairs",
+       "Mossy Stone Brick Wall",
+       "Mud Brick Slab",
+       "Mud Brick Stairs",
+       "Mud Brick Wall",
+       "Nether Brick Slab",
+       "Nether Brick Stairs",
+       "Nether Brick Wall",
+       "Prismarine Brick Slab",
+       "Prismarine Brick Stairs",
+       "Red Nether Brick Slab",
+       "Red Nether Brick Stairs",
+       "Red Nether Brick Wall"
+      ],
+      "gold": [
+       "Chiseled Nether Bricks",
+       "Chiseled Resin Bricks",
+       "Chiseled Tuff Bricks",
+       "Cracked Deepslate Bricks",
+       "Cracked Nether Bricks",
+       "Cracked Polished Blackstone Bricks",
+       "Polished Blackstone Brick Slab",
+       "Polished Blackstone Brick Stairs",
+       "Polished Blackstone Brick Wall",
+       "Polished Blackstone Bricks",
+       "Resin Brick Slab",
+       "Resin Brick Stairs",
+       "Resin Brick Wall",
+       "Resin Bricks",
+       "Tuff Brick Slab",
+       "Tuff Brick Stairs",
+       "Tuff Brick Wall",
+       "Tuff Bricks"
+      ],
+      "diamond": [
+       "Cinnabar Brick Slab",
+       "Cinnabar Brick Stairs",
+       "Cinnabar Brick Wall",
+       "Cinnabar Bricks",
+       "Sulfur Brick Slab",
+       "Sulfur Brick Stairs",
+       "Sulfur Brick Wall",
+       "Sulfur Bricks"
+      ]
+     }
+    },
+    {
+     "category": "Crafting",
+     "text": "Name something crafted using iron ingots",
+     "answers": {
+      "dirt": [
+       "Bucket",
+       "Iron Pickaxe",
+       "Iron Sword",
+       "Iron Chestplate",
+       "Iron Helmet",
+       "Iron Boots",
+       "Iron Leggings",
+       "Iron Axe",
+       [
+        "Block of Iron",
+        "Iron Block"
+       ],
+       "Shears",
+       "Anvil"
+      ],
+      "coal": [
+       "Iron Shovel",
+       "Iron Hoe",
+       "Iron Door",
+       "Iron Bars",
+       "Iron Trapdoor",
+       "Minecart",
+       "Rail",
+       "Compass",
+       "Flint and Steel",
+       "Cauldron",
+       "Shield",
+       "Piston",
+       "Hopper"
+      ],
+      "iron": [
+       "Iron Nugget",
+       "Blast Furnace",
+       "Smithing Table",
+       "Crossbow",
+       "Tripwire Hook",
+       "Heavy Weighted Pressure Plate",
+       "Stonecutter",
+       [
+        "Iron Chain",
+        "Chain"
+       ],
+       "Detector Rail",
+       "Activator Rail"
+      ],
+      "gold": [
+       "Iron Spear",
+       "Lodestone",
+       "Crafter",
+       "Saddle"
+      ]
+     }
+    },
+    {
+     "category": "Brewing",
+     "text": "Name a potion you can brew",
+     "answers": {
+      "dirt": [
+       [
+        "Healing",
+        "Potion of Healing",
+        "Healing Potion",
+        "Instant Health",
+        "Potion of Instant Health",
+        "Instant Health Potion",
+        "Health",
+        "Potion of Health",
+        "Health Potion"
+       ],
+       [
+        "Strength",
+        "Potion of Strength",
+        "Strength Potion"
+       ],
+       [
+        "Swiftness",
+        "Potion of Swiftness",
+        "Swiftness Potion",
+        "Speed",
+        "Potion of Speed",
+        "Speed Potion"
+       ],
+       [
+        "Invisibility",
+        "Potion of Invisibility",
+        "Invisibility Potion"
+       ],
+       [
+        "Night Vision",
+        "Potion of Night Vision",
+        "Night Vision Potion"
+       ],
+       [
+        "Fire Resistance",
+        "Potion of Fire Resistance",
+        "Fire Resistance Potion"
+       ],
+       [
+        "Regeneration",
+        "Potion of Regeneration",
+        "Regeneration Potion",
+        "Regen",
+        "Potion of Regen",
+        "Regen Potion"
+       ]
+      ],
+      "coal": [
+       [
+        "Poison",
+        "Potion of Poison",
+        "Poison Potion"
+       ],
+       [
+        "Harming",
+        "Potion of Harming",
+        "Harming Potion",
+        "Instant Damage",
+        "Potion of Instant Damage",
+        "Instant Damage Potion",
+        "Damage",
+        "Potion of Damage",
+        "Damage Potion"
+       ],
+       [
+        "Water Breathing",
+        "Potion of Water Breathing",
+        "Water Breathing Potion"
+       ],
+       [
+        "Leaping",
+        "Potion of Leaping",
+        "Leaping Potion",
+        "Jump Boost",
+        "Potion of Jump Boost",
+        "Jump Boost Potion"
+       ],
+       [
+        "Slowness",
+        "Potion of Slowness",
+        "Slowness Potion"
+       ],
+       [
+        "Weakness",
+        "Potion of Weakness",
+        "Weakness Potion"
+       ]
+      ],
+      "iron": [
+       [
+        "Slow Falling",
+        "Potion of Slow Falling",
+        "Slow Falling Potion"
+       ],
+       [
+        "Awkward",
+        "Potion of Awkward",
+        "Awkward Potion"
+       ],
+       [
+        "Turtle Master",
+        "Potion of Turtle Master",
+        "Turtle Master Potion"
+       ]
+      ],
+      "gold": [
+       [
+        "Mundane",
+        "Potion of Mundane",
+        "Mundane Potion"
+       ],
+       [
+        "Thick",
+        "Potion of Thick",
+        "Thick Potion"
+       ],
+       [
+        "Wind Charging",
+        "Potion of Wind Charging",
+        "Wind Charging Potion"
+       ],
+       [
+        "Weaving",
+        "Potion of Weaving",
+        "Weaving Potion"
+       ],
+       [
+        "Oozing",
+        "Potion of Oozing",
+        "Oozing Potion"
+       ],
+       [
+        "Infestation",
+        "Potion of Infestation",
+        "Infestation Potion"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Villagers",
+     "text": "Name a villager job site block (workstation)",
+     "answers": {
+      "dirt": [
+       "Composter",
+       "Lectern",
+       "Brewing Stand",
+       "Blast Furnace",
+       "Smoker"
+      ],
+      "coal": [
+       "Barrel",
+       "Cauldron",
+       "Smithing Table",
+       "Grindstone",
+       "Loom"
+      ],
+      "iron": [
+       "Stonecutter",
+       "Cartography Table",
+       "Fletching Table"
+      ]
+     }
+    },
+    {
+     "category": "Smithing",
+     "text": "Name an armor trim pattern",
+     "answers": {
+      "dirt": [
+       [
+        "Coast",
+        "Coast Armor Trim",
+        "Coast Trim"
+       ],
+       [
+        "Sentry",
+        "Sentry Armor Trim",
+        "Sentry Trim"
+       ],
+       [
+        "Dune",
+        "Dune Armor Trim",
+        "Dune Trim"
+       ],
+       [
+        "Wild",
+        "Wild Armor Trim",
+        "Wild Trim"
+       ]
+      ],
+      "coal": [
+       [
+        "Silence",
+        "Silence Armor Trim",
+        "Silence Trim"
+       ],
+       [
+        "Ward",
+        "Ward Armor Trim",
+        "Ward Trim"
+       ],
+       [
+        "Snout",
+        "Snout Armor Trim",
+        "Snout Trim"
+       ],
+       [
+        "Rib",
+        "Rib Armor Trim",
+        "Rib Trim"
+       ],
+       [
+        "Eye",
+        "Eye Armor Trim",
+        "Eye Trim"
+       ],
+       [
+        "Vex",
+        "Vex Armor Trim",
+        "Vex Trim"
+       ],
+       [
+        "Tide",
+        "Tide Armor Trim",
+        "Tide Trim"
+       ],
+       [
+        "Spire",
+        "Spire Armor Trim",
+        "Spire Trim"
+       ]
+      ],
+      "iron": [
+       [
+        "Wayfinder",
+        "Wayfinder Armor Trim",
+        "Wayfinder Trim"
+       ],
+       [
+        "Shaper",
+        "Shaper Armor Trim",
+        "Shaper Trim"
+       ],
+       [
+        "Raiser",
+        "Raiser Armor Trim",
+        "Raiser Trim"
+       ],
+       [
+        "Host",
+        "Host Armor Trim",
+        "Host Trim"
+       ]
+      ],
+      "gold": [
+       [
+        "Flow",
+        "Flow Armor Trim",
+        "Flow Trim"
+       ],
+       [
+        "Bolt",
+        "Bolt Armor Trim",
+        "Bolt Trim"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a hostile mob",
+     "answers": {
+      "dirt": [
+       "Zombie",
+       [
+        "Creeper",
+        "Charged Creeper"
+       ],
+       "Skeleton",
+       "Spider"
+      ],
+      "coal": [
+       "Enderman",
+       "Witch",
+       "Slime",
+       "Blaze",
+       "Ghast",
+       "Phantom",
+       "Drowned",
+       "Wither Skeleton"
+      ],
+      "iron": [
+       "Pillager",
+       "Husk",
+       "Stray",
+       "Cave Spider",
+       "Silverfish",
+       "Vindicator",
+       "Evoker",
+       "Ravager",
+       "Guardian",
+       "Magma Cube",
+       "Warden",
+       "Ender Dragon",
+       "Wither",
+       "Zombie Villager"
+      ],
+      "gold": [
+       "Elder Guardian",
+       "Shulker",
+       "Endermite",
+       "Vex",
+       "Hoglin",
+       "Piglin",
+       [
+        "Zombified Piglin",
+        "Zombie Pigman"
+       ],
+       "Breeze",
+       "Bogged",
+       "Creaking",
+       "Piglin Brute"
+      ],
+      "diamond": [
+       "Zoglin",
+       "Parched",
+       "Zombie Nautilus"
+      ],
+      "netherite": [
+       "Illusioner",
+       [
+        "Giant",
+        "Giant Zombie"
+       ],
+       "Killer Bunny"
+      ]
+     }
+    },
+    {
+     "category": "Villagers",
+     "text": "Name a villager profession",
+     "answers": {
+      "dirt": [
+       "Farmer",
+       "Librarian",
+       [
+        "Blacksmith",
+        "Armorer"
+       ],
+       "Butcher"
+      ],
+      "coal": [
+       "Weaponsmith",
+       "Toolsmith",
+       [
+        "Cleric",
+        "Priest"
+       ],
+       "Fisherman",
+       "Nitwit",
+       "Fletcher",
+       "Cartographer",
+       "Mason"
+      ],
+      "iron": [
+       "Shepherd",
+       "Leatherworker"
+      ],
+      "gold": [
+       "Unemployed"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'End' or 'Ender' in its name",
+     "answers": {
+      "dirt": [
+       "End Portal",
+       "End Stone",
+       "Ender Chest",
+       "Ender Pearl",
+       "Eye of Ender"
+      ],
+      "coal": [
+       "End Crystal",
+       "End Gateway",
+       "End Portal Frame",
+       "End Rod",
+       "End Stone Bricks"
+      ],
+      "iron": [
+       "End Stone Brick Slab",
+       "End Stone Brick Stairs",
+       "End Stone Brick Wall"
+      ],
+      "diamond": [
+       "Ender Dragon Spawn Egg",
+       "Enderman Spawn Egg",
+       "Endermite Spawn Egg"
+      ]
+     }
+    },
+    {
+     "category": "Blocks",
+     "text": "Name a block that gives off light",
+     "answers": {
+      "dirt": [
+       "Torch",
+       "Glowstone",
+       "Lava",
+       "Lantern",
+       "Fire",
+       "Jack o'Lantern",
+       "Sea Lantern",
+       "Redstone Lamp"
+      ],
+      "coal": [
+       "Redstone Torch",
+       "Soul Torch",
+       "Campfire",
+       "Beacon",
+       "Shroomlight",
+       "End Rod",
+       "Candle",
+       "Furnace",
+       "Glow Lichen",
+       "Magma Block",
+       "Soul Lantern"
+      ],
+      "iron": [
+       "Sea Pickle",
+       "Conduit",
+       [
+        "Glow Berries",
+        "Cave Vines"
+       ],
+       "Crying Obsidian",
+       "Soul Campfire",
+       "Soul Fire",
+       "Respawn Anchor",
+       "Copper Bulb",
+       "Copper Torch",
+       "Copper Lantern",
+       "End Portal",
+       "Nether Portal",
+       "Redstone Ore",
+       "Amethyst Cluster",
+       "Smoker",
+       "Blast Furnace",
+       "Brewing Stand",
+       "Enchanting Table",
+       "Ender Chest",
+       "Sculk Sensor",
+       [
+        "Ochre Froglight",
+        "Froglight"
+       ],
+       "Verdant Froglight",
+       "Pearlescent Froglight"
+      ],
+      "gold": [
+       "Calibrated Sculk Sensor",
+       "Sculk Catalyst",
+       "End Gateway",
+       "Vault",
+       "Trial Spawner",
+       "Dragon Egg",
+       "End Portal Frame",
+       "Lava Cauldron",
+       "Candle Cake",
+       "Large Amethyst Bud",
+       "Medium Amethyst Bud",
+       "Small Amethyst Bud",
+       "Deepslate Redstone Ore",
+       "Firefly Bush"
+      ],
+      "diamond": [
+       "Brown Mushroom",
+       [
+        "Light",
+        "Light Block"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Fishing",
+     "text": "Name something you can catch with a fishing rod",
+     "answers": {
+      "dirt": [
+       [
+        "Raw Cod",
+        "Cod",
+        "Fish",
+        "Raw Fish"
+       ],
+       [
+        "Raw Salmon",
+        "Salmon"
+       ],
+       [
+        "Pufferfish",
+        "Blowfish"
+       ],
+       [
+        "Tropical Fish",
+        "Clownfish"
+       ]
+      ],
+      "coal": [
+       [
+        "Enchanted Book",
+        "Book"
+       ],
+       "Bow",
+       "Fishing Rod",
+       "Name Tag",
+       "Saddle",
+       "Leather Boots",
+       "Rotten Flesh",
+       "Stick",
+       "String",
+       "Bone",
+       "Lily Pad"
+      ],
+      "iron": [
+       "Nautilus Shell",
+       "Bowl",
+       "Leather",
+       "Ink Sac",
+       "Water Bottle"
+      ],
+      "gold": [
+       "Tripwire Hook",
+       "Bamboo"
+      ]
+     }
+    },
+    {
+     "category": "Archaeology",
+     "text": "Name a pottery sherd",
+     "answers": {
+      "dirt": [
+       [
+        "Archer",
+        "Archer Pottery Sherd",
+        "Archer Sherd"
+       ],
+       [
+        "Arms Up",
+        "Arms Up Pottery Sherd",
+        "Arms Up Sherd"
+       ],
+       [
+        "Prize",
+        "Prize Pottery Sherd",
+        "Prize Sherd"
+       ],
+       [
+        "Skull",
+        "Skull Pottery Sherd",
+        "Skull Sherd"
+       ]
+      ],
+      "coal": [
+       [
+        "Angler",
+        "Angler Pottery Sherd",
+        "Angler Sherd"
+       ],
+       [
+        "Heart",
+        "Heart Pottery Sherd",
+        "Heart Sherd"
+       ],
+       [
+        "Heartbreak",
+        "Heartbreak Pottery Sherd",
+        "Heartbreak Sherd"
+       ],
+       [
+        "Miner",
+        "Miner Pottery Sherd",
+        "Miner Sherd"
+       ],
+       [
+        "Snort",
+        "Snort Pottery Sherd",
+        "Snort Sherd"
+       ],
+       [
+        "Shelter",
+        "Shelter Pottery Sherd",
+        "Shelter Sherd"
+       ],
+       [
+        "Explorer",
+        "Explorer Pottery Sherd",
+        "Explorer Sherd"
+       ]
+      ],
+      "iron": [
+       [
+        "Danger",
+        "Danger Pottery Sherd",
+        "Danger Sherd"
+       ],
+       [
+        "Friend",
+        "Friend Pottery Sherd",
+        "Friend Sherd"
+       ],
+       [
+        "Burn",
+        "Burn Pottery Sherd",
+        "Burn Sherd"
+       ],
+       [
+        "Blade",
+        "Blade Pottery Sherd",
+        "Blade Sherd"
+       ],
+       [
+        "Brewer",
+        "Brewer Pottery Sherd",
+        "Brewer Sherd"
+       ],
+       [
+        "Howl",
+        "Howl Pottery Sherd",
+        "Howl Sherd"
+       ],
+       [
+        "Mourner",
+        "Mourner Pottery Sherd",
+        "Mourner Sherd"
+       ],
+       [
+        "Plenty",
+        "Plenty Pottery Sherd",
+        "Plenty Sherd"
+       ],
+       [
+        "Sheaf",
+        "Sheaf Pottery Sherd",
+        "Sheaf Sherd"
+       ]
+      ],
+      "gold": [
+       [
+        "Flow",
+        "Flow Pottery Sherd",
+        "Flow Sherd"
+       ],
+       [
+        "Guster",
+        "Guster Pottery Sherd",
+        "Guster Sherd"
+       ],
+       [
+        "Scrape",
+        "Scrape Pottery Sherd",
+        "Scrape Sherd"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Tuff' in its name",
+     "answers": {
+      "dirt": [
+       "Tuff"
+      ],
+      "coal": [
+       "Chiseled Tuff",
+       "Polished Tuff",
+       "Tuff Bricks"
+      ],
+      "iron": [
+       "Chiseled Tuff Bricks",
+       "Tuff Slab",
+       "Tuff Stairs",
+       "Tuff Wall"
+      ],
+      "gold": [
+       "Polished Tuff Slab",
+       "Polished Tuff Stairs",
+       "Polished Tuff Wall",
+       "Tuff Brick Slab",
+       "Tuff Brick Stairs",
+       "Tuff Brick Wall"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob that lives in water",
+     "answers": {
+      "dirt": [
+       "Squid",
+       "Cod",
+       "Salmon",
+       "Dolphin"
+      ],
+      "coal": [
+       [
+        "Tropical Fish",
+        "Clownfish"
+       ],
+       [
+        "Pufferfish",
+        "Blowfish"
+       ],
+       "Glow Squid",
+       "Axolotl",
+       "Turtle",
+       "Drowned",
+       "Guardian"
+      ],
+      "iron": [
+       "Elder Guardian",
+       "Tadpole"
+      ],
+      "gold": [
+       "Frog",
+       "Nautilus"
+      ],
+      "diamond": [
+       "Zombie Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Advancements",
+     "text": "Name an advancement in the 'Minecraft' (story) tab",
+     "answers": {
+      "dirt": [
+       "Diamonds!",
+       "Stone Age",
+       "Getting an Upgrade",
+       "Acquire Hardware",
+       "We Need to Go Deeper"
+      ],
+      "coal": [
+       "Minecraft",
+       "Suit Up",
+       "Hot Stuff",
+       "Isn't It Iron Pick?",
+       "Enchanter",
+       "Eye Spy",
+       "The End?",
+       "Cover Me with Diamonds",
+       "Ice Bucket Challenge"
+      ],
+      "iron": [
+       "Not Today, Thank You",
+       "Zombie Doctor"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block, item, mob or biome with 'Ice' or 'Snow' in its name",
+     "answers": {
+      "dirt": [
+       "Ice",
+       "Snow",
+       "Snowball",
+       [
+        "Snow Golem",
+        "Snowman"
+       ]
+      ],
+      "coal": [
+       "Packed Ice",
+       "Blue Ice",
+       "Snow Block",
+       "Powder Snow",
+       "Ice Spikes",
+       [
+        "Snowy Plains",
+        "Snowy Tundra",
+        "Snow Plains"
+       ]
+      ],
+      "iron": [
+       "Snowy Taiga",
+       "Snowy Beach",
+       "Snowy Slopes",
+       "Frosted Ice",
+       "Powder Snow Bucket"
+      ],
+      "gold": [
+       "Snow Golem Spawn Egg",
+       "Snowy Village Map"
+      ],
+      "diamond": [
+       "Powder Snow Cauldron"
+      ]
+     }
+    },
+    {
+     "category": "Nether",
+     "text": "Name an item piglins can give you when you barter gold",
+     "answers": {
+      "dirt": [
+       "Ender Pearl",
+       "Obsidian",
+       "Crying Obsidian",
+       [
+        "Potion of Fire Resistance",
+        "Fire Resistance Potion",
+        "Fire Resistance"
+       ]
+      ],
+      "coal": [
+       "String",
+       [
+        "Nether Quartz",
+        "Quartz"
+       ],
+       "Soul Sand",
+       "Gravel",
+       "Leather",
+       "Fire Charge",
+       "Iron Nugget",
+       "Blackstone"
+      ],
+      "iron": [
+       "Spectral Arrow",
+       "Nether Brick",
+       "Iron Boots",
+       [
+        "Enchanted Book",
+        "Soul Speed Book",
+        "Soul Speed"
+       ]
+      ],
+      "gold": [
+       [
+        "Splash Potion of Fire Resistance",
+        "Splash Fire Resistance"
+       ],
+       "Water Bottle"
+      ],
+      "diamond": [
+       "Dried Ghast"
+      ]
+     }
+    },
+    {
+     "category": "Crafting",
+     "text": "Name something crafted using redstone dust",
+     "answers": {
+      "dirt": [
+       "Redstone Torch",
+       [
+        "Redstone Repeater",
+        "Repeater"
+       ],
+       "Piston",
+       [
+        "Block of Redstone",
+        "Redstone Block"
+       ],
+       "Redstone Lamp"
+      ],
+      "coal": [
+       "Dispenser",
+       "Dropper",
+       "Observer",
+       "Note Block",
+       "Clock",
+       "Compass",
+       "Powered Rail"
+      ],
+      "iron": [
+       [
+        "Target",
+        "Target Block"
+       ],
+       "Detector Rail",
+       "Crafter"
+      ],
+      "gold": [
+       [
+        "Copper Bulb",
+        "Exposed Copper Bulb",
+        "Weathered Copper Bulb",
+        "Oxidized Copper Bulb",
+        "Waxed Copper Bulb"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Brewing",
+     "text": "Name an ingredient you put in a brewing stand",
+     "answers": {
+      "dirt": [
+       "Nether Wart",
+       "Blaze Powder",
+       [
+        "Redstone Dust",
+        "Redstone"
+       ],
+       [
+        "Glowstone Dust",
+        "Glowstone"
+       ],
+       "Gunpowder",
+       "Sugar"
+      ],
+      "coal": [
+       "Spider Eye",
+       "Fermented Spider Eye",
+       "Ghast Tear",
+       "Magma Cream",
+       "Golden Carrot",
+       [
+        "Glistering Melon Slice",
+        "Glistering Melon"
+       ]
+      ],
+      "iron": [
+       "Rabbit's Foot",
+       [
+        "Pufferfish",
+        "Blowfish"
+       ],
+       "Phantom Membrane",
+       "Dragon's Breath",
+       [
+        "Turtle Shell",
+        "Turtle Helmet"
+       ]
+      ],
+      "gold": [
+       "Breeze Rod",
+       "Slime Block",
+       "Cobweb",
+       "Stone"
+      ]
+     }
+    },
+    {
+     "category": "Biomes",
+     "text": "Name a biome with 'Forest', 'Taiga', 'Jungle', 'Grove' or 'Garden' in its name",
+     "answers": {
+      "dirt": [
+       "Forest",
+       "Taiga",
+       "Jungle",
+       "Birch Forest",
+       [
+        "Dark Forest",
+        "Roofed Forest"
+       ]
+      ],
+      "coal": [
+       "Flower Forest",
+       [
+        "Snowy Taiga",
+        "Cold Taiga"
+       ],
+       "Bamboo Jungle",
+       "Cherry Grove",
+       "Crimson Forest",
+       "Warped Forest"
+      ],
+      "iron": [
+       [
+        "Old Growth Birch Forest",
+        "Tall Birch Forest"
+       ],
+       [
+        "Old Growth Pine Taiga",
+        "Giant Tree Taiga",
+        "Mega Taiga"
+       ],
+       [
+        "Old Growth Spruce Taiga",
+        "Giant Spruce Taiga",
+        "Mega Spruce Taiga"
+       ],
+       [
+        "Sparse Jungle",
+        "Jungle Edge"
+       ],
+       "Pale Garden",
+       "Grove"
+      ],
+      "gold": [
+       [
+        "Windswept Forest",
+        "Wooded Mountains"
+       ],
+       "Dappled Forest"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob you can breed",
+     "answers": {
+      "dirt": [
+       "Cow",
+       "Pig",
+       "Sheep",
+       "Chicken"
+      ],
+      "coal": [
+       [
+        "Wolf",
+        "Dog"
+       ],
+       "Cat",
+       "Horse",
+       "Rabbit"
+      ],
+      "iron": [
+       "Donkey",
+       "Llama",
+       "Bee",
+       "Fox",
+       "Goat",
+       [
+        "Mooshroom",
+        "Mushroom Cow"
+       ],
+       "Turtle",
+       "Panda",
+       "Villager"
+      ],
+      "gold": [
+       "Axolotl",
+       "Ocelot",
+       "Frog",
+       "Camel",
+       "Sniffer",
+       "Armadillo",
+       "Strider"
+      ],
+      "diamond": [
+       "Hoglin",
+       "Trader Llama"
+      ],
+      "netherite": [
+       "Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Commands",
+     "text": "Name a command (without the slash)",
+     "answers": {
+      "dirt": [
+       "give",
+       [
+        "tp",
+        "teleport"
+       ],
+       "gamemode",
+       "kill",
+       "time",
+       "weather"
+      ],
+      "coal": [
+       "summon",
+       "effect",
+       "enchant",
+       "setblock",
+       "fill",
+       "clone",
+       "gamerule",
+       "locate",
+       [
+        "xp",
+        "experience"
+       ],
+       "clear",
+       "difficulty",
+       "spawnpoint",
+       "setworldspawn",
+       "say",
+       [
+        "msg",
+        "tell",
+        "w"
+       ],
+       "execute",
+       "kick",
+       "ban",
+       "op",
+       "seed",
+       "help",
+       "list"
+      ],
+      "iron": [
+       "tellraw",
+       "title",
+       "scoreboard",
+       "tag",
+       "team",
+       "data",
+       "function",
+       "particle",
+       "playsound",
+       "stopsound",
+       "advancement",
+       "recipe",
+       "worldborder",
+       "whitelist",
+       "deop",
+       "pardon",
+       "ban-ip",
+       "pardon-ip",
+       "banlist",
+       "defaultgamemode",
+       "spreadplayers",
+       "loot",
+       "item",
+       "attribute",
+       "bossbar",
+       "trigger",
+       "spectate",
+       "forceload",
+       "reload",
+       "me",
+       [
+        "teammsg",
+        "tm"
+       ],
+       "stop",
+       "save-all",
+       "save-on",
+       "save-off",
+       "publish",
+       "datapack",
+       "damage",
+       "place",
+       "ride",
+       "fillbiome",
+       "random",
+       "return",
+       "tick",
+       "rotate"
+      ],
+      "gold": [
+       "schedule",
+       "debug",
+       "jfr",
+       "perf",
+       "transfer",
+       "dialog",
+       "test",
+       "version",
+       "waypoint",
+       "setidletimeout",
+       "unpublish",
+       "fetchprofile",
+       "swing",
+       "stopwatch",
+       "compute",
+       "posteffect"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'Copper' in its name (oxidized and waxed versions count)",
+     "answers": {
+      "dirt": [
+       [
+        "Block of Copper",
+        "Exposed Copper",
+        "Oxidized Copper",
+        "Waxed Block of Copper",
+        "Waxed Exposed Copper",
+        "Waxed Oxidized Copper",
+        "Waxed Weathered Copper",
+        "Weathered Copper",
+        "Copper Block"
+       ],
+       "Copper Ingot",
+       "Copper Ore",
+       "Raw Copper"
+      ],
+      "coal": [
+       "Copper Axe",
+       "Copper Boots",
+       [
+        "Copper Bulb",
+        "Exposed Copper Bulb",
+        "Oxidized Copper Bulb",
+        "Waxed Copper Bulb",
+        "Waxed Exposed Copper Bulb",
+        "Waxed Oxidized Copper Bulb",
+        "Waxed Weathered Copper Bulb",
+        "Weathered Copper Bulb"
+       ],
+       [
+        "Copper Chest",
+        "Exposed Copper Chest",
+        "Oxidized Copper Chest",
+        "Waxed Copper Chest",
+        "Waxed Exposed Copper Chest",
+        "Waxed Oxidized Copper Chest",
+        "Waxed Weathered Copper Chest",
+        "Weathered Copper Chest"
+       ],
+       "Copper Chestplate",
+       [
+        "Copper Door",
+        "Exposed Copper Door",
+        "Oxidized Copper Door",
+        "Waxed Copper Door",
+        "Waxed Exposed Copper Door",
+        "Waxed Oxidized Copper Door",
+        "Waxed Weathered Copper Door",
+        "Weathered Copper Door"
+       ],
+       [
+        "Copper Grate",
+        "Exposed Copper Grate",
+        "Oxidized Copper Grate",
+        "Waxed Copper Grate",
+        "Waxed Exposed Copper Grate",
+        "Waxed Oxidized Copper Grate",
+        "Waxed Weathered Copper Grate",
+        "Weathered Copper Grate"
+       ],
+       "Copper Helmet",
+       [
+        "Copper Lantern",
+        "Exposed Copper Lantern",
+        "Oxidized Copper Lantern",
+        "Waxed Copper Lantern",
+        "Waxed Exposed Copper Lantern",
+        "Waxed Oxidized Copper Lantern",
+        "Waxed Weathered Copper Lantern",
+        "Weathered Copper Lantern"
+       ],
+       "Copper Leggings",
+       "Copper Nugget",
+       "Copper Pickaxe",
+       "Copper Shovel",
+       "Copper Sword",
+       "Copper Torch",
+       [
+        "Copper Trapdoor",
+        "Exposed Copper Trapdoor",
+        "Oxidized Copper Trapdoor",
+        "Waxed Copper Trapdoor",
+        "Waxed Exposed Copper Trapdoor",
+        "Waxed Oxidized Copper Trapdoor",
+        "Waxed Weathered Copper Trapdoor",
+        "Weathered Copper Trapdoor"
+       ],
+       [
+        "Cut Copper",
+        "Exposed Cut Copper",
+        "Oxidized Cut Copper",
+        "Waxed Cut Copper",
+        "Waxed Exposed Cut Copper",
+        "Waxed Oxidized Cut Copper",
+        "Waxed Weathered Cut Copper",
+        "Weathered Cut Copper"
+       ],
+       "Deepslate Copper Ore"
+      ],
+      "iron": [
+       [
+        "Block of Raw Copper",
+        "Raw Copper Block"
+       ],
+       [
+        "Chiseled Copper",
+        "Exposed Chiseled Copper",
+        "Oxidized Chiseled Copper",
+        "Waxed Chiseled Copper",
+        "Waxed Exposed Chiseled Copper",
+        "Waxed Oxidized Chiseled Copper",
+        "Waxed Weathered Chiseled Copper",
+        "Weathered Chiseled Copper"
+       ],
+       [
+        "Copper Bars",
+        "Exposed Copper Bars",
+        "Oxidized Copper Bars",
+        "Waxed Copper Bars",
+        "Waxed Exposed Copper Bars",
+        "Waxed Oxidized Copper Bars",
+        "Waxed Weathered Copper Bars",
+        "Weathered Copper Bars"
+       ],
+       [
+        "Copper Chain",
+        "Exposed Copper Chain",
+        "Oxidized Copper Chain",
+        "Waxed Copper Chain",
+        "Waxed Exposed Copper Chain",
+        "Waxed Oxidized Copper Chain",
+        "Waxed Weathered Copper Chain",
+        "Weathered Copper Chain"
+       ],
+       [
+        "Copper Golem Statue",
+        "Exposed Copper Golem Statue",
+        "Oxidized Copper Golem Statue",
+        "Waxed Copper Golem Statue",
+        "Waxed Exposed Copper Golem Statue",
+        "Waxed Oxidized Copper Golem Statue",
+        "Waxed Weathered Copper Golem Statue",
+        "Weathered Copper Golem Statue"
+       ],
+       "Copper Hoe",
+       "Copper Horse Armor",
+       [
+        "Cut Copper Slab",
+        "Exposed Cut Copper Slab",
+        "Oxidized Cut Copper Slab",
+        "Waxed Cut Copper Slab",
+        "Waxed Exposed Cut Copper Slab",
+        "Waxed Oxidized Cut Copper Slab",
+        "Waxed Weathered Cut Copper Slab",
+        "Weathered Cut Copper Slab"
+       ],
+       [
+        "Cut Copper Stairs",
+        "Exposed Cut Copper Stairs",
+        "Oxidized Cut Copper Stairs",
+        "Waxed Cut Copper Stairs",
+        "Waxed Exposed Cut Copper Stairs",
+        "Waxed Oxidized Cut Copper Stairs",
+        "Waxed Weathered Cut Copper Stairs",
+        "Weathered Cut Copper Stairs"
+       ]
+      ],
+      "gold": [
+       "Copper Spear"
+      ],
+      "diamond": [
+       "Copper Nautilus Armor"
+      ]
+     }
+    },
+    {
+     "category": "Nether",
+     "text": "Name a block that generates naturally in the Nether (not counting structures)",
+     "answers": {
+      "dirt": [
+       "Netherrack",
+       "Soul Sand",
+       "Glowstone",
+       "Lava",
+       [
+        "Nether Quartz Ore",
+        "Quartz Ore"
+       ]
+      ],
+      "coal": [
+       "Magma Block",
+       "Nether Gold Ore",
+       "Ancient Debris",
+       "Basalt",
+       "Blackstone",
+       "Soul Soil",
+       "Gravel",
+       "Crimson Nylium",
+       "Warped Nylium",
+       "Nether Wart Block",
+       "Warped Wart Block",
+       "Crimson Stem",
+       "Warped Stem",
+       "Shroomlight",
+       "Fire",
+       "Bedrock"
+      ],
+      "iron": [
+       "Soul Fire",
+       "Weeping Vines",
+       "Twisting Vines",
+       "Crimson Fungus",
+       "Warped Fungus",
+       "Crimson Roots",
+       "Warped Roots",
+       "Nether Sprouts"
+      ],
+      "gold": [
+       "Brown Mushroom",
+       "Red Mushroom"
+      ]
+     }
+    },
+    {
+     "category": "Trading",
+     "text": "Name an item a Wandering Trader sells",
+     "answers": {
+      "dirt": [
+       "Oak Sapling",
+       "Spruce Sapling",
+       "Birch Sapling",
+       [
+        "Bucket of Tropical Fish",
+        "Tropical Fish Bucket"
+       ],
+       "Sand",
+       "Red Sand",
+       "Name Tag",
+       "Lily Pad",
+       "Slimeball",
+       "Cactus",
+       "Pumpkin",
+       "Sugar Cane"
+      ],
+      "coal": [
+       "Jungle Sapling",
+       "Acacia Sapling",
+       "Dark Oak Sapling",
+       "Cherry Sapling",
+       "Mangrove Propagule",
+       "Pale Oak Sapling",
+       [
+        "Bucket of Pufferfish",
+        "Pufferfish Bucket"
+       ],
+       "Glowstone",
+       "Gunpowder",
+       "Packed Ice",
+       "Blue Ice",
+       "Nautilus Shell",
+       "Podzol",
+       "Vines",
+       "Kelp",
+       "Sea Pickle",
+       "Fern",
+       "Brown Mushroom",
+       "Red Mushroom",
+       "Pumpkin Seeds",
+       "Melon Seeds",
+       [
+        "Wheat Seeds",
+        "Seeds"
+       ],
+       "Beetroot Seeds",
+       "Dandelion",
+       "Poppy",
+       "Blue Orchid",
+       "Allium",
+       "Azure Bluet",
+       "Red Tulip",
+       "Orange Tulip",
+       "White Tulip",
+       "Pink Tulip",
+       "Oxeye Daisy",
+       "Cornflower",
+       "Lily of the Valley",
+       "White Dye",
+       "Orange Dye",
+       "Magenta Dye",
+       "Light Blue Dye",
+       "Yellow Dye",
+       "Lime Dye",
+       "Pink Dye",
+       "Gray Dye",
+       "Light Gray Dye",
+       "Cyan Dye",
+       "Purple Dye",
+       "Blue Dye",
+       "Brown Dye",
+       "Green Dye",
+       "Red Dye",
+       "Black Dye"
+      ],
+      "iron": [
+       "Oak Log",
+       "Spruce Log",
+       "Birch Log",
+       "Jungle Log",
+       "Acacia Log",
+       "Dark Oak Log",
+       "Cherry Log",
+       "Mangrove Log",
+       "Pale Oak Log",
+       "Tube Coral Block",
+       "Brain Coral Block",
+       "Bubble Coral Block",
+       "Fire Coral Block",
+       "Horn Coral Block",
+       "Moss Block",
+       "Rooted Dirt",
+       "Pointed Dripstone",
+       "Small Dripleaf",
+       [
+        "Potion of Invisibility",
+        "Invisibility Potion"
+       ],
+       [
+        "Iron Pickaxe",
+        "Enchanted Iron Pickaxe"
+       ]
+      ],
+      "gold": [
+       "Firefly Bush",
+       "Wildflowers",
+       "Open Eyeblossom",
+       "Golden Dandelion",
+       "Pale Moss Block",
+       "Pale Hanging Moss",
+       "Tall Dry Grass",
+       "Poplar Sapling",
+       "Poplar Log",
+       "Shelf Mushroom",
+       "Sulfur Spike"
+      ]
+     }
+    },
+    {
+     "category": "Crafting",
+     "text": "Name something crafted using copper ingots",
+     "answers": {
+      "dirt": [
+       [
+        "Block of Copper",
+        "Copper Block"
+       ],
+       "Lightning Rod",
+       "Spyglass",
+       "Brush"
+      ],
+      "coal": [
+       "Copper Pickaxe",
+       "Copper Sword",
+       "Copper Axe",
+       "Copper Helmet",
+       "Copper Chestplate",
+       "Copper Leggings",
+       "Copper Boots"
+      ],
+      "iron": [
+       "Copper Shovel",
+       "Copper Hoe",
+       "Copper Door",
+       "Copper Trapdoor",
+       "Copper Nugget",
+       "Copper Chest"
+      ],
+      "gold": [
+       "Copper Bars",
+       "Copper Chain",
+       "Copper Spear"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Chiseled' in its name",
+     "answers": {
+      "dirt": [
+       "Chiseled Bookshelf",
+       "Chiseled Sandstone",
+       "Chiseled Stone Bricks"
+      ],
+      "coal": [
+       "Chiseled Deepslate",
+       "Chiseled Nether Bricks",
+       "Chiseled Polished Blackstone",
+       [
+        "Chiseled Quartz Block",
+        "Chiseled Quartz"
+       ],
+       "Chiseled Red Sandstone"
+      ],
+      "iron": [
+       [
+        "Chiseled Copper",
+        "Exposed Chiseled Copper",
+        "Weathered Chiseled Copper",
+        "Oxidized Chiseled Copper",
+        "Waxed Chiseled Copper"
+       ],
+       "Chiseled Tuff",
+       "Chiseled Tuff Bricks"
+      ],
+      "gold": [
+       "Chiseled Resin Bricks"
+      ],
+      "diamond": [
+       "Chiseled Cinnabar",
+       "Chiseled Sulfur"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob that never takes fall damage",
+     "answers": {
+      "dirt": [
+       "Chicken",
+       "Cat"
+      ],
+      "coal": [
+       "Bat",
+       "Ghast",
+       "Blaze",
+       "Phantom",
+       "Iron Golem"
+      ],
+      "iron": [
+       "Parrot",
+       "Bee",
+       "Ender Dragon",
+       "Wither",
+       "Allay",
+       "Ocelot",
+       "Vex"
+      ],
+      "gold": [
+       [
+        "Snow Golem",
+        "Snowman"
+       ],
+       "Magma Cube",
+       "Shulker",
+       [
+        "Happy Ghast",
+        "Ghastling"
+       ],
+       "Breeze"
+      ],
+      "diamond": [
+       "Copper Golem",
+       "Creaking"
+      ]
+     }
+    },
+    {
+     "category": "Enchanting",
+     "text": "Name an enchantment that can go on armor",
+     "answers": {
+      "dirt": [
+       "Protection",
+       "Unbreaking",
+       "Mending",
+       "Feather Falling",
+       "Thorns"
+      ],
+      "coal": [
+       "Fire Protection",
+       "Blast Protection",
+       "Projectile Protection",
+       "Respiration",
+       "Depth Strider",
+       "Aqua Affinity",
+       "Frost Walker"
+      ],
+      "iron": [
+       "Soul Speed",
+       "Swift Sneak",
+       [
+        "Curse of Binding",
+        "Binding"
+       ]
+      ],
+      "gold": [
+       [
+        "Curse of Vanishing",
+        "Vanishing"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'Prismarine' in its name",
+     "answers": {
+      "dirt": [
+       "Prismarine"
+      ],
+      "coal": [
+       "Dark Prismarine",
+       "Prismarine Bricks",
+       "Prismarine Crystals",
+       "Prismarine Shard"
+      ],
+      "iron": [
+       "Prismarine Slab",
+       "Prismarine Stairs",
+       "Prismarine Wall"
+      ],
+      "gold": [
+       "Dark Prismarine Slab",
+       "Dark Prismarine Stairs",
+       "Prismarine Brick Slab",
+       "Prismarine Brick Stairs"
+      ]
+     }
+    },
+    {
+     "category": "Mobs",
+     "text": "Name a block an Enderman can pick up",
+     "answers": {
+      "dirt": [
+       [
+        "Grass Block",
+        "Grass"
+       ],
+       "Dirt",
+       "Sand",
+       "TNT",
+       "Pumpkin",
+       "Melon"
+      ],
+      "coal": [
+       "Gravel",
+       "Cactus",
+       "Clay",
+       [
+        "Poppy",
+        "Rose"
+       ],
+       "Dandelion",
+       "Red Mushroom",
+       "Brown Mushroom",
+       "Mycelium",
+       "Podzol",
+       "Red Sand",
+       "Coarse Dirt",
+       "Carved Pumpkin"
+      ],
+      "iron": [
+       "Crimson Nylium",
+       "Warped Nylium",
+       "Crimson Fungus",
+       "Warped Fungus",
+       "Crimson Roots",
+       "Warped Roots",
+       [
+        "Moss Block",
+        "Moss"
+       ],
+       "Rooted Dirt",
+       "Mud",
+       "Blue Orchid",
+       "Allium",
+       "Azure Bluet",
+       "Oxeye Daisy",
+       "Cornflower",
+       "Lily of the Valley",
+       [
+        "Red Tulip",
+        "Tulip"
+       ],
+       "Orange Tulip",
+       "White Tulip",
+       "Pink Tulip"
+      ],
+      "gold": [
+       "Wither Rose",
+       "Torchflower",
+       "Muddy Mangrove Roots",
+       [
+        "Pale Moss Block",
+        "Pale Moss"
+       ],
+       [
+        "Open Eyeblossom",
+        "Eyeblossom"
+       ],
+       "Closed Eyeblossom",
+       "Golden Dandelion",
+       "Cactus Flower"
+      ]
+     }
+    },
+    {
+     "category": "The End",
+     "text": "Name a block that generates naturally in the End (End cities and ships count)",
+     "answers": {
+      "dirt": [
+       "End Stone",
+       "Obsidian",
+       "Bedrock",
+       "Chorus Plant",
+       "Chorus Flower"
+      ],
+      "coal": [
+       "End Portal",
+       "End Gateway",
+       [
+        "Purpur Block",
+        "Purpur"
+       ],
+       "Dragon Egg",
+       "End Rod",
+       "Purpur Pillar",
+       "End Stone Bricks"
+      ],
+      "iron": [
+       "Iron Bars",
+       "Purpur Stairs",
+       "Purpur Slab",
+       "Magenta Stained Glass",
+       "Chest",
+       "Dragon Head",
+       "Brewing Stand",
+       "Ladder",
+       "Ender Chest"
+      ],
+      "gold": [
+       "Torch",
+       "Fire",
+       [
+        "Magenta Banner",
+        "Banner"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Armor",
+     "text": "Name something you can wear on your head",
+     "answers": {
+      "dirt": [
+       [
+        "Iron Helmet",
+        "Helmet"
+       ],
+       "Diamond Helmet",
+       "Carved Pumpkin",
+       "Netherite Helmet"
+      ],
+      "coal": [
+       [
+        "Leather Cap",
+        "Leather Helmet"
+       ],
+       [
+        "Golden Helmet",
+        "Gold Helmet"
+       ],
+       [
+        "Chainmail Helmet",
+        "Chain Helmet"
+       ],
+       [
+        "Turtle Shell",
+        "Turtle Helmet"
+       ],
+       "Creeper Head",
+       "Zombie Head",
+       [
+        "Skeleton Skull",
+        "Skeleton Head"
+       ],
+       [
+        "Wither Skeleton Skull",
+        "Wither Skeleton Head"
+       ],
+       [
+        "Dragon Head",
+        "Ender Dragon Head"
+       ],
+       "Player Head"
+      ],
+      "iron": [
+       "Piglin Head",
+       "Copper Helmet"
+      ]
+     }
+    },
+    {
+     "category": "Crafting",
+     "text": "Name something crafted using cobblestone",
+     "answers": {
+      "dirt": [
+       "Furnace",
+       "Stone Pickaxe",
+       "Stone Sword",
+       "Stone Axe",
+       "Stone Shovel"
+      ],
+      "coal": [
+       "Cobblestone Stairs",
+       "Cobblestone Slab",
+       "Stone Hoe",
+       "Cobblestone Wall",
+       "Lever",
+       "Dispenser",
+       "Piston",
+       "Dropper",
+       "Brewing Stand",
+       "Mossy Cobblestone"
+      ],
+      "iron": [
+       "Observer",
+       "Stone Spear"
+      ],
+      "gold": [
+       "Andesite",
+       "Diorite"
+      ],
+      "diamond": [
+       [
+        "Smithing Template",
+        "Armor Trim",
+        "Armor Trim Smithing Template"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name an undead mob",
+     "answers": {
+      "dirt": [
+       "Zombie",
+       "Skeleton"
+      ],
+      "coal": [
+       "Wither Skeleton",
+       "Drowned",
+       "Husk",
+       "Zombie Villager",
+       "Wither"
+      ],
+      "iron": [
+       "Stray",
+       "Phantom",
+       [
+        "Zombified Piglin",
+        "Zombie Pigman"
+       ],
+       "Skeleton Horse"
+      ],
+      "gold": [
+       "Zombie Horse",
+       "Zoglin",
+       "Bogged"
+      ],
+      "diamond": [
+       "Parched",
+       "Camel Husk"
+      ],
+      "netherite": [
+       "Zombie Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Advancements",
+     "text": "Name an advancement in the Nether tab",
+     "answers": {
+      "dirt": [
+       "Nether",
+       "Return to Sender",
+       "A Terrible Fortress",
+       "Into Fire",
+       "Withering Heights"
+      ],
+      "coal": [
+       "Spooky Scary Skeleton",
+       "Hidden in the Depths",
+       "Cover Me in Debris",
+       "Local Brewery",
+       "Bring Home the Beacon",
+       "Beaconator",
+       "Oh Shiny",
+       "Subspace Bubble",
+       "This Boat Has Legs",
+       "War Pigs",
+       "How Did We Get Here?"
+      ],
+      "iron": [
+       "A Furious Cocktail",
+       "Uneasy Alliance",
+       "Those Were the Days",
+       "Who is Cutting Onions?",
+       "Not Quite \"Nine\" Lives",
+       "Hot Tourist Destinations",
+       "Feels Like Home"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Sandstone' in its name",
+     "answers": {
+      "dirt": [
+       "Red Sandstone",
+       "Sandstone"
+      ],
+      "coal": [
+       "Chiseled Sandstone",
+       "Cut Sandstone",
+       "Sandstone Slab",
+       "Sandstone Stairs",
+       "Smooth Sandstone"
+      ],
+      "iron": [
+       "Chiseled Red Sandstone",
+       "Cut Red Sandstone",
+       "Red Sandstone Slab",
+       "Red Sandstone Stairs",
+       "Sandstone Wall",
+       "Smooth Red Sandstone"
+      ],
+      "gold": [
+       "Cut Sandstone Slab",
+       "Red Sandstone Wall",
+       "Smooth Sandstone Slab",
+       "Smooth Sandstone Stairs"
+      ],
+      "diamond": [
+       "Cut Red Sandstone Slab",
+       "Smooth Red Sandstone Slab",
+       "Smooth Red Sandstone Stairs"
+      ]
+     }
+    },
+    {
+     "category": "Trial Chambers",
+     "text": "Name an item you can get from a vault (normal or ominous)",
+     "answers": {
+      "dirt": [
+       "Diamond",
+       "Emerald",
+       "Heavy Core",
+       [
+        "Enchanted Book",
+        "Book"
+       ],
+       "Wind Charge",
+       "Golden Apple"
+      ],
+      "coal": [
+       [
+        "Enchanted Golden Apple",
+        "Notch Apple",
+        "God Apple"
+       ],
+       "Arrow",
+       "Iron Ingot",
+       "Bow",
+       "Crossbow",
+       "Trident",
+       "Diamond Chestplate",
+       "Diamond Axe",
+       "Shield",
+       "Ominous Bottle",
+       [
+        "Music Disc Precipice",
+        "Precipice"
+       ],
+       [
+        "Music Disc Creator",
+        "Creator"
+       ]
+      ],
+      "iron": [
+       "Iron Chestplate",
+       "Iron Axe",
+       "Golden Carrot",
+       "Honey Bottle",
+       "Tipped Arrow",
+       [
+        "Block of Diamond",
+        "Diamond Block"
+       ],
+       [
+        "Block of Emerald",
+        "Emerald Block"
+       ],
+       [
+        "Flow Armor Trim",
+        "Flow Trim"
+       ],
+       [
+        "Bolt Armor Trim",
+        "Bolt Trim"
+       ]
+      ],
+      "gold": [
+       [
+        "Block of Iron",
+        "Iron Block"
+       ],
+       "Flow Banner Pattern",
+       "Guster Banner Pattern"
+      ]
+     }
+    },
+    {
+     "category": "Art",
+     "text": "Name a painting",
+     "answers": {
+      "dirt": [
+       [
+        "Kebab",
+        "Kebab med tre pepperoni"
+       ],
+       "Wither",
+       "Skull and Roses",
+       [
+        "Burning Skull",
+        "Skull On Fire"
+       ],
+       "Pointer"
+      ],
+      "coal": [
+       [
+        "Aztec",
+        "Aztec2",
+        "de_aztec"
+       ],
+       [
+        "Alban",
+        "Albanian"
+       ],
+       [
+        "Bomb",
+        "Target Successfully Bombed"
+       ],
+       [
+        "Plant",
+        "Paradistrad"
+       ],
+       "Wasteland",
+       "Pool",
+       [
+        "Courbet",
+        "Bonjour Monsieur Courbet"
+       ],
+       [
+        "Sea",
+        "Seaside"
+       ],
+       [
+        "Sunset",
+        "sunset_dense"
+       ],
+       "Creebet",
+       "Wanderer",
+       "Graham",
+       "Match",
+       "Bust",
+       [
+        "Stage",
+        "The Stage Is Set"
+       ],
+       "Void",
+       "Fighters",
+       "Pigscene",
+       [
+        "Skeleton",
+        "Mortal Coil"
+       ],
+       [
+        "Donkey Kong",
+        "Kong"
+       ]
+      ],
+      "iron": [
+       "Earth",
+       "Wind",
+       "Water",
+       "Fire"
+      ],
+      "gold": [
+       "Baroque",
+       "Humble",
+       "Meditative",
+       "Prairie Ride",
+       "Unpacked",
+       "Backyard",
+       "Bouquet",
+       "Cavebird",
+       "Changing",
+       "Cotan",
+       "Endboss",
+       "Fern",
+       "Finding",
+       "Lowmist",
+       "Orb",
+       "Owlemons",
+       "Passage",
+       "Pond",
+       "Sunflowers",
+       "Tides"
+      ],
+      "diamond": [
+       "Dennis"
+      ]
+     }
+    },
+    {
+     "category": "Items",
+     "text": "Name a kind of bucket",
+     "answers": {
+      "dirt": [
+       [
+        "Water Bucket",
+        "Bucket of Water"
+       ],
+       [
+        "Lava Bucket",
+        "Bucket of Lava"
+       ],
+       [
+        "Milk Bucket",
+        "Bucket of Milk"
+       ],
+       [
+        "Bucket",
+        "Empty Bucket"
+       ]
+      ],
+      "coal": [
+       [
+        "Bucket of Cod",
+        "Cod Bucket"
+       ],
+       [
+        "Bucket of Axolotl",
+        "Axolotl Bucket"
+       ],
+       [
+        "Bucket of Tropical Fish",
+        "Tropical Fish Bucket"
+       ],
+       [
+        "Bucket of Pufferfish",
+        "Pufferfish Bucket"
+       ],
+       [
+        "Bucket of Salmon",
+        "Salmon Bucket"
+       ],
+       [
+        "Powder Snow Bucket",
+        "Bucket of Powder Snow"
+       ]
+      ],
+      "iron": [
+       [
+        "Bucket of Tadpole",
+        "Tadpole Bucket"
+       ]
+      ],
+      "diamond": [
+       [
+        "Bucket of Sulfur Cube",
+        "Sulfur Cube Bucket"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block or item with 'Raw' in its name",
+     "answers": {
+      "dirt": [
+       "Raw Beef",
+       "Raw Chicken",
+       "Raw Iron",
+       "Raw Porkchop"
+      ],
+      "coal": [
+       "Raw Cod",
+       "Raw Copper",
+       "Raw Gold",
+       "Raw Mutton",
+       "Raw Salmon"
+      ],
+      "iron": [
+       [
+        "Block of Raw Iron",
+        "Raw Iron Block"
+       ],
+       "Raw Rabbit"
+      ],
+      "gold": [
+       [
+        "Block of Raw Copper",
+        "Raw Copper Block"
+       ],
+       [
+        "Block of Raw Gold",
+        "Raw Gold Block"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob you can ride",
+     "answers": {
+      "dirt": [
+       "Horse",
+       "Pig"
+      ],
+      "coal": [
+       "Donkey",
+       "Strider",
+       "Camel"
+      ],
+      "iron": [
+       "Mule",
+       "Llama",
+       "Skeleton Horse",
+       "Happy Ghast"
+      ],
+      "gold": [
+       "Zombie Horse",
+       "Trader Llama",
+       "Nautilus"
+      ],
+      "diamond": [
+       "Camel Husk",
+       "Zombie Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Biomes",
+     "text": "Name a biome with 'Ocean', 'River', 'Beach' or 'Shore' in its name",
+     "answers": {
+      "dirt": [
+       "Ocean",
+       "River",
+       "Beach"
+      ],
+      "coal": [
+       "Deep Ocean",
+       "Warm Ocean",
+       "Frozen Ocean",
+       "Cold Ocean"
+      ],
+      "iron": [
+       "Lukewarm Ocean",
+       "Frozen River",
+       [
+        "Snowy Beach",
+        "Cold Beach"
+       ],
+       "Deep Cold Ocean",
+       "Deep Frozen Ocean",
+       [
+        "Stony Shore",
+        "Stone Shore"
+       ]
+      ],
+      "gold": [
+       "Deep Lukewarm Ocean"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Moss' or 'Mossy' in its name",
+     "answers": {
+      "dirt": [
+       [
+        "Moss Block",
+        "Moss"
+       ],
+       "Mossy Cobblestone"
+      ],
+      "coal": [
+       "Moss Carpet",
+       "Mossy Stone Bricks"
+      ],
+      "iron": [
+       "Mossy Cobblestone Slab",
+       "Mossy Cobblestone Stairs",
+       "Mossy Cobblestone Wall",
+       "Mossy Stone Brick Slab",
+       "Mossy Stone Brick Stairs",
+       "Mossy Stone Brick Wall",
+       [
+        "Pale Moss Block",
+        "Pale Moss"
+       ]
+      ],
+      "gold": [
+       "Pale Hanging Moss",
+       "Pale Moss Carpet"
+      ],
+      "diamond": [
+       "Infested Mossy Stone Bricks"
+      ]
+     }
+    },
+    {
+     "category": "Tools",
+     "text": "Name a type of item that has durability (any material counts)",
+     "answers": {
+      "dirt": [
+       [
+        "Pickaxe",
+        "Wooden Pickaxe",
+        "Wood Pickaxe",
+        "Stone Pickaxe",
+        "Copper Pickaxe",
+        "Iron Pickaxe",
+        "Golden Pickaxe",
+        "Gold Pickaxe",
+        "Diamond Pickaxe",
+        "Netherite Pickaxe"
+       ],
+       [
+        "Sword",
+        "Wooden Sword",
+        "Wood Sword",
+        "Stone Sword",
+        "Copper Sword",
+        "Iron Sword",
+        "Golden Sword",
+        "Gold Sword",
+        "Diamond Sword",
+        "Netherite Sword"
+       ],
+       [
+        "Axe",
+        "Wooden Axe",
+        "Wood Axe",
+        "Stone Axe",
+        "Copper Axe",
+        "Iron Axe",
+        "Golden Axe",
+        "Gold Axe",
+        "Diamond Axe",
+        "Netherite Axe"
+       ],
+       [
+        "Shovel",
+        "Wooden Shovel",
+        "Wood Shovel",
+        "Stone Shovel",
+        "Copper Shovel",
+        "Iron Shovel",
+        "Golden Shovel",
+        "Gold Shovel",
+        "Diamond Shovel",
+        "Netherite Shovel"
+       ],
+       "Bow",
+       "Elytra"
+      ],
+      "coal": [
+       [
+        "Hoe",
+        "Wooden Hoe",
+        "Wood Hoe",
+        "Stone Hoe",
+        "Copper Hoe",
+        "Iron Hoe",
+        "Golden Hoe",
+        "Gold Hoe",
+        "Diamond Hoe",
+        "Netherite Hoe"
+       ],
+       [
+        "Chestplate",
+        "Leather Chestplate",
+        "Chainmail Chestplate",
+        "Copper Chestplate",
+        "Iron Chestplate",
+        "Golden Chestplate",
+        "Gold Chestplate",
+        "Diamond Chestplate",
+        "Netherite Chestplate",
+        "Leather Tunic",
+        "Chain Chestplate"
+       ],
+       [
+        "Leggings",
+        "Leather Leggings",
+        "Chainmail Leggings",
+        "Copper Leggings",
+        "Iron Leggings",
+        "Golden Leggings",
+        "Gold Leggings",
+        "Diamond Leggings",
+        "Netherite Leggings",
+        "Leather Pants",
+        "Chain Leggings"
+       ],
+       [
+        "Boots",
+        "Leather Boots",
+        "Chainmail Boots",
+        "Copper Boots",
+        "Iron Boots",
+        "Golden Boots",
+        "Gold Boots",
+        "Diamond Boots",
+        "Netherite Boots",
+        "Chain Boots"
+       ],
+       [
+        "Helmet",
+        "Leather Helmet",
+        "Chainmail Helmet",
+        "Copper Helmet",
+        "Iron Helmet",
+        "Golden Helmet",
+        "Gold Helmet",
+        "Diamond Helmet",
+        "Netherite Helmet",
+        "Leather Cap",
+        "Chain Helmet"
+       ],
+       "Shield",
+       "Fishing Rod",
+       "Trident",
+       "Crossbow",
+       "Flint and Steel",
+       "Shears"
+      ],
+      "iron": [
+       "Mace",
+       [
+        "Spear",
+        "Wooden Spear",
+        "Wood Spear",
+        "Stone Spear",
+        "Copper Spear",
+        "Iron Spear",
+        "Golden Spear",
+        "Gold Spear",
+        "Diamond Spear",
+        "Netherite Spear"
+       ],
+       [
+        "Turtle Shell",
+        "Turtle Helmet"
+       ],
+       "Carrot on a Stick",
+       "Brush"
+      ],
+      "gold": [
+       "Warped Fungus on a Stick",
+       "Wolf Armor"
+      ]
+     }
+    },
+    {
+     "category": "Redstone",
+     "text": "Name a redstone power source (a block that makes its own signal)",
+     "answers": {
+      "dirt": [
+       "Lever",
+       "Redstone Torch",
+       [
+        "Button",
+        "Stone Button",
+        "Wooden Button",
+        "Oak Button"
+       ],
+       [
+        "Pressure Plate",
+        "Stone Pressure Plate",
+        "Wooden Pressure Plate",
+        "Oak Pressure Plate"
+       ],
+       [
+        "Block of Redstone",
+        "Redstone Block"
+       ]
+      ],
+      "coal": [
+       [
+        "Daylight Detector",
+        "Daylight Sensor"
+       ],
+       "Observer",
+       [
+        "Tripwire Hook",
+        "Tripwire"
+       ],
+       "Trapped Chest",
+       "Detector Rail"
+      ],
+      "iron": [
+       [
+        "Target",
+        "Target Block"
+       ],
+       "Sculk Sensor",
+       "Lectern",
+       "Heavy Weighted Pressure Plate",
+       [
+        "Light Weighted Pressure Plate",
+        "Weighted Pressure Plate"
+       ]
+      ],
+      "gold": [
+       "Calibrated Sculk Sensor",
+       "Lightning Rod"
+      ]
+     }
+    },
+    {
+     "category": "Mobs",
+     "text": "Name an item used to breed animals",
+     "answers": {
+      "dirt": [
+       "Wheat",
+       "Carrot",
+       [
+        "Wheat Seeds",
+        "Seeds"
+       ],
+       "Golden Apple",
+       "Golden Carrot"
+      ],
+      "coal": [
+       "Potato",
+       "Beetroot",
+       "Hay Bale",
+       [
+        "Raw Cod",
+        "Cod"
+       ],
+       [
+        "Raw Salmon",
+        "Salmon"
+       ],
+       [
+        "Raw Beef",
+        "Beef"
+       ],
+       "Bamboo",
+       "Dandelion",
+       "Sweet Berries",
+       "Seagrass",
+       [
+        "Steak",
+        "Cooked Beef"
+       ],
+       [
+        "Raw Porkchop",
+        "Porkchop"
+       ],
+       "Raw Chicken",
+       "Rotten Flesh",
+       "Melon Seeds",
+       "Pumpkin Seeds",
+       "Beetroot Seeds"
+      ],
+      "iron": [
+       [
+        "Enchanted Golden Apple",
+        "Notch Apple",
+        "God Apple"
+       ],
+       "Glow Berries",
+       "Slimeball",
+       "Crimson Fungus",
+       "Warped Fungus",
+       "Cactus",
+       [
+        "Bucket of Tropical Fish",
+        "Tropical Fish Bucket"
+       ],
+       "Torchflower Seeds",
+       "Spider Eye",
+       "Cooked Chicken",
+       "Cooked Porkchop",
+       [
+        "Raw Mutton",
+        "Mutton"
+       ],
+       "Cooked Mutton",
+       "Raw Rabbit",
+       "Cooked Rabbit",
+       "Poppy",
+       "Cornflower",
+       "Sunflower",
+       "Bread"
+      ],
+      "gold": [
+       "Pitcher Pod",
+       "Cooked Cod",
+       "Cooked Salmon",
+       [
+        "Tropical Fish",
+        "Clownfish"
+       ],
+       "Pufferfish",
+       [
+        "Bucket of Cod",
+        "Cod Bucket"
+       ],
+       [
+        "Bucket of Salmon",
+        "Salmon Bucket"
+       ],
+       [
+        "Bucket of Pufferfish",
+        "Pufferfish Bucket"
+       ],
+       "Rabbit Stew",
+       "Allium",
+       "Blue Orchid",
+       "Azure Bluet",
+       "Oxeye Daisy",
+       "Lily of the Valley",
+       "Wither Rose",
+       [
+        "Red Tulip",
+        "Tulip"
+       ],
+       "Orange Tulip",
+       "White Tulip",
+       "Pink Tulip",
+       "Torchflower",
+       "Lilac",
+       "Peony",
+       "Rose Bush",
+       "Pink Petals",
+       "Wildflowers",
+       "Spore Blossom",
+       "Flowering Azalea",
+       "Cherry Leaves",
+       "Chorus Flower",
+       "Cactus Flower",
+       "Mangrove Propagule",
+       "Pitcher Plant",
+       "Open Eyeblossom"
+      ],
+      "diamond": [
+       "Flowering Azalea Leaves"
+      ]
+     }
+    },
+    {
+     "category": "History",
+     "text": "Name a named Java Edition update or game drop",
+     "answers": {
+      "dirt": [
+       "Nether Update",
+       [
+        "Caves & Cliffs",
+        "Caves and Cliffs"
+       ],
+       [
+        "Village & Pillage",
+        "Village and Pillage"
+       ],
+       [
+        "Update Aquatic",
+        "Aquatic Update"
+       ],
+       "The Wild Update",
+       [
+        "Trails & Tales",
+        "Trails and Tales"
+       ]
+      ],
+      "coal": [
+       [
+        "Buzzy Bees",
+        "Buzzy Bees Update"
+       ],
+       "Tricky Trials",
+       "Combat Update",
+       "Adventure Update",
+       "The Garden Awakens",
+       "Bundles of Bravery",
+       "Chase the Skies",
+       "The Copper Age",
+       "Exploration Update",
+       [
+        "World of Color Update",
+        "World of Color"
+       ],
+       "Spring to Life",
+       "Mounts of Mayhem"
+      ],
+      "iron": [
+       "Bountiful Update",
+       "Pretty Scary Update",
+       "Redstone Update",
+       "Horse Update",
+       "Frostburn Update",
+       "The Update that Changed the World",
+       "Tiny Takeover",
+       "Chaos Cubed",
+       "Wilderness Bound",
+       "Armored Paws"
+      ],
+      "gold": [
+       "Halloween Update"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "prompts": [
+    {
+     "category": "History",
+     "text": "Name a mob that was a candidate in a Minecraft Live / MINECON mob vote",
+     "answers": {
+      "dirt": [
+       "Allay",
+       "Sniffer",
+       "Armadillo",
+       "Glow Squid"
+      ],
+      "coal": [
+       "Copper Golem",
+       "Penguin",
+       "Crab",
+       "Glare"
+      ],
+      "iron": [
+       [
+        "Phantom",
+        "Monster of the Night Skies"
+       ],
+       "Rascal",
+       "Tuff Golem",
+       "Moobloom"
+      ],
+      "gold": [
+       "Iceologer"
+      ],
+      "diamond": [
+       [
+        "Wildfire",
+        "Hovering Inferno"
+       ],
+       "Great Hunger"
+      ],
+      "netherite": [
+       [
+        "Barnacle",
+        "Monster of the Ocean Depths"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Advancements",
+     "text": "Name an advancement in the Adventure tab",
+     "answers": {
+      "dirt": [
+       "Adventure",
+       "Monster Hunter",
+       "Adventuring Time",
+       "Sniper Duel",
+       "Take Aim",
+       "Sweet Dreams",
+       "Postmortal"
+      ],
+      "coal": [
+       "Monsters Hunted",
+       "What a Deal!",
+       "Hero of the Village",
+       "Voluntary Exile",
+       "Very Very Frightening",
+       "Two Birds, One Arrow",
+       "Ol' Betsy",
+       "Who's the Pillager Now?",
+       "Arbalistic",
+       "A Throwaway Joke",
+       "Hired Help",
+       "Sticky Situation",
+       "Is It a Bird?",
+       "Is It a Balloon?",
+       "Is It a Plane?",
+       "Bullseye",
+       "Star Trader",
+       [
+        "Caves & Cliffs",
+        "Caves and Cliffs"
+       ],
+       "The Power of Books",
+       "Surge Protector",
+       "Light as a Rabbit",
+       "Sneak 100",
+       "It Spreads",
+       "Sound of Music"
+      ],
+      "iron": [
+       "Respecting the Remnants",
+       "Careful Restoration",
+       "Smithing with Style",
+       "Crafting a New Look",
+       "Country Lode, Take Me Home",
+       "Minecraft: Trial(s) Edition",
+       "Under Lock and Key",
+       "Over-Overkill",
+       "Revaulting",
+       "Who Needs Rockets?",
+       "Blowback",
+       "Crafters Crafting Crafters",
+       "Isn't It Scute?",
+       "Lighten Up",
+       "Heart Transplanter",
+       "Mob Kabob"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a type of wall (the stone block)",
+     "answers": {
+      "dirt": [
+       "Cobblestone Wall",
+       "Stone Brick Wall"
+      ],
+      "coal": [
+       "Andesite Wall",
+       "Brick Wall",
+       "Diorite Wall",
+       "End Stone Brick Wall",
+       "Granite Wall",
+       "Mossy Cobblestone Wall",
+       "Mossy Stone Brick Wall",
+       "Nether Brick Wall",
+       "Prismarine Wall",
+       "Sandstone Wall"
+      ],
+      "iron": [
+       "Blackstone Wall",
+       "Cobbled Deepslate Wall",
+       "Deepslate Brick Wall",
+       "Deepslate Tile Wall",
+       "Mud Brick Wall",
+       "Polished Blackstone Brick Wall",
+       "Polished Blackstone Wall",
+       "Polished Deepslate Wall",
+       "Red Nether Brick Wall",
+       "Red Sandstone Wall"
+      ],
+      "gold": [
+       "Polished Tuff Wall",
+       "Resin Brick Wall",
+       "Tuff Brick Wall",
+       "Tuff Wall"
+      ],
+      "diamond": [
+       "Cinnabar Brick Wall",
+       "Cinnabar Wall",
+       "Polished Cinnabar Wall",
+       "Polished Sulfur Wall",
+       "Sulfur Brick Wall",
+       "Sulfur Wall"
+      ]
+     }
+    },
+    {
+     "category": "Loot",
+     "text": "Name an item you can find in a Desert Pyramid chest",
+     "answers": {
+      "dirt": [
+       "Diamond",
+       "Gold Ingot",
+       "Iron Ingot",
+       "Emerald",
+       "Bone",
+       "Rotten Flesh"
+      ],
+      "coal": [
+       "Golden Apple",
+       [
+        "Enchanted Golden Apple",
+        "Notch Apple",
+        "God Apple"
+       ],
+       [
+        "Enchanted Book",
+        "Book"
+       ],
+       "Gunpowder",
+       "String",
+       "Spider Eye",
+       "Sand",
+       "Iron Horse Armor",
+       [
+        "Golden Horse Armor",
+        "Gold Horse Armor"
+       ],
+       "Diamond Horse Armor"
+      ],
+      "iron": [
+       "Leather",
+       [
+        "Dune Armor Trim",
+        "Dune Trim"
+       ]
+      ],
+      "gold": [
+       "Copper Horse Armor"
+      ]
+     }
+    },
+    {
+     "category": "Blocks",
+     "text": "Name a plant you can put in a flower pot",
+     "answers": {
+      "dirt": [
+       [
+        "Poppy",
+        "Rose"
+       ],
+       "Dandelion",
+       "Cactus",
+       "Oak Sapling"
+      ],
+      "coal": [
+       [
+        "Red Tulip",
+        "Tulip"
+       ],
+       "Orange Tulip",
+       "White Tulip",
+       "Pink Tulip",
+       "Blue Orchid",
+       "Allium",
+       "Azure Bluet",
+       "Oxeye Daisy",
+       "Cornflower",
+       "Lily of the Valley",
+       "Spruce Sapling",
+       "Birch Sapling",
+       "Jungle Sapling",
+       "Acacia Sapling",
+       "Dark Oak Sapling",
+       "Fern",
+       "Dead Bush",
+       "Red Mushroom",
+       "Brown Mushroom",
+       "Bamboo"
+      ],
+      "iron": [
+       "Wither Rose",
+       "Cherry Sapling",
+       "Mangrove Propagule",
+       "Azalea",
+       "Flowering Azalea",
+       "Crimson Fungus",
+       "Warped Fungus",
+       "Torchflower"
+      ],
+      "gold": [
+       "Crimson Roots",
+       "Warped Roots",
+       "Pale Oak Sapling",
+       [
+        "Open Eyeblossom",
+        "Eyeblossom"
+       ],
+       "Closed Eyeblossom",
+       "Golden Dandelion"
+      ],
+      "diamond": [
+       "Poplar Sapling"
+      ]
+     }
+    },
+    {
+     "category": "Plants",
+     "text": "Name something you can plant that grows into a tree or giant fungus/mushroom",
+     "answers": {
+      "dirt": [
+       [
+        "Oak Sapling",
+        "Oak"
+       ],
+       [
+        "Spruce Sapling",
+        "Spruce"
+       ],
+       [
+        "Birch Sapling",
+        "Birch"
+       ]
+      ],
+      "coal": [
+       [
+        "Jungle Sapling",
+        "Jungle"
+       ],
+       [
+        "Acacia Sapling",
+        "Acacia"
+       ],
+       [
+        "Dark Oak Sapling",
+        "Dark Oak"
+       ],
+       [
+        "Cherry Sapling",
+        "Cherry"
+       ]
+      ],
+      "iron": [
+       "Mangrove Propagule",
+       [
+        "Pale Oak Sapling",
+        "Pale Oak"
+       ],
+       "Crimson Fungus",
+       "Warped Fungus",
+       "Azalea",
+       "Red Mushroom",
+       "Brown Mushroom"
+      ],
+      "gold": [
+       "Flowering Azalea",
+       [
+        "Poplar Sapling",
+        "Poplar"
+       ],
+       "Chorus Flower"
+      ]
+     }
+    },
+    {
+     "category": "Colors",
+     "text": "Name a block or item that comes in all 16 dye colors",
+     "answers": {
+      "dirt": [
+       [
+        "Wool",
+        "White Wool",
+        "Orange Wool",
+        "Magenta Wool",
+        "Light Blue Wool",
+        "Yellow Wool",
+        "Lime Wool",
+        "Pink Wool",
+        "Gray Wool",
+        "Light Gray Wool",
+        "Cyan Wool",
+        "Purple Wool",
+        "Blue Wool",
+        "Brown Wool",
+        "Green Wool",
+        "Red Wool",
+        "Black Wool"
+       ],
+       [
+        "Concrete",
+        "White Concrete",
+        "Orange Concrete",
+        "Magenta Concrete",
+        "Light Blue Concrete",
+        "Yellow Concrete",
+        "Lime Concrete",
+        "Pink Concrete",
+        "Gray Concrete",
+        "Light Gray Concrete",
+        "Cyan Concrete",
+        "Purple Concrete",
+        "Blue Concrete",
+        "Brown Concrete",
+        "Green Concrete",
+        "Red Concrete",
+        "Black Concrete"
+       ],
+       [
+        "Bed",
+        "White Bed",
+        "Orange Bed",
+        "Magenta Bed",
+        "Light Blue Bed",
+        "Yellow Bed",
+        "Lime Bed",
+        "Pink Bed",
+        "Gray Bed",
+        "Light Gray Bed",
+        "Cyan Bed",
+        "Purple Bed",
+        "Blue Bed",
+        "Brown Bed",
+        "Green Bed",
+        "Red Bed",
+        "Black Bed"
+       ],
+       [
+        "Stained Glass",
+        "Glass",
+        "White Stained Glass",
+        "Orange Stained Glass",
+        "Magenta Stained Glass",
+        "Light Blue Stained Glass",
+        "Yellow Stained Glass",
+        "Lime Stained Glass",
+        "Pink Stained Glass",
+        "Gray Stained Glass",
+        "Light Gray Stained Glass",
+        "Cyan Stained Glass",
+        "Purple Stained Glass",
+        "Blue Stained Glass",
+        "Brown Stained Glass",
+        "Green Stained Glass",
+        "Red Stained Glass",
+        "Black Stained Glass"
+       ],
+       [
+        "Carpet",
+        "White Carpet",
+        "Orange Carpet",
+        "Magenta Carpet",
+        "Light Blue Carpet",
+        "Yellow Carpet",
+        "Lime Carpet",
+        "Pink Carpet",
+        "Gray Carpet",
+        "Light Gray Carpet",
+        "Cyan Carpet",
+        "Purple Carpet",
+        "Blue Carpet",
+        "Brown Carpet",
+        "Green Carpet",
+        "Red Carpet",
+        "Black Carpet"
+       ]
+      ],
+      "coal": [
+       [
+        "Terracotta",
+        "Stained Terracotta",
+        "White Terracotta",
+        "Orange Terracotta",
+        "Magenta Terracotta",
+        "Light Blue Terracotta",
+        "Yellow Terracotta",
+        "Lime Terracotta",
+        "Pink Terracotta",
+        "Gray Terracotta",
+        "Light Gray Terracotta",
+        "Cyan Terracotta",
+        "Purple Terracotta",
+        "Blue Terracotta",
+        "Brown Terracotta",
+        "Green Terracotta",
+        "Red Terracotta",
+        "Black Terracotta"
+       ],
+       [
+        "Banner",
+        "White Banner",
+        "Orange Banner",
+        "Magenta Banner",
+        "Light Blue Banner",
+        "Yellow Banner",
+        "Lime Banner",
+        "Pink Banner",
+        "Gray Banner",
+        "Light Gray Banner",
+        "Cyan Banner",
+        "Purple Banner",
+        "Blue Banner",
+        "Brown Banner",
+        "Green Banner",
+        "Red Banner",
+        "Black Banner"
+       ],
+       [
+        "Dye",
+        "White Dye",
+        "Orange Dye",
+        "Magenta Dye",
+        "Light Blue Dye",
+        "Yellow Dye",
+        "Lime Dye",
+        "Pink Dye",
+        "Gray Dye",
+        "Light Gray Dye",
+        "Cyan Dye",
+        "Purple Dye",
+        "Blue Dye",
+        "Brown Dye",
+        "Green Dye",
+        "Red Dye",
+        "Black Dye"
+       ],
+       [
+        "Shulker Box",
+        "White Shulker Box",
+        "Orange Shulker Box",
+        "Magenta Shulker Box",
+        "Light Blue Shulker Box",
+        "Yellow Shulker Box",
+        "Lime Shulker Box",
+        "Pink Shulker Box",
+        "Gray Shulker Box",
+        "Light Gray Shulker Box",
+        "Cyan Shulker Box",
+        "Purple Shulker Box",
+        "Blue Shulker Box",
+        "Brown Shulker Box",
+        "Green Shulker Box",
+        "Red Shulker Box",
+        "Black Shulker Box"
+       ],
+       [
+        "Concrete Powder",
+        "White Concrete Powder",
+        "Orange Concrete Powder",
+        "Magenta Concrete Powder",
+        "Light Blue Concrete Powder",
+        "Yellow Concrete Powder",
+        "Lime Concrete Powder",
+        "Pink Concrete Powder",
+        "Gray Concrete Powder",
+        "Light Gray Concrete Powder",
+        "Cyan Concrete Powder",
+        "Purple Concrete Powder",
+        "Blue Concrete Powder",
+        "Brown Concrete Powder",
+        "Green Concrete Powder",
+        "Red Concrete Powder",
+        "Black Concrete Powder"
+       ],
+       [
+        "Glazed Terracotta",
+        "White Glazed Terracotta",
+        "Orange Glazed Terracotta",
+        "Magenta Glazed Terracotta",
+        "Light Blue Glazed Terracotta",
+        "Yellow Glazed Terracotta",
+        "Lime Glazed Terracotta",
+        "Pink Glazed Terracotta",
+        "Gray Glazed Terracotta",
+        "Light Gray Glazed Terracotta",
+        "Cyan Glazed Terracotta",
+        "Purple Glazed Terracotta",
+        "Blue Glazed Terracotta",
+        "Brown Glazed Terracotta",
+        "Green Glazed Terracotta",
+        "Red Glazed Terracotta",
+        "Black Glazed Terracotta"
+       ],
+       [
+        "Stained Glass Pane",
+        "Glass Pane",
+        "White Stained Glass Pane",
+        "Orange Stained Glass Pane",
+        "Magenta Stained Glass Pane",
+        "Light Blue Stained Glass Pane",
+        "Yellow Stained Glass Pane",
+        "Lime Stained Glass Pane",
+        "Pink Stained Glass Pane",
+        "Gray Stained Glass Pane",
+        "Light Gray Stained Glass Pane",
+        "Cyan Stained Glass Pane",
+        "Purple Stained Glass Pane",
+        "Blue Stained Glass Pane",
+        "Brown Stained Glass Pane",
+        "Green Stained Glass Pane",
+        "Red Stained Glass Pane",
+        "Black Stained Glass Pane"
+       ],
+       [
+        "Candle",
+        "White Candle",
+        "Orange Candle",
+        "Magenta Candle",
+        "Light Blue Candle",
+        "Yellow Candle",
+        "Lime Candle",
+        "Pink Candle",
+        "Gray Candle",
+        "Light Gray Candle",
+        "Cyan Candle",
+        "Purple Candle",
+        "Blue Candle",
+        "Brown Candle",
+        "Green Candle",
+        "Red Candle",
+        "Black Candle"
+       ]
+      ],
+      "iron": [
+       [
+        "Bundle",
+        "White Bundle",
+        "Orange Bundle",
+        "Magenta Bundle",
+        "Light Blue Bundle",
+        "Yellow Bundle",
+        "Lime Bundle",
+        "Pink Bundle",
+        "Gray Bundle",
+        "Light Gray Bundle",
+        "Cyan Bundle",
+        "Purple Bundle",
+        "Blue Bundle",
+        "Brown Bundle",
+        "Green Bundle",
+        "Red Bundle",
+        "Black Bundle"
+       ]
+      ],
+      "gold": [
+       [
+        "Harness",
+        "White Harness",
+        "Orange Harness",
+        "Magenta Harness",
+        "Light Blue Harness",
+        "Yellow Harness",
+        "Lime Harness",
+        "Pink Harness",
+        "Gray Harness",
+        "Light Gray Harness",
+        "Cyan Harness",
+        "Purple Harness",
+        "Blue Harness",
+        "Brown Harness",
+        "Green Harness",
+        "Red Harness",
+        "Black Harness"
+       ],
+       [
+        "Wool Stairs",
+        "White Wool Stairs",
+        "Orange Wool Stairs",
+        "Magenta Wool Stairs",
+        "Light Blue Wool Stairs",
+        "Yellow Wool Stairs",
+        "Lime Wool Stairs",
+        "Pink Wool Stairs",
+        "Gray Wool Stairs",
+        "Light Gray Wool Stairs",
+        "Cyan Wool Stairs",
+        "Purple Wool Stairs",
+        "Blue Wool Stairs",
+        "Brown Wool Stairs",
+        "Green Wool Stairs",
+        "Red Wool Stairs",
+        "Black Wool Stairs"
+       ],
+       [
+        "Wool Slab",
+        "White Wool Slab",
+        "Orange Wool Slab",
+        "Magenta Wool Slab",
+        "Light Blue Wool Slab",
+        "Yellow Wool Slab",
+        "Lime Wool Slab",
+        "Pink Wool Slab",
+        "Gray Wool Slab",
+        "Light Gray Wool Slab",
+        "Cyan Wool Slab",
+        "Purple Wool Slab",
+        "Blue Wool Slab",
+        "Brown Wool Slab",
+        "Green Wool Slab",
+        "Red Wool Slab",
+        "Black Wool Slab"
+       ],
+       [
+        "Cushion",
+        "White Cushion",
+        "Orange Cushion",
+        "Magenta Cushion",
+        "Light Blue Cushion",
+        "Yellow Cushion",
+        "Lime Cushion",
+        "Pink Cushion",
+        "Gray Cushion",
+        "Light Gray Cushion",
+        "Cyan Cushion",
+        "Purple Cushion",
+        "Blue Cushion",
+        "Brown Cushion",
+        "Green Cushion",
+        "Red Cushion",
+        "Black Cushion"
+       ],
+       [
+        "Concrete Stairs",
+        "White Concrete Stairs",
+        "Orange Concrete Stairs",
+        "Magenta Concrete Stairs",
+        "Light Blue Concrete Stairs",
+        "Yellow Concrete Stairs",
+        "Lime Concrete Stairs",
+        "Pink Concrete Stairs",
+        "Gray Concrete Stairs",
+        "Light Gray Concrete Stairs",
+        "Cyan Concrete Stairs",
+        "Purple Concrete Stairs",
+        "Blue Concrete Stairs",
+        "Brown Concrete Stairs",
+        "Green Concrete Stairs",
+        "Red Concrete Stairs",
+        "Black Concrete Stairs"
+       ],
+       [
+        "Concrete Slab",
+        "White Concrete Slab",
+        "Orange Concrete Slab",
+        "Magenta Concrete Slab",
+        "Light Blue Concrete Slab",
+        "Yellow Concrete Slab",
+        "Lime Concrete Slab",
+        "Pink Concrete Slab",
+        "Gray Concrete Slab",
+        "Light Gray Concrete Slab",
+        "Cyan Concrete Slab",
+        "Purple Concrete Slab",
+        "Blue Concrete Slab",
+        "Brown Concrete Slab",
+        "Green Concrete Slab",
+        "Red Concrete Slab",
+        "Black Concrete Slab"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a neutral mob",
+     "answers": {
+      "dirt": [
+       "Enderman",
+       [
+        "Wolf",
+        "Dog"
+       ]
+      ],
+      "coal": [
+       "Spider",
+       "Bee",
+       [
+        "Zombified Piglin",
+        "Zombie Pigman"
+       ],
+       "Iron Golem",
+       "Llama"
+      ],
+      "iron": [
+       "Polar Bear",
+       "Piglin",
+       "Panda",
+       "Dolphin",
+       "Goat",
+       "Cave Spider"
+      ],
+      "gold": [
+       "Fox",
+       [
+        "Pufferfish",
+        "Blowfish"
+       ],
+       "Trader Llama",
+       "Drowned"
+      ],
+      "netherite": [
+       "Nautilus",
+       "Zombie Nautilus"
+      ]
+     }
+    },
+    {
+     "category": "Biomes",
+     "text": "Name a biome where snow can fall",
+     "answers": {
+      "dirt": [
+       [
+        "Snowy Plains",
+        "Snowy Tundra",
+        "Ice Plains"
+       ],
+       [
+        "Ice Spikes",
+        "Ice Plains Spikes"
+       ],
+       [
+        "Snowy Taiga",
+        "Cold Taiga"
+       ]
+      ],
+      "coal": [
+       "Frozen Ocean",
+       "Frozen River",
+       [
+        "Snowy Beach",
+        "Cold Beach"
+       ],
+       "Snowy Slopes",
+       "Frozen Peaks",
+       "Jagged Peaks",
+       "Grove"
+      ],
+      "iron": [
+       "Deep Frozen Ocean",
+       [
+        "Windswept Hills",
+        "Mountains",
+        "Extreme Hills"
+       ],
+       "Taiga"
+      ],
+      "gold": [
+       [
+        "Windswept Gravelly Hills",
+        "Gravelly Mountains"
+       ],
+       [
+        "Windswept Forest",
+        "Wooded Mountains"
+       ],
+       [
+        "Old Growth Spruce Taiga",
+        "Giant Spruce Taiga",
+        "Mega Spruce Taiga"
+       ],
+       [
+        "Old Growth Pine Taiga",
+        "Giant Tree Taiga",
+        "Mega Taiga"
+       ],
+       [
+        "Stony Shore",
+        "Stone Shore"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Deepslate' in its name",
+     "answers": {
+      "dirt": [
+       "Cobbled Deepslate",
+       "Deepslate",
+       "Deepslate Diamond Ore"
+      ],
+      "coal": [
+       "Chiseled Deepslate",
+       "Deepslate Bricks",
+       "Deepslate Coal Ore",
+       "Deepslate Copper Ore",
+       "Deepslate Emerald Ore",
+       "Deepslate Gold Ore",
+       "Deepslate Iron Ore",
+       "Deepslate Lapis Lazuli Ore",
+       "Deepslate Redstone Ore",
+       "Deepslate Tiles",
+       "Polished Deepslate"
+      ],
+      "iron": [
+       "Cobbled Deepslate Slab",
+       "Cobbled Deepslate Stairs",
+       "Cobbled Deepslate Wall",
+       "Cracked Deepslate Bricks",
+       "Cracked Deepslate Tiles",
+       "Deepslate Brick Slab",
+       "Deepslate Brick Stairs",
+       "Deepslate Brick Wall",
+       "Deepslate Tile Slab",
+       "Deepslate Tile Stairs",
+       "Deepslate Tile Wall",
+       "Polished Deepslate Slab",
+       "Polished Deepslate Stairs",
+       "Polished Deepslate Wall"
+      ],
+      "gold": [
+       "Reinforced Deepslate",
+       "Infested Deepslate"
+      ]
+     }
+    },
+    {
+     "category": "Music",
+     "text": "Name a sound a note block can play (instrument or mob head)",
+     "answers": {
+      "dirt": [
+       [
+        "Harp",
+        "Piano"
+       ],
+       [
+        "Bass",
+        "Double Bass"
+       ],
+       [
+        "Bass Drum",
+        "Kick Drum"
+       ],
+       [
+        "Snare Drum",
+        "Snare"
+       ]
+      ],
+      "coal": [
+       [
+        "Bell",
+        "Glockenspiel"
+       ],
+       "Flute",
+       "Chime",
+       "Guitar",
+       "Xylophone",
+       [
+        "Hat",
+        "Hi-Hat",
+        "Clicks",
+        "Sticks"
+       ]
+      ],
+      "iron": [
+       [
+        "Iron Xylophone",
+        "Vibraphone"
+       ],
+       "Cow Bell",
+       "Didgeridoo",
+       [
+        "Bit",
+        "Square Wave"
+       ],
+       "Banjo",
+       [
+        "Pling",
+        "Electric Piano"
+       ]
+      ],
+      "gold": [
+       "Trumpet",
+       [
+        "Creeper",
+        "Creeper Head"
+       ],
+       [
+        "Zombie",
+        "Zombie Head"
+       ],
+       [
+        "Skeleton",
+        "Skeleton Skull"
+       ]
+      ],
+      "diamond": [
+       [
+        "Wither Skeleton",
+        "Wither Skeleton Skull"
+       ],
+       [
+        "Piglin",
+        "Piglin Head"
+       ],
+       [
+        "Ender Dragon",
+        "Dragon Head",
+        "Ender Dragon Head"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Combat",
+     "text": "Name an item a player can throw or shoot",
+     "answers": {
+      "dirt": [
+       "Arrow",
+       "Snowball",
+       [
+        "Egg",
+        "Blue Egg",
+        "Brown Egg"
+       ],
+       "Ender Pearl",
+       "Trident"
+      ],
+      "coal": [
+       "Splash Potion",
+       "Spectral Arrow",
+       "Tipped Arrow",
+       [
+        "Eye of Ender",
+        "Ender Eye"
+       ],
+       "Wind Charge",
+       [
+        "Firework Rocket",
+        "Firework"
+       ]
+      ],
+      "iron": [
+       [
+        "Bottle o' Enchanting",
+        "Experience Bottle",
+        "XP Bottle"
+       ],
+       "Lingering Potion"
+      ]
+     }
+    },
+    {
+     "category": "Crafting",
+     "text": "Name a block you craft from 9 of the same item",
+     "answers": {
+      "dirt": [
+       [
+        "Block of Diamond",
+        "Diamond Block"
+       ],
+       [
+        "Block of Iron",
+        "Iron Block"
+       ],
+       [
+        "Block of Gold",
+        "Gold Block"
+       ],
+       [
+        "Block of Emerald",
+        "Emerald Block"
+       ],
+       [
+        "Block of Coal",
+        "Coal Block"
+       ],
+       [
+        "Block of Redstone",
+        "Redstone Block"
+       ]
+      ],
+      "coal": [
+       [
+        "Block of Lapis Lazuli",
+        "Lapis Block",
+        "Lapis Lazuli Block"
+       ],
+       [
+        "Block of Netherite",
+        "Netherite Block"
+       ],
+       "Hay Bale",
+       "Slime Block",
+       [
+        "Block of Copper",
+        "Copper Block"
+       ],
+       "Melon",
+       "Bone Block"
+      ],
+      "iron": [
+       "Dried Kelp Block",
+       [
+        "Block of Raw Iron",
+        "Raw Iron Block"
+       ],
+       [
+        "Block of Raw Gold",
+        "Raw Gold Block"
+       ],
+       [
+        "Block of Raw Copper",
+        "Raw Copper Block"
+       ],
+       "Packed Ice",
+       "Blue Ice",
+       "Nether Wart Block"
+      ],
+      "gold": [
+       [
+        "Block of Bamboo",
+        "Bamboo Block"
+       ],
+       "Prismarine Bricks",
+       [
+        "Block of Resin",
+        "Resin Block"
+       ]
+      ],
+      "diamond": [
+       "Potent Sulfur"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Polished' in its name",
+     "answers": {
+      "dirt": [
+       "Polished Andesite",
+       "Polished Diorite",
+       "Polished Granite"
+      ],
+      "coal": [
+       "Polished Basalt",
+       "Polished Blackstone",
+       "Polished Deepslate",
+       "Polished Tuff"
+      ],
+      "iron": [
+       "Polished Andesite Slab",
+       "Polished Andesite Stairs",
+       "Polished Blackstone Bricks",
+       "Polished Blackstone Button",
+       "Polished Blackstone Pressure Plate",
+       "Polished Blackstone Slab",
+       "Polished Blackstone Stairs",
+       "Polished Blackstone Wall",
+       "Polished Deepslate Slab",
+       "Polished Deepslate Stairs",
+       "Polished Deepslate Wall",
+       "Polished Diorite Slab",
+       "Polished Diorite Stairs",
+       "Polished Granite Slab",
+       "Polished Granite Stairs"
+      ],
+      "gold": [
+       "Chiseled Polished Blackstone",
+       "Cracked Polished Blackstone Bricks",
+       "Polished Blackstone Brick Slab",
+       "Polished Blackstone Brick Stairs",
+       "Polished Blackstone Brick Wall",
+       "Polished Tuff Slab",
+       "Polished Tuff Stairs",
+       "Polished Tuff Wall"
+      ],
+      "diamond": [
+       "Polished Cinnabar",
+       "Polished Cinnabar Slab",
+       "Polished Cinnabar Stairs",
+       "Polished Cinnabar Wall",
+       "Polished Sulfur",
+       "Polished Sulfur Slab",
+       "Polished Sulfur Stairs",
+       "Polished Sulfur Wall"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob you can put on a lead",
+     "answers": {
+      "dirt": [
+       "Cow",
+       "Pig",
+       "Sheep",
+       "Horse",
+       [
+        "Wolf",
+        "Dog"
+       ]
+      ],
+      "coal": [
+       "Chicken",
+       "Cat",
+       "Llama",
+       "Donkey",
+       "Mule",
+       "Rabbit",
+       "Fox",
+       "Goat"
+      ],
+      "iron": [
+       [
+        "Mooshroom",
+        "Mushroom Cow"
+       ],
+       "Parrot",
+       "Polar Bear",
+       "Bee",
+       "Ocelot",
+       "Iron Golem",
+       "Camel",
+       "Axolotl",
+       "Allay",
+       "Frog",
+       [
+        "Snow Golem",
+        "Snowman"
+       ],
+       "Dolphin",
+       [
+        "Happy Ghast",
+        "Ghastling"
+       ]
+      ],
+      "gold": [
+       "Squid",
+       "Glow Squid",
+       "Strider",
+       "Trader Llama",
+       "Skeleton Horse",
+       "Zombie Horse",
+       "Sniffer",
+       "Armadillo",
+       "Hoglin",
+       "Copper Golem",
+       "Boat"
+      ],
+      "diamond": [
+       "Zoglin",
+       "Nautilus",
+       "Zombie Nautilus",
+       "Camel Husk",
+       "Sulfur Cube",
+       [
+        "Boat with Chest",
+        "Chest Boat"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Enchanting",
+     "text": "Name an enchantment for a sword, bow, crossbow, trident, mace or spear",
+     "answers": {
+      "dirt": [
+       "Sharpness",
+       "Power",
+       "Fire Aspect",
+       "Looting",
+       "Infinity",
+       "Unbreaking",
+       "Mending"
+      ],
+      "coal": [
+       "Smite",
+       "Knockback",
+       "Flame",
+       "Punch",
+       [
+        "Sweeping Edge",
+        "Sweeping"
+       ],
+       "Bane of Arthropods",
+       "Loyalty",
+       "Riptide",
+       "Channeling",
+       "Multishot"
+      ],
+      "iron": [
+       "Piercing",
+       "Quick Charge",
+       "Impaling",
+       "Density",
+       "Breach",
+       "Wind Burst"
+      ],
+      "gold": [
+       "Lunge",
+       [
+        "Curse of Vanishing",
+        "Vanishing"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block with 'Blackstone' in its name",
+     "answers": {
+      "dirt": [
+       "Blackstone"
+      ],
+      "coal": [
+       "Blackstone Slab",
+       "Blackstone Stairs",
+       "Blackstone Wall",
+       "Gilded Blackstone",
+       "Polished Blackstone",
+       "Polished Blackstone Bricks"
+      ],
+      "iron": [
+       "Chiseled Polished Blackstone",
+       "Cracked Polished Blackstone Bricks",
+       "Polished Blackstone Button",
+       "Polished Blackstone Pressure Plate",
+       "Polished Blackstone Slab",
+       "Polished Blackstone Stairs",
+       "Polished Blackstone Wall"
+      ],
+      "gold": [
+       "Polished Blackstone Brick Slab",
+       "Polished Blackstone Brick Stairs",
+       "Polished Blackstone Brick Wall"
+      ]
+     }
+    },
+    {
+     "category": "Nether",
+     "text": "Name a block that angers piglins when you open or break it",
+     "answers": {
+      "dirt": [
+       "Chest",
+       [
+        "Block of Gold",
+        "Gold Block"
+       ],
+       "Gold Ore"
+      ],
+      "coal": [
+       "Barrel",
+       "Ender Chest",
+       "Trapped Chest",
+       "Nether Gold Ore",
+       "Shulker Box"
+      ],
+      "iron": [
+       "Gilded Blackstone",
+       "Deepslate Gold Ore",
+       [
+        "Block of Raw Gold",
+        "Raw Gold Block"
+       ]
+      ],
+      "gold": [
+       [
+        "Copper Chest",
+        "Exposed Copper Chest",
+        "Weathered Copper Chest",
+        "Oxidized Copper Chest",
+        "Waxed Copper Chest"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Mechanics",
+     "text": "Name something that can explode",
+     "answers": {
+      "dirt": [
+       "TNT",
+       "Creeper",
+       "Charged Creeper"
+      ],
+      "coal": [
+       [
+        "Ghast Fireball",
+        "Fireball",
+        "Ghast"
+       ],
+       "Bed",
+       "Respawn Anchor",
+       "End Crystal",
+       [
+        "Minecart with TNT",
+        "TNT Minecart"
+       ],
+       "Wither"
+      ],
+      "iron": [
+       [
+        "Firework Rocket",
+        "Firework"
+       ],
+       "Wither Skull"
+      ],
+      "gold": [
+       "Wind Charge"
+      ],
+      "diamond": [
+       "Sulfur Cube"
+      ]
+     }
+    },
+    {
+     "category": "Storage",
+     "text": "Name a block that can hold items inside it",
+     "answers": {
+      "dirt": [
+       "Chest",
+       "Barrel",
+       "Shulker Box",
+       "Ender Chest",
+       "Hopper"
+      ],
+      "coal": [
+       "Trapped Chest",
+       "Furnace",
+       "Dispenser",
+       "Dropper",
+       "Brewing Stand",
+       "Blast Furnace",
+       "Smoker"
+      ],
+      "iron": [
+       "Chiseled Bookshelf",
+       "Decorated Pot",
+       "Crafter",
+       "Jukebox",
+       "Lectern",
+       "Campfire",
+       "Copper Chest",
+       "Shelf"
+      ],
+      "gold": [
+       "Soul Campfire",
+       "Flower Pot"
+      ]
+     }
+    },
+    {
+     "category": "Animals",
+     "text": "Name something you can equip on an animal (armor, saddle, etc.)",
+     "answers": {
+      "dirt": [
+       "Saddle",
+       "Iron Horse Armor",
+       "Diamond Horse Armor",
+       [
+        "Golden Horse Armor",
+        "Gold Horse Armor"
+       ]
+      ],
+      "coal": [
+       "Leather Horse Armor",
+       "Wolf Armor",
+       [
+        "Carpet",
+        "Llama Carpet"
+       ],
+       "Chest",
+       "Harness"
+      ],
+      "iron": [
+       "Netherite Horse Armor",
+       "Copper Horse Armor"
+      ],
+      "gold": [
+       "Iron Nautilus Armor",
+       "Diamond Nautilus Armor",
+       [
+        "Golden Nautilus Armor",
+        "Gold Nautilus Armor"
+       ],
+       "Copper Nautilus Armor",
+       "Netherite Nautilus Armor"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob that shoots or throws projectiles",
+     "answers": {
+      "dirt": [
+       "Skeleton",
+       "Ghast",
+       "Blaze"
+      ],
+      "coal": [
+       "Pillager",
+       "Witch",
+       "Stray",
+       "Llama",
+       "Wither"
+      ],
+      "iron": [
+       "Drowned",
+       [
+        "Snow Golem",
+        "Snowman"
+       ],
+       "Ender Dragon",
+       "Shulker",
+       "Piglin",
+       "Breeze"
+      ],
+      "gold": [
+       "Bogged",
+       "Trader Llama",
+       "Illusioner"
+      ],
+      "diamond": [
+       "Parched"
+      ]
+     }
+    },
+    {
+     "category": "Advancements",
+     "text": "Name an advancement in the Husbandry tab",
+     "answers": {
+      "dirt": [
+       "Husbandry",
+       "The Parrots and the Bats",
+       "Best Friends Forever",
+       "A Seedy Place",
+       "Two by Two",
+       "A Balanced Diet",
+       "Serious Dedication"
+      ],
+      "coal": [
+       "Fishy Business",
+       "Tactical Fishing",
+       "Bee Our Guest",
+       "Total Beelocation",
+       "Whatever Floats Your Goat!",
+       "A Complete Catalogue",
+       "The Cutest Predator",
+       "The Healing Power of Friendship!",
+       "Wax On",
+       "Wax Off",
+       "You've Got a Friend in Me",
+       "Birthday Song",
+       "Glow and Behold!",
+       "Bukkit Bukkit",
+       "Smells Interesting",
+       "Little Sniffs",
+       "Planting the Past",
+       "When the Squad Hops into Town",
+       "With Our Powers Combined!",
+       "Shear Brilliance",
+       "Good as New",
+       "The Whole Pack",
+       "Stay Hydrated!",
+       "Uh Oh"
+      ]
+     }
+    },
+    {
+     "category": "Plants",
+     "text": "Name a type of leaves",
+     "answers": {
+      "dirt": [
+       "Oak Leaves"
+      ],
+      "coal": [
+       "Acacia Leaves",
+       "Birch Leaves",
+       "Dark Oak Leaves",
+       "Jungle Leaves",
+       "Spruce Leaves"
+      ],
+      "iron": [
+       "Azalea Leaves",
+       "Cherry Leaves",
+       "Flowering Azalea Leaves",
+       "Mangrove Leaves"
+      ],
+      "gold": [
+       "Pale Oak Leaves"
+      ],
+      "diamond": [
+       "Orange Poplar Leaves",
+       "Poplar Leaves",
+       "Red Poplar Leaves",
+       "Yellow Poplar Leaves"
+      ]
+     }
+    },
+    {
+     "category": "Mechanics",
+     "text": "Name a block that cancels or softens fall damage",
+     "answers": {
+      "dirt": [
+       "Water",
+       "Slime Block",
+       "Hay Bale"
+      ],
+      "coal": [
+       "Cobweb",
+       "Honey Block",
+       "Ladder",
+       "Vines",
+       "Powder Snow",
+       "Bed",
+       "Scaffolding"
+      ],
+      "iron": [
+       [
+        "Sweet Berry Bush",
+        "Sweet Berries"
+       ],
+       "Twisting Vines",
+       "Weeping Vines",
+       "Lava"
+      ],
+      "gold": [
+       "Shelf Mushroom",
+       "Trapdoor",
+       [
+        "Cave Vines",
+        "Glow Berries"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Trading",
+     "text": "Name an item a Farmer villager buys or sells",
+     "answers": {
+      "dirt": [
+       "Wheat",
+       "Carrot",
+       "Potato",
+       "Bread",
+       "Emerald"
+      ],
+      "coal": [
+       "Pumpkin",
+       "Melon",
+       "Beetroot",
+       "Apple",
+       "Pumpkin Pie",
+       "Cookie",
+       "Cake",
+       "Golden Carrot"
+      ],
+      "iron": [
+       [
+        "Glistering Melon Slice",
+        "Glistering Melon"
+       ]
+      ],
+      "gold": [
+       "Suspicious Stew"
+      ]
+     }
+    },
+    {
+     "category": "Loot",
+     "text": "Name an item you can find in a Dungeon (monster room) chest",
+     "answers": {
+      "dirt": [
+       "Bone",
+       "Rotten Flesh",
+       "Iron Ingot",
+       "Gold Ingot",
+       "Bread",
+       "String"
+      ],
+      "coal": [
+       "Name Tag",
+       "Golden Apple",
+       [
+        "Enchanted Book",
+        "Book"
+       ],
+       "Gunpowder",
+       "Wheat",
+       "Bucket",
+       [
+        "Redstone Dust",
+        "Redstone"
+       ],
+       "Coal",
+       "Iron Horse Armor",
+       [
+        "Golden Horse Armor",
+        "Gold Horse Armor"
+       ],
+       "Diamond Horse Armor",
+       [
+        "Music Disc 13",
+        "13"
+       ],
+       [
+        "Music Disc Cat",
+        "Cat"
+       ]
+      ],
+      "iron": [
+       [
+        "Enchanted Golden Apple",
+        "Notch Apple",
+        "God Apple"
+       ],
+       "Melon Seeds",
+       "Pumpkin Seeds",
+       "Beetroot Seeds",
+       [
+        "Music Disc Otherside",
+        "Otherside"
+       ],
+       "Leather"
+      ],
+      "gold": [
+       "Copper Horse Armor"
+      ]
+     }
+    },
+    {
+     "category": "Biomes",
+     "text": "Name a cave biome, Nether biome or End biome",
+     "answers": {
+      "dirt": [
+       [
+        "Nether Wastes",
+        "Nether",
+        "Hell"
+       ],
+       "Lush Caves",
+       "Deep Dark",
+       "The End"
+      ],
+      "coal": [
+       "Crimson Forest",
+       "Warped Forest",
+       "Soul Sand Valley",
+       "Basalt Deltas",
+       "Dripstone Caves"
+      ],
+      "iron": [
+       "End Highlands",
+       "Small End Islands",
+       "Sulfur Caves"
+      ],
+      "gold": [
+       "End Midlands",
+       "End Barrens"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "prompts": [
+    {
+     "category": "Mobs",
+     "text": "Name a mob that can come out of a spawner (monster or trial spawner)",
+     "answers": {
+      "dirt": [
+       "Zombie",
+       "Skeleton",
+       "Spider"
+      ],
+      "coal": [
+       "Blaze",
+       "Cave Spider"
+      ],
+      "iron": [
+       "Silverfish",
+       "Breeze"
+      ],
+      "gold": [
+       "Husk",
+       "Stray",
+       "Slime",
+       "Magma Cube"
+      ],
+      "diamond": [
+       "Bogged"
+      ]
+     }
+    },
+    {
+     "category": "Commands",
+     "text": "Name a game rule (current or old name)",
+     "answers": {
+      "dirt": [
+       "keep_inventory",
+       "mob_griefing",
+       [
+        "advance_time",
+        "doDaylightCycle"
+       ]
+      ],
+      "coal": [
+       [
+        "advance_weather",
+        "doWeatherCycle"
+       ],
+       [
+        "spawn_mobs",
+        "doMobSpawning"
+       ],
+       "fall_damage",
+       "fire_damage",
+       "pvp",
+       "show_death_messages",
+       "send_command_feedback",
+       "command_block_output",
+       [
+        "natural_health_regeneration",
+        "naturalRegeneration"
+       ],
+       [
+        "immediate_respawn",
+        "doImmediateRespawn"
+       ],
+       "random_tick_speed",
+       "players_sleeping_percentage",
+       [
+        "block_drops",
+        "doTileDrops"
+       ],
+       [
+        "mob_drops",
+        "doMobLoot"
+       ],
+       [
+        "spawn_phantoms",
+        "doInsomnia"
+       ]
+      ],
+      "iron": [
+       "drowning_damage",
+       "freeze_damage",
+       [
+        "entity_drops",
+        "doEntityDrops"
+       ],
+       [
+        "spawn_patrols",
+        "doPatrolSpawning"
+       ],
+       [
+        "spawn_wandering_traders",
+        "doTraderSpawning"
+       ],
+       [
+        "spawn_wardens",
+        "doWardenSpawning"
+       ],
+       [
+        "raids",
+        "disableRaids"
+       ],
+       [
+        "limited_crafting",
+        "doLimitedCrafting"
+       ],
+       [
+        "show_advancement_messages",
+        "announceAdvancements"
+       ],
+       "reduced_debug_info",
+       [
+        "respawn_radius",
+        "spawnRadius"
+       ],
+       "max_entity_cramming",
+       "universal_anger",
+       "forgive_dead_players",
+       "tnt_explodes",
+       "spawn_monsters",
+       "locator_bar",
+       [
+        "fire_spread_radius_around_player",
+        "doFireTick"
+       ]
+      ],
+      "gold": [
+       [
+        "spread_vines",
+        "doVinesSpread"
+       ],
+       "log_admin_commands",
+       "spectators_generate_chunks",
+       [
+        "max_command_sequence_length",
+        "maxCommandChainLength"
+       ],
+       [
+        "max_command_forks",
+        "maxCommandForkCount"
+       ],
+       [
+        "max_block_modifications",
+        "commandModificationBlockLimit"
+       ],
+       [
+        "command_blocks_work",
+        "commandBlocksEnabled",
+        "enableCommandBlocks"
+       ],
+       [
+        "spawner_blocks_work",
+        "spawnerBlocksEnabled"
+       ],
+       [
+        "max_snow_accumulation_height",
+        "snowAccumulationHeight"
+       ],
+       "water_source_conversion",
+       "lava_source_conversion",
+       "block_explosion_drop_decay",
+       "mob_explosion_drop_decay",
+       "tnt_explosion_drop_decay",
+       "global_sound_events",
+       "ender_pearls_vanish_on_death",
+       [
+        "elytra_movement_check",
+        "disableElytraMovementCheck"
+       ],
+       [
+        "player_movement_check",
+        "disablePlayerMovementCheck"
+       ],
+       "players_nether_portal_default_delay",
+       "players_nether_portal_creative_delay",
+       "allow_entering_nether_using_portals",
+       [
+        "max_minecart_speed",
+        "minecartMaxSpeed"
+       ],
+       "projectiles_can_break_blocks"
+      ]
+     }
+    },
+    {
+     "category": "Blocks",
+     "text": "Name a type of stairs",
+     "answers": {
+      "dirt": [
+       "Cobblestone Stairs",
+       "Oak Stairs",
+       "Stone Brick Stairs",
+       "Stone Stairs"
+      ],
+      "coal": [
+       "Acacia Stairs",
+       "Andesite Stairs",
+       "Birch Stairs",
+       "Blackstone Stairs",
+       "Brick Stairs",
+       "Cherry Stairs",
+       "Cobbled Deepslate Stairs",
+       "Crimson Stairs",
+       "Dark Oak Stairs",
+       "Deepslate Brick Stairs",
+       "Diorite Stairs",
+       "Granite Stairs",
+       "Jungle Stairs",
+       "Mangrove Stairs",
+       "Mossy Cobblestone Stairs",
+       "Mossy Stone Brick Stairs",
+       "Nether Brick Stairs",
+       "Prismarine Stairs",
+       "Purpur Stairs",
+       "Quartz Stairs",
+       "Red Sandstone Stairs",
+       "Sandstone Stairs",
+       "Spruce Stairs",
+       "Warped Stairs"
+      ],
+      "iron": [
+       "Bamboo Stairs",
+       "Deepslate Tile Stairs",
+       "Mud Brick Stairs",
+       "Polished Andesite Stairs",
+       "Polished Blackstone Stairs",
+       "Polished Deepslate Stairs",
+       "Polished Diorite Stairs",
+       "Polished Granite Stairs"
+      ],
+      "gold": [
+       "Bamboo Mosaic Stairs",
+       [
+        "Cut Copper Stairs",
+        "Copper Stairs",
+        "Exposed Cut Copper Stairs",
+        "Oxidized Cut Copper Stairs",
+        "Waxed Cut Copper Stairs",
+        "Waxed Exposed Cut Copper Stairs",
+        "Waxed Oxidized Cut Copper Stairs",
+        "Waxed Weathered Cut Copper Stairs",
+        "Weathered Cut Copper Stairs"
+       ],
+       "Dark Prismarine Stairs",
+       "End Stone Brick Stairs",
+       "Pale Oak Stairs",
+       "Polished Blackstone Brick Stairs",
+       "Polished Tuff Stairs",
+       "Prismarine Brick Stairs",
+       "Red Nether Brick Stairs",
+       "Smooth Quartz Stairs",
+       "Smooth Red Sandstone Stairs",
+       "Smooth Sandstone Stairs",
+       "Tuff Brick Stairs",
+       "Tuff Stairs"
+      ],
+      "diamond": [
+       "Cinnabar Brick Stairs",
+       "Cinnabar Stairs",
+       "Polished Cinnabar Stairs",
+       "Polished Sulfur Stairs",
+       "Poplar Stairs",
+       "Resin Brick Stairs",
+       "Sulfur Brick Stairs",
+       "Sulfur Stairs",
+       [
+        "Wool Stairs",
+        "White Wool Stairs",
+        "Orange Wool Stairs",
+        "Magenta Wool Stairs",
+        "Light Blue Wool Stairs",
+        "Yellow Wool Stairs",
+        "Lime Wool Stairs",
+        "Pink Wool Stairs",
+        "Gray Wool Stairs",
+        "Light Gray Wool Stairs",
+        "Cyan Wool Stairs",
+        "Purple Wool Stairs",
+        "Blue Wool Stairs",
+        "Brown Wool Stairs",
+        "Green Wool Stairs",
+        "Red Wool Stairs",
+        "Black Wool Stairs"
+       ],
+       [
+        "Concrete Stairs",
+        "White Concrete Stairs",
+        "Orange Concrete Stairs",
+        "Magenta Concrete Stairs",
+        "Light Blue Concrete Stairs",
+        "Yellow Concrete Stairs",
+        "Lime Concrete Stairs",
+        "Pink Concrete Stairs",
+        "Gray Concrete Stairs",
+        "Light Gray Concrete Stairs",
+        "Cyan Concrete Stairs",
+        "Purple Concrete Stairs",
+        "Blue Concrete Stairs",
+        "Brown Concrete Stairs",
+        "Green Concrete Stairs",
+        "Red Concrete Stairs",
+        "Black Concrete Stairs"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Anvil",
+     "text": "Name a material you can use to repair gear in an anvil",
+     "answers": {
+      "dirt": [
+       [
+        "Iron Ingot",
+        "Iron"
+       ],
+       "Diamond",
+       [
+        "Gold Ingot",
+        "Gold"
+       ],
+       [
+        "Netherite Ingot",
+        "Netherite"
+       ],
+       "Leather"
+      ],
+      "coal": [
+       [
+        "Planks",
+        "Wood",
+        "Wooden Planks",
+        "Oak Planks"
+       ],
+       "Cobblestone",
+       "Phantom Membrane"
+      ],
+      "iron": [
+       [
+        "Copper Ingot",
+        "Copper"
+       ],
+       [
+        "Turtle Scute",
+        "Scute"
+       ],
+       "Armadillo Scute",
+       "Blackstone",
+       "Cobbled Deepslate"
+      ],
+      "gold": [
+       "Breeze Rod"
+      ]
+     }
+    },
+    {
+     "category": "Blocks",
+     "text": "Name a type of door",
+     "answers": {
+      "dirt": [
+       [
+        "Oak Door",
+        "Oak"
+       ],
+       [
+        "Iron Door",
+        "Iron"
+       ],
+       [
+        "Spruce Door",
+        "Spruce"
+       ],
+       [
+        "Birch Door",
+        "Birch"
+       ]
+      ],
+      "coal": [
+       [
+        "Jungle Door",
+        "Jungle"
+       ],
+       [
+        "Acacia Door",
+        "Acacia"
+       ],
+       [
+        "Dark Oak Door",
+        "Dark Oak"
+       ]
+      ],
+      "iron": [
+       [
+        "Cherry Door",
+        "Cherry"
+       ],
+       [
+        "Mangrove Door",
+        "Mangrove"
+       ],
+       [
+        "Crimson Door",
+        "Crimson"
+       ],
+       [
+        "Warped Door",
+        "Warped"
+       ],
+       [
+        "Bamboo Door",
+        "Bamboo"
+       ],
+       [
+        "Copper Door",
+        "Copper",
+        "Exposed Copper Door",
+        "Weathered Copper Door",
+        "Oxidized Copper Door",
+        "Waxed Copper Door"
+       ]
+      ],
+      "gold": [
+       [
+        "Pale Oak Door",
+        "Pale Oak"
+       ]
+      ],
+      "diamond": [
+       [
+        "Poplar Door",
+        "Poplar"
+       ]
+      ]
+     }
+    },
+    {
+     "category": "Dyes",
+     "text": "Name an item you can turn into dye (not counting other dyes)",
+     "answers": {
+      "dirt": [
+       [
+        "Poppy",
+        "Rose"
+       ],
+       "Dandelion",
+       "Ink Sac",
+       "Bone Meal",
+       [
+        "Lapis Lazuli",
+        "Lapis"
+       ],
+       "Cactus"
+      ],
+      "coal": [
+       [
+        "Cocoa Beans",
+        "Cocoa"
+       ],
+       "Rose Bush",
+       "Sunflower",
+       "Cornflower",
+       "Beetroot",
+       [
+        "Red Tulip",
+        "Tulip"
+       ],
+       "Blue Orchid",
+       "Lily of the Valley",
+       "Allium",
+       "Lilac",
+       "Orange Tulip",
+       "Pink Tulip",
+       "White Tulip",
+       "Peony",
+       "Oxeye Daisy",
+       "Azure Bluet"
+      ],
+      "iron": [
+       "Wither Rose",
+       "Sea Pickle",
+       "Pink Petals",
+       "Torchflower",
+       "Pitcher Plant"
+      ],
+      "gold": [
+       [
+        "Open Eyeblossom",
+        "Eyeblossom"
+       ],
+       "Closed Eyeblossom",
+       "Wildflowers",
+       "Cactus Flower",
+       "Golden Dandelion"
+      ]
+     }
+    },
+    {
+     "category": "Names",
+     "text": "Name a block, item or biome with 'Pale' in its name",
+     "answers": {
+      "dirt": [
+       "Pale Oak Log",
+       "Pale Oak Planks",
+       "Pale Oak Sapling",
+       "Pale Garden"
+      ],
+      "coal": [
+       "Pale Hanging Moss",
+       "Pale Moss Block",
+       "Pale Moss Carpet",
+       "Pale Oak Boat",
+       "Pale Oak Door",
+       "Pale Oak Leaves",
+       "Pale Oak Slab",
+       "Pale Oak Stairs",
+       "Pale Oak Wood"
+      ],
+      "iron": [
+       "Pale Oak Button",
+       "Pale Oak Fence",
+       "Pale Oak Fence Gate",
+       "Pale Oak Pressure Plate",
+       "Pale Oak Sign",
+       "Pale Oak Trapdoor",
+       "Stripped Pale Oak Log"
+      ],
+      "gold": [
+       "Pale Oak Boat with Chest",
+       "Pale Oak Hanging Sign",
+       "Pale Oak Shelf",
+       "Stripped Pale Oak Wood"
+      ]
+     }
+    }
+   ]
+  }
+ ]
 }
