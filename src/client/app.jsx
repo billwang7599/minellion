@@ -34,18 +34,13 @@ async function dayView(meta, date) {
   return { screen: "intro", day };
 }
 
-async function viewOf(path) {
-  const dayMatch = path.match(/^\/day\/(\d{4}-\d{2}-\d{2})$/);
-  if (dayMatch && !metaLoad) loadDay(dayMatch[1]);
+async function viewOf(place) {
   try {
     const meta = await loadMeta();
-    if (path === "/") {
-      const view = meta.days.some((d) => d.date === meta.today) ? await dayView(meta, meta.today) : { screen: "intro" };
-      return { ...view, meta };
-    }
-    if (path === "/archive") return { screen: "archive", meta };
-    if (dayMatch) return { ...(await dayView(meta, dayMatch[1])), meta };
-    return { screen: "lost", text: "this tunnel leads nowhere.", meta };
+    if (place === "archive") return { screen: "archive", meta };
+    if (place !== "today") return { ...(await dayView(meta, place)), meta };
+    const view = meta.days.some((d) => d.date === meta.today) ? await dayView(meta, meta.today) : { screen: "intro" };
+    return { ...view, meta };
   } catch (error) {
     return { screen: "error", text: `couldn't load minellion (${error.message}). try reloading.` };
   }
@@ -116,32 +111,26 @@ let digCount = 0;
 
 function App() {
   const store = useStore();
-  const [nav, setNav] = useState(0);
+  const [nav, setNav] = useState({ place: "today" });
   const [view, setView] = useState(null);
   const [dig, setDig] = useState(null);
   const menuRef = useRef(null);
 
   useEffect(() => {
-    const go = () => setNav((n) => n + 1);
     const onClick = (event) => {
-      const link = event.target.closest("a[href^='/']");
-      if (!link || event.metaKey || event.ctrlKey || event.shiftKey || link.target) return;
+      const link = event.target.closest("[data-go]");
+      if (!link) return;
       event.preventDefault();
-      history.pushState(null, "", link.getAttribute("href"));
-      go();
+      setNav({ place: link.dataset.go });
     };
     document.addEventListener("click", onClick);
-    addEventListener("popstate", go);
-    return () => {
-      document.removeEventListener("click", onClick);
-      removeEventListener("popstate", go);
-    };
+    return () => document.removeEventListener("click", onClick);
   }, []);
 
   useEffect(() => {
     let stale = false;
     menuRef.current.close();
-    viewOf(location.pathname.replace(/\/+$/, "") || "/").then((next) => {
+    viewOf(nav.place).then((next) => {
       if (stale) return;
       setDig(null);
       setView((prev) => ({ ...next, meta: next.meta ?? prev?.meta }));
@@ -169,7 +158,6 @@ function App() {
   const hudScore = dig && !dig.done ? dig.from : score;
 
   const begin = () => {
-    if (location.pathname !== `/day/${day.date}`) history.pushState(null, "", `/day/${day.date}`);
     flushSync(() => {
       save(startRound(getStore(), day.date, Date.now()));
       setView({ ...view, screen: "round", index: 0 });
@@ -256,10 +244,10 @@ function App() {
           <span>DIG IN</span>
         </p>
         <nav className="tiles">
-          <a href="/" className="tile">
+          <a href="/" data-go="today" className="tile">
             ↓<span>DAILY DIG</span>
           </a>
-          <a href="/archive" className="tile">
+          <a href="/" data-go="archive" className="tile">
             ⟲<span>ARCHIVE</span>
           </a>
         </nav>

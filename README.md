@@ -41,11 +41,15 @@ A new dive goes live at midnight New York time. Days after today are never serve
 
 ## Autocomplete
 
-The guess box suggests close matches from `GET /api/names`: every answer name in `data/days.json` plus
+The guess box only fixes spelling. Once a guess has 4+ letters and isn't a known name, it lists names within one typo
+(two from 8 letters; swapped letters count as one), never names that merely start with or contain what you typed, so a
+fragment like "raw" lists nothing. Names come from `GET /api/names`: every answer name in `data/days.json` plus
 `data/names.json`, a generic list that keeps suggestions from giving answers away. `names.json` holds the block, item,
 mob, biome, enchantment, effect, potion, music disc, painting, trim, goat horn, profession and advancement names from
 the Minecraft 26.3 client jar's `assets/minecraft/lang/en_us.json`, minus technical blocks, spawn eggs and wall
-variants. Ranking lives in `suggest()` in `src/match.js`.
+variants. The logic lives in `suggest()` in `src/match.js`.
+
+The app has one page, `/`: the menu, archive and past dives switch screens without changing the URL.
 
 ## Deploy
 

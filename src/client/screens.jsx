@@ -46,7 +46,7 @@ export function Intro({ day, meta, onBegin }) {
         )}
         <div className="start-foot">
           <span className="label">{label}</span>
-          <a className="btn btn-small" href="/archive">
+          <a className="btn btn-small" href="/" data-go="archive">
             ARCHIVE ⟲
           </a>
         </div>
@@ -257,7 +257,7 @@ export function Results({ day, meta }) {
           {copied ? "COPIED ✓" : "COPY RESULT"}
         </button>
         <p className="share-fallback">{fallback && <textarea ref={fallbackRef} readOnly rows="5" value={fallback} />}</p>
-        <a className="btn btn-small" href="/archive">
+        <a className="btn btn-small" href="/" data-go="archive">
           ARCHIVE ⟲
         </a>
         <p className="rule">
@@ -292,7 +292,7 @@ export function Archive({ meta }) {
     <section className="sheet">
       <div className="sheet-inner">
         <header className="sheet-head">
-          <a className="logo" href="/">
+          <a className="logo" href="/" data-go="today">
             MINELLION
           </a>
           <span className="label">THE ARCHIVE</span>
@@ -306,7 +306,7 @@ export function Archive({ meta }) {
               const dive = diveOf(store, d.date);
               return (
                 <li key={d.date}>
-                  <a href={`/day/${d.date}`}>
+                  <a href="/" data-go={d.date}>
                     <b>#{d.number}</b>
                     <span className="arch-date">
                       {fmtDate(d.date)}
@@ -346,7 +346,7 @@ export function Message({ title, text, home }) {
       <p className="quip">{text}</p>
       {home && (
         <p>
-          <a className="btn btn-small" href="/">
+          <a className="btn btn-small" href="/" data-go="today">
             BACK TO THE SURFACE ▲
           </a>
         </p>
