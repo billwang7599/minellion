@@ -1,11 +1,14 @@
 import { test, before, after, mock } from "node:test";
 import assert from "node:assert/strict";
-import worker, { TIERS, matchAnswer } from "../src/worker.js";
+import worker, { TIERS, matchAnswer, deal } from "../src/worker.js";
 import { normalize } from "../src/match.js";
-import data from "../data/days.json" with { type: "json" };
+import bank from "../data/prompts.json" with { type: "json" };
 import aliases from "../data/aliases.json" with { type: "json" };
+import frozen from "./frozen-days.json" with { type: "json" };
 
-const [past, today, future] = data.days;
+const addDays = (date, n) => new Date(Date.parse(date) + n * 86_400_000).toISOString().slice(0, 10);
+const dayOf = (n) => ({ date: addDays(bank.start, n), prompts: bank.prompts.slice(n * 7, n * 7 + 7) });
+const [past, today, future] = [0, 1, 2].map(dayOf);
 const firstName = (answer) => [].concat(answer)[0];
 const firstDirt = firstName(today.prompts[0].answers.dirt[0]);
 
@@ -106,12 +109,92 @@ test("GET /api/names lists generic names plus every answer, deduped, with nothin
   assert.deepEqual(Object.keys(body), ["names"]);
   assert.ok(body.names.every((name) => typeof name === "string"));
   assert.ok(body.names.includes(firstDirt));
-  assert.ok(body.names.includes(firstName(future.prompts.at(-1).answers.dirt.at(-1))));
+  assert.ok(body.names.includes(firstName(bank.prompts.at(-1).answers.dirt.at(-1))));
   assert.ok(body.names.includes("Creeper"));
   assert.ok(body.names.includes(aliases["Wither Skeleton Skull"][0]));
   const keys = body.names.map(normalize);
   assert.equal(new Set(keys).size, keys.length);
   assert.deepEqual(body.names, [...body.names].sort((a, b) => a.localeCompare(b)));
+});
+
+const texts = (days) => Object.fromEntries(days.map((d) => [d.date, d.prompts.map((p) => p.text)]));
+const ids = (day) => day.prompts.map((p) => p.text).sort().join("\n");
+
+test("the first days deal the bank in file order, as the old hand-dated days did", () => {
+  const days = deal(bank, addDays(bank.start, 13));
+  assert.equal(days.length, 14);
+  days.forEach((day, n) => assert.deepEqual(day, dayOf(n)));
+});
+
+test("dealt days match the frozen fixture, so past dives never change", () => {
+  const dates = Object.keys(frozen);
+  assert.equal(dates[0], bank.start);
+  assert.deepEqual(texts(deal(bank, dates.at(-1))), frozen);
+});
+
+test("appending prompts with a later added date leaves earlier days alone", () => {
+  const extra = (added, i) => ({ added, category: "New", tags: [`n${i}`], text: `New ${i}`, answers: { dirt: ["D"] } });
+  const appended = [extra("2027-02-10", 1), extra("2027-02-10", 2), extra("2027-06-01", 3)];
+  const grown = { ...bank, prompts: [...bank.prompts, ...appended] };
+  const until = "2027-09-01";
+  const before = deal(bank, until);
+  const after = deal(grown, until);
+  const cut = before.findIndex((d) => d.date === "2027-02-10");
+  assert.deepEqual(after.slice(0, cut), before.slice(0, cut));
+  assert.deepEqual(after[cut].prompts.slice(0, 2).map((p) => p.text), ["New 1", "New 2"]);
+  assert.ok(after.find((d) => d.date === "2027-06-01").prompts.some((p) => p.text === "New 3"));
+});
+
+test("a day avoids prompts that share a tag when the bank allows it", () => {
+  const card = (added, tags, i) => ({ added, category: "T", tags, text: `${added} ${i}`, answers: { dirt: ["Dirt"] } });
+  const launch = Array.from({ length: 7 }, (_, i) => card("2027-01-01", ["a"], i));
+  const later = ["a", "a", "b", "b", "c", "c", "d", "d", "e", "e", "f", "f", "g", "g"].map((tag, i) =>
+    card("2027-01-02", [tag], i),
+  );
+  const days = deal({ start: "2027-01-01", prompts: [...launch, ...later] }, "2027-01-03");
+  assert.deepEqual(days[0].prompts, launch, "the launch bank keeps its file order");
+  for (const day of days.slice(1)) {
+    const tags = day.prompts.flatMap((p) => p.tags);
+    assert.equal(new Set(tags).size, tags.length, `${day.date}: ${tags}`);
+  }
+});
+
+test("every date from start to today is a dive numbered from start; outside that is 404", async () => {
+  const now = "2027-03-15";
+  mock.timers.setTime(new Date(`${now}T17:00:00Z`).getTime());
+  try {
+    const { today: served, days } = await (await call("/api/days")).json();
+    assert.equal(served, now);
+    assert.equal(days[0].date, bank.start);
+    assert.equal(days.at(-1).date, now);
+    days.forEach((d, i) => assert.deepEqual(d, { date: addDays(bank.start, i), number: i + 1 }));
+    const last = await (await call(`/api/days/${now}`)).json();
+    assert.equal(last.number, days.length);
+    assert.equal(last.prompts.length, 7);
+    assert.equal((await call(`/api/days/${now}/7/answers`)).status, 200);
+    for (const date of [addDays(bank.start, -1), addDays(now, 1)]) {
+      assert.equal((await call(`/api/days/${date}`)).status, 404);
+    }
+  } finally {
+    mock.timers.setTime(new Date(`${today.date}T17:00:00Z`).getTime());
+  }
+});
+
+test("no prompt repeats until every prompt is used, and no day repeats a lineup", () => {
+  const days = deal(bank, addDays(bank.start, 3 * 365));
+  assert.equal(days.length, 3 * 365 + 1);
+  let cycle = new Set();
+  for (const day of days) {
+    assert.equal(new Set(day.prompts).size, 7, day.date);
+    for (const prompt of day.prompts) {
+      if (cycle.has(prompt)) {
+        assert.equal(cycle.size, bank.prompts.length, `${prompt.text} repeats early on ${day.date}`);
+        cycle = new Set();
+      }
+      cycle.add(prompt);
+    }
+  }
+  assert.equal(new Set(days.map(ids)).size, days.length);
 });
 
 test("wrong methods and unknown api paths", async () => {

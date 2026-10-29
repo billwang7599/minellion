@@ -1,4 +1,4 @@
-import data from "../data/days.json" with { type: "json" };
+import bank from "../data/prompts.json" with { type: "json" };
 import genericNames from "../data/names.json" with { type: "json" };
 import aliasTable from "../data/aliases.json" with { type: "json" };
 import { normalize, edits } from "./match.js";
@@ -16,6 +16,76 @@ export const TIERS = [
 const ROUNDS = 7;
 const MAX_GUESS_CHARS = 100;
 const MIN_TYPO_CHARS = 5;
+
+const DAY_MS = 86_400_000;
+const addDays = (date, n) => new Date(Date.parse(date) + n * DAY_MS).toISOString().slice(0, 10);
+
+function seededRandom(text) {
+  let seed = 2166136261;
+  for (const char of text) seed = Math.imul(seed ^ char.charCodeAt(0), 16777619);
+  return () => {
+    seed = (seed + 0x6d2b79f5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffle(items, random) {
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+  return items;
+}
+
+// A tag repeats in a day only if the pool holds 2+ per day of it, so leftovers don't pile up at a cycle's end.
+function spread(pool, lineup) {
+  const count = (tag) => lineup.filter((p) => p.tags.includes(tag)).length;
+  const perDay = (tag) => (pool.filter((p) => p.tags.includes(tag)).length * ROUNDS) / pool.length;
+  const cap = (tag) => Math.max(1, Math.floor(perDay(tag)));
+  const clash = (card) => card.tags.reduce((n, tag) => n + count(tag), 0);
+  const fit = pool.find((card) => card.tags.every((tag) => count(tag) < cap(tag)));
+  return fit ?? pool.reduce((best, card) => (clash(card) < clash(best) ? card : best));
+}
+
+export function deal({ start, prompts }, until) {
+  const days = [];
+  const lastDealt = new Map();
+  let deck = [];
+  for (let date = start; date <= until; date = addDays(date, 1)) {
+    const lineup = [];
+    while (lineup.length < ROUNDS) {
+      const fresh = prompts.filter((p) => p.added <= date && !lastDealt.has(p) && !lineup.includes(p));
+      if (fresh.length) {
+        // The launch bank was hand-dated before tags; its file order is those days' lineups.
+        lineup.push(fresh[0].added === start ? fresh[0] : spread(fresh, lineup));
+        continue;
+      }
+      const open = deck.filter((p) => !lineup.includes(p));
+      if (!open.length) {
+        const byAge = prompts.filter((p) => lastDealt.has(p)).sort((a, b) => lastDealt.get(a) - lastDealt.get(b));
+        const half = Math.ceil(byAge.length / 2);
+        const random = seededRandom(date);
+        // Least recently dealt half first, so the end of one cycle doesn't come straight back.
+        deck = [...shuffle(byAge.slice(0, half), random), ...shuffle(byAge.slice(half), random)];
+        continue;
+      }
+      const card = spread(open, lineup);
+      deck.splice(deck.indexOf(card), 1);
+      lineup.push(card);
+    }
+    for (const p of lineup) lastDealt.set(p, days.length);
+    days.push({ date, prompts: lineup });
+  }
+  return days;
+}
+
+let dealt = { until: "", days: [] };
+function playableDays(today) {
+  if (dealt.until !== today) dealt = { until: today, days: deal(bank, today) };
+  return dealt.days;
+}
 
 const nyDate = new Intl.DateTimeFormat("en-CA", {
   timeZone: "America/New_York",
@@ -53,9 +123,7 @@ export function matchAnswer(prompt, guess) {
   return close.length === 1 ? { answer: close[0].answer, tier: close[0].tier, exact: false } : null;
 }
 
-const answerNames = data.days.flatMap((d) =>
-  d.prompts.flatMap((p) => Object.values(p.answers).flat().map((a) => [].concat(a)[0])),
-);
+const answerNames = bank.prompts.flatMap((p) => Object.values(p.answers).flat().map((a) => [].concat(a)[0]));
 // Aliases go first so a real name keeps its spelling when both normalize alike.
 const allNames = [...Object.values(aliasTable).flat(), ...genericNames, ...answerNames];
 const names = [...new Map(allNames.map((n) => [normalize(n), n])).values()].sort((a, b) => a.localeCompare(b));
@@ -69,7 +137,7 @@ export default {
     const { pathname } = new URL(request.url);
     const parts = pathname.split("/").filter(Boolean).slice(1);
     const today = nyDate.format(new Date());
-    const playable = data.days.filter((d) => d.date <= today);
+    const playable = playableDays(today);
 
     if (parts[0] === "names" && parts.length === 1) {
       if (request.method !== "GET") return json({ error: "method not allowed" }, 405);
