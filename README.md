@@ -42,7 +42,7 @@ How a day is dealt (`deal()` in `src/worker.js`):
   order, which reproduces the hand-made dives of Oct 22 to Nov 4.
 - After that, days are filled from a repeat deck: every dealt prompt, shuffled with a seed from the date the deck was
   built, least recently dealt half first. A new deck is built only when the old one runs out, so no prompt repeats
-  until every prompt has been used. With 98 prompts a question comes back about every 14 days.
+  until every prompt has been used. With 196 prompts a question comes back about every 28 days.
 - Each prompt has 1 to 3 `tags` (`mobs`, `blocks`, `items`, `world`, `nether`, `end`, `crafting`, `loot`, `names`,
   `lore`, `mechanics`). A day skips a card that shares a tag with one already dealt that day if another card fits;
   a tag that still makes up 2+ per day of what's left may repeat. `category` is only the label the game shows.
