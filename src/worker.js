@@ -1,6 +1,6 @@
 import data from "../data/days.json" with { type: "json" };
 import genericNames from "../data/names.json" with { type: "json" };
-import { normalize, edits } from "../public/match.js";
+import { normalize, edits } from "./match.js";
 
 export { normalize };
 

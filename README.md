@@ -3,15 +3,25 @@
 Krillion, but for Minecraft: a daily rare-answer trivia dig. Seven prompts a day, 25 seconds each. Name an answer that fits; a miss costs nothing but time, so keep trying. The rarer the answer, the
 more points you score and the deeper you dig, from the surface at Y 64 down to bedrock at Y -64 (700 points).
 
-It's one Cloudflare Worker with static assets: no database and no build step. Prompts and answers live in
-`data/days.json`, player results live in the browser's localStorage.
+It's one Cloudflare Worker with static assets and no database. The front end is React, built with Vite and
+Cloudflare's Vite plugin, which also runs the Worker in dev. Prompts and answers live in `data/days.json`, player
+results live in the browser's localStorage.
+
+## Layout
+
+- `src/worker.js`: the API under `/api/*`; everything else is the built SPA.
+- `src/game.js`, `src/match.js`: plain modules shared by the client, the Worker and the tests.
+- `src/client/`: the React app (`app.jsx` routing and HUD, `World.jsx` the dig scene, `Round.jsx` the guess box,
+  `screens.jsx` the other screens) and `style.css`.
 
 ## Run locally
 
 ```sh
 npm install
-npm run dev     # http://localhost:8787
+npm run dev       # Vite + the Worker, http://localhost:5173
 npm test
+npm run build     # dist/client (assets) and dist/minellion (Worker + generated wrangler.json)
+npm run preview   # serve the build in the Workers runtime
 ```
 
 ## Add a day
@@ -35,14 +45,17 @@ The guess box suggests close matches from `GET /api/names`: every answer name in
 `data/names.json`, a generic list that keeps suggestions from giving answers away. `names.json` holds the block, item,
 mob, biome, enchantment, effect, potion, music disc, painting, trim, goat horn, profession and advancement names from
 the Minecraft 26.3 client jar's `assets/minecraft/lang/en_us.json`, minus technical blocks, spawn eggs and wall
-variants. Ranking lives in `suggest()` in `public/match.js`.
+variants. Ranking lives in `suggest()` in `src/match.js`.
 
 ## Deploy
 
 ```sh
 npx wrangler login
-npx wrangler deploy
+npm run deploy    # npm run build && wrangler deploy
 ```
+
+`wrangler deploy` picks up the config Vite writes to `dist/minellion/wrangler.json`, so always build first. In
+Cloudflare's Git integration set the build command to `npm run build` and the deploy command to `npx wrangler deploy`.
 
 ## API
 

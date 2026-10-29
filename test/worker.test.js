@@ -1,7 +1,7 @@
 import { test, before, after, mock } from "node:test";
 import assert from "node:assert/strict";
 import worker, { TIERS, matchAnswer } from "../src/worker.js";
-import { normalize } from "../public/match.js";
+import { normalize } from "../src/match.js";
 import data from "../data/days.json" with { type: "json" };
 
 const [past, today, future] = data.days;

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { SUGGEST_LIMIT, MIN_SUGGEST_CHARS, edits, suggest } from "../public/match.js";
+import { SUGGEST_LIMIT, MIN_SUGGEST_CHARS, edits, suggest } from "../src/match.js";
 
 const NAMES = [
   "Diamond", "Diamond Sword", "Diamond Ore", "Deepslate Diamond Ore", "Block of Diamond", "Diamond Horse Armor",

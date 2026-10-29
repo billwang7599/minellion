@@ -4,7 +4,7 @@ import {
   ROUNDS, ROUND_MS, MAX_SCORE, SURFACE_Y, BEDROCK_Y, MISS, MISS_EMOJI, BANDS,
   depthY, bandOf, totalScore, shareText, loadStore, startRound, finishRound, expireRound, stats,
   msUntilNextDive,
-} from "../public/game.js";
+} from "../src/game.js";
 import { TIERS } from "../src/worker.js";
 
 const DATE = "2026-10-28";
