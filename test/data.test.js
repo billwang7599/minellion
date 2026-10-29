@@ -3,7 +3,9 @@ import assert from "node:assert/strict";
 import Ajv2020 from "ajv/dist/2020.js";
 import schema from "../data/days.schema.json" with { type: "json" };
 import data from "../data/days.json" with { type: "json" };
-import { TIERS, normalize } from "../src/worker.js";
+import aliases from "../data/aliases.json" with { type: "json" };
+import names from "../data/names.json" with { type: "json" };
+import { TIERS, normalize, answerEntries } from "../src/worker.js";
 
 const RARE_TIERS = TIERS.slice(-2).map((t) => t.key);
 
@@ -49,6 +51,49 @@ test("every prompt has a rare answer", () => {
     day.prompts.forEach((prompt, i) => {
       const rare = RARE_TIERS.flatMap((key) => prompt.answers[key] ?? []);
       assert.ok(rare.length >= 1, `${day.date} prompt ${i + 1} has no ${RARE_TIERS.join(" or ")} answer`);
+    });
+  }
+});
+
+test("aliases.json maps each canonical name to a list of distinct aliases", () => {
+  for (const [canonical, list] of Object.entries(aliases)) {
+    assert.ok(normalize(canonical), canonical);
+    assert.ok(Array.isArray(list) && list.length >= 1, canonical);
+    const keys = list.map(normalize);
+    assert.ok(keys.every(Boolean), `${canonical}: an alias normalizes to nothing`);
+    assert.equal(new Set(keys).size, keys.length, `${canonical}: duplicate alias`);
+    assert.ok(!keys.includes(normalize(canonical)), `${canonical}: alias equals its canonical`);
+  }
+});
+
+test("every alias points to one canonical that is a real name", () => {
+  const canonicals = new Set(Object.keys(aliases).map(normalize));
+  const known = new Set(names.map(normalize));
+  for (const day of data.days)
+    for (const prompt of day.prompts)
+      for (const answer of Object.values(prompt.answers).flat()) known.add(normalize([].concat(answer)[0]));
+  const owner = new Map();
+  for (const [canonical, list] of Object.entries(aliases)) {
+    assert.ok(known.has(normalize(canonical)), `${canonical} is in neither names.json nor any bank`);
+    for (const alias of list) {
+      const key = normalize(alias);
+      assert.ok(!canonicals.has(key), `"${alias}" is itself a canonical name`);
+      assert.ok(!owner.has(key), `"${alias}" points to both ${owner.get(key)} and ${canonical}`);
+      owner.set(key, canonical);
+    }
+  }
+});
+
+test("with global aliases merged, no key in a prompt points to two answers", () => {
+  for (const day of data.days) {
+    day.prompts.forEach((prompt, i) => {
+      const seen = new Map();
+      for (const entry of answerEntries(prompt)) {
+        for (const key of new Set(entry.keys)) {
+          assert.ok(!seen.has(key), `${day.date} prompt ${i + 1}: "${key}" is ${seen.get(key)} and ${entry.answer}`);
+          seen.set(key, entry.answer);
+        }
+      }
     });
   }
 });

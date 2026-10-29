@@ -10,20 +10,12 @@
      "answers": {
       "dirt": [
        "Ghast",
-       [
-        "Zombified Piglin",
-        "Zombie Pigman",
-        "Pigman"
-       ]
+       "Zombified Piglin"
       ],
       "coal": [
        "Blaze",
        "Piglin",
-       [
-        "Magma Cube",
-        "Magma Slime",
-        "Lava Slime"
-       ],
+       "Magma Cube",
        "Wither Skeleton",
        "Hoglin"
       ],
@@ -51,72 +43,29 @@
      "answers": {
       "dirt": [
        "Plains",
-       [
-        "Desert",
-        "Desert Hills"
-       ],
-       [
-        "Forest",
-        "Wooded Hills"
-       ],
-       [
-        "Jungle",
-        "Jungle Hills"
-       ],
-       [
-        "Taiga",
-        "Taiga Hills"
-       ],
+       "Desert",
+       "Forest",
+       "Jungle",
+       "Taiga",
        "Ocean",
-       [
-        "Swamp",
-        "Swampland",
-        "Swamp Hills"
-       ]
+       "Swamp"
       ],
       "coal": [
        "Savanna",
-       [
-        "Badlands",
-        "Mesa",
-        "Badlands Plateau"
-       ],
-       [
-        "Snowy Plains",
-        "Snowy Tundra",
-        "Ice Plains",
-        "Snowy Mountains"
-       ],
-       [
-        "Birch Forest",
-        "Birch Forest Hills"
-       ],
-       [
-        "Dark Forest",
-        "Roofed Forest",
-        "Dark Forest Hills"
-       ],
-       [
-        "Mushroom Fields",
-        "Mushroom Island",
-        "Mushroom Field Shore"
-       ],
+       "Badlands",
+       "Snowy Plains",
+       "Birch Forest",
+       "Dark Forest",
+       "Mushroom Fields",
        "River",
        "Beach",
        "Cherry Grove",
        "Flower Forest",
-       [
-        "Ice Spikes",
-        "Ice Plains Spikes"
-       ],
+       "Ice Spikes",
        "Deep Ocean",
        "Lush Caves",
        "Deep Dark",
-       [
-        "Snowy Taiga",
-        "Cold Taiga",
-        "Snowy Taiga Hills"
-       ],
+       "Snowy Taiga",
        "Mangrove Swamp",
        "Meadow",
        "Bamboo Jungle",
@@ -124,79 +73,37 @@
       ],
       "iron": [
        "Sunflower Plains",
-       [
-        "Warm Ocean",
-        "Deep Warm Ocean"
-       ],
+       "Warm Ocean",
        "Frozen Ocean",
        "Cold Ocean",
        "Lukewarm Ocean",
        "Pale Garden",
-       [
-        "Windswept Hills",
-        "Mountains",
-        "Extreme Hills"
-       ],
+       "Windswept Hills",
        "Grove",
        "Snowy Slopes",
        "Jagged Peaks",
        "Frozen Peaks",
        "Stony Peaks",
        "Frozen River",
-       [
-        "Snowy Beach",
-        "Cold Beach"
-       ],
-       [
-        "Old Growth Spruce Taiga",
-        "Giant Spruce Taiga",
-        "Mega Spruce Taiga"
-       ],
-       [
-        "Old Growth Pine Taiga",
-        "Giant Tree Taiga",
-        "Mega Taiga"
-       ],
-       [
-        "Old Growth Birch Forest",
-        "Tall Birch Forest"
-       ],
-       [
-        "Eroded Badlands",
-        "Eroded Mesa"
-       ],
-       [
-        "Wooded Badlands",
-        "Wooded Badlands Plateau"
-       ],
+       "Snowy Beach",
+       "Old Growth Spruce Taiga",
+       "Old Growth Pine Taiga",
+       "Old Growth Birch Forest",
+       "Eroded Badlands",
+       "Wooded Badlands",
        "Savanna Plateau",
-       [
-        "Sparse Jungle",
-        "Jungle Edge"
-       ]
+       "Sparse Jungle"
       ],
       "gold": [
-       [
-        "Windswept Forest",
-        "Wooded Mountains"
-       ],
-       [
-        "Windswept Savanna",
-        "Shattered Savanna"
-       ],
-       [
-        "Stony Shore",
-        "Stone Shore"
-       ],
+       "Windswept Forest",
+       "Windswept Savanna",
+       "Stony Shore",
        "Deep Cold Ocean",
        "Sulfur Caves",
        "Dappled Forest"
       ],
       "diamond": [
-       [
-        "Windswept Gravelly Hills",
-        "Gravelly Mountains"
-       ],
+       "Windswept Gravelly Hills",
        "Deep Frozen Ocean",
        "Deep Lukewarm Ocean"
       ]
@@ -207,10 +114,7 @@
      "text": "Name a block or item with 'Gold' or 'Golden' in its name",
      "answers": {
       "dirt": [
-       [
-        "Block of Gold",
-        "Gold Block"
-       ],
+       "Block of Gold",
        "Gold Ingot",
        "Gold Ore",
        "Golden Apple",
@@ -218,31 +122,21 @@
        "Golden Sword"
       ],
       "coal": [
-       [
-        "Enchanted Golden Apple",
-        "Notch Apple",
-        "God Apple"
-       ],
+       "Enchanted Golden Apple",
        "Gold Nugget",
        "Golden Axe",
        "Golden Boots",
        "Golden Carrot",
        "Golden Chestplate",
        "Golden Helmet",
-       [
-        "Golden Horse Armor",
-        "Gold Horse Armor"
-       ],
+       "Golden Horse Armor",
        "Golden Leggings",
        "Golden Shovel",
        "Nether Gold Ore",
        "Raw Gold"
       ],
       "iron": [
-       [
-        "Block of Raw Gold",
-        "Raw Gold Block"
-       ],
+       "Block of Raw Gold",
        "Deepslate Gold Ore",
        "Golden Hoe"
       ],
@@ -355,14 +249,8 @@
       "dirt": [
        "Apple",
        "Bread",
-       [
-        "Steak",
-        "Cooked Beef"
-       ],
-       [
-        "Cooked Porkchop",
-        "Cooked Pork"
-       ],
+       "Steak",
+       "Cooked Porkchop",
        "Golden Apple",
        "Carrot"
       ],
@@ -379,37 +267,19 @@
         "Melon"
        ],
        "Cake",
-       [
-        "Pumpkin Pie",
-        "Pie"
-       ],
-       [
-        "Raw Beef",
-        "Beef"
-       ],
-       [
-        "Raw Porkchop",
-        "Porkchop"
-       ],
+       "Pumpkin Pie",
+       "Raw Beef",
+       "Raw Porkchop",
        "Raw Chicken",
        "Golden Carrot",
        "Rotten Flesh",
-       [
-        "Mushroom Stew",
-        "Mushroom Soup"
-       ]
+       "Mushroom Stew"
       ],
       "iron": [
        "Cooked Mutton",
-       [
-        "Raw Mutton",
-        "Mutton"
-       ],
+       "Raw Mutton",
        "Cooked Salmon",
-       [
-        "Cooked Cod",
-        "Cooked Fish"
-       ],
+       "Cooked Cod",
        [
         "Raw Cod",
         "Cod",
@@ -429,11 +299,7 @@
         "Rabbit"
        ],
        "Raw Rabbit",
-       [
-        "Enchanted Golden Apple",
-        "Notch Apple",
-        "God Apple"
-       ],
+       "Enchanted Golden Apple",
        "Spider Eye",
        "Honey Bottle",
        "Dried Kelp"
@@ -441,22 +307,13 @@
       "gold": [
        "Glow Berries",
        "Chorus Fruit",
-       [
-        "Pufferfish",
-        "Blowfish"
-       ],
-       [
-        "Tropical Fish",
-        "Clownfish"
-       ],
+       "Pufferfish",
+       "Tropical Fish",
        "Poisonous Potato"
       ],
       "diamond": [
        "Suspicious Stew",
-       [
-        "Milk Bucket",
-        "Milk"
-       ]
+       "Milk Bucket"
       ]
      }
     },
@@ -489,9 +346,7 @@
        ],
        [
         "Lapis Lazuli Ore",
-        "Lapis Ore",
-        "Lapis Lazuli",
-        "Lapis"
+        "Lapis Lazuli"
        ],
        [
         "Emerald Ore",
@@ -505,7 +360,6 @@
       "iron": [
        [
         "Nether Quartz Ore",
-        "Quartz Ore",
         "Nether Quartz",
         "Quartz"
        ],
@@ -513,47 +367,19 @@
         "Ancient Debris",
         "Netherite"
        ],
-       [
-        "Nether Gold Ore",
-        "Nether Gold"
-       ]
+       "Nether Gold Ore"
       ],
       "gold": [
-       [
-        "Deepslate Diamond Ore",
-        "Deepslate Diamond"
-       ],
-       [
-        "Deepslate Iron Ore",
-        "Deepslate Iron"
-       ]
+       "Deepslate Diamond Ore",
+       "Deepslate Iron Ore"
       ],
       "diamond": [
-       [
-        "Deepslate Coal Ore",
-        "Deepslate Coal"
-       ],
-       [
-        "Deepslate Gold Ore",
-        "Deepslate Gold"
-       ],
-       [
-        "Deepslate Redstone Ore",
-        "Deepslate Redstone"
-       ],
-       [
-        "Deepslate Lapis Lazuli Ore",
-        "Deepslate Lapis Ore",
-        "Deepslate Lapis"
-       ],
-       [
-        "Deepslate Emerald Ore",
-        "Deepslate Emerald"
-       ],
-       [
-        "Deepslate Copper Ore",
-        "Deepslate Copper"
-       ]
+       "Deepslate Coal Ore",
+       "Deepslate Gold Ore",
+       "Deepslate Redstone Ore",
+       "Deepslate Lapis Lazuli Ore",
+       "Deepslate Emerald Ore",
+       "Deepslate Copper Ore"
       ],
       "netherite": [
        "Gilded Blackstone"
@@ -597,18 +423,9 @@
       ],
       "iron": [
        "Bane of Arthropods",
-       [
-        "Sweeping Edge",
-        "Sweeping"
-       ],
-       [
-        "Curse of Vanishing",
-        "Vanishing"
-       ],
-       [
-        "Curse of Binding",
-        "Binding"
-       ],
+       "Sweeping Edge",
+       "Curse of Vanishing",
+       "Curse of Binding",
        "Lure",
        "Luck of the Sea",
        "Impaling",
@@ -656,22 +473,13 @@
        "Mule",
        "Parrot",
        "Turtle",
-       [
-        "Mooshroom",
-        "Mushroom Cow"
-       ],
+       "Mooshroom",
        "Ocelot",
        "Axolotl",
        "Cod",
        "Salmon",
-       [
-        "Tropical Fish",
-        "Clownfish"
-       ],
-       [
-        "Snow Golem",
-        "Snowman"
-       ],
+       "Tropical Fish",
+       "Snow Golem",
        "Glow Squid",
        "Allay",
        "Wandering Trader"
@@ -684,10 +492,7 @@
        "Armadillo",
        "Tadpole",
        "Skeleton Horse",
-       [
-        "Happy Ghast",
-        "Ghastling"
-       ]
+       "Happy Ghast"
       ],
       "diamond": [
        "Copper Golem",
@@ -709,10 +514,7 @@
         "Swiftness"
        ],
        "Strength",
-       [
-        "Regeneration",
-        "Regen"
-       ],
+       "Regeneration",
        "Poison",
        "Invisibility",
        "Night Vision",
@@ -737,10 +539,7 @@
        "Haste",
        "Mining Fatigue",
        "Wither",
-       [
-        "Nausea",
-        "Confusion"
-       ],
+       "Nausea",
        "Blindness",
        "Hunger",
        "Absorption",
@@ -760,10 +559,7 @@
        "Luck"
       ],
       "gold": [
-       [
-        "Bad Luck",
-        "Unluck"
-       ],
+       "Bad Luck",
        "Raid Omen",
        "Trial Omen",
        "Wind Charged",
@@ -781,10 +577,7 @@
      "text": "Name a block or item with 'Nether' in its name (Netherite counts)",
      "answers": {
       "dirt": [
-       [
-        "Block of Netherite",
-        "Netherite Block"
-       ],
+       "Block of Netherite",
        "Nether Bricks",
        "Nether Portal",
        "Nether Star",
@@ -827,10 +620,7 @@
       "diamond": [
        "Netherite Nautilus Armor",
        "Red Nether Brick Wall",
-       [
-        "Netherite Upgrade",
-        "Netherite Upgrade Smithing Template"
-       ]
+       "Netherite Upgrade"
       ]
      }
     },
@@ -839,32 +629,20 @@
      "text": "Name a flower",
      "answers": {
       "dirt": [
-       [
-        "Poppy",
-        "Rose"
-       ],
+       "Poppy",
        "Dandelion"
       ],
       "coal": [
        "Sunflower",
-       [
-        "Blue Orchid",
-        "Orchid"
-       ],
+       "Blue Orchid",
        [
         "Red Tulip",
         "Tulip"
        ],
-       [
-        "Oxeye Daisy",
-        "Daisy"
-       ],
+       "Oxeye Daisy",
        "Cornflower",
        "Allium",
-       [
-        "Azure Bluet",
-        "Bluet"
-       ],
+       "Azure Bluet",
        "Lilac",
        "Rose Bush",
        "Peony",
@@ -884,10 +662,7 @@
        "Pitcher Plant"
       ],
       "gold": [
-       [
-        "Open Eyeblossom",
-        "Eyeblossom"
-       ],
+       "Open Eyeblossom",
        "Closed Eyeblossom",
        "Wildflowers",
        "Cactus Flower",
@@ -910,124 +685,36 @@
      "text": "Name a music disc",
      "answers": {
       "dirt": [
-       [
-        "13",
-        "Music Disc 13",
-        "13 Disc"
-       ],
-       [
-        "Cat",
-        "Music Disc Cat",
-        "Cat Disc"
-       ],
-       [
-        "Pigstep",
-        "Music Disc Pigstep",
-        "Pigstep Disc"
-       ]
+       "13",
+       "Cat",
+       "Pigstep"
       ],
       "coal": [
-       [
-        "Otherside",
-        "Music Disc Otherside",
-        "Otherside Disc"
-       ],
-       [
-        "Blocks",
-        "Music Disc Blocks",
-        "Blocks Disc"
-       ],
-       [
-        "Chirp",
-        "Music Disc Chirp",
-        "Chirp Disc"
-       ],
-       [
-        "11",
-        "Music Disc 11",
-        "11 Disc"
-       ],
-       [
-        "Far",
-        "Music Disc Far",
-        "Far Disc"
-       ],
-       [
-        "Mall",
-        "Music Disc Mall",
-        "Mall Disc"
-       ],
-       [
-        "Mellohi",
-        "Music Disc Mellohi",
-        "Mellohi Disc"
-       ],
-       [
-        "Stal",
-        "Music Disc Stal",
-        "Stal Disc"
-       ],
-       [
-        "Strad",
-        "Music Disc Strad",
-        "Strad Disc"
-       ],
-       [
-        "Ward",
-        "Music Disc Ward",
-        "Ward Disc"
-       ],
-       [
-        "Wait",
-        "Music Disc Wait",
-        "Wait Disc"
-       ]
+       "Otherside",
+       "Blocks",
+       "Chirp",
+       "11",
+       "Far",
+       "Mall",
+       "Mellohi",
+       "Stal",
+       "Strad",
+       "Ward",
+       "Wait"
       ],
       "iron": [
-       [
-        "Relic",
-        "Music Disc Relic",
-        "Relic Disc"
-       ],
-       [
-        "5",
-        "Music Disc 5",
-        "5 Disc"
-       ]
+       "Relic",
+       "5"
       ],
       "gold": [
-       [
-        "Creator",
-        "Music Disc Creator",
-        "Creator Disc"
-       ],
-       [
-        "Precipice",
-        "Music Disc Precipice",
-        "Precipice Disc"
-       ],
-       [
-        "Lava Chicken",
-        "Music Disc Lava Chicken",
-        "Lava Chicken Disc"
-       ]
+       "Creator",
+       "Precipice",
+       "Lava Chicken"
       ],
       "diamond": [
-       [
-        "Creator (Music Box)",
-        "Music Disc Creator (Music Box)",
-        "Creator (Music Box) Disc"
-       ],
-       [
-        "Tears",
-        "Music Disc Tears",
-        "Tears Disc"
-       ],
-       [
-        "Bounce",
-        "Music Disc Bounce",
-        "Bounce Disc"
-       ]
+       "Creator (Music Box)",
+       "Tears",
+       "Bounce"
       ]
      }
     },
@@ -1090,9 +777,7 @@
        ],
        [
         "Gray",
-        "Gray Dye",
-        "Grey",
-        "Grey Dye"
+        "Gray Dye"
        ],
        [
         "Cyan",
@@ -1108,11 +793,7 @@
       "diamond": [
        [
         "Light Gray",
-        "Light Gray Dye",
-        "Light Grey",
-        "Light Grey Dye",
-        "Silver",
-        "Silver Dye"
+        "Light Gray Dye"
        ]
       ]
      }
@@ -1122,10 +803,7 @@
      "text": "Name a block or item with 'Diamond' in its name",
      "answers": {
       "dirt": [
-       [
-        "Block of Diamond",
-        "Diamond Block"
-       ],
+       "Block of Diamond",
        "Diamond",
        "Diamond Ore",
        "Diamond Pickaxe",
@@ -1160,10 +838,7 @@
      "text": "Name a mob you can tame",
      "answers": {
       "dirt": [
-       [
-        "Wolf",
-        "Dog"
-       ],
+       "Wolf",
        "Cat"
       ],
       "coal": [
@@ -1197,58 +872,24 @@
       "dirt": [
        "Village",
        "Stronghold",
-       [
-        "Nether Fortress",
-        "Fortress",
-        "Nether Bridge"
-       ],
-       [
-        "Desert Pyramid",
-        "Desert Temple"
-       ]
+       "Nether Fortress",
+       "Desert Pyramid"
       ],
       "coal": [
-       [
-        "Woodland Mansion",
-        "Mansion"
-       ],
-       [
-        "Ocean Monument",
-        "Monument",
-        "Ocean Temple"
-       ],
-       [
-        "Jungle Pyramid",
-        "Jungle Temple"
-       ],
-       [
-        "Mineshaft",
-        "Abandoned Mineshaft",
-        "Badlands Mineshaft",
-        "Mesa Mineshaft"
-       ],
+       "Woodland Mansion",
+       "Ocean Monument",
+       "Jungle Pyramid",
+       "Mineshaft",
        "End City",
-       [
-        "Bastion Remnant",
-        "Bastion"
-       ],
+       "Bastion Remnant",
        "Shipwreck",
        "Ancient City",
-       [
-        "Pillager Outpost",
-        "Outpost"
-       ],
-       [
-        "Swamp Hut",
-        "Witch Hut"
-       ],
+       "Pillager Outpost",
+       "Swamp Hut",
        "Igloo",
        "Ruined Portal",
        "Trial Chambers",
-       [
-        "Dungeon",
-        "Monster Room"
-       ]
+       "Dungeon"
       ],
       "iron": [
        "Ocean Ruins",
@@ -1260,31 +901,17 @@
       ],
       "gold": [
        "Fossil",
-       [
-        "Amethyst Geode",
-        "Geode"
-       ],
+       "Amethyst Geode",
        "Abandoned Camp",
        "Bonus Chest"
       ],
       "diamond": [
-       [
-        "End Spike",
-        "Obsidian Pillar",
-        "End Pillar",
-        "Obsidian Tower"
-       ],
-       [
-        "Exit Portal",
-        "End Fountain"
-       ],
+       "End Spike",
+       "Exit Portal",
        "End Gateway"
       ],
       "netherite": [
-       [
-        "End Platform",
-        "Obsidian Platform"
-       ]
+       "End Platform"
       ]
      }
     },
@@ -1382,10 +1009,7 @@
        "Iron Boots",
        "Iron Leggings",
        "Iron Axe",
-       [
-        "Block of Iron",
-        "Iron Block"
-       ],
+       "Block of Iron",
        "Shears",
        "Anvil"
       ],
@@ -1436,12 +1060,7 @@
       "dirt": [
        [
         "Potion of Healing",
-        "Potion of Instant Health",
-        "Potion of Health",
         "Healing",
-        "Healing Potion",
-        "Instant Health Potion",
-        "Health Potion",
         "Instant Health",
         "Health",
         "Splash Potion of Healing",
@@ -1454,16 +1073,12 @@
        [
         "Potion of Strength",
         "Strength",
-        "Strength Potion",
         "Splash Potion of Strength",
         "Lingering Potion of Strength"
        ],
        [
         "Potion of Swiftness",
-        "Potion of Speed",
         "Swiftness",
-        "Swiftness Potion",
-        "Speed Potion",
         "Speed",
         "Splash Potion of Swiftness",
         "Splash Potion of Speed",
@@ -1473,31 +1088,24 @@
        [
         "Potion of Invisibility",
         "Invisibility",
-        "Invisibility Potion",
         "Splash Potion of Invisibility",
         "Lingering Potion of Invisibility"
        ],
        [
         "Potion of Night Vision",
         "Night Vision",
-        "Night Vision Potion",
         "Splash Potion of Night Vision",
         "Lingering Potion of Night Vision"
        ],
        [
         "Potion of Fire Resistance",
         "Fire Resistance",
-        "Fire Resistance Potion",
         "Splash Potion of Fire Resistance",
         "Lingering Potion of Fire Resistance"
        ],
        [
         "Potion of Regeneration",
-        "Potion of Regen",
         "Regeneration",
-        "Regeneration Potion",
-        "Regen Potion",
-        "Regen",
         "Splash Potion of Regeneration",
         "Splash Potion of Regen",
         "Lingering Potion of Regeneration",
@@ -1508,18 +1116,12 @@
        [
         "Potion of Poison",
         "Poison",
-        "Poison Potion",
         "Splash Potion of Poison",
         "Lingering Potion of Poison"
        ],
        [
         "Potion of Harming",
-        "Potion of Instant Damage",
-        "Potion of Damage",
         "Harming",
-        "Harming Potion",
-        "Instant Damage Potion",
-        "Damage Potion",
         "Instant Damage",
         "Damage",
         "Splash Potion of Harming",
@@ -1532,16 +1134,12 @@
        [
         "Potion of Water Breathing",
         "Water Breathing",
-        "Water Breathing Potion",
         "Splash Potion of Water Breathing",
         "Lingering Potion of Water Breathing"
        ],
        [
         "Potion of Leaping",
-        "Potion of Jump Boost",
         "Leaping",
-        "Leaping Potion",
-        "Jump Boost Potion",
         "Jump Boost",
         "Splash Potion of Leaping",
         "Splash Potion of Jump Boost",
@@ -1551,14 +1149,12 @@
        [
         "Potion of Slowness",
         "Slowness",
-        "Slowness Potion",
         "Splash Potion of Slowness",
         "Lingering Potion of Slowness"
        ],
        [
         "Potion of Weakness",
         "Weakness",
-        "Weakness Potion",
         "Splash Potion of Weakness",
         "Lingering Potion of Weakness"
        ]
@@ -1567,19 +1163,12 @@
        [
         "Potion of Slow Falling",
         "Slow Falling",
-        "Slow Falling Potion",
         "Splash Potion of Slow Falling",
         "Lingering Potion of Slow Falling"
        ],
-       [
-        "Awkward Potion",
-        "Awkward"
-       ],
+       "Awkward Potion",
        [
         "Potion of the Turtle Master",
-        "Potion of Turtle Master",
-        "the Turtle Master",
-        "the Turtle Master Potion",
         "Splash Potion of the Turtle Master",
         "Splash Potion of Turtle Master",
         "Lingering Potion of the Turtle Master",
@@ -1591,42 +1180,30 @@
       "gold": [
        [
         "Potion of Wind Charging",
-        "Wind Charging",
-        "Wind Charging Potion",
         "Splash Potion of Wind Charging",
         "Lingering Potion of Wind Charging"
        ],
        [
         "Potion of Weaving",
         "Weaving",
-        "Weaving Potion",
         "Splash Potion of Weaving",
         "Lingering Potion of Weaving"
        ],
        [
         "Potion of Oozing",
         "Oozing",
-        "Oozing Potion",
         "Splash Potion of Oozing",
         "Lingering Potion of Oozing"
        ],
        [
         "Potion of Infestation",
-        "Infestation",
-        "Infestation Potion",
         "Splash Potion of Infestation",
         "Lingering Potion of Infestation"
        ]
       ],
       "diamond": [
-       [
-        "Mundane Potion",
-        "Mundane"
-       ],
-       [
-        "Thick Potion",
-        "Thick"
-       ]
+       "Mundane Potion",
+       "Thick Potion"
       ]
      }
     },
@@ -1671,119 +1248,83 @@
       "dirt": [
        [
         "Coast Armor Trim",
-        "Coast",
-        "Coast Trim",
-        "Coast Armor Trim Smithing Template"
+        "Coast"
        ],
        [
         "Sentry Armor Trim",
-        "Sentry",
-        "Sentry Trim",
-        "Sentry Armor Trim Smithing Template"
+        "Sentry"
        ],
        [
         "Dune Armor Trim",
-        "Dune",
-        "Dune Trim",
-        "Dune Armor Trim Smithing Template"
+        "Dune"
        ],
        [
         "Wild Armor Trim",
-        "Wild",
-        "Wild Trim",
-        "Wild Armor Trim Smithing Template"
+        "Wild"
        ]
       ],
       "coal": [
        [
         "Silence Armor Trim",
-        "Silence",
-        "Silence Trim",
-        "Silence Armor Trim Smithing Template"
+        "Silence"
        ],
        [
         "Ward Armor Trim",
-        "Ward",
-        "Ward Trim",
-        "Ward Armor Trim Smithing Template"
+        "Ward"
        ],
        [
         "Snout Armor Trim",
-        "Snout",
-        "Snout Trim",
-        "Snout Armor Trim Smithing Template"
+        "Snout"
        ],
        [
         "Rib Armor Trim",
-        "Rib",
-        "Rib Trim",
-        "Rib Armor Trim Smithing Template"
+        "Rib"
        ],
        [
         "Eye Armor Trim",
-        "Eye",
-        "Eye Trim",
-        "Eye Armor Trim Smithing Template"
+        "Eye"
        ],
        [
         "Vex Armor Trim",
-        "Vex",
-        "Vex Trim",
-        "Vex Armor Trim Smithing Template"
+        "Vex"
        ],
        [
         "Tide Armor Trim",
-        "Tide",
-        "Tide Trim",
-        "Tide Armor Trim Smithing Template"
+        "Tide"
        ],
        [
         "Spire Armor Trim",
-        "Spire",
-        "Spire Trim",
-        "Spire Armor Trim Smithing Template"
+        "Spire"
        ]
       ],
       "iron": [
        [
         "Wayfinder Armor Trim",
-        "Wayfinder",
-        "Wayfinder Trim",
-        "Wayfinder Armor Trim Smithing Template"
+        "Wayfinder"
        ],
        [
         "Shaper Armor Trim",
-        "Shaper",
-        "Shaper Trim",
-        "Shaper Armor Trim Smithing Template"
+        "Shaper"
        ]
       ],
       "gold": [
        [
         "Flow Armor Trim",
-        "Flow",
-        "Flow Trim",
-        "Flow Armor Trim Smithing Template"
+        "Flow"
        ],
        [
         "Bolt Armor Trim",
-        "Bolt",
-        "Bolt Trim",
-        "Bolt Armor Trim Smithing Template"
+        "Bolt"
        ]
       ],
       "diamond": [
        [
         "Raiser Armor Trim",
-        "Raiser",
-        "Raiser Trim",
-        "Raiser Armor Trim Smithing Template"
+        "Raiser"
        ],
        [
         "Host Armor Trim",
-        "Host",
-        "Host Trim",
-        "Host Armor Trim Smithing Template"
+        "Host"
        ]
       ]
      }
@@ -1839,11 +1380,7 @@
       "gold": [
        "Endermite",
        "Vex",
-       [
-        "Zombified Piglin",
-        "Zombie Pigman",
-        "Pigman"
-       ],
+       "Zombified Piglin",
        "Breeze",
        "Bogged",
        "Creaking",
@@ -1857,10 +1394,7 @@
        "Illusioner"
       ],
       "netherite": [
-       [
-        "Giant",
-        "Giant Zombie"
-       ],
+       "Giant",
        "The Killer Bunny"
       ]
      }
@@ -1881,33 +1415,21 @@
       "coal": [
        "Weaponsmith",
        "Toolsmith",
-       [
-        "Cleric",
-        "Priest"
-       ],
-       [
-        "Fisherman",
-        "Fisher"
-       ],
+       "Cleric",
+       "Fisherman",
        "Nitwit",
        "Fletcher",
        "Cartographer"
       ],
       "iron": [
-       [
-        "Mason",
-        "Stone Mason"
-       ],
+       "Mason",
        "Shepherd"
       ],
       "gold": [
        "Leatherworker"
       ],
       "diamond": [
-       [
-        "Unemployed",
-        "Jobless"
-       ]
+       "Unemployed"
       ]
      }
     },
@@ -1953,10 +1475,7 @@
        "Fire",
        "Jack o'Lantern",
        "Sea Lantern",
-       [
-        "Redstone Lamp",
-        "Lamp"
-       ]
+       "Redstone Lamp"
       ],
       "coal": [
        "Redstone Torch",
@@ -2049,7 +1568,6 @@
        "Lava Cauldron",
        [
         "Cake with Candle",
-        "Candle Cake",
         "Cake with White Candle",
         "Cake with Orange Candle",
         "Cake with Magenta Candle",
@@ -2075,10 +1593,7 @@
       ],
       "diamond": [
        "Brown Mushroom",
-       [
-        "Light",
-        "Light Block"
-       ]
+       "Light"
       ]
      }
     },
@@ -2097,14 +1612,8 @@
         "Raw Salmon",
         "Salmon"
        ],
-       [
-        "Pufferfish",
-        "Blowfish"
-       ],
-       [
-        "Tropical Fish",
-        "Clownfish"
-       ]
+       "Pufferfish",
+       "Tropical Fish"
       ],
       "coal": [
        [
@@ -2147,149 +1656,103 @@
       "dirt": [
        [
         "Archer Pottery Sherd",
-        "Archer",
-        "Archer Sherd",
-        "Archer Pottery Shard"
+        "Archer"
        ],
        [
         "Arms Up Pottery Sherd",
-        "Arms Up",
-        "Arms Up Sherd",
-        "Arms Up Pottery Shard"
+        "Arms Up"
        ],
        [
         "Prize Pottery Sherd",
-        "Prize",
-        "Prize Sherd",
-        "Prize Pottery Shard"
+        "Prize"
        ],
        [
         "Skull Pottery Sherd",
-        "Skull",
-        "Skull Sherd",
-        "Skull Pottery Shard"
+        "Skull"
        ]
       ],
       "coal": [
        [
         "Angler Pottery Sherd",
-        "Angler",
-        "Angler Sherd",
-        "Angler Pottery Shard"
+        "Angler"
        ],
        [
         "Heart Pottery Sherd",
-        "Heart",
-        "Heart Sherd",
-        "Heart Pottery Shard"
+        "Heart"
        ],
        [
         "Heartbreak Pottery Sherd",
-        "Heartbreak",
-        "Heartbreak Sherd",
-        "Heartbreak Pottery Shard"
+        "Heartbreak"
        ],
        [
         "Miner Pottery Sherd",
-        "Miner",
-        "Miner Sherd",
-        "Miner Pottery Shard"
+        "Miner"
        ],
        [
         "Snort Pottery Sherd",
-        "Snort",
-        "Snort Sherd",
-        "Snort Pottery Shard"
+        "Snort"
        ],
        [
         "Shelter Pottery Sherd",
-        "Shelter",
-        "Shelter Sherd",
-        "Shelter Pottery Shard"
+        "Shelter"
        ],
        [
         "Explorer Pottery Sherd",
-        "Explorer",
-        "Explorer Sherd",
-        "Explorer Pottery Shard"
+        "Explorer"
        ]
       ],
       "iron": [
        [
         "Danger Pottery Sherd",
-        "Danger",
-        "Danger Sherd",
-        "Danger Pottery Shard"
+        "Danger"
        ],
        [
         "Friend Pottery Sherd",
-        "Friend",
-        "Friend Sherd",
-        "Friend Pottery Shard"
+        "Friend"
        ],
        [
         "Burn Pottery Sherd",
-        "Burn",
-        "Burn Sherd",
-        "Burn Pottery Shard"
+        "Burn"
        ],
        [
         "Blade Pottery Sherd",
-        "Blade",
-        "Blade Sherd",
-        "Blade Pottery Shard"
+        "Blade"
        ],
        [
         "Brewer Pottery Sherd",
-        "Brewer",
-        "Brewer Sherd",
-        "Brewer Pottery Shard"
+        "Brewer"
        ],
        [
         "Howl Pottery Sherd",
-        "Howl",
-        "Howl Sherd",
-        "Howl Pottery Shard"
+        "Howl"
        ],
        [
         "Mourner Pottery Sherd",
-        "Mourner",
-        "Mourner Sherd",
-        "Mourner Pottery Shard"
+        "Mourner"
        ],
        [
         "Plenty Pottery Sherd",
-        "Plenty",
-        "Plenty Sherd",
-        "Plenty Pottery Shard"
+        "Plenty"
        ]
       ],
       "gold": [
        [
         "Flow Pottery Sherd",
-        "Flow",
-        "Flow Sherd",
-        "Flow Pottery Shard"
+        "Flow"
        ],
        [
         "Guster Pottery Sherd",
-        "Guster",
-        "Guster Sherd",
-        "Guster Pottery Shard"
+        "Guster"
        ],
        [
         "Scrape Pottery Sherd",
-        "Scrape",
-        "Scrape Sherd",
-        "Scrape Pottery Shard"
+        "Scrape"
        ]
       ],
       "diamond": [
        [
         "Sheaf Pottery Sherd",
-        "Sheaf",
-        "Sheaf Sherd",
-        "Sheaf Pottery Shard"
+        "Sheaf"
        ]
       ]
      }
@@ -2343,14 +1806,8 @@
        "Dolphin"
       ],
       "coal": [
-       [
-        "Tropical Fish",
-        "Clownfish"
-       ],
-       [
-        "Pufferfish",
-        "Blowfish"
-       ],
+       "Tropical Fish",
+       "Pufferfish",
        "Glow Squid",
        "Axolotl",
        "Turtle",
@@ -2410,10 +1867,7 @@
        "Ice",
        "Snow",
        "Snowball",
-       [
-        "Snow Golem",
-        "Snowman"
-       ]
+       "Snow Golem"
       ],
       "coal": [
        "Packed Ice",
@@ -2421,11 +1875,7 @@
        "Snow Block",
        "Powder Snow",
        "Ice Spikes",
-       [
-        "Snowy Plains",
-        "Snowy Tundra",
-        "Snow Plains"
-       ]
+       "Snowy Plains"
       ],
       "iron": [
        "Snowy Taiga",
@@ -2457,7 +1907,6 @@
        "Crying Obsidian",
        [
         "Potion of Fire Resistance",
-        "Fire Resistance Potion",
         "Fire Resistance"
        ]
       ],
@@ -2502,15 +1951,9 @@
      "answers": {
       "dirt": [
        "Redstone Torch",
-       [
-        "Redstone Repeater",
-        "Repeater"
-       ],
+       "Redstone Repeater",
        "Piston",
-       [
-        "Block of Redstone",
-        "Redstone Block"
-       ],
+       "Block of Redstone",
        "Redstone Lamp"
       ],
       "coal": [
@@ -2524,17 +1967,11 @@
       ],
       "iron": [
        "Detector Rail",
-       [
-        "Target",
-        "Target Block"
-       ]
+       "Target"
       ],
       "gold": [
        "Crafter",
-       [
-        "Redstone Comparator",
-        "Comparator"
-       ]
+       "Redstone Comparator"
       ],
       "diamond": [
        [
@@ -2574,23 +2011,14 @@
        "Ghast Tear",
        "Magma Cream",
        "Golden Carrot",
-       [
-        "Glistering Melon Slice",
-        "Glistering Melon"
-       ]
+       "Glistering Melon Slice"
       ],
       "iron": [
        "Rabbit's Foot",
-       [
-        "Pufferfish",
-        "Blowfish"
-       ],
+       "Pufferfish",
        "Phantom Membrane",
        "Dragon's Breath",
-       [
-        "Turtle Shell",
-        "Turtle Helmet"
-       ],
+       "Turtle Shell",
        "Water Bottle"
       ],
       "gold": [
@@ -2608,70 +2036,33 @@
      "text": "Name a biome with 'Forest', 'Taiga', 'Jungle', 'Grove' or 'Garden' in its name",
      "answers": {
       "dirt": [
-       [
-        "Forest",
-        "Wooded Hills"
-       ],
-       [
-        "Taiga",
-        "Taiga Hills"
-       ],
-       [
-        "Jungle",
-        "Jungle Hills"
-       ],
-       [
-        "Birch Forest",
-        "Birch Forest Hills"
-       ],
-       [
-        "Dark Forest",
-        "Roofed Forest",
-        "Dark Forest Hills"
-       ]
+       "Forest",
+       "Taiga",
+       "Jungle",
+       "Birch Forest",
+       "Dark Forest"
       ],
       "coal": [
        "Flower Forest",
-       [
-        "Snowy Taiga",
-        "Cold Taiga",
-        "Snowy Taiga Hills"
-       ],
+       "Snowy Taiga",
        "Bamboo Jungle",
        "Cherry Grove",
        "Crimson Forest",
        "Warped Forest"
       ],
       "iron": [
-       [
-        "Old Growth Birch Forest",
-        "Tall Birch Forest"
-       ],
-       [
-        "Old Growth Pine Taiga",
-        "Giant Tree Taiga",
-        "Mega Taiga"
-       ],
-       [
-        "Old Growth Spruce Taiga",
-        "Giant Spruce Taiga",
-        "Mega Spruce Taiga"
-       ],
+       "Old Growth Birch Forest",
+       "Old Growth Pine Taiga",
+       "Old Growth Spruce Taiga",
        "Pale Garden"
       ],
       "gold": [
-       [
-        "Sparse Jungle",
-        "Jungle Edge"
-       ],
+       "Sparse Jungle",
        "Grove",
        "Dappled Forest"
       ],
       "diamond": [
-       [
-        "Windswept Forest",
-        "Wooded Mountains"
-       ]
+       "Windswept Forest"
       ]
      }
     }
@@ -2691,10 +2082,7 @@
        "Chicken"
       ],
       "coal": [
-       [
-        "Wolf",
-        "Dog"
-       ],
+       "Wolf",
        "Cat",
        "Horse",
        "Rabbit"
@@ -2705,10 +2093,7 @@
        "Bee",
        "Fox",
        "Goat",
-       [
-        "Mooshroom",
-        "Mushroom Cow"
-       ],
+       "Mooshroom",
        "Turtle",
        "Panda",
        "Villager"
@@ -2737,10 +2122,7 @@
      "answers": {
       "dirt": [
        "give",
-       [
-        "tp",
-        "teleport"
-       ],
+       "tp",
        "gamemode",
        "kill",
        "time",
@@ -2755,20 +2137,13 @@
        "clone",
        "gamerule",
        "locate",
-       [
-        "xp",
-        "experience"
-       ],
+       "xp",
        "clear",
        "difficulty",
        "spawnpoint",
        "setworldspawn",
        "say",
-       [
-        "msg",
-        "tell",
-        "w"
-       ],
+       "msg",
        "execute",
        "kick",
        "ban",
@@ -2808,10 +2183,7 @@
        "forceload",
        "reload",
        "me",
-       [
-        "teammsg",
-        "tm"
-       ],
+       "teammsg",
        "stop",
        "save-all",
        "save-on",
@@ -2882,8 +2254,7 @@
         "Waxed Exposed Copper",
         "Waxed Oxidized Copper",
         "Waxed Weathered Copper",
-        "Weathered Copper",
-        "Copper Block"
+        "Weathered Copper"
        ],
        "Copper Ingot",
        "Copper Ore",
@@ -2973,10 +2344,7 @@
        "Deepslate Copper Ore"
       ],
       "iron": [
-       [
-        "Block of Raw Copper",
-        "Raw Copper Block"
-       ],
+       "Block of Raw Copper",
        [
         "Chiseled Copper",
         "Exposed Chiseled Copper",
@@ -3057,10 +2425,7 @@
        "Soul Sand",
        "Glowstone",
        "Lava",
-       [
-        "Nether Quartz Ore",
-        "Quartz Ore"
-       ]
+       "Nether Quartz Ore"
       ],
       "coal": [
        "Magma Block",
@@ -3106,10 +2471,7 @@
        "Oak Sapling",
        "Spruce Sapling",
        "Birch Sapling",
-       [
-        "Bucket of Tropical Fish",
-        "Tropical Fish Bucket"
-       ],
+       "Bucket of Tropical Fish",
        "Sand",
        "Red Sand",
        "Name Tag",
@@ -3126,10 +2488,7 @@
        "Cherry Sapling",
        "Mangrove Propagule",
        "Pale Oak Sapling",
-       [
-        "Bucket of Pufferfish",
-        "Pufferfish Bucket"
-       ],
+       "Bucket of Pufferfish",
        "Glowstone",
        "Gunpowder",
        "Packed Ice",
@@ -3195,10 +2554,7 @@
        "Horn Coral Block",
        "Moss Block",
        "Rooted Dirt",
-       [
-        "Potion of Invisibility",
-        "Invisibility Potion"
-       ],
+       "Potion of Invisibility",
        [
         "Iron Pickaxe",
         "Enchanted Iron Pickaxe"
@@ -3228,10 +2584,7 @@
      "text": "Name something crafted using copper ingots",
      "answers": {
       "dirt": [
-       [
-        "Block of Copper",
-        "Copper Block"
-       ],
+       "Block of Copper",
        "Lightning Rod",
        "Spyglass",
        "Brush"
@@ -3275,10 +2628,7 @@
        "Chiseled Deepslate",
        "Chiseled Nether Bricks",
        "Chiseled Polished Blackstone",
-       [
-        "Chiseled Quartz Block",
-        "Chiseled Quartz"
-       ],
+       "Chiseled Quartz Block",
        "Chiseled Red Sandstone"
       ],
       "iron": [
@@ -3334,16 +2684,10 @@
        "Vex"
       ],
       "gold": [
-       [
-        "Snow Golem",
-        "Snowman"
-       ],
+       "Snow Golem",
        "Magma Cube",
        "Shulker",
-       [
-        "Happy Ghast",
-        "Ghastling"
-       ],
+       "Happy Ghast",
        "Breeze"
       ],
       "diamond": [
@@ -3374,19 +2718,13 @@
       ],
       "iron": [
        "Soul Speed",
-       [
-        "Curse of Binding",
-        "Binding"
-       ]
+       "Curse of Binding"
       ],
       "gold": [
        "Swift Sneak"
       ],
       "diamond": [
-       [
-        "Curse of Vanishing",
-        "Vanishing"
-       ]
+       "Curse of Vanishing"
       ]
      }
     },
@@ -3437,10 +2775,7 @@
        "Gravel",
        "Cactus",
        "Clay",
-       [
-        "Poppy",
-        "Rose"
-       ],
+       "Poppy",
        "Dandelion",
        "Red Mushroom",
        "Brown Mushroom",
@@ -3457,10 +2792,7 @@
        "Warped Fungus",
        "Crimson Roots",
        "Warped Roots",
-       [
-        "Moss Block",
-        "Moss"
-       ],
+       "Moss Block",
        "Rooted Dirt",
        "Mud",
        "Blue Orchid",
@@ -3480,14 +2812,8 @@
       "gold": [
        "Wither Rose",
        "Torchflower",
-       [
-        "Pale Moss Block",
-        "Pale Moss"
-       ],
-       [
-        "Open Eyeblossom",
-        "Eyeblossom"
-       ],
+       "Pale Moss Block",
+       "Open Eyeblossom",
        "Closed Eyeblossom",
        "Cactus Flower"
       ],
@@ -3511,18 +2837,12 @@
       "coal": [
        "End Portal",
        "End Gateway",
-       [
-        "Purpur Block",
-        "Purpur"
-       ],
+       "Purpur Block",
        "Dragon Egg",
        "End Rod",
        "Purpur Pillar",
        "End Stone Bricks",
-       [
-        "End Crystal",
-        "Ender Crystal"
-       ]
+       "End Crystal"
       ],
       "iron": [
        "Iron Bars",
@@ -3565,48 +2885,24 @@
        "Netherite Helmet"
       ],
       "coal": [
-       [
-        "Leather Cap",
-        "Leather Helmet"
-       ],
-       [
-        "Golden Helmet",
-        "Gold Helmet"
-       ],
-       [
-        "Chainmail Helmet",
-        "Chain Helmet"
-       ],
-       [
-        "Turtle Shell",
-        "Turtle Helmet"
-       ],
+       "Leather Cap",
+       "Golden Helmet",
+       "Chainmail Helmet",
+       "Turtle Shell",
        "Creeper Head",
        "Zombie Head",
-       [
-        "Skeleton Skull",
-        "Skeleton Head"
-       ]
+       "Skeleton Skull"
       ],
       "iron": [
-       [
-        "Wither Skeleton Skull",
-        "Wither Skeleton Head"
-       ],
-       [
-        "Dragon Head",
-        "Ender Dragon Head"
-       ],
+       "Wither Skeleton Skull",
+       "Dragon Head",
        "Copper Helmet"
       ],
       "gold": [
        "Piglin Head"
       ],
       "diamond": [
-       [
-        "Player Head",
-        "Steve Head"
-       ]
+       "Player Head"
       ]
      }
     },
@@ -3676,10 +2972,7 @@
       ],
       "iron": [
        "Stray",
-       [
-        "Zombified Piglin",
-        "Zombie Pigman"
-       ],
+       "Zombified Piglin",
        "Skeleton Horse"
       ],
       "gold": [
@@ -3787,11 +3080,7 @@
        "Golden Apple"
       ],
       "coal": [
-       [
-        "Enchanted Golden Apple",
-        "Notch Apple",
-        "God Apple"
-       ],
+       "Enchanted Golden Apple",
        "Arrow",
        "Iron Ingot",
        "Bow",
@@ -3801,14 +3090,8 @@
        "Diamond Axe",
        "Shield",
        "Ominous Bottle",
-       [
-        "Precipice",
-        "Music Disc Precipice"
-       ],
-       [
-        "Creator",
-        "Music Disc Creator"
-       ]
+       "Precipice",
+       "Creator"
       ],
       "iron": [
        "Iron Chestplate",
@@ -3816,30 +3099,13 @@
        "Golden Carrot",
        "Honey Bottle",
        "Tipped Arrow",
-       [
-        "Block of Diamond",
-        "Diamond Block"
-       ],
-       [
-        "Block of Emerald",
-        "Emerald Block"
-       ]
+       "Block of Diamond",
+       "Block of Emerald"
       ],
       "gold": [
-       [
-        "Flow Armor Trim",
-        "Flow Trim",
-        "Flow Armor Trim Smithing Template"
-       ],
-       [
-        "Bolt Armor Trim",
-        "Bolt Trim",
-        "Bolt Armor Trim Smithing Template"
-       ],
-       [
-        "Block of Iron",
-        "Iron Block"
-       ]
+       "Flow Armor Trim",
+       "Bolt Armor Trim",
+       "Block of Iron"
       ],
       "diamond": [
        "Flow Banner Pattern",
@@ -3852,28 +3118,15 @@
      "text": "Name a painting",
      "answers": {
       "dirt": [
-       [
-        "Kebab med tre pepperoni",
-        "Kebab"
-       ],
+       "Kebab med tre pepperoni",
        "Wither",
        "Skull and Roses",
-       [
-        "Skull On Fire",
-        "Burning Skull"
-       ],
+       "Skull On Fire",
        "Pointer"
       ],
       "coal": [
-       [
-        "de_aztec",
-        "Aztec",
-        "Aztec2"
-       ],
-       [
-        "Albanian",
-        "Alban"
-       ],
+       "de_aztec",
+       "Albanian",
        [
         "Target Successfully Bombed",
         "Bomb"
@@ -3884,10 +3137,7 @@
        ],
        "Wasteland",
        "The Pool",
-       [
-        "Bonjour Monsieur Courbet",
-        "Courbet"
-       ],
+       "Bonjour Monsieur Courbet",
        [
         "Seaside",
         "Sea"
@@ -3912,10 +3162,7 @@
         "Mortal Coil",
         "Skeleton"
        ],
-       [
-        "Kong",
-        "Donkey Kong"
-       ]
+       "Kong"
       ],
       "iron": [
        "Earth",
@@ -3955,60 +3202,24 @@
      "text": "Name a kind of bucket",
      "answers": {
       "dirt": [
-       [
-        "Water Bucket",
-        "Bucket of Water"
-       ],
-       [
-        "Lava Bucket",
-        "Bucket of Lava"
-       ],
-       [
-        "Milk Bucket",
-        "Bucket of Milk"
-       ],
-       [
-        "Bucket",
-        "Empty Bucket"
-       ]
+       "Water Bucket",
+       "Lava Bucket",
+       "Milk Bucket",
+       "Bucket"
       ],
       "coal": [
-       [
-        "Bucket of Cod",
-        "Cod Bucket"
-       ],
-       [
-        "Bucket of Axolotl",
-        "Axolotl Bucket"
-       ],
-       [
-        "Bucket of Tropical Fish",
-        "Tropical Fish Bucket"
-       ],
-       [
-        "Bucket of Pufferfish",
-        "Pufferfish Bucket"
-       ],
-       [
-        "Bucket of Salmon",
-        "Salmon Bucket"
-       ],
-       [
-        "Powder Snow Bucket",
-        "Bucket of Powder Snow"
-       ]
+       "Bucket of Cod",
+       "Bucket of Axolotl",
+       "Bucket of Tropical Fish",
+       "Bucket of Pufferfish",
+       "Bucket of Salmon",
+       "Powder Snow Bucket"
       ],
       "iron": [
-       [
-        "Bucket of Tadpole",
-        "Tadpole Bucket"
-       ]
+       "Bucket of Tadpole"
       ],
       "diamond": [
-       [
-        "Bucket of Sulfur Cube",
-        "Sulfur Cube Bucket"
-       ]
+       "Bucket of Sulfur Cube"
       ]
      }
     },
@@ -4030,23 +3241,14 @@
        "Raw Salmon"
       ],
       "iron": [
-       [
-        "Block of Raw Iron",
-        "Raw Iron Block"
-       ],
+       "Block of Raw Iron",
        "Raw Rabbit"
       ],
       "gold": [
-       [
-        "Block of Raw Gold",
-        "Raw Gold Block"
-       ]
+       "Block of Raw Gold"
       ],
       "diamond": [
-       [
-        "Block of Raw Copper",
-        "Raw Copper Block"
-       ]
+       "Block of Raw Copper"
       ]
      }
     }
@@ -4096,28 +3298,19 @@
       ],
       "coal": [
        "Deep Ocean",
-       [
-        "Warm Ocean",
-        "Deep Warm Ocean"
-       ],
+       "Warm Ocean",
        "Frozen Ocean",
        "Cold Ocean"
       ],
       "iron": [
        "Lukewarm Ocean",
        "Frozen River",
-       [
-        "Snowy Beach",
-        "Cold Beach"
-       ]
+       "Snowy Beach"
       ],
       "gold": [
        "Deep Cold Ocean",
        "Deep Frozen Ocean",
-       [
-        "Stony Shore",
-        "Stone Shore"
-       ]
+       "Stony Shore"
       ],
       "diamond": [
        "Deep Lukewarm Ocean"
@@ -4129,10 +3322,7 @@
      "text": "Name a block with 'Moss' or 'Mossy' in its name",
      "answers": {
       "dirt": [
-       [
-        "Moss Block",
-        "Moss"
-       ],
+       "Moss Block",
        "Mossy Cobblestone"
       ],
       "coal": [
@@ -4146,10 +3336,7 @@
        "Mossy Stone Brick Slab",
        "Mossy Stone Brick Stairs",
        "Mossy Stone Brick Wall",
-       [
-        "Pale Moss Block",
-        "Pale Moss"
-       ]
+       "Pale Moss Block"
       ],
       "gold": [
        "Pale Hanging Moss",
@@ -4168,48 +3355,40 @@
        [
         "Pickaxe",
         "Wooden Pickaxe",
-        "Wood Pickaxe",
         "Stone Pickaxe",
         "Copper Pickaxe",
         "Iron Pickaxe",
         "Golden Pickaxe",
-        "Gold Pickaxe",
         "Diamond Pickaxe",
         "Netherite Pickaxe"
        ],
        [
         "Sword",
         "Wooden Sword",
-        "Wood Sword",
         "Stone Sword",
         "Copper Sword",
         "Iron Sword",
         "Golden Sword",
-        "Gold Sword",
         "Diamond Sword",
         "Netherite Sword"
        ],
        [
         "Axe",
         "Wooden Axe",
-        "Wood Axe",
         "Stone Axe",
         "Copper Axe",
         "Iron Axe",
         "Golden Axe",
-        "Gold Axe",
         "Diamond Axe",
         "Netherite Axe"
        ],
        [
         "Shovel",
         "Wooden Shovel",
-        "Wood Shovel",
         "Stone Shovel",
         "Copper Shovel",
         "Iron Shovel",
         "Golden Shovel",
-        "Gold Shovel",
         "Diamond Shovel",
         "Netherite Shovel"
        ],
@@ -4220,40 +3399,32 @@
        [
         "Hoe",
         "Wooden Hoe",
-        "Wood Hoe",
         "Stone Hoe",
         "Copper Hoe",
         "Iron Hoe",
         "Golden Hoe",
-        "Gold Hoe",
         "Diamond Hoe",
         "Netherite Hoe"
        ],
        [
         "Chestplate",
-        "Leather Chestplate",
         "Chainmail Chestplate",
         "Copper Chestplate",
         "Iron Chestplate",
         "Golden Chestplate",
-        "Gold Chestplate",
         "Diamond Chestplate",
         "Netherite Chestplate",
-        "Leather Tunic",
-        "Chain Chestplate"
+        "Leather Tunic"
        ],
        [
         "Leggings",
-        "Leather Leggings",
         "Chainmail Leggings",
         "Copper Leggings",
         "Iron Leggings",
         "Golden Leggings",
-        "Gold Leggings",
         "Diamond Leggings",
         "Netherite Leggings",
-        "Leather Pants",
-        "Chain Leggings"
+        "Leather Pants"
        ],
        [
         "Boots",
@@ -4262,23 +3433,18 @@
         "Copper Boots",
         "Iron Boots",
         "Golden Boots",
-        "Gold Boots",
         "Diamond Boots",
-        "Netherite Boots",
-        "Chain Boots"
+        "Netherite Boots"
        ],
        [
         "Helmet",
-        "Leather Helmet",
         "Chainmail Helmet",
         "Copper Helmet",
         "Iron Helmet",
         "Golden Helmet",
-        "Gold Helmet",
         "Diamond Helmet",
         "Netherite Helmet",
-        "Leather Cap",
-        "Chain Helmet"
+        "Leather Cap"
        ],
        "Shield",
        "Fishing Rod",
@@ -4292,19 +3458,14 @@
        [
         "Spear",
         "Wooden Spear",
-        "Wood Spear",
         "Stone Spear",
         "Copper Spear",
         "Iron Spear",
         "Golden Spear",
-        "Gold Spear",
         "Diamond Spear",
         "Netherite Spear"
        ],
-       [
-        "Turtle Shell",
-        "Turtle Helmet"
-       ]
+       "Turtle Shell"
       ],
       "gold": [
        "Carrot on a Stick",
@@ -4361,16 +3522,10 @@
         "Warped Pressure Plate",
         "Poplar Pressure Plate"
        ],
-       [
-        "Block of Redstone",
-        "Redstone Block"
-       ]
+       "Block of Redstone"
       ],
       "coal": [
-       [
-        "Daylight Detector",
-        "Daylight Sensor"
-       ],
+       "Daylight Detector",
        "Observer",
        [
         "Tripwire Hook",
@@ -4380,20 +3535,14 @@
        "Detector Rail"
       ],
       "iron": [
-       [
-        "Target",
-        "Target Block"
-       ],
+       "Target",
        "Sculk Sensor",
        "Heavy Weighted Pressure Plate",
        [
         "Light Weighted Pressure Plate",
         "Weighted Pressure Plate"
        ],
-       [
-        "Redstone Comparator",
-        "Comparator"
-       ]
+       "Redstone Comparator"
       ],
       "gold": [
        "Lectern",
@@ -4430,22 +3579,13 @@
         "Raw Salmon",
         "Salmon"
        ],
-       [
-        "Raw Beef",
-        "Beef"
-       ],
+       "Raw Beef",
        "Bamboo",
        "Dandelion",
        "Sweet Berries",
        "Seagrass",
-       [
-        "Steak",
-        "Cooked Beef"
-       ],
-       [
-        "Raw Porkchop",
-        "Porkchop"
-       ],
+       "Steak",
+       "Raw Porkchop",
        "Raw Chicken",
        "Rotten Flesh",
        "Melon Seeds",
@@ -4453,28 +3593,18 @@
        "Beetroot Seeds"
       ],
       "iron": [
-       [
-        "Enchanted Golden Apple",
-        "Notch Apple",
-        "God Apple"
-       ],
+       "Enchanted Golden Apple",
        "Glow Berries",
        "Slimeball",
        "Crimson Fungus",
        "Warped Fungus",
        "Cactus",
-       [
-        "Bucket of Tropical Fish",
-        "Tropical Fish Bucket"
-       ],
+       "Bucket of Tropical Fish",
        "Torchflower Seeds",
        "Spider Eye",
        "Cooked Chicken",
        "Cooked Porkchop",
-       [
-        "Raw Mutton",
-        "Mutton"
-       ],
+       "Raw Mutton",
        "Cooked Mutton",
        "Raw Rabbit",
        "Cooked Rabbit",
@@ -4486,23 +3616,11 @@
        "Pitcher Pod",
        "Cooked Cod",
        "Cooked Salmon",
-       [
-        "Tropical Fish",
-        "Clownfish"
-       ],
+       "Tropical Fish",
        "Pufferfish",
-       [
-        "Bucket of Cod",
-        "Cod Bucket"
-       ],
-       [
-        "Bucket of Salmon",
-        "Salmon Bucket"
-       ],
-       [
-        "Bucket of Pufferfish",
-        "Pufferfish Bucket"
-       ],
+       "Bucket of Cod",
+       "Bucket of Salmon",
+       "Bucket of Pufferfish",
        "Rabbit Stew",
        "Allium",
        "Blue Orchid",
@@ -4541,31 +3659,14 @@
      "answers": {
       "dirt": [
        "Nether Update",
-       [
-        "Caves & Cliffs",
-        "Caves and Cliffs",
-        "Caves & Cliffs: Part I",
-        "Caves & Cliffs: Part II"
-       ],
-       [
-        "Village & Pillage",
-        "Village and Pillage"
-       ],
-       [
-        "Update Aquatic",
-        "Aquatic Update"
-       ],
+       "Caves & Cliffs",
+       "Village & Pillage",
+       "Update Aquatic",
        "The Wild Update",
-       [
-        "Trails & Tales",
-        "Trails and Tales"
-       ]
+       "Trails & Tales"
       ],
       "coal": [
-       [
-        "Buzzy Bees",
-        "Buzzy Bees Update"
-       ],
+       "Buzzy Bees",
        "Tricky Trials",
        "Combat Update",
        "Adventure Update",
@@ -4578,10 +3679,7 @@
       ],
       "iron": [
        "Exploration Update",
-       [
-        "World of Color Update",
-        "World of Color"
-       ],
+       "World of Color Update",
        "Bountiful Update",
        "Pretty Scary Update",
        "Redstone Update",
@@ -4622,10 +3720,7 @@
        "Glare"
       ],
       "iron": [
-       [
-        "Phantom",
-        "Monster of the Night Skies"
-       ],
+       "Phantom",
        "Rascal",
        "Tuff Golem",
        "Moobloom"
@@ -4634,17 +3729,11 @@
        "Iceologer"
       ],
       "diamond": [
-       [
-        "Wildfire",
-        "Hovering Inferno"
-       ],
+       "Wildfire",
        "Great Hunger"
       ],
       "netherite": [
-       [
-        "Barnacle",
-        "Monster of the Ocean Depths"
-       ]
+       "Barnacle"
       ]
      }
     },
@@ -4681,10 +3770,7 @@
        "Is It a Plane?",
        "Bullseye",
        "Star Trader",
-       [
-        "Caves & Cliffs",
-        "Caves and Cliffs"
-       ],
+       "Caves & Cliffs",
        "The Power of Books",
        "Surge Protector",
        "Light as a Rabbit",
@@ -4776,11 +3862,7 @@
       ],
       "coal": [
        "Golden Apple",
-       [
-        "Enchanted Golden Apple",
-        "Notch Apple",
-        "God Apple"
-       ],
+       "Enchanted Golden Apple",
        [
         "Enchanted Book",
         "Book"
@@ -4790,21 +3872,14 @@
        "Spider Eye",
        "Sand",
        "Iron Horse Armor",
-       [
-        "Golden Horse Armor",
-        "Gold Horse Armor"
-       ],
+       "Golden Horse Armor",
        "Diamond Horse Armor"
       ],
       "iron": [
        "Leather"
       ],
       "gold": [
-       [
-        "Dune Armor Trim",
-        "Dune Trim",
-        "Dune Armor Trim Smithing Template"
-       ]
+       "Dune Armor Trim"
       ],
       "diamond": [
        "Copper Horse Armor"
@@ -4816,10 +3891,7 @@
      "text": "Name a plant you can put in a flower pot",
      "answers": {
       "dirt": [
-       [
-        "Poppy",
-        "Rose"
-       ],
+       "Poppy",
        "Dandelion",
        "Cactus",
        "Oak Sapling"
@@ -4863,10 +3935,7 @@
        "Crimson Roots",
        "Warped Roots",
        "Pale Oak Sapling",
-       [
-        "Open Eyeblossom",
-        "Eyeblossom"
-       ],
+       "Open Eyeblossom",
        "Closed Eyeblossom",
        "Golden Dandelion"
       ],
@@ -5345,18 +4414,12 @@
      "answers": {
       "dirt": [
        "Enderman",
-       [
-        "Wolf",
-        "Dog"
-       ]
+       "Wolf"
       ],
       "coal": [
        "Spider",
        "Bee",
-       [
-        "Zombified Piglin",
-        "Zombie Pigman"
-       ],
+       "Zombified Piglin",
        "Iron Golem",
        "Llama"
       ],
@@ -5370,10 +4433,7 @@
       ],
       "gold": [
        "Fox",
-       [
-        "Pufferfish",
-        "Blowfish"
-       ],
+       "Pufferfish",
        "Trader Llama",
        "Drowned"
       ],
@@ -5388,29 +4448,14 @@
      "text": "Name a biome where snow can fall (at any height)",
      "answers": {
       "dirt": [
-       [
-        "Snowy Plains",
-        "Snowy Tundra",
-        "Ice Plains",
-        "Snowy Mountains"
-       ],
-       [
-        "Ice Spikes",
-        "Ice Plains Spikes"
-       ],
-       [
-        "Snowy Taiga",
-        "Cold Taiga",
-        "Snowy Taiga Hills"
-       ]
+       "Snowy Plains",
+       "Ice Spikes",
+       "Snowy Taiga"
       ],
       "coal": [
        "Frozen Ocean",
        "Frozen River",
-       [
-        "Snowy Beach",
-        "Cold Beach"
-       ],
+       "Snowy Beach",
        "Snowy Slopes",
        "Frozen Peaks",
        "Jagged Peaks",
@@ -5418,41 +4463,17 @@
       ],
       "iron": [
        "Deep Frozen Ocean",
-       [
-        "Taiga",
-        "Taiga Hills"
-       ],
-       [
-        "Windswept Hills",
-        "Mountains",
-        "Extreme Hills"
-       ]
+       "Taiga",
+       "Windswept Hills"
       ],
       "gold": [
-       [
-        "Windswept Gravelly Hills",
-        "Gravelly Mountains"
-       ],
-       [
-        "Windswept Forest",
-        "Wooded Mountains"
-       ],
-       [
-        "Old Growth Spruce Taiga",
-        "Giant Spruce Taiga",
-        "Mega Spruce Taiga"
-       ]
+       "Windswept Gravelly Hills",
+       "Windswept Forest",
+       "Old Growth Spruce Taiga"
       ],
       "diamond": [
-       [
-        "Old Growth Pine Taiga",
-        "Giant Tree Taiga",
-        "Mega Taiga"
-       ],
-       [
-        "Stony Shore",
-        "Stone Shore"
-       ]
+       "Old Growth Pine Taiga",
+       "Stony Shore"
       ]
      }
     },
@@ -5507,63 +4528,29 @@
      "text": "Name a sound a note block can play (instrument or mob head)",
      "answers": {
       "dirt": [
-       [
-        "Harp",
-        "Piano"
-       ],
-       [
-        "Bass",
-        "Double Bass",
-        "Bass Guitar",
-        "String Bass"
-       ],
-       [
-        "Bass Drum",
-        "Kick Drum"
-       ],
-       [
-        "Snare Drum",
-        "Snare"
-       ]
+       "Harp",
+       "Bass",
+       "Bass Drum",
+       "Snare Drum"
       ],
       "coal": [
-       [
-        "Bell",
-        "Glockenspiel"
-       ],
+       "Bell",
        "Flute",
        "Chime",
-       [
-        "Guitar",
-        "Harpsichord"
-       ],
+       "Guitar",
        "Xylophone",
        [
         "Hat",
-        "Hi-Hat",
-        "Hi-Hat Click",
-        "Click",
         "Sticks"
        ]
       ],
       "iron": [
-       [
-        "Iron Xylophone",
-        "Vibraphone"
-       ],
+       "Iron Xylophone",
        "Cow Bell",
        "Didgeridoo",
-       [
-        "Bit",
-        "Square Wave",
-        "Clarinet",
-        "Synthesizer"
-       ],
+       "Bit",
        "Banjo",
-       [
-        "Pling",
-        "Electric Piano"
-       ]
+       "Pling"
       ],
       "gold": [
        "Trumpet",
@@ -5591,29 +4578,14 @@
        ],
        [
         "Ender Dragon",
-        "Dragon Head",
-        "Ender Dragon Head"
+        "Dragon Head"
        ],
-       [
-        "Exposed Trumpet",
-        "Distorted Trumpet",
-        "Cornet"
-       ],
-       [
-        "Weathered Trumpet",
-        "Trombone"
-       ],
-       [
-        "Oxidized Trumpet",
-        "Distorted Trombone",
-        "Euphonium"
-       ]
+       "Exposed Trumpet",
+       "Weathered Trumpet",
+       "Oxidized Trumpet"
       ],
       "netherite": [
-       [
-        "Player Head",
-        "Custom Head"
-       ]
+       "Player Head"
       ]
      }
     },
@@ -5636,25 +4608,15 @@
        "Splash Potion",
        "Spectral Arrow",
        "Tipped Arrow",
-       [
-        "Eye of Ender",
-        "Ender Eye"
-       ],
+       "Eye of Ender",
        "Wind Charge",
-       [
-        "Firework Rocket",
-        "Firework"
-       ]
+       "Firework Rocket"
       ],
       "iron": [
        "Lingering Potion"
       ],
       "gold": [
-       [
-        "Bottle o' Enchanting",
-        "Experience Bottle",
-        "XP Bottle"
-       ]
+       "Bottle o' Enchanting"
       ],
       "diamond": [
        [
@@ -5669,78 +4631,35 @@
      "text": "Name a block you craft from 9 of the same item",
      "answers": {
       "dirt": [
-       [
-        "Block of Diamond",
-        "Diamond Block"
-       ],
-       [
-        "Block of Iron",
-        "Iron Block"
-       ],
-       [
-        "Block of Gold",
-        "Gold Block"
-       ],
-       [
-        "Block of Emerald",
-        "Emerald Block"
-       ],
-       [
-        "Block of Coal",
-        "Coal Block"
-       ],
-       [
-        "Block of Redstone",
-        "Redstone Block"
-       ]
+       "Block of Diamond",
+       "Block of Iron",
+       "Block of Gold",
+       "Block of Emerald",
+       "Block of Coal",
+       "Block of Redstone"
       ],
       "coal": [
-       [
-        "Block of Lapis Lazuli",
-        "Lapis Block",
-        "Lapis Lazuli Block"
-       ],
-       [
-        "Block of Netherite",
-        "Netherite Block"
-       ],
+       "Block of Lapis Lazuli",
+       "Block of Netherite",
        "Hay Bale",
        "Slime Block",
-       [
-        "Block of Copper",
-        "Copper Block"
-       ],
+       "Block of Copper",
        "Melon",
        "Bone Block"
       ],
       "iron": [
        "Dried Kelp Block",
-       [
-        "Block of Raw Iron",
-        "Raw Iron Block"
-       ],
-       [
-        "Block of Raw Gold",
-        "Raw Gold Block"
-       ],
-       [
-        "Block of Raw Copper",
-        "Raw Copper Block"
-       ],
+       "Block of Raw Iron",
+       "Block of Raw Gold",
+       "Block of Raw Copper",
        "Packed Ice",
        "Blue Ice",
        "Nether Wart Block"
       ],
       "gold": [
-       [
-        "Block of Bamboo",
-        "Bamboo Block"
-       ],
+       "Block of Bamboo",
        "Prismarine Bricks",
-       [
-        "Block of Resin",
-        "Resin Block"
-       ]
+       "Block of Resin"
       ],
       "diamond": [
        "Potent Sulfur"
@@ -5815,10 +4734,7 @@
        "Pig",
        "Sheep",
        "Horse",
-       [
-        "Wolf",
-        "Dog"
-       ]
+       "Wolf"
       ],
       "coal": [
        "Chicken",
@@ -5831,10 +4747,7 @@
        "Goat"
       ],
       "iron": [
-       [
-        "Mooshroom",
-        "Mushroom Cow"
-       ],
+       "Mooshroom",
        "Parrot",
        "Polar Bear",
        "Bee",
@@ -5844,15 +4757,9 @@
        "Axolotl",
        "Allay",
        "Frog",
-       [
-        "Snow Golem",
-        "Snowman"
-       ],
+       "Snow Golem",
        "Dolphin",
-       [
-        "Happy Ghast",
-        "Ghastling"
-       ]
+       "Happy Ghast"
       ],
       "gold": [
        "Squid",
@@ -5873,10 +4780,7 @@
        "Zombie Nautilus",
        "Camel Husk",
        "Sulfur Cube",
-       [
-        "Boat with Chest",
-        "Chest Boat"
-       ]
+       "Boat with Chest"
       ]
      }
     },
@@ -5898,10 +4802,7 @@
        "Knockback",
        "Flame",
        "Punch",
-       [
-        "Sweeping Edge",
-        "Sweeping"
-       ],
+       "Sweeping Edge",
        "Bane of Arthropods",
        "Loyalty",
        "Riptide",
@@ -5920,10 +4821,7 @@
        "Lunge"
       ],
       "diamond": [
-       [
-        "Curse of Vanishing",
-        "Vanishing"
-       ]
+       "Curse of Vanishing"
       ]
      }
     },
@@ -5966,10 +4864,7 @@
      "answers": {
       "dirt": [
        "Chest",
-       [
-        "Block of Gold",
-        "Gold Block"
-       ],
+       "Block of Gold",
        "Gold Ore"
       ],
       "coal": [
@@ -6002,10 +4897,7 @@
        "Deepslate Gold Ore"
       ],
       "gold": [
-       [
-        "Block of Raw Gold",
-        "Raw Gold Block"
-       ]
+       "Block of Raw Gold"
       ],
       "diamond": [
        [
@@ -6033,7 +4925,6 @@
        "Charged Creeper",
        [
         "Fireball",
-        "Ghast Fireball",
         "Ghast"
        ],
        [
@@ -6057,17 +4948,11 @@
        ],
        "Respawn Anchor",
        "End Crystal",
-       [
-        "Minecart with TNT",
-        "TNT Minecart"
-       ],
+       "Minecart with TNT",
        "Wither"
       ],
       "iron": [
-       [
-        "Firework Rocket",
-        "Firework"
-       ],
+       "Firework Rocket",
        "Wither Skull"
       ],
       "gold": [
@@ -6168,10 +5053,7 @@
        "Saddle",
        "Iron Horse Armor",
        "Diamond Horse Armor",
-       [
-        "Golden Horse Armor",
-        "Gold Horse Armor"
-       ]
+       "Golden Horse Armor"
       ],
       "coal": [
        "Leather Horse Armor",
@@ -6224,10 +5106,7 @@
       "gold": [
        "Iron Nautilus Armor",
        "Diamond Nautilus Armor",
-       [
-        "Golden Nautilus Armor",
-        "Gold Nautilus Armor"
-       ],
+       "Golden Nautilus Armor",
        "Copper Nautilus Armor"
       ],
       "diamond": [
@@ -6255,10 +5134,7 @@
        "Stray",
        "Llama",
        "Wither",
-       [
-        "Snow Golem",
-        "Snowman"
-       ]
+       "Snow Golem"
       ],
       "iron": [
        "Drowned",
@@ -6464,10 +5340,7 @@
        "Golden Carrot"
       ],
       "gold": [
-       [
-        "Glistering Melon Slice",
-        "Glistering Melon"
-       ]
+       "Glistering Melon Slice"
       ],
       "diamond": [
        "Suspicious Stew"
@@ -6502,36 +5375,20 @@
        ],
        "Coal",
        "Iron Horse Armor",
-       [
-        "Golden Horse Armor",
-        "Gold Horse Armor"
-       ],
+       "Golden Horse Armor",
        "Diamond Horse Armor",
-       [
-        "13",
-        "Music Disc 13"
-       ],
-       [
-        "Cat",
-        "Music Disc Cat"
-       ]
+       "13",
+       "Cat"
       ],
       "iron": [
-       [
-        "Enchanted Golden Apple",
-        "Notch Apple",
-        "God Apple"
-       ],
+       "Enchanted Golden Apple",
        "Melon Seeds",
        "Pumpkin Seeds",
        "Beetroot Seeds",
        "Leather"
       ],
       "gold": [
-       [
-        "Otherside",
-        "Music Disc Otherside"
-       ]
+       "Otherside"
       ],
       "diamond": [
        "Copper Horse Armor"
@@ -6545,8 +5402,7 @@
       "dirt": [
        [
         "Nether Wastes",
-        "Nether",
-        "Hell"
+        "Nether"
        ],
        "Lush Caves",
        "Deep Dark",
@@ -6582,10 +5438,7 @@
      "text": "Name a mob that a naturally generated spawner (monster or trial spawner) can spawn",
      "answers": {
       "dirt": [
-       [
-        "Zombie",
-        "Baby Zombie"
-       ],
+       "Zombie",
        "Skeleton",
        "Spider"
       ],
@@ -6615,120 +5468,52 @@
       "dirt": [
        "keep_inventory",
        "mob_griefing",
-       [
-        "advance_time",
-        "doDaylightCycle"
-       ]
+       "advance_time"
       ],
       "coal": [
-       [
-        "advance_weather",
-        "doWeatherCycle"
-       ],
-       [
-        "spawn_mobs",
-        "doMobSpawning"
-       ],
+       "advance_weather",
+       "spawn_mobs",
        "fall_damage",
        "fire_damage",
        "pvp",
        "show_death_messages",
        "send_command_feedback",
        "command_block_output",
-       [
-        "natural_health_regeneration",
-        "naturalRegeneration"
-       ],
-       [
-        "immediate_respawn",
-        "doImmediateRespawn"
-       ],
+       "natural_health_regeneration",
+       "immediate_respawn",
        "random_tick_speed",
        "players_sleeping_percentage",
-       [
-        "block_drops",
-        "doTileDrops"
-       ],
-       [
-        "mob_drops",
-        "doMobLoot"
-       ],
-       [
-        "spawn_phantoms",
-        "doInsomnia"
-       ]
+       "block_drops",
+       "mob_drops",
+       "spawn_phantoms"
       ],
       "iron": [
        "drowning_damage",
        "freeze_damage",
-       [
-        "entity_drops",
-        "doEntityDrops"
-       ],
-       [
-        "spawn_patrols",
-        "doPatrolSpawning"
-       ],
-       [
-        "spawn_wandering_traders",
-        "doTraderSpawning"
-       ],
-       [
-        "spawn_wardens",
-        "doWardenSpawning"
-       ],
-       [
-        "raids",
-        "disableRaids"
-       ],
-       [
-        "limited_crafting",
-        "doLimitedCrafting"
-       ],
-       [
-        "show_advancement_messages",
-        "announceAdvancements"
-       ],
+       "entity_drops",
+       "spawn_patrols",
+       "spawn_wandering_traders",
+       "spawn_wardens",
+       "raids",
+       "limited_crafting",
+       "show_advancement_messages",
        "reduced_debug_info",
-       [
-        "respawn_radius",
-        "spawnRadius"
-       ],
+       "respawn_radius",
        "max_entity_cramming",
        "universal_anger",
        "forgive_dead_players",
        "tnt_explodes",
        "spawn_monsters",
        "locator_bar",
-       [
-        "fire_spread_radius_around_player",
-        "doFireTick",
-        "allowFireTicksAwayFromPlayer"
-       ]
+       "fire_spread_radius_around_player"
       ],
       "gold": [
-       [
-        "spread_vines",
-        "doVinesSpread"
-       ],
+       "spread_vines",
        "log_admin_commands",
-       [
-        "max_command_sequence_length",
-        "maxCommandChainLength"
-       ],
-       [
-        "command_blocks_work",
-        "commandBlocksEnabled",
-        "enableCommandBlocks"
-       ],
-       [
-        "spawner_blocks_work",
-        "spawnerBlocksEnabled"
-       ],
-       [
-        "max_snow_accumulation_height",
-        "snowAccumulationHeight"
-       ],
+       "max_command_sequence_length",
+       "command_blocks_work",
+       "spawner_blocks_work",
+       "max_snow_accumulation_height",
        "water_source_conversion",
        "lava_source_conversion",
        "block_explosion_drop_decay",
@@ -6736,31 +5521,16 @@
        "tnt_explosion_drop_decay",
        "ender_pearls_vanish_on_death",
        "allow_entering_nether_using_portals",
-       [
-        "max_minecart_speed",
-        "minecartMaxSpeed"
-       ],
+       "max_minecart_speed",
        "projectiles_can_break_blocks"
       ],
       "diamond": [
        "spectators_generate_chunks",
-       [
-        "max_command_forks",
-        "maxCommandForkCount"
-       ],
-       [
-        "max_block_modifications",
-        "commandModificationBlockLimit"
-       ],
+       "max_command_forks",
+       "max_block_modifications",
        "global_sound_events",
-       [
-        "elytra_movement_check",
-        "disableElytraMovementCheck"
-       ],
-       [
-        "player_movement_check",
-        "disablePlayerMovementCheck"
-       ],
+       "elytra_movement_check",
+       "player_movement_check",
        "players_nether_portal_default_delay",
        "players_nether_portal_creative_delay"
       ],
@@ -6819,7 +5589,6 @@
        "Bamboo Mosaic Stairs",
        [
         "Cut Copper Stairs",
-        "Copper Stairs",
         "Exposed Cut Copper Stairs",
         "Oxidized Cut Copper Stairs",
         "Waxed Cut Copper Stairs",
@@ -6915,7 +5684,6 @@
        [
         "Planks",
         "Wood",
-        "Wooden Planks",
         "Oak Planks",
         "Spruce Planks",
         "Birch Planks",
@@ -7041,17 +5809,11 @@
      "text": "Name an item you can turn into dye (not counting other dyes)",
      "answers": {
       "dirt": [
-       [
-        "Poppy",
-        "Rose"
-       ],
+       "Poppy",
        "Dandelion",
        "Ink Sac",
        "Bone Meal",
-       [
-        "Lapis Lazuli",
-        "Lapis"
-       ],
+       "Lapis Lazuli",
        "Cactus"
       ],
       "coal": [
@@ -7085,10 +5847,7 @@
        "Pitcher Plant"
       ],
       "gold": [
-       [
-        "Open Eyeblossom",
-        "Eyeblossom"
-       ],
+       "Open Eyeblossom",
        "Closed Eyeblossom",
        "Wildflowers",
        "Cactus Flower"

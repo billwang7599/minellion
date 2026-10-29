@@ -47,7 +47,7 @@
     "answers": {
       "type": "array",
       "items": {
-        "description": "A name, or [name, ...aliases] when other spellings or old names should also count.",
+        "description": "A name, or [name, ...aliases] for names that count in this prompt only. Nicknames that always mean the same thing go in aliases.json.",
         "oneOf": [
           { "type": "string", "minLength": 1 },
           { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } }

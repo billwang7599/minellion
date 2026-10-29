@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import worker, { TIERS, matchAnswer } from "../src/worker.js";
 import { normalize } from "../src/match.js";
 import data from "../data/days.json" with { type: "json" };
+import aliases from "../data/aliases.json" with { type: "json" };
 
 const [past, today, future] = data.days;
 const firstName = (answer) => [].concat(answer)[0];
@@ -107,6 +108,7 @@ test("GET /api/names lists generic names plus every answer, deduped, with nothin
   assert.ok(body.names.includes(firstDirt));
   assert.ok(body.names.includes(firstName(future.prompts.at(-1).answers.dirt.at(-1))));
   assert.ok(body.names.includes("Creeper"));
+  assert.ok(body.names.includes(aliases["Wither Skeleton Skull"][0]));
   const keys = body.names.map(normalize);
   assert.equal(new Set(keys).size, keys.length);
   assert.deepEqual(body.names, [...body.names].sort((a, b) => a.localeCompare(b)));
@@ -156,4 +158,22 @@ test("one typo is forgiven only for long answers with a single close match", () 
   assert.equal(matchAnswer(prompt, "be"), null);
   assert.equal(matchAnswer(prompt, "zomb"), null);
   assert.equal(matchAnswer(prompt, "the"), null);
+});
+
+test("a global alias scores as the canonical answer of the prompt that has it", () => {
+  assert.ok(aliases["Wither Skeleton Skull"].includes("Wither Head"));
+  const heads = { answers: { dirt: ["Creeper Head"], gold: ["Wither Skeleton Skull"] } };
+  assert.deepEqual(matchAnswer(heads, "wither head"), { answer: "Wither Skeleton Skull", tier: "gold", exact: true });
+  assert.equal(matchAnswer(heads, "withr head")?.answer, "Wither Skeleton Skull");
+  const mobs = { answers: { iron: [["Wither Skeleton", "Wither Skeleton Skull"]] } };
+  assert.deepEqual(matchAnswer(mobs, "wither head"), { answer: "Wither Skeleton", tier: "iron", exact: true });
+  assert.equal(matchAnswer({ answers: { dirt: ["Creeper"] } }, "wither head"), null);
+});
+
+test("a prompt's own answers and aliases beat a global alias", () => {
+  const own = { answers: { dirt: ["Wither Skeleton Skull"], diamond: ["Wither Skull"] } };
+  assert.deepEqual(matchAnswer(own, "wither skull"), { answer: "Wither Skull", tier: "diamond", exact: true });
+  assert.equal(matchAnswer(own, "wither head")?.answer, "Wither Skeleton Skull");
+  const ownAlias = { answers: { dirt: ["Wither Skeleton Skull"], coal: [["Ghast", "Wither Head"]] } };
+  assert.deepEqual(matchAnswer(ownAlias, "wither head"), { answer: "Ghast", tier: "coal", exact: true });
 });

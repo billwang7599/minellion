@@ -1,5 +1,6 @@
 import data from "../data/days.json" with { type: "json" };
 import genericNames from "../data/names.json" with { type: "json" };
+import aliasTable from "../data/aliases.json" with { type: "json" };
 import { normalize, edits } from "./match.js";
 
 export { normalize };
@@ -23,15 +24,29 @@ const nyDate = new Intl.DateTimeFormat("en-CA", {
   day: "2-digit",
 });
 
-export function matchAnswer(prompt, guess) {
-  const key = normalize(guess);
-  if (!key) return null;
+const globalAliases = new Map(
+  Object.entries(aliasTable).map(([name, aliases]) => [normalize(name), aliases.map(normalize)]),
+);
+
+export function answerEntries(prompt) {
   const entries = TIERS.flatMap((tier) =>
     (prompt.answers[tier.key] ?? []).map((answer) => {
       const names = [].concat(answer);
       return { answer: names[0], tier: tier.key, keys: names.map(normalize) };
     }),
   );
+  const own = new Set(entries.flatMap((e) => e.keys));
+  for (const entry of entries) {
+    const aliases = entry.keys.flatMap((key) => globalAliases.get(key) ?? []);
+    entry.keys.push(...aliases.filter((alias) => !own.has(alias)));
+  }
+  return entries;
+}
+
+export function matchAnswer(prompt, guess) {
+  const key = normalize(guess);
+  if (!key) return null;
+  const entries = answerEntries(prompt);
   const exact = entries.find((e) => e.keys.includes(key));
   if (exact) return { answer: exact.answer, tier: exact.tier, exact: true };
   const close = entries.filter((e) => e.keys.some((k) => k.length >= MIN_TYPO_CHARS && edits(k, key, 1) <= 1));
@@ -41,9 +56,9 @@ export function matchAnswer(prompt, guess) {
 const answerNames = data.days.flatMap((d) =>
   d.prompts.flatMap((p) => Object.values(p.answers).flat().map((a) => [].concat(a)[0])),
 );
-const names = [...new Map([...genericNames, ...answerNames].map((n) => [normalize(n), n])).values()].sort((a, b) =>
-  a.localeCompare(b),
-);
+// Aliases go first so a real name keeps its spelling when both normalize alike.
+const allNames = [...Object.values(aliasTable).flat(), ...genericNames, ...answerNames];
+const names = [...new Map(allNames.map((n) => [normalize(n), n])).values()].sort((a, b) => a.localeCompare(b));
 
 const json = (body, status = 200, cache = "no-store") =>
   Response.json(body, { status, headers: { "cache-control": cache } });
