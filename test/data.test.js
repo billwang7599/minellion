@@ -5,6 +5,8 @@ import schema from "../data/days.schema.json" with { type: "json" };
 import data from "../data/days.json" with { type: "json" };
 import { TIERS, normalize } from "../src/worker.js";
 
+const RARE_TIERS = TIERS.slice(-2).map((t) => t.key);
+
 const DAY_MS = 86_400_000;
 
 test("days.json matches the schema", () => {
@@ -38,6 +40,15 @@ test("every prompt has a full bank of distinct answers", () => {
         assert.ok(!seen.has(key), `${where}: "${name}" collides with "${seen.get(key)}"`);
         seen.set(key, name);
       }
+    });
+  }
+});
+
+test("every prompt has a rare answer", () => {
+  for (const day of data.days) {
+    day.prompts.forEach((prompt, i) => {
+      const rare = RARE_TIERS.flatMap((key) => prompt.answers[key] ?? []);
+      assert.ok(rare.length >= 1, `${day.date} prompt ${i + 1} has no ${RARE_TIERS.join(" or ")} answer`);
     });
   }
 });
