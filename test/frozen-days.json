@@ -126,129 +126,129 @@
   "Name a block, item or biome with 'Pale' in its name"
  ],
  "2026-11-05": [
-  "Name a music disc",
-  "Name a hostile mob",
-  "Name a dye color",
-  "Name a block or item with 'Brick' in its name",
-  "Name a status effect",
-  "Name a flower",
-  "Name something you can wear on your head"
+  "Name an item you can find in a Shipwreck chest",
+  "Name a mob that drops something you use to brew potions",
+  "Name a status effect you can get by eating something (suspicious stew counts)",
+  "Name a block that a hoe breaks fastest",
+  "Name a block, item or mob with 'Chorus', 'Purpur', 'Shulker' or 'Dragon' in its name",
+  "Name a block, item, mob or biome added in the Nether Update (1.16)",
+  "Name something crafted using string or leather"
  ],
  "2026-11-06": [
-  "Name a block with 'Tuff' in its name",
-  "Name an ingredient you put in a brewing stand",
-  "Name a Java Edition command (without the slash)",
-  "Name a villager profession",
-  "Name a type of wood (one that has its own planks)",
-  "Name a structure that generates in the world",
-  "Name a Java Edition game rule (current or old name)"
+  "Name an item you can find in a Bastion Remnant chest",
+  "Name a mob whose attack can give you a status effect",
+  "Name something crafted using sticks (pickaxes, axes, shovels, hoes, swords, spears, fences, signs and banners don't count)",
+  "Name a biome where it never rains or snows",
+  "Name a block the Ender Dragon can't destroy by flying through it",
+  "Name a block or item with 'Oak' in its name (Dark Oak and Pale Oak count)",
+  "Name a block, item, mob or effect added in Update Aquatic (1.13)"
  ],
  "2026-11-07": [
-  "Name a block or item with 'Diamond' in its name",
-  "Name something crafted using copper ingots",
-  "Name an advancement in the 'Minecraft' (story) tab",
-  "Name a mob that never takes fall damage",
-  "Name a villager job site block (workstation)",
-  "Name an item piglins can give you when you barter gold",
-  "Name a food you can eat"
+  "Name an item you can find in an End City chest",
+  "Name a block that does something when it gets a redstone signal",
+  "Name something you get by smelting in a furnace",
+  "Name a mob that can spawn naturally in a jungle biome (any kind of jungle)",
+  "Name a block, item or biome with 'Crimson', 'Warped' or 'Soul' in its name",
+  "Name a block, item, mob or biome added in Trails & Tales (1.20)",
+  "Name an item you can find in a Buried Treasure chest"
  ],
  "2026-11-08": [
-  "Name a block or item with 'End' or 'Ender' in its name",
-  "Name something crafted using iron ingots",
-  "Name a block that gives off light",
-  "Name a mob that spawns naturally in the Nether",
-  "Name something you can catch with a fishing rod",
-  "Name a biome with 'Forest', 'Taiga', 'Jungle', 'Grove' or 'Garden' in its name",
-  "Name a named Java Edition update or game drop"
+  "Name an item you can find in a Nether Fortress chest",
+  "Name a block that hurts you when you touch or stand in it",
+  "Name an item you can make in a smithing table",
+  "Name a mob that spawns because of a structure (not from a spawner)",
+  "Name a block, item or mob with 'Iron' in its name",
+  "Name a block, item, mob or effect added in Tricky Trials (1.21)",
+  "Name an item you can find in a Stronghold chest"
  ],
  "2026-11-09": [
-  "Name a block or item with 'Prismarine' in its name",
-  "Name a block that generates naturally in the End (End cities and ships count)",
-  "Name an enchantment that can go on armor",
-  "Name a mob that lives in water",
-  "Name an item a Wandering Trader sells",
-  "Name an advancement in the Adventure tab",
-  "Name something that can explode"
+  "Name an item you can find in an Ancient City chest",
+  "Name something crafted from Nether Quartz or quartz blocks (stonecutter counts)",
+  "Name an item a dispenser uses (shoots, places or applies) instead of just dropping it",
+  "Name a mob added in 1.19 (the Wild Update) or later",
+  "Name a block or item with 'Bamboo' in its name",
+  "Name an item you can find in a Jungle Temple chest or dispenser",
+  "Name something crafted from an End material (end stone, chorus fruit, shulker shells or ender pearls)"
  ],
  "2026-11-10": [
-  "Name a block or item with 'Copper' in its name (oxidized and waxed versions count)",
-  "Name an armor trim pattern",
-  "Name an ore block",
-  "Name a passive mob",
-  "Name an item you can find in a Dungeon (monster room) chest",
-  "Name a painting",
-  "Name a block with 'Chiseled' in its name"
+  "Name an item you can find in a village chest (any house or building)",
+  "Name something you craft from four of the same item in a 2×2 square",
+  "Name a mob that can turn into a different mob",
+  "Name an item a Piglin will pick up and admire because it's gold",
+  "Name a block, item or mob added in a 2025 game drop (Spring to Life, Chase the Skies, The Copper Age or Mounts of Mayhem)",
+  "Name an item you can find in a Pillager Outpost chest",
+  "Name a block or item with 'Glass' in its name"
  ],
  "2026-11-11": [
-  "Name something crafted using redstone dust",
-  "Name a block or item with 'Gold' or 'Golden' in its name",
-  "Name a block an Enderman can pick up",
-  "Name a pottery sherd",
-  "Name an Overworld biome",
-  "Name a sound a note block can play (instrument or mob head)",
-  "Name a block or item with 'Nether' in its name (Netherite counts)"
+  "Name a block you need at least an iron pickaxe to mine (or it drops nothing)",
+  "Name an ingredient you can use to craft a firework rocket or firework star",
+  "Name an item you can find in a Mineshaft chest minecart",
+  "Name a mob that has a baby version",
+  "Name a background music track from the game (not a music disc)",
+  "Name an item you can find in a Ruined Portal chest",
+  "Name a block with 'Coral' in its name (dead ones count)"
  ],
  "2026-11-12": [
-  "Name a block, item, mob or biome with 'Ice' or 'Snow' in its name",
-  "Name a block that generates naturally in the Nether (not counting structures)",
-  "Name a potion you can brew",
-  "Name a mob you can tame",
-  "Name a type of item that has durability (any material counts)",
-  "Name an item a Farmer villager buys or sells",
-  "Name an advancement in the Husbandry tab"
+  "Name a food you make by crafting or cooking",
+  "Name a block that falls when there is nothing under it",
+  "Name an item you can find in a Woodland Mansion chest",
+  "Name a block, item, mob or biome added in Caves & Cliffs (1.17 or 1.18)",
+  "Name a tropical fish pattern or one of its named species (the names in its bucket tooltip)",
+  "Name an item a Cleric villager buys or sells",
+  "Name a block with 'Smooth' or 'Cut' in its name"
  ],
  "2026-11-13": [
-  "Name a mob you can breed",
-  "Name something crafted using cobblestone",
-  "Name an item you can find in a Desert Pyramid chest",
-  "Name a block with 'Sandstone' in its name",
-  "Name a type of leaves",
-  "Name something you can plant that grows into a tree or giant fungus/mushroom",
-  "Name an item a player can throw or shoot"
+  "Name a block a redstone comparator can read a signal from",
+  "Name an item you can brush out of suspicious sand or gravel (not a pottery sherd)",
+  "Name a block, item, mob or effect added in Village & Pillage (1.14)",
+  "Name a cat or wolf variant",
+  "Name a plant with 'Grass', 'Fern' or 'Bush' in its name (not Grass Block)",
+  "Name a kind of damage in the game (each has its own death message)",
+  "Name a world type or Superflat preset (Java Edition)"
  ],
  "2026-11-14": [
-  "Name an enchantment",
-  "Name an item used to breed animals",
-  "Name a block with 'Polished' in its name",
-  "Name a biome with 'Ocean', 'River', 'Beach' or 'Shore' in its name",
-  "Name a mob you can ride",
-  "Name a type of stairs",
-  "Name a block that cancels or softens fall damage"
+  "Name a block that generates in Lush Caves (not counting stone, deepslate or ores)",
+  "Name an item a Librarian villager buys or sells",
+  "Name a mob that can break, place or change blocks",
+  "Name a subcommand of /execute (Java Edition)",
+  "Name a block that generates in an Ancient City",
+  "Name a block or item with 'Emerald', 'Lapis' or 'Redstone' in its name",
+  "Name a statistic in the General tab of the Statistics screen"
  ],
  "2026-11-15": [
-  "Name something you can equip on an animal (armor, saddle, etc.)",
-  "Name a block with 'Blackstone' in its name",
-  "Name a block you craft from 9 of the same item",
-  "Name a biome where snow can fall (at any height)",
-  "Name a mob that shoots or throws projectiles",
-  "Name a type of door",
-  "Name an item you can get from a vault (normal or ominous)"
+  "Name an item a Cartographer villager buys or sells",
+  "Name a block or item with 'Torch' or 'Lantern' in its name",
+  "Name an item that changes a block when you use it on that block",
+  "Name a challenge advancement (the ones with a spiky frame)",
+  "Name a crop or plant you can farm because it keeps growing by itself",
+  "Name a block that opens a menu when you right-click it",
+  "Name a mob that drops food when killed"
  ],
  "2026-11-16": [
-  "Name a mob that was a candidate in a Minecraft Live / MINECON mob vote",
-  "Name a material you can use to repair gear in an anvil",
-  "Name a cave biome, Nether biome or End biome",
-  "Name a block with 'Deepslate' in its name",
-  "Name a mob that a naturally generated spawner (monster or trial spawner) can spawn",
-  "Name a plant you can put in a flower pot",
-  "Name a redstone power source (a block that makes its own signal)"
+  "Name an item a Fisherman villager buys or sells",
+  "Name a block, item, mob or biome added in the Wild Update (1.19)",
+  "Name a block you can't get as an item in Survival (Java Edition), even with Silk Touch",
+  "Name an item you can get from a living mob without killing, trading or bartering",
+  "Name a block or item with 'Amethyst' or 'Sculk' in its name",
+  "Name a piece of armor a player can wear (any material)",
+  "Name a block that generates naturally in an Overworld ocean (not in a structure)"
  ],
  "2026-11-17": [
-  "Name an advancement in the Nether tab",
-  "Name a block, item or biome with 'Pale' in its name",
-  "Name an item you can turn into dye (not counting other dyes)",
-  "Name a mob you can put on a lead",
-  "Name a block that can hold items inside it",
-  "Name a type of wall (the stone block)",
-  "Name an undead mob"
+  "Name an item you can find in a Trial Chambers chest or barrel (not a vault)",
+  "Name an entity attribute you can change with /attribute (Java Edition)",
+  "Name a block that generates in a Bastion Remnant",
+  "Name something you need to craft, build or power a beacon",
+  "Name a mob that can spawn naturally in a Swamp or Mangrove Swamp",
+  "Name a kind of boat or raft",
+  "Name a key binding in the Controls settings (Java Edition)"
  ],
  "2026-11-18": [
-  "Name a block or item with 'Raw' in its name",
-  "Name a kind of bucket",
-  "Name a neutral mob",
-  "Name an enchantment for a sword, bow, crossbow, trident, mace or spear",
-  "Name a block or item that comes in all 16 dye colors",
-  "Name a block with 'Moss' or 'Mossy' in its name",
-  "Name a block that angers piglins when you open or break it"
+  "Name a block that generates in an Igloo (including the basement)",
+  "Name a gift villagers can throw you when you have Hero of the Village",
+  "Name a target selector argument, like the ones inside @e[...] (Java Edition)",
+  "Name a block or item that comes in the wood of every Overworld tree (oak, spruce, birch and the rest)",
+  "Name a block found on the surface of a Badlands biome (any kind of Badlands)",
+  "Name a block that drops experience orbs when you mine it",
+  "Name a block or item you can only get by going to the End"
  ]
 }
