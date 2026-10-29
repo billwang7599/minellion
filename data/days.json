@@ -3518,7 +3518,11 @@
        "Dragon Egg",
        "End Rod",
        "Purpur Pillar",
-       "End Stone Bricks"
+       "End Stone Bricks",
+       [
+        "End Crystal",
+        "Ender Crystal"
+       ]
       ],
       "iron": [
        "Iron Bars",
@@ -3535,7 +3539,8 @@
        [
         "Torch",
         "Wall Torch"
-       ]
+       ],
+       "Item Frame"
       ],
       "diamond": [
        "Fire",
