@@ -13273,9 +13273,18 @@
      "Cooked Mutton",
      "Cooked Rabbit",
      "Pumpkin Pie",
-     "Raw Cod",
-     "Raw Salmon",
-     "Redstone Dust",
+     [
+      "Raw Cod",
+      "Cod"
+     ],
+     [
+      "Raw Salmon",
+      "Salmon"
+     ],
+     [
+      "Redstone Dust",
+      "Redstone"
+     ],
      "Lapis Lazuli",
      "Paper",
      [
@@ -13297,13 +13306,34 @@
      "Golden Axe",
      "Tipped Arrow",
      "Clay",
-     "Wheat Seeds",
+     [
+      "Wheat Seeds",
+      "Seeds"
+     ],
      [
       "Wool",
       "White Wool",
       "Red Wool",
-      "Blue Wool"
-     ]
+      "Blue Wool",
+      "Orange Wool",
+      "Magenta Wool",
+      "Light Blue Wool",
+      "Yellow Wool",
+      "Lime Wool",
+      "Pink Wool",
+      "Gray Wool",
+      "Light Gray Wool",
+      "Cyan Wool",
+      "Purple Wool",
+      "Brown Wool",
+      "Green Wool",
+      "Black Wool"
+     ],
+     [
+      "Chainmail Armor",
+      "Chain Armor"
+     ],
+     "Stone Tools"
     ],
     "diamond": [
      "Poppy"
@@ -13320,11 +13350,21 @@
    "text": "Name a plant with 'Grass', 'Fern' or 'Bush' in its name (not Grass Block)",
    "answers": {
     "dirt": [
-     "Short Grass",
+     [
+      "Short Grass",
+      "Grass"
+     ],
      "Tall Grass",
      "Fern",
-     "Dead Bush",
-     "Sweet Berry Bush"
+     [
+      "Dead Bush",
+      "Dead Shrub",
+      "Shrub"
+     ],
+     [
+      "Sweet Berry Bush",
+      "Berry Bush"
+     ]
     ],
     "coal": [
      "Large Fern",
@@ -13334,11 +13374,18 @@
     ],
     "iron": [
      "Tall Seagrass",
-     "Short Dry Grass",
+     [
+      "Short Dry Grass",
+      "Dry Grass"
+     ],
      "Tall Dry Grass"
     ],
-    "diamond": [
+    "gold": [
      "Firefly Bush"
+    ],
+    "diamond": [
+     "Potted Fern",
+     "Potted Dead Bush"
     ]
    }
   },
@@ -13353,8 +13400,15 @@
    "answers": {
     "dirt": [
      "type",
-     "distance",
-     "limit",
+     [
+      "distance",
+      "r",
+      "rm"
+     ],
+     [
+      "limit",
+      "c"
+     ],
      "name"
     ],
     "coal": [
@@ -13363,8 +13417,15 @@
      "x",
      "y",
      "z",
-     "gamemode",
-     "level",
+     [
+      "gamemode",
+      "m"
+     ],
+     [
+      "level",
+      "l",
+      "lm"
+     ],
      "scores"
     ],
     "iron": [
@@ -13375,8 +13436,16 @@
      "dz"
     ],
     "gold": [
-     "x_rotation",
-     "y_rotation",
+     [
+      "x_rotation",
+      "rx",
+      "rxm"
+     ],
+     [
+      "y_rotation",
+      "ry",
+      "rym"
+     ],
      "advancements"
     ],
     "diamond": [
@@ -13431,7 +13500,8 @@
       "Mangrove Door",
       "Cherry Door",
       "Pale Oak Door",
-      "Poplar Door"
+      "Poplar Door",
+      "Wooden Door"
      ],
      [
       "Stairs",
@@ -13444,7 +13514,8 @@
       "Mangrove Stairs",
       "Cherry Stairs",
       "Pale Oak Stairs",
-      "Poplar Stairs"
+      "Poplar Stairs",
+      "Wooden Stairs"
      ],
      [
       "Slab",
@@ -13457,7 +13528,8 @@
       "Mangrove Slab",
       "Cherry Slab",
       "Pale Oak Slab",
-      "Poplar Slab"
+      "Poplar Slab",
+      "Wooden Slab"
      ],
      [
       "Fence",
@@ -13470,7 +13542,8 @@
       "Mangrove Fence",
       "Cherry Fence",
       "Pale Oak Fence",
-      "Poplar Fence"
+      "Poplar Fence",
+      "Wooden Fence"
      ],
      [
       "Boat",
@@ -13498,7 +13571,8 @@
       "Mangrove Fence Gate",
       "Cherry Fence Gate",
       "Pale Oak Fence Gate",
-      "Poplar Fence Gate"
+      "Poplar Fence Gate",
+      "Wooden Fence Gate"
      ],
      [
       "Trapdoor",
@@ -13511,7 +13585,8 @@
       "Mangrove Trapdoor",
       "Cherry Trapdoor",
       "Pale Oak Trapdoor",
-      "Poplar Trapdoor"
+      "Poplar Trapdoor",
+      "Wooden Trapdoor"
      ],
      [
       "Button",
@@ -13524,7 +13599,8 @@
       "Mangrove Button",
       "Cherry Button",
       "Pale Oak Button",
-      "Poplar Button"
+      "Poplar Button",
+      "Wooden Button"
      ],
      [
       "Pressure Plate",
@@ -13537,7 +13613,8 @@
       "Mangrove Pressure Plate",
       "Cherry Pressure Plate",
       "Pale Oak Pressure Plate",
-      "Poplar Pressure Plate"
+      "Poplar Pressure Plate",
+      "Wooden Pressure Plate"
      ],
      [
       "Sign",
@@ -13563,7 +13640,8 @@
       "Mangrove Wood",
       "Cherry Wood",
       "Pale Oak Wood",
-      "Poplar Wood"
+      "Poplar Wood",
+      "Bark"
      ],
      [
       "Leaves",
@@ -13575,7 +13653,11 @@
       "Dark Oak Leaves",
       "Mangrove Leaves",
       "Cherry Leaves",
-      "Pale Oak Leaves"
+      "Pale Oak Leaves",
+      "Poplar Leaves",
+      "Orange Poplar Leaves",
+      "Red Poplar Leaves",
+      "Yellow Poplar Leaves"
      ]
     ],
     "iron": [
@@ -13629,7 +13711,23 @@
       "Mangrove Boat with Chest",
       "Cherry Boat with Chest",
       "Pale Oak Boat with Chest",
-      "Poplar Boat with Chest"
+      "Poplar Boat with Chest",
+      "Chest Boat"
+     ]
+    ],
+    "gold": [
+     [
+      "Wall Sign",
+      "Oak Wall Sign",
+      "Spruce Wall Sign",
+      "Birch Wall Sign",
+      "Jungle Wall Sign",
+      "Acacia Wall Sign",
+      "Dark Oak Wall Sign",
+      "Mangrove Wall Sign",
+      "Cherry Wall Sign",
+      "Pale Oak Wall Sign",
+      "Poplar Wall Sign"
      ]
     ],
     "diamond": [
@@ -13644,7 +13742,21 @@
       "Mangrove Shelf",
       "Cherry Shelf",
       "Pale Oak Shelf",
-      "Poplar Shelf"
+      "Poplar Shelf",
+      "Shelves"
+     ],
+     [
+      "Wall Hanging Sign",
+      "Oak Wall Hanging Sign",
+      "Spruce Wall Hanging Sign",
+      "Birch Wall Hanging Sign",
+      "Jungle Wall Hanging Sign",
+      "Acacia Wall Hanging Sign",
+      "Dark Oak Wall Hanging Sign",
+      "Mangrove Wall Hanging Sign",
+      "Cherry Wall Hanging Sign",
+      "Pale Oak Wall Hanging Sign",
+      "Poplar Wall Hanging Sign"
      ]
     ]
    }
@@ -13660,7 +13772,10 @@
     "dirt": [
      "Water",
      "Sand",
-     "Kelp",
+     [
+      "Kelp",
+      "Kelp Plant"
+     ],
      "Seagrass",
      "Gravel"
     ],
@@ -13669,15 +13784,23 @@
      "Tall Seagrass",
      "Sea Pickle",
      "Ice",
-     "Packed Ice",
+     [
+      "Packed Ice",
+      "Iceberg"
+     ],
      "Blue Ice",
-     "Magma Block",
+     [
+      "Magma Block",
+      "Magma"
+     ],
      "Bubble Column",
      "Brain Coral Block",
      "Tube Coral Block",
      "Fire Coral Block",
      "Bubble Coral Block",
-     "Horn Coral Block"
+     "Horn Coral Block",
+     "Coral",
+     "Coral Block"
     ],
     "iron": [
      "Brain Coral",
@@ -13690,10 +13813,27 @@
      "Fire Coral Fan",
      "Bubble Coral Fan",
      "Horn Coral Fan",
-     "Snow Block"
+     "Snow Block",
+     "Coral Fan"
+    ],
+    "gold": [
+     [
+      "Coral Wall Fan",
+      "Brain Coral Wall Fan",
+      "Tube Coral Wall Fan",
+      "Fire Coral Wall Fan",
+      "Bubble Coral Wall Fan",
+      "Horn Coral Wall Fan"
+     ],
+     "Sandstone",
+     "Stone",
+     "Sugar Cane"
     ],
     "diamond": [
-     "Snow"
+     [
+      "Snow",
+      "Snow Layer"
+     ]
     ]
    }
   },
@@ -13790,6 +13930,15 @@
      [
       "Toggle Fullscreen",
       "Fullscreen"
+     ],
+     [
+      "Toggle GUI",
+      "Hide GUI"
+     ],
+     [
+      "Toggle Overlay",
+      "Debug Screen",
+      "Debug Overlay"
      ]
     ],
     "gold": [
@@ -13803,12 +13952,42 @@
      ],
      "Highlight Players",
      "Save Hotbar Activator",
-     "Load Hotbar Activator"
+     "Load Hotbar Activator",
+     "Select On Hotbar",
+     [
+      "Show Hitboxes",
+      "Hitboxes"
+     ],
+     [
+      "Show Chunk Boundaries",
+      "Chunk Borders",
+      "Chunk Boundaries"
+     ],
+     "Game Mode Switcher",
+     "Copy Location",
+     "Reload Chunks",
+     "Clear Chat",
+     "Show Advanced Tooltips",
+     "Reload Resource Packs"
     ],
     "diamond": [
      "Toggle Spectator Shader Effects",
      "Friends Screen",
-     "Quick Actions"
+     "Quick Actions",
+     "Debug Modifier Key",
+     "Debug Options",
+     "Fps Charts",
+     "Network Charts",
+     "Profiling Chart",
+     "Start/Stop Profiling",
+     "Debug Crash",
+     "Dump Dynamic Textures",
+     "Dump Version Info",
+     "Toggle Lost Focus Pause",
+     "Toggle Improved Transparency",
+     "Lightmap Texture",
+     "Cycle Spectator",
+     "Copy Data"
     ]
    }
   },
@@ -13829,14 +14008,21 @@
      "Lapis Lazuli Ore"
     ],
     "coal": [
-     "Nether Quartz Ore",
+     [
+      "Nether Quartz Ore",
+      "Quartz Ore",
+      "Nether Quartz"
+     ],
      "Nether Gold Ore",
      "Deepslate Diamond Ore",
      "Deepslate Coal Ore",
      "Deepslate Emerald Ore",
      "Deepslate Redstone Ore",
      "Deepslate Lapis Lazuli Ore",
-     "Monster Spawner"
+     [
+      "Monster Spawner",
+      "Spawner"
+     ]
     ],
     "iron": [
      "Sculk",
@@ -13844,8 +14030,14 @@
      "Sculk Sensor",
      "Sculk Shrieker"
     ],
+    "gold": [
+     "Creaking Heart"
+    ],
     "diamond": [
-     "Calibrated Sculk Sensor"
+     "Calibrated Sculk Sensor",
+     "Furnace",
+     "Blast Furnace",
+     "Smoker"
     ]
    }
   },
@@ -13860,13 +14052,37 @@
    "answers": {
     "dirt": [
      "Elytra",
-     "Dragon Egg",
+     [
+      "Dragon Egg",
+      "Ender Dragon Egg"
+     ],
      "Shulker Shell",
-     "Chorus Fruit",
+     [
+      "Chorus Fruit",
+      "Chorus"
+     ],
      "End Stone"
     ],
     "coal": [
-     "Shulker Box",
+     [
+      "Shulker Box",
+      "White Shulker Box",
+      "Orange Shulker Box",
+      "Magenta Shulker Box",
+      "Light Blue Shulker Box",
+      "Yellow Shulker Box",
+      "Lime Shulker Box",
+      "Pink Shulker Box",
+      "Gray Shulker Box",
+      "Light Gray Shulker Box",
+      "Cyan Shulker Box",
+      "Purple Shulker Box",
+      "Blue Shulker Box",
+      "Brown Shulker Box",
+      "Green Shulker Box",
+      "Red Shulker Box",
+      "Black Shulker Box"
+     ],
      "Dragon Head",
      "Dragon's Breath",
      "Purpur Block",
@@ -13882,7 +14098,10 @@
      "End Stone Brick Stairs",
      "End Stone Brick Slab",
      "End Stone Brick Wall",
-     "Spire Armor Trim"
+     [
+      "Spire Armor Trim",
+      "Spire Armor Trim Smithing Template"
+     ]
     ],
     "gold": [
      "Tipped Arrow"
