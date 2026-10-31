@@ -6597,7 +6597,9 @@
     "dirt": [
      [
       "Buried Treasure Map",
-      "Treasure Map"
+      "Treasure Map",
+      "Map",
+      "Explorer Map"
      ],
      "Emerald",
      "Gold Ingot",
@@ -6618,9 +6620,13 @@
      "Lapis Lazuli",
      "Gold Nugget",
      "Iron Nugget",
-     "Empty Map",
+     [
+      "Empty Map",
+      "Blank Map"
+     ],
      "Clock",
-     "Leather Tunic"
+     "Leather Tunic",
+     "Leather Armor"
     ],
     "iron": [
      "Pumpkin",
@@ -6631,11 +6637,17 @@
      "Book",
      "Feather",
      "Suspicious Stew",
-     "Coast Armor Trim"
+     "Coast Armor Trim",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "gold": [
      "Bamboo",
-     "Moss Block"
+     "Moss Block",
+     "Nautilus Armor"
     ],
     "diamond": [
      "Iron Nautilus Armor",
@@ -6673,8 +6685,15 @@
      "Slime",
      "Guardian"
     ],
+    "gold": [
+     "Turtle"
+    ],
     "diamond": [
-     "Elder Guardian"
+     "Elder Guardian",
+     [
+      "Ender Dragon",
+      "Dragon"
+     ]
     ]
    }
   },
@@ -6733,7 +6752,6 @@
      "Gold Nugget",
      "Crying Obsidian",
      "Enchanted Golden Apple",
-     "Netherite Upgrade",
      "Golden Carrot",
      "Golden Sword",
      "Golden Axe",
@@ -6747,7 +6765,16 @@
      "Diamond",
      "Netherite Ingot",
      "Snout Armor Trim",
-     "Pigstep"
+     "Pigstep",
+     [
+      "Golden Armor",
+      "Gold Armor"
+     ],
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "iron": [
      "Spectral Arrow",
@@ -6767,11 +6794,21 @@
      "Diamond Boots",
      "Block of Iron",
      "Saddle",
-     "String"
+     "String",
+     "Diamond Armor",
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ],
+     "Netherite Upgrade"
     ],
     "gold": [
      "Iron Sword",
-     "Iron Chain",
+     [
+      "Iron Chain",
+      "Chain"
+     ],
      "Bone Block",
      [
       "Enchanted Book",
@@ -6779,14 +6816,18 @@
      ],
      "Glowstone",
      "Soul Sand",
-     "Nether Quartz"
+     "Nether Quartz",
+     "Banner Pattern"
     ],
     "diamond": [
      "Crimson Fungus",
      "Crimson Nylium",
      "Crimson Roots",
      "Diamond Spear",
-     "Snout Banner Pattern"
+     [
+      "Snout Banner Pattern",
+      "Snout Pattern"
+     ]
     ]
    }
   },
@@ -6808,12 +6849,16 @@
     ],
     "coal": [
      "Crossbow",
-     "White Wool",
+     [
+      "White Wool",
+      "Wool"
+     ],
      "Leather Cap",
      "Leather Pants",
      "Leather Boots",
      "Bundle",
-     "Scaffolding"
+     "Scaffolding",
+     "Leather Armor"
     ],
     "iron": [
      "Loom",
@@ -6875,7 +6920,11 @@
      "Parched"
     ],
     "diamond": [
-     "Illusioner"
+     "Illusioner",
+     [
+      "Ender Dragon",
+      "Dragon"
+     ]
     ]
    }
   },
@@ -6905,7 +6954,9 @@
      "Saddle",
      "Iron Sword",
      "Iron Pickaxe",
-     "Diamond Horse Armor"
+     "Diamond Horse Armor",
+     "Diamond Armor",
+     "Iron Armor"
     ],
     "iron": [
      "Iron Helmet",
@@ -6915,7 +6966,13 @@
      "Iron Shovel",
      "Iron Horse Armor",
      "Golden Horse Armor",
-     "Spire Armor Trim"
+     "Spire Armor Trim",
+     "Horse Armor",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "gold": [
      "Beetroot Seeds",
@@ -6957,7 +7014,23 @@
      "Activator Rail",
      "Tripwire Hook",
      "Soul Torch",
-     "Grindstone"
+     "Grindstone",
+     [
+      "Fence Gate",
+      "Oak Fence Gate",
+      "Spruce Fence Gate",
+      "Birch Fence Gate",
+      "Jungle Fence Gate",
+      "Acacia Fence Gate",
+      "Dark Oak Fence Gate",
+      "Mangrove Fence Gate",
+      "Cherry Fence Gate",
+      "Pale Oak Fence Gate",
+      "Bamboo Fence Gate",
+      "Crimson Fence Gate",
+      "Warped Fence Gate",
+      "Poplar Fence Gate"
+     ]
     ],
     "gold": [
      "Soul Campfire",
@@ -6986,7 +7059,19 @@
       "Door",
       "Iron Door",
       "Wooden Door",
-      "Oak Door"
+      "Oak Door",
+      "Spruce Door",
+      "Birch Door",
+      "Jungle Door",
+      "Acacia Door",
+      "Dark Oak Door",
+      "Mangrove Door",
+      "Cherry Door",
+      "Pale Oak Door",
+      "Bamboo Door",
+      "Crimson Door",
+      "Warped Door",
+      "Poplar Door"
      ]
     ],
     "coal": [
@@ -6996,11 +7081,36 @@
      [
       "Trapdoor",
       "Iron Trapdoor",
-      "Oak Trapdoor"
+      "Oak Trapdoor",
+      "Spruce Trapdoor",
+      "Birch Trapdoor",
+      "Jungle Trapdoor",
+      "Acacia Trapdoor",
+      "Dark Oak Trapdoor",
+      "Mangrove Trapdoor",
+      "Cherry Trapdoor",
+      "Pale Oak Trapdoor",
+      "Bamboo Trapdoor",
+      "Crimson Trapdoor",
+      "Warped Trapdoor",
+      "Poplar Trapdoor",
+      "Wooden Trapdoor"
      ],
      [
       "Fence Gate",
-      "Oak Fence Gate"
+      "Oak Fence Gate",
+      "Spruce Fence Gate",
+      "Birch Fence Gate",
+      "Jungle Fence Gate",
+      "Acacia Fence Gate",
+      "Dark Oak Fence Gate",
+      "Mangrove Fence Gate",
+      "Cherry Fence Gate",
+      "Pale Oak Fence Gate",
+      "Bamboo Fence Gate",
+      "Crimson Fence Gate",
+      "Warped Fence Gate",
+      "Poplar Fence Gate"
      ],
      "Powered Rail",
      "Hopper",
@@ -7009,22 +7119,74 @@
     "iron": [
      "Activator Rail",
      "Bell",
-     "Command Block",
+     [
+      "Command Block",
+      "Repeating Command Block",
+      "Chain Command Block"
+     ],
      "Redstone Torch",
      "Redstone Comparator",
-     "Copper Bulb",
-     "Crafter"
+     [
+      "Copper Bulb",
+      "Exposed Copper Bulb",
+      "Weathered Copper Bulb",
+      "Oxidized Copper Bulb",
+      "Waxed Copper Bulb",
+      "Waxed Exposed Copper Bulb",
+      "Waxed Weathered Copper Bulb",
+      "Waxed Oxidized Copper Bulb"
+     ],
+     "Crafter",
+     [
+      "Redstone Dust",
+      "Redstone Wire",
+      "Redstone"
+     ]
     ],
     "gold": [
-     "Copper Door",
-     "Copper Trapdoor",
-     "Big Dripleaf"
+     [
+      "Copper Door",
+      "Exposed Copper Door",
+      "Weathered Copper Door",
+      "Oxidized Copper Door",
+      "Waxed Copper Door",
+      "Waxed Exposed Copper Door",
+      "Waxed Weathered Copper Door",
+      "Waxed Oxidized Copper Door"
+     ],
+     [
+      "Copper Trapdoor",
+      "Exposed Copper Trapdoor",
+      "Weathered Copper Trapdoor",
+      "Oxidized Copper Trapdoor",
+      "Waxed Copper Trapdoor",
+      "Waxed Exposed Copper Trapdoor",
+      "Waxed Weathered Copper Trapdoor",
+      "Waxed Oxidized Copper Trapdoor"
+     ],
+     "Big Dripleaf",
+     "Dragon Head"
     ],
     "diamond": [
      [
       "Shelf",
-      "Oak Shelf"
-     ]
+      "Oak Shelf",
+      "Spruce Shelf",
+      "Birch Shelf",
+      "Jungle Shelf",
+      "Acacia Shelf",
+      "Dark Oak Shelf",
+      "Mangrove Shelf",
+      "Cherry Shelf",
+      "Pale Oak Shelf",
+      "Bamboo Shelf",
+      "Crimson Shelf",
+      "Warped Shelf",
+      "Poplar Shelf"
+     ],
+     "Structure Block",
+     "Piglin Head",
+     "Calibrated Sculk Sensor"
     ]
    }
   },
@@ -7048,13 +7210,19 @@
      "Golden Sword",
      "Golden Chestplate",
      "Obsidian",
-     "Flint and Steel"
+     "Flint and Steel",
+     "Horse Armor"
     ],
     "iron": [
      "Iron Horse Armor",
      "Golden Horse Armor",
      "Diamond Horse Armor",
-     "Rib Armor Trim"
+     "Rib Armor Trim",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "diamond": [
      "Copper Horse Armor"
@@ -7159,11 +7327,18 @@
      "Lava",
      "Fire",
      "Cactus",
-     "Magma Block"
+     [
+      "Magma Block",
+      "Magma"
+     ]
     ],
     "coal": [
      "Campfire",
-     "Sweet Berry Bush",
+     [
+      "Sweet Berry Bush",
+      "Berry Bush",
+      "Sweet Berries"
+     ],
      "Soul Fire",
      "Soul Campfire"
     ],
@@ -7172,7 +7347,12 @@
      "Powder Snow"
     ],
     "gold": [
-     "Pointed Dripstone"
+     [
+      "Pointed Dripstone",
+      "Dripstone",
+      "Stalactite",
+      "Stalagmite"
+     ]
     ],
     "diamond": [
      "Lava Cauldron"
@@ -7191,7 +7371,11 @@
     "dirt": [
      "Enchanted Golden Apple",
      "Echo Shard",
-     "Disc Fragment",
+     [
+      "Disc Fragment",
+      "Disc Fragment 5",
+      "Music Disc Fragment"
+     ],
      "Diamond Leggings"
     ],
     "coal": [
@@ -7209,7 +7393,21 @@
      "Otherside",
      "Diamond Horse Armor",
      "Silence Armor Trim",
-     "Ward Armor Trim"
+     "Ward Armor Trim",
+     [
+      "Swift Sneak",
+      "Swift Sneak Book"
+     ],
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ],
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "iron": [
      "Bone",
@@ -7258,7 +7456,10 @@
      "Chiseled Quartz Block",
      "Quartz Stairs",
      "Quartz Slab",
-     "Smooth Quartz Block"
+     [
+      "Smooth Quartz Block",
+      "Smooth Quartz"
+     ]
     ],
     "iron": [
      "Quartz Bricks",
@@ -7301,10 +7502,28 @@
      "Tipped Arrow",
      "Bucket",
      "Shulker Box",
-     "Minecart",
+     [
+      "Minecart",
+      "Minecart with Chest",
+      "Minecart with Hopper",
+      "Minecart with Furnace",
+      "Minecart with TNT",
+      "Minecart with Command Block"
+     ],
      [
       "Oak Boat",
-      "Boat"
+      "Boat",
+      "Spruce Boat",
+      "Birch Boat",
+      "Jungle Boat",
+      "Acacia Boat",
+      "Dark Oak Boat",
+      "Mangrove Boat",
+      "Cherry Boat",
+      "Pale Oak Boat",
+      "Poplar Boat",
+      "Bamboo Raft",
+      "Raft"
      ]
     ],
     "iron": [
@@ -7324,7 +7543,8 @@
       "Diamond Chestplate",
       "Chestplate",
       "Armor"
-     ]
+     ],
+     "Armor Stand"
     ],
     "gold": [
      "Brush",
@@ -7333,19 +7553,63 @@
       "Horse Armor"
      ],
      "Wolf Armor",
-     "Bucket of Cod",
+     [
+      "Bucket of Cod",
+      "Fish Bucket",
+      "Bucket of Fish"
+     ],
      [
       "Creeper Head",
       "Mob Head",
-      "Skeleton Skull"
-     ]
+      "Skeleton Skull",
+      "Zombie Head",
+      "Player Head",
+      "Piglin Head",
+      "Dragon Head",
+      "Head",
+      "Skull"
+     ],
+     [
+      "Boat with Chest",
+      "Oak Boat with Chest",
+      "Spruce Boat with Chest",
+      "Birch Boat with Chest",
+      "Jungle Boat with Chest",
+      "Acacia Boat with Chest",
+      "Dark Oak Boat with Chest",
+      "Mangrove Boat with Chest",
+      "Cherry Boat with Chest",
+      "Pale Oak Boat with Chest",
+      "Poplar Boat with Chest",
+      "Bamboo Raft with Chest"
+     ],
+     "Elytra",
+     "Bucket of Salmon",
+     "Bucket of Tropical Fish",
+     "Bucket of Pufferfish",
+     "Bucket of Axolotl",
+     [
+      "Nautilus Armor",
+      "Iron Nautilus Armor"
+     ],
+     "Harness",
+     "Wither Skeleton Skull",
+     "Turtle Shell"
     ],
     "diamond": [
      [
       "Potion",
       "Water Bottle"
      ],
-     "Glowstone"
+     "Glowstone",
+     "Bucket of Tadpole",
+     "Bucket of Sulfur Cube",
+     [
+      "Carpet",
+      "White Carpet"
+     ],
+     "Chest",
+     "Honeycomb"
     ]
    }
   },
@@ -7386,15 +7650,19 @@
      "Raw Cod",
      "Raw Salmon",
      "Potato",
-     "Carrot",
-     "Wheat Seeds",
+     [
+      "Wheat Seeds",
+      "Seeds"
+     ],
      "Rotten Flesh",
      "Arrow",
      "Shears",
      "Book",
      "Paper",
      "Coal",
-     "Stick"
+     "Stick",
+     "Iron Armor",
+     "Horse Armor"
     ],
     "iron": [
      "Leather",
@@ -7423,14 +7691,21 @@
      "Iron Shovel",
      "Iron Spear",
      "Clay Ball",
-     "White Wool",
+     [
+      "White Wool",
+      "Wool"
+     ],
      "Furnace",
      "Stone",
      "Stone Bricks",
-     "Oak Sapling",
+     [
+      "Oak Sapling",
+      "Sapling"
+     ],
      "Spruce Sapling",
      "Acacia Sapling",
-     "Spruce Log"
+     "Spruce Log",
+     "Leather Armor"
     ],
     "gold": [
      "Barrel",
@@ -7442,7 +7717,10 @@
      "Dead Bush",
      "Fern",
      "Large Fern",
-     "Short Grass",
+     [
+      "Short Grass",
+      "Grass"
+     ],
      "Tall Grass",
      "Flower Pot",
      "Green Dye",
@@ -7473,19 +7751,34 @@
      "Crafting Table",
      "Stone Bricks",
      "Sandstone",
-     "Snow Block",
-     "Oak Wood"
+     [
+      "Snow Block",
+      "Snow"
+     ],
+     [
+      "Oak Wood",
+      "Wood"
+     ]
     ],
     "coal": [
-     "Bricks",
-     "Clay",
+     [
+      "Bricks",
+      "Brick Block"
+     ],
+     [
+      "Clay",
+      "Clay Block"
+     ],
      "Glowstone",
      "Block of Quartz",
      "Polished Andesite",
      "Polished Diorite",
      "Polished Granite",
      "Red Sandstone",
-     "White Wool",
+     [
+      "White Wool",
+      "Wool"
+     ],
      "Prismarine",
      "Nether Bricks",
      "Block of Amethyst",
