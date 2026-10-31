@@ -5378,7 +5378,8 @@
      "Dropper",
      "Brewing Stand",
      "Blast Furnace",
-     "Smoker"
+     "Smoker",
+     "Item Frame"
     ],
     "iron": [
      "Chiseled Bookshelf",
@@ -5412,11 +5413,13 @@
       "Crimson Shelf",
       "Warped Shelf",
       "Poplar Shelf"
-     ]
+     ],
+     "Glow Item Frame"
     ],
     "gold": [
      "Soul Campfire",
-     "Flower Pot"
+     "Flower Pot",
+     "Armor Stand"
     ],
     "netherite": [
      "Suspicious Sand",
@@ -5462,7 +5465,11 @@
       "Black Carpet",
       "Llama Carpet"
      ],
-     "Chest"
+     "Chest",
+     [
+      "Horse Armor",
+      "Horse Armour"
+     ]
     ],
     "iron": [
      "Netherite Horse Armor",
@@ -5491,7 +5498,9 @@
      "Iron Nautilus Armor",
      "Diamond Nautilus Armor",
      "Golden Nautilus Armor",
-     "Copper Nautilus Armor"
+     "Copper Nautilus Armor",
+     "Nautilus Armor",
+     "Lead"
     ],
     "diamond": [
      "Netherite Nautilus Armor"
@@ -5535,7 +5544,8 @@
      "Parched"
     ],
     "netherite": [
-     "Villager"
+     "Villager",
+     "Allay"
     ]
    }
   },
@@ -5635,7 +5645,10 @@
    "text": "Name a block that cancels or softens fall damage",
    "answers": {
     "dirt": [
-     "Water",
+     [
+      "Water",
+      "Water Bucket"
+     ],
      "Slime Block",
      "Hay Bale"
     ],
@@ -5705,7 +5718,8 @@
       "Warped Trapdoor",
       "Poplar Trapdoor"
      ],
-     "Bubble Column"
+     "Bubble Column",
+     "Boat"
     ],
     "diamond": [
      "Shelf Mushroom"
@@ -5782,14 +5796,22 @@
      "Golden Horse Armor",
      "Diamond Horse Armor",
      "13",
-     "Cat"
+     "Cat",
+     [
+      "Horse Armor",
+      "Horse Armour"
+     ]
     ],
     "iron": [
      "Enchanted Golden Apple",
      "Melon Seeds",
      "Pumpkin Seeds",
      "Beetroot Seeds",
-     "Leather"
+     "Leather",
+     [
+      "Music Disc",
+      "Disc"
+     ]
     ],
     "gold": [
      "Otherside"
