@@ -256,6 +256,24 @@ test("a global alias scores as the canonical answer of the prompt that has it", 
   assert.equal(matchAnswer({ answers: { dirt: ["Creeper"] } }, "wither head"), null);
 });
 
+test("old names and nicknames reach the current in-game name", () => {
+  const cases = {
+    "gold dandelion": "Golden Dandelion",
+    chain: "Iron Chain",
+    workbench: "Crafting Table",
+    "oak chest boat": "Oak Boat with Chest",
+    "warped log": "Warped Stem",
+    "writable book": "Book and Quill",
+    "blank map": "Empty Map",
+    "raw fish": "Raw Cod",
+    "hardened clay": "Terracotta",
+    thirteen: "13",
+    "cover me in diamonds": "Cover Me with Diamonds",
+  };
+  for (const [guess, name] of Object.entries(cases))
+    assert.equal(matchAnswer({ answers: { dirt: [name] } }, guess)?.answer, name, guess);
+});
+
 test("a prompt's own answers and aliases beat a global alias", () => {
   const own = { answers: { dirt: ["Wither Skeleton Skull"], diamond: ["Wither Skull"] } };
   assert.deepEqual(matchAnswer(own, "wither skull"), { answer: "Wither Skull", tier: "diamond", exact: true });

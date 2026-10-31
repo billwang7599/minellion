@@ -68,7 +68,6 @@
      "Beach",
      [
       "Cherry Grove",
-      "Cherry Forest",
       "Cherry Blossom Forest"
      ],
      "Flower Forest",
@@ -79,8 +78,7 @@
      "Snowy Taiga",
      [
       "Mangrove Swamp",
-      "Mangrove",
-      "Mangrove Forest"
+      "Mangrove"
      ],
      "Bamboo Jungle"
     ],
@@ -90,10 +88,7 @@
      "Frozen Ocean",
      "Cold Ocean",
      "Lukewarm Ocean",
-     [
-      "Pale Garden",
-      "Pale Forest"
-     ],
+     "Pale Garden",
      "Windswept Hills",
      "Grove",
      "Snowy Slopes",
@@ -313,14 +308,9 @@
      "Cooked Cod",
      [
       "Raw Cod",
-      "Cod",
-      "Raw Fish",
       "Fish"
      ],
-     [
-      "Raw Salmon",
-      "Salmon"
-     ],
+     "Raw Salmon",
      [
       "Sweet Berries",
       "Sweet Berry",
@@ -412,8 +402,7 @@
      ],
      [
       "Ancient Debris",
-      "Netherite",
-      "Netherite Ore"
+      "Netherite"
      ],
      "Nether Gold Ore"
     ],
@@ -591,8 +580,7 @@
      ],
      [
       "Jump Boost",
-      "Leaping",
-      "Jump"
+      "Leaping"
      ],
      "Water Breathing",
      "Haste",
@@ -763,10 +751,7 @@
    "text": "Name a music disc",
    "answers": {
     "dirt": [
-     [
-      "13",
-      "Thirteen"
-     ],
+     "13",
      "Cat",
      "Pigstep"
     ],
@@ -774,10 +759,7 @@
      "Otherside",
      "Blocks",
      "Chirp",
-     [
-      "11",
-      "Eleven"
-     ],
+     "11",
      "Far",
      "Mall",
      "Mellohi",
@@ -788,10 +770,7 @@
     ],
     "iron": [
      "Relic",
-     [
-      "5",
-      "Five"
-     ]
+     "5"
     ],
     "gold": [
      "Creator",
@@ -1169,10 +1148,7 @@
      "Tripwire Hook",
      "Heavy Weighted Pressure Plate",
      "Stonecutter",
-     [
-      "Iron Chain",
-      "Chain"
-     ],
+     "Iron Chain",
      "Detector Rail",
      "Activator Rail"
     ],
@@ -1647,10 +1623,7 @@
    "text": "Name a block that gives off light",
    "answers": {
     "dirt": [
-     [
-      "Torch",
-      "Wall Torch"
-     ],
+     "Torch",
      "Glowstone",
      "Lava",
      "Lantern",
@@ -1687,10 +1660,7 @@
      ],
      "Furnace",
      "Glow Lichen",
-     [
-      "Magma Block",
-      "Magma"
-     ],
+     "Magma Block",
      "Soul Lantern"
     ],
     "iron": [
@@ -1797,14 +1767,9 @@
     "dirt": [
      [
       "Raw Cod",
-      "Cod",
-      "Fish",
-      "Raw Fish"
+      "Fish"
      ],
-     [
-      "Raw Salmon",
-      "Salmon"
-     ],
+     "Raw Salmon",
      "Pufferfish",
      "Tropical Fish"
     ],
@@ -2059,10 +2024,7 @@
      "Enchanter",
      "Eye Spy",
      "The End?",
-     [
-      "Cover Me with Diamonds",
-      "Cover Me in Diamonds"
-     ]
+     "Cover Me with Diamonds"
     ],
     "iron": [
      "Isn't It Iron Pick?"
@@ -2202,10 +2164,7 @@
      "Note Block",
      "Clock",
      "Compass",
-     [
-      "Powered Rail",
-      "Golden Rail"
-     ]
+     "Powered Rail"
     ],
     "iron": [
      "Detector Rail",
@@ -2240,10 +2199,7 @@
     "dirt": [
      "Nether Wart",
      "Blaze Powder",
-     [
-      "Redstone Dust",
-      "Redstone"
-     ],
+     "Redstone Dust",
      [
       "Glowstone Dust",
       "Glowstone"
@@ -2296,10 +2252,7 @@
      "Flower Forest",
      "Snowy Taiga",
      "Bamboo Jungle",
-     [
-      "Cherry Grove",
-      "Cherry Forest"
-     ],
+     "Cherry Grove",
      "Crimson Forest",
      "Warped Forest"
     ],
@@ -2639,8 +2592,7 @@
       "Waxed Exposed Cut Copper Slab",
       "Waxed Oxidized Cut Copper Slab",
       "Waxed Weathered Cut Copper Slab",
-      "Weathered Cut Copper Slab",
-      "Copper Slab"
+      "Weathered Cut Copper Slab"
      ],
      [
       "Cut Copper Stairs",
@@ -2701,10 +2653,7 @@
      "Nether Quartz Ore"
     ],
     "coal": [
-     [
-      "Magma Block",
-      "Magma"
-     ],
+     "Magma Block",
      [
       "Nether Gold Ore",
       "Gold Ore"
@@ -2966,10 +2915,7 @@
     "coal": [
      "Chiseled Deepslate",
      "Chiseled Nether Bricks",
-     [
-      "Chiseled Polished Blackstone",
-      "Chiseled Blackstone"
-     ],
+     "Chiseled Polished Blackstone",
      "Chiseled Quartz Block",
      "Chiseled Red Sandstone"
     ],
@@ -3233,10 +3179,7 @@
      "Ender Chest"
     ],
     "gold": [
-     [
-      "Torch",
-      "Wall Torch"
-     ],
+     "Torch",
      "Item Frame"
     ],
     "diamond": [
@@ -3315,10 +3258,7 @@
       "Cobble Slab"
      ],
      "Stone Hoe",
-     [
-      "Cobblestone Wall",
-      "Cobble Wall"
-     ],
+     "Cobblestone Wall",
      "Lever",
      "Dispenser",
      "Piston"
@@ -3506,7 +3446,10 @@
      "Iron Chestplate",
      "Iron Axe",
      "Golden Carrot",
-     "Honey Bottle",
+     [
+      "Honey Bottle",
+      "Honey"
+     ],
      "Tipped Arrow",
      "Block of Diamond",
      "Block of Emerald",
@@ -4036,14 +3979,9 @@
      "Hay Bale",
      [
       "Raw Cod",
-      "Cod",
-      "Fish",
-      "Raw Fish"
+      "Fish"
      ],
-     [
-      "Raw Salmon",
-      "Salmon"
-     ],
+     "Raw Salmon",
      "Raw Beef",
      "Bamboo",
      "Dandelion",
@@ -4291,10 +4229,7 @@
    "text": "Name a type of wall (the stone block)",
    "answers": {
     "dirt": [
-     [
-      "Cobblestone Wall",
-      "Cobble Wall"
-     ],
+     "Cobblestone Wall",
      "Stone Brick Wall"
     ],
     "coal": [
@@ -4303,10 +4238,7 @@
      "Diorite Wall",
      "End Stone Brick Wall",
      "Granite Wall",
-     [
-      "Mossy Cobblestone Wall",
-      "Mossy Cobble Wall"
-     ],
+     "Mossy Cobblestone Wall",
      "Mossy Stone Brick Wall",
      "Nether Brick Wall",
      "Prismarine Wall",
@@ -4442,14 +4374,8 @@
      "Wither Rose",
      "Cherry Sapling",
      "Mangrove Propagule",
-     [
-      "Azalea",
-      "Azalea Bush"
-     ],
-     [
-      "Flowering Azalea",
-      "Flowering Azalea Bush"
-     ],
+     "Azalea",
+     "Flowering Azalea",
      "Crimson Fungus",
      "Warped Fungus",
      "Torchflower"
@@ -5870,7 +5796,10 @@
     ],
     "coal": [
      "Cobweb",
-     "Honey Block",
+     [
+      "Honey Block",
+      "Honey"
+     ],
      "Ladder",
      "Vines",
      "Powder Snow",
@@ -6003,10 +5932,7 @@
      "Gunpowder",
      "Wheat",
      "Bucket",
-     [
-      "Redstone Dust",
-      "Redstone"
-     ],
+     "Redstone Dust",
      "Coal",
      "Iron Horse Armor",
      "Golden Horse Armor",
@@ -6201,11 +6127,7 @@
    "answers": {
     "dirt": [
      "Cobblestone Stairs",
-     [
-      "Oak Stairs",
-      "Wooden Stairs",
-      "Wood Stairs"
-     ],
+     "Oak Stairs",
      "Stone Brick Stairs",
      "Stone Stairs"
     ],
@@ -6397,9 +6319,7 @@
     "dirt": [
      [
       "Oak Door",
-      "Oak",
-      "Wooden Door",
-      "Wood Door"
+      "Oak"
      ],
      [
       "Iron Door",
@@ -6521,7 +6441,10 @@
      "Wither Rose",
      "Pink Petals",
      "Torchflower",
-     "Pitcher Plant"
+     [
+      "Pitcher Plant",
+      "Pitcher"
+     ]
     ],
     "gold": [
      "Open Eyeblossom",
@@ -6577,10 +6500,7 @@
      "Stripped Pale Oak Wood"
     ],
     "diamond": [
-     [
-      "Pale Oak Boat with Chest",
-      "Pale Oak Chest Boat"
-     ],
+     "Pale Oak Boat with Chest",
      "Pale Oak Shelf"
     ]
    }
@@ -6620,10 +6540,7 @@
      "Lapis Lazuli",
      "Gold Nugget",
      "Iron Nugget",
-     [
-      "Empty Map",
-      "Blank Map"
-     ],
+     "Empty Map",
      "Clock",
      "Leather Tunic",
      "Leather Armor"
@@ -6690,10 +6607,7 @@
     ],
     "diamond": [
      "Elder Guardian",
-     [
-      "Ender Dragon",
-      "Dragon"
-     ]
+     "Ender Dragon"
     ]
    }
   },
@@ -6805,10 +6719,7 @@
     ],
     "gold": [
      "Iron Sword",
-     [
-      "Iron Chain",
-      "Chain"
-     ],
+     "Iron Chain",
      "Bone Block",
      [
       "Enchanted Book",
@@ -6921,10 +6832,7 @@
     ],
     "diamond": [
      "Illusioner",
-     [
-      "Ender Dragon",
-      "Dragon"
-     ]
+     "Ender Dragon"
     ]
    }
   },
@@ -7058,7 +6966,6 @@
      [
       "Door",
       "Iron Door",
-      "Wooden Door",
       "Oak Door",
       "Spruce Door",
       "Birch Door",
@@ -7139,8 +7046,7 @@
      "Crafter",
      [
       "Redstone Dust",
-      "Redstone Wire",
-      "Redstone"
+      "Redstone Wire"
      ]
     ],
     "gold": [
@@ -7327,17 +7233,15 @@
      "Lava",
      "Fire",
      "Cactus",
-     [
-      "Magma Block",
-      "Magma"
-     ]
+     "Magma Block"
     ],
     "coal": [
      "Campfire",
      [
       "Sweet Berry Bush",
       "Berry Bush",
-      "Sweet Berries"
+      "Sweet Berries",
+      "Berries"
      ],
      "Soul Fire",
      "Soul Campfire"
@@ -7456,10 +7360,7 @@
      "Chiseled Quartz Block",
      "Quartz Stairs",
      "Quartz Slab",
-     [
-      "Smooth Quartz Block",
-      "Smooth Quartz"
-     ]
+     "Smooth Quartz Block"
     ],
     "iron": [
      "Quartz Bricks",
@@ -7685,7 +7586,10 @@
      "Beetroot Soup",
      "Beetroot Seeds",
      "Pumpkin Seeds",
-     "Sweet Berries",
+     [
+      "Sweet Berries",
+      "Berries"
+     ],
      "Snowball",
      "Snow Block",
      "Iron Shovel",
@@ -8281,7 +8185,10 @@
      "Suspicious Stew"
     ],
     "diamond": [
-     "Honey Bottle"
+     [
+      "Honey Bottle",
+      "Honey"
+     ]
     ]
    }
   },
@@ -8785,10 +8692,7 @@
     "dirt": [
      "Chorus Fruit",
      "Shulker Box",
-     [
-      "Ender Dragon",
-      "Dragon"
-     ],
+     "Ender Dragon",
      "Dragon Egg",
      "Shulker",
      "Purpur Block"
@@ -8908,10 +8812,7 @@
    "answers": {
     "dirt": [
      "Moss Block",
-     [
-      "Azalea",
-      "Azalea Bush"
-     ],
+     "Azalea",
      [
       "Glow Berries",
       "Cave Vines"
@@ -8933,7 +8834,10 @@
      "Water",
      "Glow Lichen",
      "Vines",
-     "Short Grass",
+     [
+      "Short Grass",
+      "Grass"
+     ],
      "Tall Grass"
     ],
     "gold": [
@@ -9032,10 +8936,7 @@
    "text": "Name an item a Cleric villager buys or sells",
    "answers": {
     "dirt": [
-     [
-      "Redstone Dust",
-      "Redstone"
-     ],
+     "Redstone Dust",
      "Lapis Lazuli",
      "Emerald",
      "Rotten Flesh"
@@ -9186,18 +9087,12 @@
      "Soul Speed",
      "Warped Fungus on a Stick",
      "Warped Wart Block",
-     [
-      "Crimson Stem",
-      "Crimson Log"
-     ],
+     "Crimson Stem",
      "Crimson Nylium",
      "Crimson Roots",
      "Crimson Door",
      "Crimson Fence",
-     [
-      "Warped Stem",
-      "Warped Log"
-     ],
+     "Warped Stem",
      "Warped Nylium",
      "Warped Roots",
      "Warped Door",
@@ -9211,10 +9106,7 @@
      "Crimson Pressure Plate",
      "Crimson Sign",
      "Crimson Fence Gate",
-     [
-      "Crimson Hyphae",
-      "Crimson Wood"
-     ],
+     "Crimson Hyphae",
      "Stripped Crimson Stem",
      "Warped Stairs",
      "Warped Slab",
@@ -9223,10 +9115,7 @@
      "Warped Pressure Plate",
      "Warped Sign",
      "Warped Fence Gate",
-     [
-      "Warped Hyphae",
-      "Warped Wood"
-     ],
+     "Warped Hyphae",
      "Stripped Warped Stem"
     ],
     "gold": [
@@ -9401,10 +9290,7 @@
      "Dark Oak Slab",
      "Dark Oak Stairs",
      "Dark Oak Wood",
-     [
-      "Oak Boat with Chest",
-      "Oak Chest Boat"
-     ],
+     "Oak Boat with Chest",
      "Oak Button",
      "Oak Fence Gate",
      "Oak Hanging Sign",
@@ -9446,15 +9332,9 @@
      "Stripped Pale Oak Wood"
     ],
     "diamond": [
-     [
-      "Dark Oak Boat with Chest",
-      "Dark Oak Chest Boat"
-     ],
+     "Dark Oak Boat with Chest",
      "Dark Oak Shelf",
-     [
-      "Pale Oak Boat with Chest",
-      "Pale Oak Chest Boat"
-     ],
+     "Pale Oak Boat with Chest",
      "Pale Oak Shelf"
     ],
     "netherite": [
@@ -9479,10 +9359,7 @@
      "Bookshelf"
     ],
     "coal": [
-     [
-      "Book and Quill",
-      "Writable Book"
-     ],
+     "Book and Quill",
      "Ink Sac",
      "Lantern",
      "Glass",
@@ -9582,7 +9459,6 @@
     "gold": [
      [
       "Bamboo Raft with Chest",
-      "Bamboo Chest Raft",
       "Bamboo Chest Boat"
      ],
      [
@@ -9607,8 +9483,7 @@
     "dirt": [
      [
       "Empty Map",
-      "Map",
-      "Blank Map"
+      "Map"
      ],
      "Paper",
      "Emerald",
@@ -9704,10 +9579,7 @@
     ],
     "coal": [
      "Netherite Scrap",
-     [
-      "Block of Netherite",
-      "Netherite Block"
-     ],
+     "Block of Netherite",
      "Netherite Sword",
      "Netherite Pickaxe",
      "Netherite Helmet",
@@ -9764,10 +9636,7 @@
      "Warped Planks",
      "Crimson Hyphae",
      "Warped Hyphae",
-     [
-      "Iron Chain",
-      "Chain"
-     ],
+     "Iron Chain",
      "Netherite Upgrade",
      "Lodestone Compass",
      "Stripped Crimson Stem",
@@ -9858,10 +9727,7 @@
      "Iron Horse Armor",
      "Block of Raw Iron",
      "Iron Spear",
-     [
-      "Iron Chain",
-      "Chain"
-     ]
+     "Iron Chain"
     ],
     "gold": [
      "Iron Nautilus Armor",
@@ -9890,12 +9756,7 @@
     ],
     "coal": [
      "Rabbit",
-     [
-      "Mooshroom",
-      "Mooshroom Cow",
-      "Brown Mooshroom",
-      "Red Mooshroom"
-     ],
+     "Mooshroom",
      "Cod",
      "Salmon",
      "Hoglin",
@@ -10026,20 +9887,14 @@
       "Waxed Copper",
       "Waxed Copper Block"
      ],
-     [
-      "Cake with Candle",
-      "Candle Cake"
-     ]
+     "Cake with Candle"
     ],
     "gold": [
      "Exposed Copper",
      "Weathered Copper",
      "Oxidized Copper",
      "Cave Vines",
-     [
-      "Amethyst Geode",
-      "Geode"
-     ],
+     "Amethyst Geode",
      "Cracked Deepslate Bricks",
      "Cracked Deepslate Tiles",
      "Cut Copper Stairs",
@@ -10082,10 +9937,7 @@
     ],
     "diamond": [
      "Infested Deepslate",
-     [
-      "Light",
-      "Light Block"
-     ],
+     "Light",
      "Block of Raw Copper"
     ]
    }
@@ -10160,14 +10012,8 @@
    "text": "Name an item a Fisherman villager buys or sells",
    "answers": {
     "dirt": [
-     [
-      "Raw Cod",
-      "Cod"
-     ],
-     [
-      "Raw Salmon",
-      "Salmon"
-     ],
+     "Raw Cod",
+     "Raw Salmon",
      [
       "Fishing Rod",
       "Enchanted Fishing Rod"
@@ -10178,10 +10024,7 @@
     "coal": [
      "Cooked Salmon",
      "String",
-     [
-      "Bucket of Cod",
-      "Cod Bucket"
-     ],
+     "Bucket of Cod",
      [
       "Tropical Fish",
       "Tropical Fish Bucket"
@@ -10353,10 +10196,7 @@
      "Prismarine Brick Slab",
      "Dark Prismarine Stairs",
      "Dark Prismarine Slab",
-     [
-      "Smooth Quartz Block",
-      "Smooth Quartz"
-     ],
+     "Smooth Quartz Block",
      "Smooth Sandstone",
      "Smooth Red Sandstone",
      "Pufferfish Spawn Egg",
@@ -10480,12 +10320,7 @@
      "Goat",
      "Polar Bear",
      "Ocelot",
-     [
-      "Mooshroom",
-      "Mooshroom Cow",
-      "Brown Mooshroom",
-      "Red Mooshroom"
-     ],
+     "Mooshroom",
      "Piglin",
      "Hoglin",
      "Axolotl",
@@ -10500,10 +10335,7 @@
      "Zombie Villager",
      "Zombified Piglin",
      "Strider",
-     [
-      "Happy Ghast",
-      "Ghastling"
-     ]
+     "Happy Ghast"
     ],
     "gold": [
      "Zoglin",
@@ -10650,10 +10482,7 @@
     "dirt": [
      "Cut Copper",
      "Cut Sandstone",
-     [
-      "Smooth Quartz Block",
-      "Smooth Quartz"
-     ],
+     "Smooth Quartz Block",
      "Smooth Sandstone",
      "Smooth Stone"
     ],
@@ -10898,10 +10727,7 @@
    "text": "Name a block or item with 'Torch' or 'Lantern' in its name",
    "answers": {
     "dirt": [
-     [
-      "Torch",
-      "Wall Torch"
-     ],
+     "Torch",
      "Lantern",
      [
       "Redstone Torch",
@@ -10994,7 +10820,6 @@
       "Leather Horse Armor",
       "Iron Horse Armor",
       "Golden Horse Armor",
-      "Gold Horse Armor",
       "Diamond Horse Armor",
       "Copper Horse Armor",
       "Netherite Horse Armor"
@@ -11078,8 +10903,7 @@
      "5",
      [
       "Oak Boat with Chest",
-      "Boat with Chest",
-      "Chest Boat"
+      "Boat with Chest"
      ],
      "Bucket of Tadpole",
      "Mangrove Door",
@@ -11124,7 +10948,6 @@
      "Lapis Lazuli",
      [
       "Redstone Dust",
-      "Redstone",
       "Redstone Wire"
      ],
      "Emerald Ore",
@@ -11166,10 +10989,7 @@
     "dirt": [
      "Bedrock",
      "End Portal Frame",
-     [
-      "Monster Spawner",
-      "Spawner"
-     ],
+     "Monster Spawner",
      "Barrier",
      "Command Block"
     ],
@@ -11471,7 +11291,8 @@
      ],
      [
       "Pitcher Plant",
-      "Pitcher Pod"
+      "Pitcher Pod",
+      "Pitcher"
      ],
      "Vines",
      [
@@ -11553,10 +11374,7 @@
    "text": "Name a block, item or mob added in a 2025 game drop (Spring to Life, Chase the Skies, The Copper Age or Mounts of Mayhem)",
    "answers": {
     "dirt": [
-     [
-      "Happy Ghast",
-      "Ghastling"
-     ],
+     "Happy Ghast",
      "Copper Golem",
      [
       "Spear",
@@ -11721,10 +11539,7 @@
       "Wax"
      ],
      "Water Bucket",
-     [
-      "Eye of Ender",
-      "Ender Eye"
-     ],
+     "Eye of Ender",
      "Brush",
      "Fire Charge"
     ],
@@ -11789,7 +11604,6 @@
     "dirt": [
      [
       "Crafting Table",
-      "Workbench",
       "Crafting Bench"
      ],
      "Furnace",
@@ -12089,7 +11903,8 @@
      [
       "Sweet Berry Bush",
       "Sweet Berries",
-      "Berry Bush"
+      "Berry Bush",
+      "Berries"
      ],
      [
       "Magic",
@@ -12675,7 +12490,6 @@
      "Gilded Blackstone",
      [
       "Block of Gold",
-      "Gold Block",
       "Gold"
      ],
      "Chest",
@@ -12694,22 +12508,13 @@
      "Polished Blackstone Brick Stairs",
      "Basalt",
      "Polished Basalt",
-     [
-      "Magma Block",
-      "Magma"
-     ],
-     [
-      "Monster Spawner",
-      "Spawner"
-     ],
+     "Magma Block",
+     "Monster Spawner",
      "Netherrack",
      "Soul Sand"
     ],
     "iron": [
-     [
-      "Iron Chain",
-      "Chain"
-     ],
+     "Iron Chain",
      "Lantern",
      "Nether Wart",
      "Glowstone",
@@ -12718,13 +12523,9 @@
     "gold": [
      [
       "Block of Quartz",
-      "Quartz Block",
       "Quartz"
      ],
-     [
-      "Smooth Quartz Block",
-      "Smooth Quartz"
-     ]
+     "Smooth Quartz Block"
     ],
     "diamond": [
      "Smooth Quartz Slab"
@@ -12897,10 +12698,7 @@
       "Oak Trapdoor",
       "Trapdoor"
      ],
-     [
-      "Torch",
-      "Wall Torch"
-     ],
+     "Torch",
      "Redstone Torch",
      "White Carpet",
      [
@@ -13067,9 +12865,7 @@
      "Birch Boat",
      [
       "Oak Boat with Chest",
-      "Boat with Chest",
-      "Chest Boat",
-      "Oak Chest Boat"
+      "Boat with Chest"
      ],
      "Boat"
     ],
@@ -13086,52 +12882,24 @@
      "Mangrove Boat"
     ],
     "iron": [
-     [
-      "Spruce Boat with Chest",
-      "Spruce Chest Boat"
-     ],
-     [
-      "Birch Boat with Chest",
-      "Birch Chest Boat"
-     ],
-     [
-      "Jungle Boat with Chest",
-      "Jungle Chest Boat"
-     ],
-     [
-      "Acacia Boat with Chest",
-      "Acacia Chest Boat"
-     ],
-     [
-      "Dark Oak Boat with Chest",
-      "Dark Oak Chest Boat"
-     ],
+     "Spruce Boat with Chest",
+     "Birch Boat with Chest",
+     "Jungle Boat with Chest",
+     "Acacia Boat with Chest",
+     "Dark Oak Boat with Chest",
      "Pale Oak Boat",
      [
       "Bamboo Raft with Chest",
-      "Bamboo Chest Raft",
       "Chest Raft"
      ]
     ],
     "gold": [
-     [
-      "Cherry Boat with Chest",
-      "Cherry Chest Boat"
-     ],
-     [
-      "Mangrove Boat with Chest",
-      "Mangrove Chest Boat"
-     ],
-     [
-      "Pale Oak Boat with Chest",
-      "Pale Oak Chest Boat"
-     ]
+     "Cherry Boat with Chest",
+     "Mangrove Boat with Chest",
+     "Pale Oak Boat with Chest"
     ],
     "diamond": [
-     [
-      "Poplar Boat with Chest",
-      "Poplar Chest Boat"
-     ],
+     "Poplar Boat with Chest",
      "Poplar Boat"
     ]
    }
@@ -13148,7 +12916,6 @@
     "dirt": [
      [
       "Terracotta",
-      "Hardened Clay",
       "Stained Clay",
       "Mesa"
      ],
@@ -13272,18 +13039,9 @@
      "Cooked Mutton",
      "Cooked Rabbit",
      "Pumpkin Pie",
-     [
-      "Raw Cod",
-      "Cod"
-     ],
-     [
-      "Raw Salmon",
-      "Salmon"
-     ],
-     [
-      "Redstone Dust",
-      "Redstone"
-     ],
+     "Raw Cod",
+     "Raw Salmon",
+     "Redstone Dust",
      "Lapis Lazuli",
      "Paper",
      [
@@ -13499,8 +13257,7 @@
       "Mangrove Door",
       "Cherry Door",
       "Pale Oak Door",
-      "Poplar Door",
-      "Wooden Door"
+      "Poplar Door"
      ],
      [
       "Stairs",
@@ -13513,8 +13270,7 @@
       "Mangrove Stairs",
       "Cherry Stairs",
       "Pale Oak Stairs",
-      "Poplar Stairs",
-      "Wooden Stairs"
+      "Poplar Stairs"
      ],
      [
       "Slab",
@@ -13710,8 +13466,7 @@
       "Mangrove Boat with Chest",
       "Cherry Boat with Chest",
       "Pale Oak Boat with Chest",
-      "Poplar Boat with Chest",
-      "Chest Boat"
+      "Poplar Boat with Chest"
      ]
     ],
     "gold": [
@@ -13788,10 +13543,7 @@
       "Iceberg"
      ],
      "Blue Ice",
-     [
-      "Magma Block",
-      "Magma"
-     ],
+     "Magma Block",
      "Bubble Column",
      "Brain Coral Block",
      "Tube Coral Block",
@@ -14009,7 +13761,6 @@
     "coal": [
      [
       "Nether Quartz Ore",
-      "Quartz Ore",
       "Nether Quartz"
      ],
      "Nether Gold Ore",
@@ -14024,10 +13775,7 @@
      "Sculk Catalyst",
      "Sculk Sensor",
      "Sculk Shrieker",
-     [
-      "Monster Spawner",
-      "Spawner"
-     ]
+     "Monster Spawner"
     ],
     "gold": [
      "Creaking Heart"
@@ -14099,10 +13847,7 @@
      "Popped Chorus Fruit"
     ],
     "gold": [
-     [
-      "Spire Armor Trim",
-      "Spire Armor Trim Smithing Template"
-     ]
+     "Spire Armor Trim"
     ],
     "diamond": [
      "Lingering Potion"
