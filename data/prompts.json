@@ -12334,29 +12334,51 @@
    "text": "Name a world type or Superflat preset (Java Edition)",
    "answers": {
     "dirt": [
-     "Default",
-     "Superflat",
+     [
+      "Default",
+      "Normal"
+     ],
+     [
+      "Superflat",
+      "Flat"
+     ],
      "Amplified",
      "Large Biomes"
     ],
     "coal": [
      "Single Biome",
-     "Classic Flat",
+     [
+      "Classic Flat",
+      "Classic"
+     ],
      "The Void",
      "Redstone Ready"
     ],
     "iron": [
-     "Debug Mode",
+     [
+      "Debug Mode",
+      "Debug"
+     ],
      "Water World",
      "Bottomless Pit",
      "Snowy Kingdom"
     ],
     "gold": [
      "Tunnelers' Dream",
-     "Desert"
+     "Desert",
+     "Flat All Dimensions"
     ],
     "diamond": [
-     "Overworld"
+     "Overworld",
+     [
+      "Customized",
+      "Old Customized"
+     ],
+     [
+      "Buffet",
+      "Caves",
+      "Floating Islands"
+     ]
     ]
    }
   },
@@ -12385,24 +12407,42 @@
      "Diamond Pickaxe",
      "Golden Axe",
      "Golden Pickaxe",
-     "Tipped Arrow",
+     [
+      "Tipped Arrow",
+      "Arrow of Poison",
+      "Arrow of Slowness"
+     ],
      "Baked Potato",
      "Block of Diamond",
      "Block of Iron",
      "Block of Emerald",
      "Scaffolding",
      "Tuff",
-     "Stick"
+     "Stick",
+     "Axe",
+     "Pickaxe"
     ],
     "iron": [
      "Honeycomb",
      "Bamboo Planks",
-     "Bamboo Hanging Sign",
-     "Glow Berries",
+     [
+      "Bamboo Hanging Sign",
+      "Hanging Sign",
+      "Bamboo Sign"
+     ],
+     [
+      "Glow Berries",
+      "Glow Berry"
+     ],
      "Milk Bucket",
      "Bucket",
      "Compass",
-     "Potion"
+     [
+      "Potion",
+      "Potion of Regeneration",
+      "Potion of Strength"
+     ],
+     "Planks"
     ],
     "gold": [
      "Bone Meal",
@@ -12424,39 +12464,96 @@
    "text": "Name a cat or wolf variant",
    "answers": {
     "dirt": [
-     "Tabby",
-     "Tuxedo",
-     "Siamese",
+     [
+      "Tabby",
+      "Tabby Cat"
+     ],
+     [
+      "Tuxedo",
+      "Tuxedo Cat"
+     ],
+     [
+      "Siamese",
+      "Siamese Cat"
+     ],
      [
       "Black",
-      "All Black"
+      "All Black",
+      "Black Cat",
+      "Black Wolf",
+      "All Black Cat"
      ],
-     "Pale"
+     [
+      "Pale",
+      "Pale Wolf"
+     ]
     ],
     "coal": [
-     "Calico",
-     "Persian",
-     "British Shorthair",
-     "Ragdoll",
-     "White",
+     [
+      "Calico",
+      "Calico Cat"
+     ],
+     [
+      "Persian",
+      "Persian Cat"
+     ],
+     [
+      "British Shorthair",
+      "British Shorthair Cat",
+      "Shorthair"
+     ],
+     [
+      "Ragdoll",
+      "Ragdoll Cat"
+     ],
+     [
+      "White",
+      "White Cat"
+     ],
      [
       "Red",
-      "Ginger"
+      "Ginger",
+      "Ginger Cat",
+      "Red Cat"
      ],
-     "Snowy",
-     "Spotted",
-     "Striped"
+     [
+      "Snowy",
+      "Snowy Wolf"
+     ],
+     [
+      "Spotted",
+      "Spotted Wolf"
+     ],
+     [
+      "Striped",
+      "Striped Wolf"
+     ]
     ],
     "iron": [
-     "Woods",
-     "Ashen"
+     [
+      "Woods",
+      "Woods Wolf"
+     ],
+     [
+      "Ashen",
+      "Ashen Wolf"
+     ]
     ],
     "gold": [
-     "Chestnut",
-     "Rusty"
+     [
+      "Chestnut",
+      "Chestnut Wolf"
+     ],
+     [
+      "Rusty",
+      "Rusty Wolf"
+     ]
     ],
     "diamond": [
-     "Jellie"
+     [
+      "Jellie",
+      "Jellie Cat"
+     ]
     ]
    }
   },
@@ -12470,37 +12567,66 @@
    "text": "Name an entity attribute you can change with /attribute (Java Edition)",
    "answers": {
     "dirt": [
-     "Max Health",
+     [
+      "Max Health",
+      "Health"
+     ],
      "Armor",
      "Attack Damage",
      [
       "Speed",
       "Movement Speed"
      ],
-     "Scale"
+     [
+      "Scale",
+      "Size"
+     ]
     ],
     "coal": [
      "Armor Toughness",
      "Attack Speed",
-     "Knockback Resistance",
-     "Jump Strength",
+     [
+      "Knockback Resistance",
+      "Knockback"
+     ],
+     [
+      "Jump Strength",
+      "Horse Jump Strength",
+      "Jump"
+     ],
      "Gravity",
      "Step Height",
      "Luck",
      "Attack Knockback",
      "Max Absorption",
      "Safe Fall Distance",
-     "Block Interaction Range",
-     "Entity Interaction Range"
+     [
+      "Block Interaction Range",
+      "Reach",
+      "Block Reach"
+     ],
+     [
+      "Entity Interaction Range",
+      "Entity Reach"
+     ]
     ],
     "iron": [
      "Fall Damage Multiplier",
      "Mining Efficiency",
      "Block Break Speed",
      "Burning Time",
-     "Oxygen Bonus",
-     "Sneaking Speed",
-     "Flying Speed",
+     [
+      "Oxygen Bonus",
+      "Oxygen"
+     ],
+     [
+      "Sneaking Speed",
+      "Sneak Speed"
+     ],
+     [
+      "Flying Speed",
+      "Fly Speed"
+     ],
      [
       "Mob Follow Range",
       "Follow Range"
@@ -12528,7 +12654,11 @@
      "Air Drag Modifier",
      "Bounciness",
      "Friction Modifier",
-     "Name Tag Distance"
+     "Name Tag Distance",
+     [
+      "Name Tag Score Distance",
+      "Below Name Distance"
+     ]
     ]
    }
   },
@@ -12544,12 +12674,19 @@
     "dirt": [
      "Blackstone",
      "Gilded Blackstone",
-     "Block of Gold",
+     [
+      "Block of Gold",
+      "Gold Block",
+      "Gold"
+     ],
      "Chest",
      "Lava"
     ],
     "coal": [
-     "Polished Blackstone Bricks",
+     [
+      "Polished Blackstone Bricks",
+      "Blackstone Bricks"
+     ],
      "Cracked Polished Blackstone Bricks",
      "Chiseled Polished Blackstone",
      "Blackstone Stairs",
@@ -12558,21 +12695,37 @@
      "Polished Blackstone Brick Stairs",
      "Basalt",
      "Polished Basalt",
-     "Magma Block",
-     "Monster Spawner",
+     [
+      "Magma Block",
+      "Magma"
+     ],
+     [
+      "Monster Spawner",
+      "Spawner"
+     ],
      "Netherrack",
      "Soul Sand"
     ],
     "iron": [
-     "Iron Chain",
+     [
+      "Iron Chain",
+      "Chain"
+     ],
      "Lantern",
      "Nether Wart",
      "Glowstone",
      "Fire"
     ],
     "gold": [
-     "Block of Quartz",
-     "Smooth Quartz Block"
+     [
+      "Block of Quartz",
+      "Quartz Block",
+      "Quartz"
+     ],
+     [
+      "Smooth Quartz Block",
+      "Smooth Quartz"
+     ]
     ],
     "diamond": [
      "Smooth Quartz Slab"
@@ -12610,7 +12763,11 @@
      "Zombie Villager"
     ],
     "gold": [
-     "Glow Squid"
+     "Glow Squid",
+     [
+      "Cat",
+      "Black Cat"
+     ]
     ],
     "diamond": [
      "Tropical Fish"
@@ -12664,7 +12821,10 @@
      "Nether Star",
      "Block of Iron",
      "Block of Diamond",
-     "Iron Ingot",
+     [
+      "Iron Ingot",
+      "Iron"
+     ],
      "Diamond"
     ],
     "coal": [
@@ -12673,14 +12833,29 @@
      "Block of Gold",
      "Block of Emerald",
      "Emerald",
-     "Gold Ingot"
+     [
+      "Gold Ingot",
+      "Gold"
+     ]
     ],
     "iron": [
-     "Netherite Ingot",
-     "Beacon"
+     [
+      "Netherite Ingot",
+      "Netherite"
+     ],
+     "Beacon",
+     "Crafting Table",
+     [
+      "Mineral Blocks",
+      "Pyramid"
+     ]
+    ],
+    "gold": [
+     "Wither"
     ],
     "diamond": [
-     "Block of Netherite"
+     "Block of Netherite",
+     "Stained Glass"
     ]
    }
   },
