@@ -8496,12 +8496,52 @@
      "Decorated Pot",
      "Sculk Sensor",
      "Calibrated Sculk Sensor",
-     "Copper Bulb",
-     "Copper Chest"
+     [
+      "Copper Bulb",
+      "Exposed Copper Bulb",
+      "Weathered Copper Bulb",
+      "Oxidized Copper Bulb",
+      "Waxed Copper Bulb",
+      "Waxed Exposed Copper Bulb",
+      "Waxed Weathered Copper Bulb",
+      "Waxed Oxidized Copper Bulb"
+     ],
+     [
+      "Copper Chest",
+      "Exposed Copper Chest",
+      "Weathered Copper Chest",
+      "Oxidized Copper Chest",
+      "Waxed Copper Chest",
+      "Waxed Exposed Copper Chest",
+      "Waxed Weathered Copper Chest",
+      "Waxed Oxidized Copper Chest"
+     ],
+     [
+      "Shelf",
+      "Oak Shelf",
+      "Spruce Shelf",
+      "Birch Shelf",
+      "Jungle Shelf",
+      "Acacia Shelf",
+      "Dark Oak Shelf",
+      "Mangrove Shelf",
+      "Cherry Shelf",
+      "Pale Oak Shelf",
+      "Bamboo Shelf",
+      "Crimson Shelf",
+      "Warped Shelf",
+      "Poplar Shelf"
+     ],
+     [
+      "Detector Rail",
+      "Minecart with Chest",
+      "Minecart with Hopper"
+     ]
     ],
     "diamond": [
      "Creaking Heart",
-     "Glow Item Frame"
+     "Glow Item Frame",
+     "Copper Golem Statue"
     ]
    }
   },
@@ -8522,7 +8562,11 @@
     "coal": [
      "Carrot",
      "Potato",
-     "Dark Oak Log",
+     [
+      "Dark Oak Log",
+      "Dark Oak",
+      "Log"
+     ],
      "Bottle o' Enchanting",
      "String"
     ],
@@ -8531,6 +8575,11 @@
      [
       "Enchanted Book",
       "Book"
+     ],
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
      ]
     ],
     "gold": [
@@ -8553,7 +8602,10 @@
      "Desert",
      "Savanna",
      "Badlands",
-     "Nether Wastes"
+     [
+      "Nether Wastes",
+      "Nether"
+     ]
     ],
     "coal": [
      "Savanna Plateau",
@@ -8647,14 +8699,26 @@
      "Golden Leggings",
      "Golden Boots",
      "Fire Charge",
-     "Flint"
+     "Flint",
+     [
+      "Golden Armor",
+      "Gold Armor"
+     ],
+     [
+      "Golden Tools",
+      "Gold Tools"
+     ]
     ],
     "iron": [
      "Iron Nugget",
      "Glistering Melon Slice",
      "Clock",
      "Golden Horse Armor",
-     "Light Weighted Pressure Plate"
+     [
+      "Light Weighted Pressure Plate",
+      "Gold Pressure Plate",
+      "Golden Pressure Plate"
+     ]
     ],
     "gold": [
      "Bell"
@@ -8696,10 +8760,16 @@
      "Zombie Villager"
     ],
     "gold": [
-     "Wolf"
+     "Wolf",
+     "Phantom",
+     "Wandering Trader"
     ],
     "diamond": [
-     "Glow Squid"
+     "Glow Squid",
+     "Trader Llama",
+     "Skeleton Horse",
+     "Spider Jockey",
+     "Chicken Jockey"
     ]
    }
   },
@@ -8715,7 +8785,10 @@
     "dirt": [
      "Chorus Fruit",
      "Shulker Box",
-     "Ender Dragon",
+     [
+      "Ender Dragon",
+      "Dragon"
+     ],
      "Dragon Egg",
      "Shulker",
      "Purpur Block"
@@ -8725,8 +8798,14 @@
      "Chorus Flower",
      "Popped Chorus Fruit",
      "Shulker Shell",
-     "Dragon Head",
-     "Dragon's Breath",
+     [
+      "Dragon Head",
+      "Dragon Wall Head"
+     ],
+     [
+      "Dragon's Breath",
+      "Dragon Breath"
+     ],
      "Purpur Pillar",
      "Purpur Stairs",
      "Purpur Slab"
@@ -8790,15 +8869,28 @@
      "Wheat",
      "Vex Armor Trim",
      "Diamond Hoe",
-     "Chainmail Chestplate"
+     "Chainmail Chestplate",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "iron": [
      "Bucket",
-     "Melon Seeds",
+     [
+      "Melon Seeds",
+      "Seeds"
+     ],
      "Pumpkin Seeds",
      "Beetroot Seeds",
      "13",
-     "Cat"
+     "Cat",
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ]
     ],
     "diamond": [
      "Resin Clump"
@@ -8816,7 +8908,10 @@
    "answers": {
     "dirt": [
      "Moss Block",
-     "Azalea",
+     [
+      "Azalea",
+      "Azalea Bush"
+     ],
      [
       "Glow Berries",
       "Cave Vines"
@@ -8836,18 +8931,31 @@
      "Hanging Roots",
      "Rooted Dirt",
      "Water",
-     "Glow Lichen"
+     "Glow Lichen",
+     "Vines",
+     "Short Grass",
+     "Tall Grass"
     ],
     "gold": [
      "Oak Log",
-     "Dirt"
+     "Dirt",
+     "Sand",
+     "Lava"
     ],
     "diamond": [
      "Granite",
      "Diorite",
      "Andesite",
      "Tuff",
-     "Gravel"
+     "Gravel",
+     "Magma Block",
+     "Block of Amethyst",
+     "Budding Amethyst",
+     "Calcite",
+     "Smooth Basalt",
+     "Mossy Cobblestone",
+     "Cobblestone",
+     "Monster Spawner"
     ]
    }
   },
@@ -8861,7 +8969,10 @@
    "text": "Name an item a Piglin will pick up and admire because it's gold",
    "answers": {
     "dirt": [
-     "Gold Ingot",
+     [
+      "Gold Ingot",
+      "Gold"
+     ],
      "Block of Gold",
      "Golden Apple",
      "Gold Ore",
@@ -8882,13 +8993,25 @@
      "Golden Hoe",
      "Clock",
      "Deepslate Gold Ore",
-     "Block of Raw Gold"
+     "Block of Raw Gold",
+     [
+      "Golden Armor",
+      "Gold Armor"
+     ],
+     [
+      "Golden Tools",
+      "Gold Tools"
+     ]
     ],
     "iron": [
      "Glistering Melon Slice",
      "Gilded Blackstone",
      "Bell",
-     "Light Weighted Pressure Plate",
+     [
+      "Light Weighted Pressure Plate",
+      "Gold Pressure Plate",
+      "Golden Pressure Plate"
+     ],
      "Golden Horse Armor"
     ],
     "gold": [
