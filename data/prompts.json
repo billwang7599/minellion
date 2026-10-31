@@ -12869,33 +12869,60 @@
    "text": "Name a block that generates in an Igloo (including the basement)",
    "answers": {
     "dirt": [
-     "Snow Block",
+     [
+      "Snow Block",
+      "Snow"
+     ],
      "Ice",
      "Chest",
      "Furnace",
      "Crafting Table",
-     "Red Bed"
+     [
+      "Red Bed",
+      "Bed"
+     ]
     ],
     "coal": [
      "Brewing Stand",
-     "Cauldron",
+     [
+      "Cauldron",
+      "Water Cauldron"
+     ],
      "Stone Bricks",
      "Mossy Stone Bricks",
      "Cracked Stone Bricks",
      "Chiseled Stone Bricks",
      "Iron Bars",
      "Ladder",
-     "Oak Trapdoor",
-     "Torch",
+     [
+      "Oak Trapdoor",
+      "Trapdoor"
+     ],
+     [
+      "Torch",
+      "Wall Torch"
+     ],
      "Redstone Torch",
      "White Carpet",
-     "Cobweb"
+     [
+      "Cobweb",
+      "Web"
+     ],
+     "Carpet"
     ],
     "iron": [
-     "Infested Stone Bricks",
+     [
+      "Infested Stone Bricks",
+      "Infested Block",
+      "Silverfish Block"
+     ],
      "Infested Mossy Stone Bricks",
      "Infested Chiseled Stone Bricks",
-     "Oak Sign",
+     [
+      "Oak Sign",
+      "Sign",
+      "Oak Wall Sign"
+     ],
      "Red Carpet",
      "Light Gray Carpet",
      "Spruce Stairs",
@@ -12934,7 +12961,10 @@
       "Time Played",
       "Play Time"
      ],
-     "Mob Kills",
+     [
+      "Mob Kills",
+      "Kills"
+     ],
      "Distance Walked",
      "Player Kills"
     ],
@@ -12949,7 +12979,11 @@
      "Animals Bred",
      "Fish Caught",
      "Items Enchanted",
-     "Times Slept in a Bed",
+     [
+      "Times Slept in a Bed",
+      "Times Slept",
+      "Sleeps"
+     ],
      "Traded with Villagers",
      "Chests Opened",
      "Distance Crouched",
@@ -13032,33 +13066,74 @@
      "Oak Boat",
      "Spruce Boat",
      "Birch Boat",
-     "Oak Boat with Chest"
+     [
+      "Oak Boat with Chest",
+      "Boat with Chest",
+      "Chest Boat",
+      "Oak Chest Boat"
+     ],
+     "Boat"
     ],
     "coal": [
      "Jungle Boat",
      "Acacia Boat",
      "Dark Oak Boat",
-     "Bamboo Raft",
+     [
+      "Bamboo Raft",
+      "Raft",
+      "Bamboo Boat"
+     ],
      "Cherry Boat",
      "Mangrove Boat"
     ],
     "iron": [
-     "Spruce Boat with Chest",
-     "Birch Boat with Chest",
-     "Jungle Boat with Chest",
-     "Acacia Boat with Chest",
-     "Dark Oak Boat with Chest",
+     [
+      "Spruce Boat with Chest",
+      "Spruce Chest Boat"
+     ],
+     [
+      "Birch Boat with Chest",
+      "Birch Chest Boat"
+     ],
+     [
+      "Jungle Boat with Chest",
+      "Jungle Chest Boat"
+     ],
+     [
+      "Acacia Boat with Chest",
+      "Acacia Chest Boat"
+     ],
+     [
+      "Dark Oak Boat with Chest",
+      "Dark Oak Chest Boat"
+     ],
      "Pale Oak Boat",
-     "Bamboo Raft with Chest"
+     [
+      "Bamboo Raft with Chest",
+      "Bamboo Chest Raft",
+      "Chest Raft"
+     ]
     ],
     "gold": [
-     "Cherry Boat with Chest",
-     "Mangrove Boat with Chest",
-     "Pale Oak Boat with Chest"
+     [
+      "Cherry Boat with Chest",
+      "Cherry Chest Boat"
+     ],
+     [
+      "Mangrove Boat with Chest",
+      "Mangrove Chest Boat"
+     ],
+     [
+      "Pale Oak Boat with Chest",
+      "Pale Oak Chest Boat"
+     ],
+     "Poplar Boat"
     ],
     "diamond": [
-     "Poplar Boat",
-     "Poplar Boat with Chest"
+     [
+      "Poplar Boat with Chest",
+      "Poplar Chest Boat"
+     ]
     ]
    }
   },
@@ -13072,7 +13147,12 @@
    "text": "Name a block found on the surface of a Badlands biome (any kind of Badlands)",
    "answers": {
     "dirt": [
-     "Terracotta",
+     [
+      "Terracotta",
+      "Hardened Clay",
+      "Stained Clay",
+      "Mesa"
+     ],
      "Red Sand",
      "Cactus",
      "Dead Bush"
@@ -13088,23 +13168,41 @@
      "Coarse Dirt"
     ],
     "iron": [
-     "Oak Log",
+     [
+      "Oak Log",
+      "Oak Tree",
+      "Tree"
+     ],
      "Oak Leaves",
      "Grass Block",
-     "Short Dry Grass",
+     [
+      "Short Dry Grass",
+      "Dry Grass"
+     ],
      "Tall Dry Grass",
-     "Gold Ore",
      "Sugar Cane",
-     "Short Grass"
+     [
+      "Short Grass",
+      "Grass"
+     ]
     ],
     "gold": [
      "Cactus Flower",
      "Firefly Bush",
-     "Pumpkin"
+     "Pumpkin",
+     "Water",
+     "Lava",
+     "Sand",
+     "Gravel",
+     "Gold Ore"
     ],
     "diamond": [
      "Red Mushroom",
-     "Brown Mushroom"
+     "Brown Mushroom",
+     "Clay",
+     "Oak Planks",
+     "Oak Fence",
+     "Rail"
     ]
    }
   },
