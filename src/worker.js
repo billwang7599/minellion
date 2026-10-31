@@ -117,7 +117,8 @@ export function matchAnswer(prompt, guess) {
   const key = normalize(guess);
   if (!key) return null;
   const entries = answerEntries(prompt);
-  const exact = entries.find((e) => e.keys.includes(key));
+  const forms = [key, key.replace(/ie$/, "y"), key.replace(/y$/, "ie")];
+  const exact = entries.find((e) => forms.some((f) => e.keys.includes(f)));
   if (exact) return { answer: exact.answer, tier: exact.tier, exact: true };
   const close = entries.filter((e) => e.keys.some((k) => k.length >= MIN_TYPO_CHARS && edits(k, key, 1) <= 1));
   return close.length === 1 ? { answer: close[0].answer, tier: close[0].tier, exact: false } : null;

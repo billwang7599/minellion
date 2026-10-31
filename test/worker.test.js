@@ -207,13 +207,13 @@ test("wrong methods and unknown api paths", async () => {
 const prompt = {
   answers: {
     dirt: ["Zombie", ["Zombified Piglin", "Zombie Pigman"]],
-    coal: ["Café Block", "Bee"],
+    coal: ["Café Block", "Bee", "Glow Berries", "Ancient City", "Cookie"],
     iron: ["Enderman", "Endermen"],
     diamond: ["Stray", "Jack o'Lantern"],
   },
 };
 
-test("matching ignores case, diacritics, punctuation, spacing, articles and a plural s", () => {
+test("matching ignores case, diacritics, punctuation, spacing, articles and a plural s or ies", () => {
   for (const [input, answer] of [
     ["zombie", "Zombie"],
     ["  ZOMBIES ", "Zombie"],
@@ -225,6 +225,9 @@ test("matching ignores case, diacritics, punctuation, spacing, articles and a pl
     ["jack-o-lantern", "Jack o'Lantern"],
     ["Jack O Lanterns", "Jack o'Lantern"],
     ["zombie pigman", "Zombified Piglin"],
+    ["glow berry", "Glow Berries"],
+    ["ancient cities", "Ancient City"],
+    ["cookies", "Cookie"],
   ]) {
     assert.equal(matchAnswer(prompt, input)?.answer, answer, input);
   }
