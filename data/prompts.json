@@ -3592,7 +3592,8 @@
       "Iron Pickaxe",
       "Golden Pickaxe",
       "Diamond Pickaxe",
-      "Netherite Pickaxe"
+      "Netherite Pickaxe",
+      "Pick"
      ],
      [
       "Sword",
@@ -3683,7 +3684,11 @@
      "Trident",
      "Crossbow",
      "Flint and Steel",
-     "Shears"
+     "Shears",
+     [
+      "Armor",
+      "Armour"
+     ]
     ],
     "iron": [
      "Mace",
@@ -3815,7 +3820,9 @@
      "Hay Bale",
      [
       "Raw Cod",
-      "Cod"
+      "Cod",
+      "Fish",
+      "Raw Fish"
      ],
      [
       "Raw Salmon",
@@ -3824,7 +3831,10 @@
      "Raw Beef",
      "Bamboo",
      "Dandelion",
-     "Sweet Berries",
+     [
+      "Sweet Berries",
+      "Berries"
+     ],
      "Seagrass",
      "Steak",
      "Raw Porkchop",
@@ -3832,7 +3842,9 @@
      "Rotten Flesh",
      "Melon Seeds",
      "Pumpkin Seeds",
-     "Beetroot Seeds"
+     "Beetroot Seeds",
+     "Flower",
+     "Meat"
     ],
     "iron": [
      "Enchanted Golden Apple",
@@ -3891,7 +3903,9 @@
      "Pitcher Plant"
     ],
     "diamond": [
-     "Flowering Azalea Leaves"
+     "Flowering Azalea Leaves",
+     "Wither Rose",
+     "Open Eyeblossom"
     ]
    }
   },
@@ -3937,10 +3951,12 @@
     ],
     "gold": [
      "Frostburn Update",
-     "Armored Paws"
+     "Armored Paws",
+     "Bats and Pots"
     ],
     "diamond": [
-     "Halloween Update"
+     "Halloween Update",
+     "Texture Update"
     ]
    }
   },
@@ -4059,7 +4075,10 @@
    "text": "Name a type of wall (the stone block)",
    "answers": {
     "dirt": [
-     "Cobblestone Wall",
+     [
+      "Cobblestone Wall",
+      "Cobble Wall"
+     ],
      "Stone Brick Wall"
     ],
     "coal": [
@@ -4068,7 +4087,10 @@
      "Diorite Wall",
      "End Stone Brick Wall",
      "Granite Wall",
-     "Mossy Cobblestone Wall",
+     [
+      "Mossy Cobblestone Wall",
+      "Mossy Cobble Wall"
+     ],
      "Mossy Stone Brick Wall",
      "Nether Brick Wall",
      "Prismarine Wall",
@@ -4113,8 +4135,14 @@
    "answers": {
     "dirt": [
      "Diamond",
-     "Gold Ingot",
-     "Iron Ingot",
+     [
+      "Gold Ingot",
+      "Gold"
+     ],
+     [
+      "Iron Ingot",
+      "Iron"
+     ],
      "Emerald",
      "Bone",
      "Rotten Flesh"
@@ -4132,7 +4160,11 @@
      "Sand",
      "Iron Horse Armor",
      "Golden Horse Armor",
-     "Diamond Horse Armor"
+     "Diamond Horse Armor",
+     [
+      "Horse Armor",
+      "Horse Armour"
+     ]
     ],
     "iron": [
      "Leather"
@@ -4157,7 +4189,10 @@
      "Poppy",
      "Dandelion",
      "Cactus",
-     "Oak Sapling"
+     [
+      "Oak Sapling",
+      "Sapling"
+     ]
     ],
     "coal": [
      [
@@ -4179,7 +4214,10 @@
      "Acacia Sapling",
      "Dark Oak Sapling",
      "Fern",
-     "Red Mushroom",
+     [
+      "Red Mushroom",
+      "Mushroom"
+     ],
      "Brown Mushroom"
     ],
     "iron": [
@@ -4188,8 +4226,14 @@
      "Wither Rose",
      "Cherry Sapling",
      "Mangrove Propagule",
-     "Azalea",
-     "Flowering Azalea",
+     [
+      "Azalea",
+      "Azalea Bush"
+     ],
+     [
+      "Flowering Azalea",
+      "Flowering Azalea Bush"
+     ],
      "Crimson Fungus",
      "Warped Fungus",
      "Torchflower"
@@ -4218,7 +4262,8 @@
     "dirt": [
      [
       "Oak Sapling",
-      "Oak"
+      "Oak",
+      "Sapling"
      ],
      [
       "Spruce Sapling",
@@ -4248,17 +4293,27 @@
      ]
     ],
     "iron": [
-     "Mangrove Propagule",
+     [
+      "Mangrove Propagule",
+      "Propagule",
+      "Mangrove"
+     ],
      [
       "Pale Oak Sapling",
       "Pale Oak"
      ],
-     "Crimson Fungus",
+     [
+      "Crimson Fungus",
+      "Fungus"
+     ],
      "Warped Fungus",
      "Azalea"
     ],
     "gold": [
-     "Red Mushroom",
+     [
+      "Red Mushroom",
+      "Mushroom"
+     ],
      "Brown Mushroom",
      "Flowering Azalea",
      [
@@ -4813,7 +4868,10 @@
     "dirt": [
      "Harp",
      "Bass",
-     "Bass Drum",
+     [
+      "Bass Drum",
+      "Drum"
+     ],
      "Snare Drum"
     ],
     "coal": [
@@ -4898,7 +4956,9 @@
      "Tipped Arrow",
      "Eye of Ender",
      "Wind Charge",
-     "Firework Rocket"
+     "Firework Rocket",
+     "Bow",
+     "Crossbow"
     ],
     "iron": [
      "Lingering Potion"
