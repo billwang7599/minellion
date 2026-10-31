@@ -7905,7 +7905,10 @@
      "Iron Sword"
     ],
     "iron": [
-     "Leather Tunic",
+     [
+      "Leather Tunic",
+      "Leather Armor"
+     ],
      [
       "Potion",
       "Potion of Water Breathing"
@@ -7915,7 +7918,8 @@
     "gold": [
      "Iron Nautilus Armor",
      "Golden Nautilus Armor",
-     "Diamond Nautilus Armor"
+     "Diamond Nautilus Armor",
+     "Nautilus Armor"
     ],
     "diamond": [
      "Copper Nautilus Armor"
@@ -7934,13 +7938,24 @@
      "Netherite Sword",
      "Netherite Pickaxe",
      "Netherite Helmet",
-     "Netherite Chestplate"
+     "Netherite Chestplate",
+     [
+      "Netherite Armor",
+      "Netherite",
+      "Netherite Gear"
+     ]
     ],
     "coal": [
      "Netherite Axe",
      "Netherite Shovel",
      "Netherite Leggings",
-     "Netherite Boots"
+     "Netherite Boots",
+     "Netherite Tools",
+     [
+      "Trimmed Armor",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "iron": [
      "Netherite Hoe"
@@ -7964,14 +7979,26 @@
    "text": "Name a block you need at least an iron pickaxe to mine (or it drops nothing)",
    "answers": {
     "dirt": [
-     "Diamond Ore",
+     [
+      "Diamond Ore",
+      "Diamond"
+     ],
      "Obsidian",
-     "Gold Ore",
+     [
+      "Gold Ore",
+      "Gold"
+     ],
      "Ancient Debris"
     ],
     "coal": [
-     "Emerald Ore",
-     "Redstone Ore",
+     [
+      "Emerald Ore",
+      "Emerald"
+     ],
+     [
+      "Redstone Ore",
+      "Redstone"
+     ],
      "Deepslate Diamond Ore",
      "Crying Obsidian",
      "Block of Diamond",
@@ -8017,7 +8044,9 @@
      "Iron Pickaxe",
      "Iron Sword",
      "Golden Apple",
-     "Coal"
+     "Coal",
+     "Iron Armor",
+     "Horse Armor"
     ],
     "iron": [
      "Empty Map",
@@ -8029,7 +8058,17 @@
      "Golden Horse Armor",
      "Diamond Horse Armor",
      "Eye Armor Trim",
-     "Leather"
+     "Leather",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ],
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ]
     ],
     "gold": [
      "Otherside"
@@ -8055,19 +8094,28 @@
     "coal": [
      "Firework Star",
      "Diamond",
-     "Glowstone Dust",
+     [
+      "Glowstone Dust",
+      "Glowstone"
+     ],
      "Red Dye",
      "Blue Dye",
      "Green Dye",
      "Yellow Dye",
      "White Dye",
-     "Black Dye"
+     "Black Dye",
+     "Dye"
     ],
     "iron": [
      "Fire Charge",
      "Gold Nugget",
      "Feather",
-     "Creeper Head",
+     [
+      "Creeper Head",
+      "Mob Head",
+      "Head",
+      "Skull"
+     ],
      "Orange Dye",
      "Purple Dye",
      "Pink Dye",
@@ -8101,7 +8149,10 @@
    "answers": {
     "dirt": [
      "Hay Bale",
-     "Oak Leaves",
+     [
+      "Oak Leaves",
+      "Leaves"
+     ],
      "Moss Block",
      "Sculk"
     ],
@@ -8137,7 +8188,10 @@
      "Pale Moss Carpet"
     ],
     "diamond": [
-     "Red Poplar Leaves",
+     [
+      "Red Poplar Leaves",
+      "Poplar Leaves"
+     ],
      "Orange Poplar Leaves",
      "Yellow Poplar Leaves",
      "Straw Bed"
@@ -8167,13 +8221,19 @@
       "Book"
      ],
      "Wild Armor Trim",
-     "Bamboo"
+     "Bamboo",
+     "Horse Armor"
     ],
     "iron": [
      "Iron Horse Armor",
      "Golden Horse Armor",
      "Diamond Horse Armor",
-     "Leather"
+     "Leather",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "diamond": [
      "Copper Horse Armor"
@@ -8202,7 +8262,11 @@
      "Pumpkin Pie",
      "Baked Potato",
      "Golden Carrot",
-     "Mushroom Stew",
+     [
+      "Mushroom Stew",
+      "Stew",
+      "Soup"
+     ],
      "Cooked Mutton",
      "Cooked Cod",
      "Cooked Salmon"
@@ -8261,14 +8325,20 @@
     "iron": [
      "Chipped Anvil",
      "Damaged Anvil",
-     "Pointed Dripstone"
+     [
+      "Pointed Dripstone",
+      "Dripstone",
+      "Stalactite",
+      "Stalagmite"
+     ]
     ],
     "gold": [
      "Scaffolding",
      "Suspicious Sand"
     ],
     "diamond": [
-     "Suspicious Gravel"
+     "Suspicious Gravel",
+     "Sulfur Spike"
     ]
    }
   },
@@ -8282,7 +8352,11 @@
    "text": "Name an item you can find in a Mineshaft chest minecart",
    "answers": {
     "dirt": [
-     "Rail",
+     [
+      "Rail",
+      "Minecart Rail",
+      "Track"
+     ],
      "Torch",
      "Iron Ingot",
      "Coal",
@@ -8307,9 +8381,19 @@
     ],
     "iron": [
      "Glow Berries",
-     "Melon Seeds",
+     [
+      "Melon Seeds",
+      "Seeds"
+     ],
      "Pumpkin Seeds",
      "Beetroot Seeds"
+    ],
+    "gold": [
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ]
     ],
     "diamond": [
      "Bounce"
@@ -8364,7 +8448,8 @@
      "Black Shulker Box"
     ],
     "diamond": [
-     "Spire Armor Trim"
+     "Spire Armor Trim",
+     "Eye Armor Trim"
     ]
    }
   },
