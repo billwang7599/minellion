@@ -82,9 +82,7 @@
       "Mangrove",
       "Mangrove Forest"
      ],
-     "Meadow",
-     "Bamboo Jungle",
-     "Dripstone Caves"
+     "Bamboo Jungle"
     ],
     "iron": [
      "Sunflower Plains",
@@ -110,7 +108,9 @@
      "Eroded Badlands",
      "Wooded Badlands",
      "Savanna Plateau",
-     "Sparse Jungle"
+     "Sparse Jungle",
+     "Meadow",
+     "Dripstone Caves"
     ],
     "gold": [
      "Windswept Forest",
@@ -461,17 +461,13 @@
      "Smite",
      "Thorns",
      "Flame",
-     "Punch",
      "Respiration",
      "Depth Strider",
-     "Aqua Affinity",
      "Loyalty",
      "Riptide",
-     "Channeling",
      "Frost Walker",
      "Fire Protection",
-     "Blast Protection",
-     "Projectile Protection"
+     "Blast Protection"
     ],
     "iron": [
      "Bane of Arthropods",
@@ -484,7 +480,11 @@
      "Multishot",
      "Piercing",
      "Quick Charge",
-     "Soul Speed"
+     "Soul Speed",
+     "Channeling",
+     "Projectile Protection",
+     "Aqua Affinity",
+     "Punch"
     ],
     "gold": [
      "Swift Sneak",
@@ -604,9 +604,7 @@
      "Absorption",
      "Resistance",
      "Levitation",
-     "Slow Falling",
-     "Saturation",
-     "Glowing"
+     "Slow Falling"
     ],
     "iron": [
      "Bad Omen",
@@ -618,7 +616,9 @@
      ],
      "Dolphin's Grace",
      "Health Boost",
-     "Luck"
+     "Luck",
+     "Saturation",
+     "Glowing"
     ],
     "gold": [
      "Bad Luck",
@@ -1734,10 +1734,8 @@
      ],
      "Smoker",
      "Blast Furnace",
-     "Brewing Stand",
      "Enchanting Table",
      "Ender Chest",
-     "Sculk Sensor",
      [
       "Ochre Froglight",
       "Froglight"
@@ -1777,7 +1775,9 @@
      "Medium Amethyst Bud",
      "Small Amethyst Bud",
      "Deepslate Redstone Ore",
-     "Firefly Bush"
+     "Firefly Bush",
+     "Brewing Stand",
+     "Sculk Sensor"
     ],
     "diamond": [
      "Brown Mushroom",
@@ -2418,7 +2418,6 @@
      "function",
      "particle",
      "playsound",
-     "stopsound",
      "advancement",
      "recipe",
      "worldborder",
@@ -2426,8 +2425,6 @@
      "deop",
      "pardon",
      "ban-ip",
-     "pardon-ip",
-     "banlist",
      "defaultgamemode",
      "spreadplayers",
      "loot",
@@ -2435,25 +2432,15 @@
      "attribute",
      "bossbar",
      "trigger",
-     "spectate",
      "forceload",
      "reload",
      "me",
-     "teammsg",
      "stop",
      "save-all",
-     "save-on",
-     "save-off",
-     "publish",
      "datapack",
      "damage",
      "place",
-     "ride",
-     "fillbiome",
-     "random",
-     "return",
-     "tick",
-     "rotate"
+     "tick"
     ],
     "gold": [
      "schedule",
@@ -2471,7 +2458,20 @@
      "swing",
      "stopwatch",
      "compute",
-     "posteffect"
+     "posteffect",
+     "spectate",
+     "fillbiome",
+     "random",
+     "return",
+     "rotate",
+     "ride",
+     "publish",
+     "save-on",
+     "save-off",
+     "teammsg",
+     "banlist",
+     "pardon-ip",
+     "stopsound"
     ],
     "diamond": [
      "raid",
@@ -2558,16 +2558,6 @@
       "Waxed Weathered Copper Door",
       "Weathered Copper Door"
      ],
-     [
-      "Copper Grate",
-      "Exposed Copper Grate",
-      "Oxidized Copper Grate",
-      "Waxed Copper Grate",
-      "Waxed Exposed Copper Grate",
-      "Waxed Oxidized Copper Grate",
-      "Waxed Weathered Copper Grate",
-      "Weathered Copper Grate"
-     ],
      "Copper Helmet",
      [
       "Copper Lantern",
@@ -2580,21 +2570,10 @@
       "Weathered Copper Lantern"
      ],
      "Copper Leggings",
-     "Copper Nugget",
      "Copper Pickaxe",
      "Copper Shovel",
      "Copper Sword",
      "Copper Torch",
-     [
-      "Copper Trapdoor",
-      "Exposed Copper Trapdoor",
-      "Oxidized Copper Trapdoor",
-      "Waxed Copper Trapdoor",
-      "Waxed Exposed Copper Trapdoor",
-      "Waxed Oxidized Copper Trapdoor",
-      "Waxed Weathered Copper Trapdoor",
-      "Weathered Copper Trapdoor"
-     ],
      [
       "Cut Copper",
       "Exposed Cut Copper",
@@ -2671,7 +2650,28 @@
       "Waxed Oxidized Cut Copper Stairs",
       "Waxed Weathered Cut Copper Stairs",
       "Weathered Cut Copper Stairs"
-     ]
+     ],
+     [
+      "Copper Grate",
+      "Exposed Copper Grate",
+      "Oxidized Copper Grate",
+      "Waxed Copper Grate",
+      "Waxed Exposed Copper Grate",
+      "Waxed Oxidized Copper Grate",
+      "Waxed Weathered Copper Grate",
+      "Weathered Copper Grate"
+     ],
+     [
+      "Copper Trapdoor",
+      "Exposed Copper Trapdoor",
+      "Oxidized Copper Trapdoor",
+      "Waxed Copper Trapdoor",
+      "Waxed Exposed Copper Trapdoor",
+      "Waxed Oxidized Copper Trapdoor",
+      "Waxed Weathered Copper Trapdoor",
+      "Weathered Copper Trapdoor"
+     ],
+     "Copper Nugget"
     ],
     "gold": [
      "Copper Spear"
@@ -2722,7 +2722,6 @@
       "Nether Wart Block",
       "Wart Block"
      ],
-     "Warped Wart Block",
      "Crimson Stem",
      "Warped Stem",
      "Shroomlight",
@@ -2741,7 +2740,8 @@
       "Crimson Roots",
       "Roots"
      ],
-     "Warped Roots"
+     "Warped Roots",
+     "Warped Wart Block"
     ],
     "gold": [
      "Soul Fire",
@@ -2793,51 +2793,26 @@
      "Packed Ice",
      "Blue Ice",
      "Nautilus Shell",
-     "Podzol",
      "Vines",
      "Kelp",
      "Sea Pickle",
-     "Fern",
-     "Brown Mushroom",
      [
       "Red Mushroom",
       "Mushroom"
      ],
-     "Pumpkin Seeds",
-     "Melon Seeds",
      [
       "Wheat Seeds",
       "Seeds"
      ],
-     "Beetroot Seeds",
      "Dandelion",
      "Poppy",
-     "Blue Orchid",
-     "Allium",
-     "Azure Bluet",
      [
       "Red Tulip",
       "Tulip"
      ],
-     "Orange Tulip",
-     "White Tulip",
-     "Pink Tulip",
-     "Oxeye Daisy",
-     "Cornflower",
-     "Lily of the Valley",
      "White Dye",
-     "Orange Dye",
-     "Magenta Dye",
-     "Light Blue Dye",
      "Yellow Dye",
-     "Lime Dye",
-     "Pink Dye",
-     "Gray Dye",
-     "Light Gray Dye",
-     "Cyan Dye",
-     "Purple Dye",
      "Blue Dye",
-     "Brown Dye",
      "Green Dye",
      "Red Dye",
      "Black Dye",
@@ -2876,7 +2851,32 @@
      [
       "Iron Pickaxe",
       "Enchanted Iron Pickaxe"
-     ]
+     ],
+     "Orange Dye",
+     "Magenta Dye",
+     "Light Blue Dye",
+     "Lime Dye",
+     "Pink Dye",
+     "Gray Dye",
+     "Light Gray Dye",
+     "Cyan Dye",
+     "Purple Dye",
+     "Brown Dye",
+     "Blue Orchid",
+     "Allium",
+     "Azure Bluet",
+     "Orange Tulip",
+     "White Tulip",
+     "Pink Tulip",
+     "Oxeye Daisy",
+     "Cornflower",
+     "Lily of the Valley",
+     "Beetroot Seeds",
+     "Melon Seeds",
+     "Pumpkin Seeds",
+     "Fern",
+     "Podzol",
+     "Brown Mushroom"
     ],
     "gold": [
      "Firefly Bush",
