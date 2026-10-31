@@ -3184,7 +3184,6 @@
      "Nether",
      "Return to Sender",
      "A Terrible Fortress",
-     "Into Fire",
      "Withering Heights"
     ],
     "coal": [
@@ -3196,7 +3195,8 @@
      "Beaconator",
      "Oh Shiny",
      "War Pigs",
-     "How Did We Get Here?"
+     "How Did We Get Here?",
+     "Into Fire"
     ],
     "iron": [
      "Subspace Bubble",
@@ -3330,8 +3330,7 @@
      "Kebab med tre pepperoni",
      "Wither",
      "Skull and Roses",
-     "Skull On Fire",
-     "Pointer"
+     "Skull On Fire"
     ],
     "coal": [
      "de_aztec",
@@ -3340,44 +3339,45 @@
       "Target Successfully Bombed",
       "Bomb"
      ],
-     [
-      "Paradisträd",
-      "Plant"
-     ],
      "Wasteland",
-     "The Pool",
-     "Bonjour Monsieur Courbet",
-     [
-      "Seaside",
-      "Sea"
-     ],
      [
       "sunset_dense",
       "Sunset"
      ],
      "Creebet",
-     "Wanderer",
-     "Graham",
-     "Match",
-     "Bust",
-     [
-      "The Stage Is Set",
-      "Stage"
-     ],
      "The void",
-     "Fighters",
      "Pigscene",
-     [
-      "Mortal Coil",
-      "Skeleton"
-     ],
-     "Kong"
+     "Kong",
+     "Pointer"
     ],
     "iron": [
      "Earth",
      "Wind",
      "Water",
-     "Fire"
+     "Fire",
+     "Graham",
+     "Match",
+     "Bust",
+     "Wanderer",
+     "Fighters",
+     [
+      "Seaside",
+      "Sea"
+     ],
+     "The Pool",
+     "Bonjour Monsieur Courbet",
+     [
+      "The Stage Is Set",
+      "Stage"
+     ],
+     [
+      "Mortal Coil",
+      "Skeleton"
+     ],
+     [
+      "Paradisträd",
+      "Plant"
+     ]
     ],
     "gold": [
      "Baroque",
@@ -3835,7 +3835,6 @@
       "Sweet Berries",
       "Berries"
      ],
-     "Seagrass",
      "Steak",
      "Raw Porkchop",
      "Raw Chicken",
@@ -3864,7 +3863,8 @@
      "Cooked Rabbit",
      "Poppy",
      "Cornflower",
-     "Sunflower"
+     "Sunflower",
+     "Seagrass"
     ],
     "gold": [
      "Pitcher Pod",
@@ -4012,9 +4012,7 @@
      "Monster Hunter",
      "Adventuring Time",
      "Sniper Duel",
-     "Take Aim",
-     "Sweet Dreams",
-     "Postmortal"
+     "Take Aim"
     ],
     "coal": [
      "Monsters Hunted",
@@ -4026,7 +4024,9 @@
      "Ol' Betsy",
      "Who's the Pillager Now?",
      "Arbalistic",
-     "A Throwaway Joke"
+     "A Throwaway Joke",
+     "Postmortal",
+     "Sweet Dreams"
     ],
     "iron": [
      "Hired Help",
@@ -5970,7 +5970,8 @@
      "players_nether_portal_creative_delay"
     ],
     "netherite": [
-     "spawnChunkRadius"
+     "spawnChunkRadius",
+     "entitiesWithPassengersCanUsePortals"
     ]
    }
   },
@@ -5984,7 +5985,11 @@
    "answers": {
     "dirt": [
      "Cobblestone Stairs",
-     "Oak Stairs",
+     [
+      "Oak Stairs",
+      "Wooden Stairs",
+      "Wood Stairs"
+     ],
      "Stone Brick Stairs",
      "Stone Stairs"
     ],
@@ -6176,7 +6181,9 @@
     "dirt": [
      [
       "Oak Door",
-      "Oak"
+      "Oak",
+      "Wooden Door",
+      "Wood Door"
      ],
      [
       "Iron Door",
@@ -6242,7 +6249,8 @@
      [
       "Pale Oak Door",
       "Pale Oak"
-     ]
+     ],
+     "Trapdoor"
     ],
     "diamond": [
      [
@@ -6320,7 +6328,10 @@
    "text": "Name a block, item or biome with 'Pale' in its name",
    "answers": {
     "dirt": [
-     "Pale Oak Log",
+     [
+      "Pale Oak Log",
+      "Pale Oak"
+     ],
      "Pale Oak Planks",
      "Pale Oak Sapling",
      "Pale Garden"
@@ -6350,7 +6361,10 @@
      "Stripped Pale Oak Wood"
     ],
     "diamond": [
-     "Pale Oak Boat with Chest",
+     [
+      "Pale Oak Boat with Chest",
+      "Pale Oak Chest Boat"
+     ],
      "Pale Oak Shelf"
     ]
    }
