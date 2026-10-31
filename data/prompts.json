@@ -10766,7 +10766,29 @@
      "Camel",
      "Cherry Grove",
      "Brush",
-     "Pottery Sherd",
+     [
+      "Pottery Sherd",
+      "Angler Pottery Sherd",
+      "Archer Pottery Sherd",
+      "Arms Up Pottery Sherd",
+      "Blade Pottery Sherd",
+      "Brewer Pottery Sherd",
+      "Burn Pottery Sherd",
+      "Danger Pottery Sherd",
+      "Explorer Pottery Sherd",
+      "Friend Pottery Sherd",
+      "Heart Pottery Sherd",
+      "Heartbreak Pottery Sherd",
+      "Howl Pottery Sherd",
+      "Miner Pottery Sherd",
+      "Mourner Pottery Sherd",
+      "Plenty Pottery Sherd",
+      "Prize Pottery Sherd",
+      "Sheaf Pottery Sherd",
+      "Shelter Pottery Sherd",
+      "Skull Pottery Sherd",
+      "Snort Pottery Sherd"
+     ],
      "Decorated Pot"
     ],
     "coal": [
@@ -10780,15 +10802,46 @@
      "Pink Petals",
      "Suspicious Sand",
      "Suspicious Gravel",
-     "Armor Trim",
-     "Smithing Template",
+     [
+      "Armor Trim",
+      "Coast Armor Trim",
+      "Dune Armor Trim",
+      "Eye Armor Trim",
+      "Host Armor Trim",
+      "Raiser Armor Trim",
+      "Rib Armor Trim",
+      "Sentry Armor Trim",
+      "Shaper Armor Trim",
+      "Silence Armor Trim",
+      "Snout Armor Trim",
+      "Spire Armor Trim",
+      "Tide Armor Trim",
+      "Vex Armor Trim",
+      "Ward Armor Trim",
+      "Wayfinder Armor Trim",
+      "Wild Armor Trim"
+     ],
+     [
+      "Smithing Template",
+      "Armor Trim Smithing Template"
+     ],
      "Netherite Upgrade",
      "Bamboo Planks",
      "Bamboo Raft",
      "Chiseled Bookshelf",
      [
       "Hanging Sign",
-      "Oak Hanging Sign"
+      "Oak Hanging Sign",
+      "Spruce Hanging Sign",
+      "Birch Hanging Sign",
+      "Jungle Hanging Sign",
+      "Acacia Hanging Sign",
+      "Dark Oak Hanging Sign",
+      "Mangrove Hanging Sign",
+      "Cherry Hanging Sign",
+      "Bamboo Hanging Sign",
+      "Crimson Hanging Sign",
+      "Warped Hanging Sign"
      ],
      "Trail Ruins"
     ],
@@ -10801,14 +10854,38 @@
      "Piglin Head",
      "Relic",
      "Cherry Door",
-     "Cherry Wood"
+     "Cherry Wood",
+     "Cherry Boat"
     ],
     "gold": [
-     "Bamboo Raft with Chest"
+     "Bamboo Raft with Chest",
+     "Stripped Cherry Log",
+     "Stripped Cherry Wood",
+     "Cherry Boat with Chest",
+     "Bamboo Mosaic Stairs",
+     "Bamboo Mosaic Slab",
+     "Sniffer Spawn Egg",
+     "Camel Spawn Egg",
+     "Cherry Stairs",
+     "Cherry Slab",
+     "Cherry Fence",
+     "Cherry Fence Gate",
+     "Cherry Trapdoor",
+     "Cherry Button",
+     "Cherry Pressure Plate",
+     "Cherry Sign",
+     "Bamboo Door",
+     "Bamboo Trapdoor",
+     "Bamboo Fence",
+     "Bamboo Fence Gate",
+     "Bamboo Stairs",
+     "Bamboo Slab",
+     "Bamboo Button",
+     "Bamboo Pressure Plate",
+     "Bamboo Sign"
     ],
     "diamond": [
-     "Block of Stripped Bamboo",
-     "Stripped Cherry Log"
+     "Block of Stripped Bamboo"
     ]
    }
   },
@@ -10822,19 +10899,34 @@
    "text": "Name a block or item with 'Torch' or 'Lantern' in its name",
    "answers": {
     "dirt": [
-     "Torch",
+     [
+      "Torch",
+      "Wall Torch"
+     ],
      "Lantern",
-     "Redstone Torch",
+     [
+      "Redstone Torch",
+      "Redstone Wall Torch"
+     ],
      "Jack o'Lantern"
     ],
     "coal": [
-     "Soul Torch",
+     [
+      "Soul Torch",
+      "Soul Wall Torch"
+     ],
      "Soul Lantern",
      "Sea Lantern",
-     "Torchflower"
+     [
+      "Torchflower",
+      "Torchflower Crop"
+     ]
     ],
     "iron": [
-     "Copper Torch",
+     [
+      "Copper Torch",
+      "Copper Wall Torch"
+     ],
      "Copper Lantern",
      "Torchflower Seeds"
     ],
@@ -10847,7 +10939,8 @@
      "Waxed Copper Lantern",
      "Waxed Exposed Copper Lantern",
      "Waxed Weathered Copper Lantern",
-     "Waxed Oxidized Copper Lantern"
+     "Waxed Oxidized Copper Lantern",
+     "Potted Torchflower"
     ]
    }
   },
@@ -10875,9 +10968,15 @@
      "Bucket of Salmon",
      "Bucket of Pufferfish",
      "Bucket of Tropical Fish",
-     "Turtle Scute",
+     [
+      "Turtle Scute",
+      "Scute"
+     ],
      "Armadillo Scute",
-     "Red Mushroom",
+     [
+      "Red Mushroom",
+      "Mushroom"
+     ],
      "Brown Mushroom",
      "Suspicious Stew"
     ],
@@ -10891,14 +10990,35 @@
      "Carved Pumpkin",
      "Ochre Froglight",
      "Verdant Froglight",
-     "Pearlescent Froglight"
+     "Pearlescent Froglight",
+     [
+      "Horse Armor",
+      "Leather Horse Armor",
+      "Iron Horse Armor",
+      "Golden Horse Armor",
+      "Gold Horse Armor",
+      "Diamond Horse Armor",
+      "Copper Horse Armor",
+      "Netherite Horse Armor"
+     ],
+     "Bucket of Sulfur Cube"
     ],
     "gold": [
      "Rabbit Hide",
      "Rabbit's Foot",
      "Phantom Membrane",
      "Slimeball",
-     "Saddle"
+     "Saddle",
+     [
+      "Carpet",
+      "Llama Carpet"
+     ],
+     "Wolf Armor",
+     "Harness",
+     "Poppy",
+     "Dragon's Breath",
+     "Sniffer Egg",
+     "Turtle Egg"
     ],
     "diamond": [
      "Raw Chicken",
@@ -10928,7 +11048,10 @@
     ],
     "coal": [
      "Tadpole",
-     "Sculk",
+     [
+      "Sculk",
+      "Sculk Block"
+     ],
      "Sculk Shrieker",
      "Sculk Catalyst",
      "Sculk Vein",
@@ -10956,16 +11079,32 @@
      "5",
      [
       "Oak Boat with Chest",
-      "Boat with Chest"
+      "Boat with Chest",
+      "Chest Boat"
      ],
      "Bucket of Tadpole",
-     "Mangrove Door"
+     "Mangrove Door",
+     "Mangrove Boat"
     ],
     "gold": [
      "Mud Brick Stairs",
      "Mud Brick Slab",
      "Mud Brick Wall",
-     "Stripped Mangrove Log"
+     "Stripped Mangrove Log",
+     "Mangrove Wood",
+     "Stripped Mangrove Wood",
+     "Allay Spawn Egg",
+     "Frog Spawn Egg",
+     "Warden Spawn Egg",
+     "Tadpole Spawn Egg",
+     "Mangrove Stairs",
+     "Mangrove Slab",
+     "Mangrove Fence",
+     "Mangrove Fence Gate",
+     "Mangrove Trapdoor",
+     "Mangrove Button",
+     "Mangrove Pressure Plate",
+     "Mangrove Sign"
     ],
     "diamond": [
      "Mangrove Boat with Chest"
@@ -10984,10 +11123,17 @@
     "dirt": [
      "Emerald",
      "Lapis Lazuli",
-     "Redstone Dust",
+     [
+      "Redstone Dust",
+      "Redstone",
+      "Redstone Wire"
+     ],
      "Emerald Ore",
      "Redstone Ore",
-     "Redstone Torch"
+     [
+      "Redstone Torch",
+      "Redstone Wall Torch"
+     ]
     ],
     "coal": [
      "Block of Emerald",
@@ -11033,7 +11179,10 @@
      "Farmland",
      "Dirt Path",
      "Reinforced Deepslate",
-     "Nether Portal",
+     [
+      "Nether Portal",
+      "Portal"
+     ],
      "End Portal",
      "Fire",
      "Structure Block",
@@ -11043,7 +11192,12 @@
     "iron": [
      "Chorus Plant",
      "Frosted Ice",
-     "Infested Stone",
+     [
+      "Infested Stone",
+      "Infested Block",
+      "Silverfish Block",
+      "Monster Egg"
+     ],
      "Suspicious Sand",
      "Suspicious Gravel",
      "Light",
@@ -11053,7 +11207,8 @@
      "Water",
      "Lava",
      "End Gateway",
-     "Player Head"
+     "Player Head",
+     "Powder Snow"
     ],
     "gold": [
      "Petrified Oak Slab",
@@ -11063,7 +11218,31 @@
      "Soul Fire",
      "Infested Deepslate",
      "Infested Cobblestone",
-     "Infested Stone Bricks"
+     "Infested Stone Bricks",
+     "Air",
+     "Infested Chiseled Stone Bricks",
+     "Infested Mossy Stone Bricks",
+     "Infested Cracked Stone Bricks",
+     "Redstone Wire",
+     "Tripwire",
+     [
+      "Water Cauldron",
+      "Lava Cauldron",
+      "Powder Snow Cauldron"
+     ],
+     "Kelp Plant",
+     "Cave Vines",
+     "Sweet Berry Bush",
+     [
+      "Pumpkin Stem",
+      "Attached Pumpkin Stem"
+     ],
+     [
+      "Melon Stem",
+      "Attached Melon Stem"
+     ],
+     "Bamboo Shoot",
+     "Wheat Crops"
     ],
     "diamond": [
      "Moving Piston",
@@ -11071,7 +11250,11 @@
      "Tall Seagrass",
      "Test Block",
      "Test Instance Block",
-     "Cave Air"
+     "Cave Air",
+     "Void Air",
+     "Big Dripleaf Stem",
+     "Torchflower Crop",
+     "Pitcher Crop"
     ]
    }
   },
@@ -11099,11 +11282,26 @@
      "Ominous Trial Key",
      "Breeze Rod",
      "Ominous Bottle",
-     "Copper Bulb",
-     "Copper Grate",
-     "Chiseled Copper",
-     "Copper Door",
-     "Copper Trapdoor",
+     [
+      "Copper Bulb",
+      "Waxed Copper Bulb"
+     ],
+     [
+      "Copper Grate",
+      "Waxed Copper Grate"
+     ],
+     [
+      "Chiseled Copper",
+      "Waxed Chiseled Copper"
+     ],
+     [
+      "Copper Door",
+      "Waxed Copper Door"
+     ],
+     [
+      "Copper Trapdoor",
+      "Waxed Copper Trapdoor"
+     ],
      "Tuff Bricks",
      "Chiseled Tuff",
      "Polished Tuff",
@@ -11133,7 +11331,76 @@
      "Scrape Pottery Sherd",
      "Tuff Stairs",
      "Tuff Slab",
-     "Tuff Wall"
+     "Tuff Wall",
+     [
+      "Exposed Copper Bulb",
+      "Waxed Exposed Copper Bulb"
+     ],
+     [
+      "Weathered Copper Bulb",
+      "Waxed Weathered Copper Bulb"
+     ],
+     [
+      "Oxidized Copper Bulb",
+      "Waxed Oxidized Copper Bulb"
+     ],
+     [
+      "Exposed Copper Grate",
+      "Waxed Exposed Copper Grate"
+     ],
+     [
+      "Weathered Copper Grate",
+      "Waxed Weathered Copper Grate"
+     ],
+     [
+      "Oxidized Copper Grate",
+      "Waxed Oxidized Copper Grate"
+     ],
+     [
+      "Exposed Copper Door",
+      "Waxed Exposed Copper Door"
+     ],
+     [
+      "Weathered Copper Door",
+      "Waxed Weathered Copper Door"
+     ],
+     [
+      "Oxidized Copper Door",
+      "Waxed Oxidized Copper Door"
+     ],
+     [
+      "Exposed Copper Trapdoor",
+      "Waxed Exposed Copper Trapdoor"
+     ],
+     [
+      "Weathered Copper Trapdoor",
+      "Waxed Weathered Copper Trapdoor"
+     ],
+     [
+      "Oxidized Copper Trapdoor",
+      "Waxed Oxidized Copper Trapdoor"
+     ],
+     [
+      "Exposed Chiseled Copper",
+      "Waxed Exposed Chiseled Copper"
+     ],
+     [
+      "Weathered Chiseled Copper",
+      "Waxed Weathered Chiseled Copper"
+     ],
+     [
+      "Oxidized Chiseled Copper",
+      "Waxed Oxidized Chiseled Copper"
+     ],
+     "Polished Tuff Stairs",
+     "Polished Tuff Slab",
+     "Polished Tuff Wall",
+     "Tuff Brick Stairs",
+     "Tuff Brick Slab",
+     "Tuff Brick Wall",
+     "Breeze Spawn Egg",
+     "Bogged Spawn Egg",
+     "Ominous Vault"
     ],
     "diamond": [
      "Creator (Music Box)"
@@ -11150,18 +11417,31 @@
    "text": "Name a crop or plant you can farm because it keeps growing by itself",
    "answers": {
     "dirt": [
-     "Wheat",
+     [
+      "Wheat",
+      "Wheat Seeds",
+      "Seeds"
+     ],
      "Carrots",
      [
       "Potatoes",
       "Potato"
      ],
      "Sugar Cane",
-     "Pumpkin",
-     "Melon"
+     [
+      "Pumpkin",
+      "Pumpkin Seeds"
+     ],
+     [
+      "Melon",
+      "Melon Seeds"
+     ]
     ],
     "coal": [
-     "Beetroots",
+     [
+      "Beetroots",
+      "Beetroot Seeds"
+     ],
      "Cactus",
      "Bamboo",
      "Nether Wart",
@@ -11169,30 +11449,61 @@
       "Cocoa Beans",
       "Cocoa"
      ],
-     "Sweet Berries",
+     [
+      "Sweet Berries",
+      "Sweet Berry",
+      "Berries"
+     ],
      "Kelp"
     ],
     "iron": [
      [
       "Glow Berries",
-      "Cave Vines"
+      "Cave Vines",
+      "Glow Berry"
      ],
      [
       "Chorus Flower",
-      "Chorus Fruit"
+      "Chorus Fruit",
+      "Chorus Plant"
      ],
-     "Torchflower",
-     "Pitcher Plant",
-     "Vines"
+     [
+      "Torchflower",
+      "Torchflower Seeds"
+     ],
+     [
+      "Pitcher Plant",
+      "Pitcher Pod"
+     ],
+     "Vines",
+     [
+      "Tree",
+      "Sapling",
+      "Oak Sapling",
+      "Spruce Sapling",
+      "Birch Sapling",
+      "Jungle Sapling",
+      "Acacia Sapling",
+      "Dark Oak Sapling",
+      "Cherry Sapling",
+      "Pale Oak Sapling",
+      "Poplar Sapling"
+     ],
+     "Mushroom"
     ],
     "gold": [
      "Twisting Vines",
      "Weeping Vines",
      "Red Mushroom",
-     "Brown Mushroom"
+     "Brown Mushroom",
+     "Mangrove Propagule",
+     [
+      "Azalea",
+      "Flowering Azalea"
+     ]
     ],
     "diamond": [
-     "Pale Hanging Moss"
+     "Cactus Flower"
     ]
    }
   },
@@ -11206,7 +11517,10 @@
    "text": "Name a block or item with 'Amethyst' or 'Sculk' in its name",
    "answers": {
     "dirt": [
-     "Amethyst Shard",
+     [
+      "Amethyst Shard",
+      "Amethyst"
+     ],
      "Block of Amethyst",
      "Sculk",
      "Sculk Sensor",
@@ -11220,7 +11534,10 @@
     ],
     "iron": [
      "Small Amethyst Bud",
-     "Medium Amethyst Bud",
+     [
+      "Medium Amethyst Bud",
+      "Amethyst Bud"
+     ],
      "Large Amethyst Bud"
     ],
     "diamond": [
@@ -11237,7 +11554,10 @@
    "text": "Name a block, item or mob added in a 2025 game drop (Spring to Life, Chase the Skies, The Copper Age or Mounts of Mayhem)",
    "answers": {
     "dirt": [
-     "Happy Ghast",
+     [
+      "Happy Ghast",
+      "Ghastling"
+     ],
      "Copper Golem",
      [
       "Spear",
@@ -11258,7 +11578,19 @@
      "Copper Torch",
      [
       "Shelf",
-      "Oak Shelf"
+      "Oak Shelf",
+      "Spruce Shelf",
+      "Birch Shelf",
+      "Jungle Shelf",
+      "Acacia Shelf",
+      "Dark Oak Shelf",
+      "Mangrove Shelf",
+      "Cherry Shelf",
+      "Pale Oak Shelf",
+      "Bamboo Shelf",
+      "Crimson Shelf",
+      "Warped Shelf",
+      "Poplar Shelf"
      ],
      "Copper Sword",
      "Copper Pickaxe",
@@ -11269,11 +11601,16 @@
      "Camel Husk",
      "Parched",
      "Blue Egg",
-     "Brown Egg"
+     "Brown Egg",
+     "Copper Armor",
+     "Copper Tools"
     ],
     "iron": [
      "Bush",
-     "Short Dry Grass",
+     [
+      "Short Dry Grass",
+      "Dry Grass"
+     ],
      "Tall Dry Grass",
      "Cactus Flower",
      "Copper Lantern",
@@ -11288,7 +11625,8 @@
      "Copper Boots",
      "Copper Horse Armor",
      "Lunge",
-     "Tears"
+     "Tears",
+     "Nautilus Armor"
     ],
     "gold": [
      "Copper Nautilus Armor",
@@ -11296,12 +11634,41 @@
      "Golden Nautilus Armor",
      "Diamond Nautilus Armor",
      "Netherite Nautilus Armor",
-     "Copper Spear"
+     "Copper Spear",
+     [
+      "Exposed Copper Chest",
+      "Weathered Copper Chest",
+      "Oxidized Copper Chest",
+      "Waxed Copper Chest",
+      "Waxed Exposed Copper Chest",
+      "Waxed Weathered Copper Chest",
+      "Waxed Oxidized Copper Chest"
+     ],
+     [
+      "Exposed Copper Golem Statue",
+      "Weathered Copper Golem Statue",
+      "Oxidized Copper Golem Statue",
+      "Waxed Copper Golem Statue"
+     ],
+     [
+      "Exposed Lightning Rod",
+      "Weathered Lightning Rod",
+      "Oxidized Lightning Rod",
+      "Waxed Lightning Rod"
+     ],
+     "Happy Ghast Spawn Egg",
+     "Copper Golem Spawn Egg",
+     "Nautilus Spawn Egg",
+     "Zombie Nautilus Spawn Egg",
+     "Camel Husk Spawn Egg",
+     "Parched Spawn Egg"
     ],
     "diamond": [
      "Netherite Horse Armor",
      "Netherite Spear",
-     "Lava Chicken"
+     "Lava Chicken",
+     "Test Block",
+     "Test Instance Block"
     ]
    }
   },
