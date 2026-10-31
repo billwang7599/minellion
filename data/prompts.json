@@ -3166,7 +3166,8 @@
      "Camel Husk"
     ],
     "netherite": [
-     "Zombie Nautilus"
+     "Zombie Nautilus",
+     "Giant"
     ]
    }
   },
@@ -3283,9 +3284,7 @@
      "Diamond Chestplate",
      "Diamond Axe",
      "Shield",
-     "Ominous Bottle",
-     "Precipice",
-     "Creator"
+     "Ominous Bottle"
     ],
     "iron": [
      "Iron Chestplate",
@@ -3294,12 +3293,24 @@
      "Honey Bottle",
      "Tipped Arrow",
      "Block of Diamond",
-     "Block of Emerald"
+     "Block of Emerald",
+     "Precipice",
+     "Creator",
+     [
+      "Music Disc",
+      "Disc"
+     ]
     ],
     "gold": [
      "Flow Armor Trim",
      "Bolt Armor Trim",
-     "Block of Iron"
+     "Block of Iron",
+     [
+      "Armor Trim",
+      "Smithing Template",
+      "Trim"
+     ],
+     "Banner Pattern"
     ],
     "diamond": [
      "Flow Banner Pattern",
@@ -3410,7 +3421,11 @@
      "Bucket"
     ],
     "coal": [
-     "Bucket of Cod",
+     [
+      "Bucket of Cod",
+      "Bucket of Fish",
+      "Fish Bucket"
+     ],
      "Bucket of Axolotl",
      "Bucket of Tropical Fish",
      "Bucket of Pufferfish",
