@@ -66,14 +66,22 @@
      "Mushroom Fields",
      "River",
      "Beach",
-     "Cherry Grove",
+     [
+      "Cherry Grove",
+      "Cherry Forest",
+      "Cherry Blossom Forest"
+     ],
      "Flower Forest",
      "Ice Spikes",
      "Deep Ocean",
      "Lush Caves",
      "Deep Dark",
      "Snowy Taiga",
-     "Mangrove Swamp",
+     [
+      "Mangrove Swamp",
+      "Mangrove",
+      "Mangrove Forest"
+     ],
      "Meadow",
      "Bamboo Jungle",
      "Dripstone Caves"
@@ -84,7 +92,10 @@
      "Frozen Ocean",
      "Cold Ocean",
      "Lukewarm Ocean",
-     "Pale Garden",
+     [
+      "Pale Garden",
+      "Pale Forest"
+     ],
      "Windswept Hills",
      "Grove",
      "Snowy Slopes",
@@ -213,7 +224,8 @@
       "Cherry",
       "Cherry Planks",
       "Cherry Log",
-      "Cherry Wood"
+      "Cherry Wood",
+      "Cherry Blossom"
      ],
      [
       "Mangrove",
@@ -309,7 +321,12 @@
       "Raw Salmon",
       "Salmon"
      ],
-     "Sweet Berries",
+     [
+      "Sweet Berries",
+      "Sweet Berry",
+      "Berries",
+      "Berry"
+     ],
      "Beetroot",
      "Beetroot Soup",
      "Rabbit Stew",
@@ -320,11 +337,17 @@
      "Raw Rabbit",
      "Enchanted Golden Apple",
      "Spider Eye",
-     "Honey Bottle",
+     [
+      "Honey Bottle",
+      "Honey"
+     ],
      "Dried Kelp"
     ],
     "gold": [
-     "Glow Berries",
+     [
+      "Glow Berries",
+      "Glow Berry"
+     ],
      "Chorus Fruit",
      "Pufferfish",
      "Tropical Fish",
@@ -389,7 +412,8 @@
      ],
      [
       "Ancient Debris",
-      "Netherite"
+      "Netherite",
+      "Netherite Ore"
      ],
      "Nether Gold Ore"
     ],
@@ -460,13 +484,13 @@
      "Multishot",
      "Piercing",
      "Quick Charge",
-     "Soul Speed",
+     "Soul Speed"
+    ],
+    "gold": [
+     "Swift Sneak",
      "Density",
      "Breach",
      "Wind Burst"
-    ],
-    "gold": [
-     "Swift Sneak"
     ],
     "diamond": [
      "Lunge"
@@ -509,7 +533,8 @@
      "Snow Golem",
      "Glow Squid",
      "Allay",
-     "Wandering Trader"
+     "Wandering Trader",
+     "Fox"
     ],
     "gold": [
      "Frog",
@@ -556,15 +581,18 @@
      "Weakness",
      [
       "Instant Health",
-      "Healing"
+      "Healing",
+      "Health"
      ],
      [
       "Instant Damage",
-      "Harming"
+      "Harming",
+      "Damage"
      ],
      [
       "Jump Boost",
-      "Leaping"
+      "Leaping",
+      "Jump"
      ],
      "Water Breathing",
      "Haste",
@@ -584,7 +612,10 @@
      "Bad Omen",
      "Hero of the Village",
      "Darkness",
-     "Conduit Power",
+     [
+      "Conduit Power",
+      "Conduit"
+     ],
      "Dolphin's Grace",
      "Health Boost",
      "Luck"
@@ -699,7 +730,10 @@
      "Torchflower",
      "Pink Petals",
      "Spore Blossom",
-     "Pitcher Plant"
+     [
+      "Pitcher Plant",
+      "Pitcher"
+     ]
     ],
     "gold": [
      "Open Eyeblossom",
@@ -729,7 +763,10 @@
    "text": "Name a music disc",
    "answers": {
     "dirt": [
-     "13",
+     [
+      "13",
+      "Thirteen"
+     ],
      "Cat",
      "Pigstep"
     ],
@@ -737,7 +774,10 @@
      "Otherside",
      "Blocks",
      "Chirp",
-     "11",
+     [
+      "11",
+      "Eleven"
+     ],
      "Far",
      "Mall",
      "Mellohi",
@@ -748,7 +788,10 @@
     ],
     "iron": [
      "Relic",
-     "5"
+     [
+      "5",
+      "Five"
+     ]
     ],
     "gold": [
      "Creator",
@@ -756,7 +799,10 @@
      "Lava Chicken"
     ],
     "diamond": [
-     "Creator (Music Box)",
+     [
+      "Creator (Music Box)",
+      "Music Box"
+     ],
      "Tears",
      "Bounce"
     ]
@@ -821,7 +867,8 @@
      ],
      [
       "Lime",
-      "Lime Dye"
+      "Lime Dye",
+      "Lime Green"
      ],
      [
       "Gray",
@@ -938,7 +985,10 @@
      "End City",
      "Bastion Remnant",
      "Shipwreck",
-     "Ancient City",
+     [
+      "Ancient City",
+      "Ancient Cities"
+     ],
      "Pillager Outpost",
      "Swamp Hut",
      "Igloo",
@@ -952,13 +1002,17 @@
      "Trail Ruins",
      "Nether Fossil",
      "End Ship",
-     "Desert Well"
+     [
+      "Desert Well",
+      "Well"
+     ]
     ],
     "gold": [
      "Fossil",
      "Amethyst Geode",
      "Abandoned Camp",
-     "Bonus Chest"
+     "Bonus Chest",
+     "Iceberg"
     ],
     "diamond": [
      "End Spike",
@@ -990,8 +1044,14 @@
      "Chiseled Stone Bricks",
      "Cracked Stone Bricks",
      "Deepslate Bricks",
-     "End Stone Bricks",
-     "Mossy Stone Bricks",
+     [
+      "End Stone Bricks",
+      "End Bricks"
+     ],
+     [
+      "Mossy Stone Bricks",
+      "Mossy Bricks"
+     ],
      "Mud Bricks",
      "Nether Brick Fence",
      "Prismarine Bricks",
@@ -1051,7 +1111,11 @@
      "Sulfur Brick Slab",
      "Sulfur Brick Stairs",
      "Sulfur Brick Wall",
-     "Sulfur Bricks"
+     "Sulfur Bricks",
+     "Infested Stone Bricks",
+     "Infested Mossy Stone Bricks",
+     "Infested Cracked Stone Bricks",
+     "Infested Chiseled Stone Bricks"
     ]
    }
   },
