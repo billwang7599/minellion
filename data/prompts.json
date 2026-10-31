@@ -11717,9 +11717,15 @@
       "Netherite Shovel"
      ],
      "Shears",
-     "Honeycomb",
+     [
+      "Honeycomb",
+      "Wax"
+     ],
      "Water Bucket",
-     "Eye of Ender",
+     [
+      "Eye of Ender",
+      "Ender Eye"
+     ],
      "Brush",
      "Fire Charge"
     ],
@@ -11729,10 +11735,14 @@
      "Glass Bottle",
      [
       "Potion",
-      "Water Bottle"
+      "Water Bottle",
+      "Splash Water Bottle"
      ],
      "Glowstone",
-     "Ink Sac",
+     [
+      "Ink Sac",
+      "Ink"
+     ],
      "Glow Ink Sac",
      "Candle"
     ],
@@ -11744,11 +11754,27 @@
       "Black Dye",
       "White Dye"
      ],
-     "Book",
-     "Music Disc"
+     [
+      "Book",
+      "Book and Quill",
+      "Written Book"
+     ],
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ],
+     [
+      "Trial Key",
+      "Ominous Trial Key"
+     ],
+     "Flower",
+     "Powder Snow Bucket"
     ],
     "diamond": [
-     "Wind Charge"
+     "Wind Charge",
+     "Spawn Egg",
+     "Banner"
     ]
    }
   },
@@ -11762,9 +11788,17 @@
    "text": "Name a block that opens a menu when you right-click it",
    "answers": {
     "dirt": [
-     "Crafting Table",
+     [
+      "Crafting Table",
+      "Workbench",
+      "Crafting Bench"
+     ],
      "Furnace",
-     "Chest",
+     [
+      "Chest",
+      "Large Chest",
+      "Double Chest"
+     ],
      "Enchanting Table",
      "Anvil",
      "Brewing Stand"
@@ -11774,7 +11808,25 @@
      "Smoker",
      "Barrel",
      "Ender Chest",
-     "Shulker Box",
+     [
+      "Shulker Box",
+      "White Shulker Box",
+      "Orange Shulker Box",
+      "Magenta Shulker Box",
+      "Light Blue Shulker Box",
+      "Yellow Shulker Box",
+      "Lime Shulker Box",
+      "Pink Shulker Box",
+      "Gray Shulker Box",
+      "Light Gray Shulker Box",
+      "Cyan Shulker Box",
+      "Purple Shulker Box",
+      "Blue Shulker Box",
+      "Brown Shulker Box",
+      "Green Shulker Box",
+      "Red Shulker Box",
+      "Black Shulker Box"
+     ],
      "Hopper",
      "Dispenser",
      "Dropper",
@@ -11792,20 +11844,55 @@
      "Command Block",
      "Chipped Anvil",
      "Damaged Anvil",
-     "Copper Chest"
+     [
+      "Copper Chest",
+      "Exposed Copper Chest",
+      "Weathered Copper Chest",
+      "Oxidized Copper Chest",
+      "Waxed Copper Chest"
+     ]
     ],
     "gold": [
      "Structure Block",
      "Jigsaw Block",
      [
       "Sign",
-      "Oak Sign"
+      "Oak Sign",
+      "Spruce Sign",
+      "Birch Sign",
+      "Jungle Sign",
+      "Acacia Sign",
+      "Dark Oak Sign",
+      "Mangrove Sign",
+      "Cherry Sign",
+      "Bamboo Sign",
+      "Crimson Sign",
+      "Warped Sign",
+      "Pale Oak Sign",
+      "Poplar Sign"
+     ],
+     [
+      "Hanging Sign",
+      "Oak Hanging Sign",
+      "Spruce Hanging Sign",
+      "Birch Hanging Sign",
+      "Jungle Hanging Sign",
+      "Acacia Hanging Sign",
+      "Dark Oak Hanging Sign",
+      "Mangrove Hanging Sign",
+      "Cherry Hanging Sign",
+      "Bamboo Hanging Sign",
+      "Crimson Hanging Sign",
+      "Warped Hanging Sign",
+      "Pale Oak Hanging Sign",
+      "Poplar Hanging Sign"
      ]
     ],
     "diamond": [
      "Test Instance Block",
      "Repeating Command Block",
-     "Chain Command Block"
+     "Chain Command Block",
+     "Test Block"
     ]
    }
   },
@@ -11913,34 +12000,62 @@
       "Fall",
       "Falling"
      ],
-     "Drowning",
+     [
+      "Drowning",
+      "Drown",
+      "Drowned"
+     ],
      [
       "Fire",
-      "Burning"
+      "Burning",
+      "On Fire",
+      "In Fire",
+      "Flames",
+      "Burned",
+      "Burned to Death"
      ],
-     "Lava",
+     [
+      "Lava",
+      "Swim in Lava"
+     ],
      [
       "Explosion",
-      "TNT"
+      "TNT",
+      "Player Explosion",
+      "Blew Up",
+      "Blown Up",
+      "Creeper",
+      "Explode"
      ],
      [
       "Void",
-      "Falling into the Void"
+      "Falling into the Void",
+      "Out of World",
+      "Fell out of the World"
      ]
     ],
     "coal": [
      [
       "Suffocation",
-      "Suffocating"
+      "Suffocating",
+      "In Wall",
+      "Suffocated"
      ],
      [
       "Starvation",
-      "Starving"
+      "Starving",
+      "Starve",
+      "Starved",
+      "Hunger"
      ],
-     "Cactus",
+     [
+      "Cactus",
+      "Pricked"
+     ],
      [
       "Lightning",
-      "Lightning Bolt"
+      "Lightning Bolt",
+      "Struck by Lightning"
      ],
      [
       "Magma Block",
@@ -11950,10 +12065,15 @@
       "Arrow",
       "Shot"
      ],
-     "Wither",
+     [
+      "Wither",
+      "Withered",
+      "Withered Away"
+     ],
      [
       "Mob Attack",
-      "Mob"
+      "Mob",
+      "Slain"
      ],
      [
       "Player Attack",
@@ -11963,13 +12083,21 @@
     "iron": [
      [
       "Freezing",
-      "Powder Snow"
+      "Powder Snow",
+      "Freeze",
+      "Froze"
      ],
-     "Sweet Berry Bush",
+     [
+      "Sweet Berry Bush",
+      "Sweet Berries",
+      "Berry Bush"
+     ],
      [
       "Magic",
       "Instant Damage",
-      "Harming"
+      "Harming",
+      "Indirect Magic",
+      "Even More Magic"
      ],
      "Thorns",
      "Trident",
@@ -11982,7 +12110,8 @@
      [
       "Kinetic Energy",
       "Fly into Wall",
-      "Elytra"
+      "Elytra",
+      "Kinetic"
      ],
      "Campfire"
     ],
@@ -12000,21 +12129,37 @@
       "Dragon's Breath",
       "Dragon Breath"
      ],
-     "Sonic Boom",
+     [
+      "Sonic Boom",
+      "Warden"
+     ],
      [
       "Sting",
-      "Bee Sting"
+      "Bee Sting",
+      "Bee"
      ],
      [
       "Cramming",
       "Entity Cramming"
      ],
      "Wither Skull",
-     "World Border",
+     [
+      "World Border",
+      "Outside Border"
+     ],
      [
       "Bad Respawn Point",
       "Bed Explosion"
-     ]
+     ],
+     [
+      "Generic",
+      "Died"
+     ],
+     [
+      "Thrown",
+      "Pummeled"
+     ],
+     "Mob Projectile"
     ],
     "diamond": [
      [
@@ -12035,6 +12180,10 @@
      [
       "Kill Command",
       "Kill"
+     ],
+     [
+      "Sulfur Cube",
+      "Hot Sulfur Cube"
      ]
     ]
    }
@@ -12070,7 +12219,11 @@
      "Leather Cap",
      "Leather Tunic",
      "Leather Pants",
-     "Leather Boots"
+     "Leather Boots",
+     "Helmet",
+     "Chestplate",
+     "Leggings",
+     "Boots"
     ],
     "iron": [
      "Chainmail Helmet",
@@ -12079,13 +12232,30 @@
      "Chainmail Boots"
     ],
     "gold": [
-     "Turtle Shell"
-    ],
-    "diamond": [
+     "Turtle Shell",
+     "Elytra",
      "Copper Helmet",
      "Copper Chestplate",
      "Copper Leggings",
      "Copper Boots"
+    ],
+    "diamond": [
+     [
+      "Carved Pumpkin",
+      "Pumpkin"
+     ],
+     [
+      "Mob Head",
+      "Head",
+      "Skull",
+      "Creeper Head",
+      "Zombie Head",
+      "Skeleton Skull",
+      "Wither Skeleton Skull",
+      "Piglin Head",
+      "Dragon Head",
+      "Player Head"
+     ]
     ]
    }
   },
@@ -12098,7 +12268,10 @@
    "text": "Name a tropical fish pattern or one of its named species (the names in its bucket tooltip)",
    "answers": {
     "dirt": [
-     "Clownfish",
+     [
+      "Clownfish",
+      "Nemo"
+     ],
      "Blue Tang",
      "Yellow Tang",
      "Butterflyfish",
@@ -12125,12 +12298,18 @@
      "Red Cichlid",
      "Tomato Clownfish",
      "Triggerfish",
-     "Queen Angelfish",
+     [
+      "Queen Angelfish",
+      "Angelfish"
+     ],
      "Moorish Idol",
      "Goatfish"
     ],
     "gold": [
-     "Cotton Candy Betta",
+     [
+      "Cotton Candy Betta",
+      "Betta"
+     ],
      "Dottyback",
      "Emperor Red Snapper",
      "Red Snapper",
@@ -12139,7 +12318,10 @@
     ],
     "diamond": [
      "Ornate Butterflyfish",
-     "Red Lipped Blenny"
+     [
+      "Red Lipped Blenny",
+      "Blenny"
+     ]
     ]
    }
   },
