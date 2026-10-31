@@ -9032,7 +9032,10 @@
    "text": "Name an item a Cleric villager buys or sells",
    "answers": {
     "dirt": [
-     "Redstone Dust",
+     [
+      "Redstone Dust",
+      "Redstone"
+     ],
      "Lapis Lazuli",
      "Emerald",
      "Rotten Flesh"
@@ -9049,7 +9052,10 @@
      "Rabbit's Foot"
     ],
     "diamond": [
-     "Turtle Scute"
+     [
+      "Turtle Scute",
+      "Scute"
+     ]
     ]
    }
   },
@@ -9103,8 +9109,14 @@
      "Cobbled Deepslate Wall",
      "Polished Basalt",
      "Smooth Basalt",
-     "Gray Wool",
-     "Gray Carpet",
+     [
+      "Gray Wool",
+      "Wool"
+     ],
+     [
+      "Gray Carpet",
+      "Carpet"
+     ],
      "Blue Wool",
      "Blue Carpet",
      "Light Blue Wool",
@@ -9174,12 +9186,18 @@
      "Soul Speed",
      "Warped Fungus on a Stick",
      "Warped Wart Block",
-     "Crimson Stem",
+     [
+      "Crimson Stem",
+      "Crimson Log"
+     ],
      "Crimson Nylium",
      "Crimson Roots",
      "Crimson Door",
      "Crimson Fence",
-     "Warped Stem",
+     [
+      "Warped Stem",
+      "Warped Log"
+     ],
      "Warped Nylium",
      "Warped Roots",
      "Warped Door",
@@ -9193,7 +9211,10 @@
      "Crimson Pressure Plate",
      "Crimson Sign",
      "Crimson Fence Gate",
-     "Crimson Hyphae",
+     [
+      "Crimson Hyphae",
+      "Crimson Wood"
+     ],
      "Stripped Crimson Stem",
      "Warped Stairs",
      "Warped Slab",
@@ -9202,7 +9223,10 @@
      "Warped Pressure Plate",
      "Warped Sign",
      "Warped Fence Gate",
-     "Warped Hyphae",
+     [
+      "Warped Hyphae",
+      "Warped Wood"
+     ],
      "Stripped Warped Stem"
     ],
     "gold": [
@@ -9246,7 +9270,13 @@
      "Lead",
      "Suspicious Stew",
      "Dead Bush",
-     "Relic"
+     "Relic",
+     [
+      "Music Disc",
+      "Disc",
+      "Record"
+     ],
+     "Dye"
     ],
     "iron": [
      "Wayfinder Armor Trim",
@@ -9254,13 +9284,21 @@
      "Raiser Armor Trim",
      "Host Armor Trim",
      "Wooden Hoe",
-     "Wheat Seeds",
+     [
+      "Wheat Seeds",
+      "Seeds"
+     ],
      "Beetroot Seeds",
      "Blue Dye",
      "Light Blue Dye",
      "Orange Dye",
      "White Dye",
-     "Yellow Dye"
+     "Yellow Dye",
+     [
+      "Smithing Template",
+      "Armor Trim",
+      "Trim"
+     ]
     ],
     "gold": [
      "Red Candle",
@@ -9268,7 +9306,9 @@
      "Purple Candle",
      "Brown Candle",
      "Oak Hanging Sign",
-     "Spruce Hanging Sign"
+     "Spruce Hanging Sign",
+     "Candle",
+     "Hanging Sign"
     ],
     "diamond": [
      "Blue Stained Glass Pane",
@@ -9277,7 +9317,8 @@
      "Pink Stained Glass Pane",
      "Purple Stained Glass Pane",
      "Red Stained Glass Pane",
-     "Yellow Stained Glass Pane"
+     "Yellow Stained Glass Pane",
+     "Stained Glass Pane"
     ]
    }
   },
@@ -9316,7 +9357,13 @@
      "Magma Cube"
     ],
     "gold": [
-     "Skeleton"
+     "Skeleton",
+     "Silverfish",
+     "Camel",
+     "Horse",
+     "Cow",
+     "Pig",
+     "Sheep"
     ],
     "diamond": [
      "Zombified Piglin"
@@ -9354,7 +9401,10 @@
      "Dark Oak Slab",
      "Dark Oak Stairs",
      "Dark Oak Wood",
-     "Oak Boat with Chest",
+     [
+      "Oak Boat with Chest",
+      "Oak Chest Boat"
+     ],
      "Oak Button",
      "Oak Fence Gate",
      "Oak Hanging Sign",
@@ -9396,10 +9446,19 @@
      "Stripped Pale Oak Wood"
     ],
     "diamond": [
-     "Dark Oak Boat with Chest",
+     [
+      "Dark Oak Boat with Chest",
+      "Dark Oak Chest Boat"
+     ],
      "Dark Oak Shelf",
-     "Pale Oak Boat with Chest",
+     [
+      "Pale Oak Boat with Chest",
+      "Pale Oak Chest Boat"
+     ],
      "Pale Oak Shelf"
+    ],
+    "netherite": [
+     "Petrified Oak Slab"
     ]
    }
   },
@@ -9420,14 +9479,24 @@
      "Bookshelf"
     ],
     "coal": [
-     "Book and Quill",
+     [
+      "Book and Quill",
+      "Writable Book"
+     ],
      "Ink Sac",
      "Lantern",
-     "Glass"
+     "Glass",
+     [
+      "Mending",
+      "Mending Book"
+     ]
     ],
     "iron": [
      "Compass",
      "Clock"
+    ],
+    "gold": [
+     "Candle"
     ],
     "diamond": [
      "Red Candle",
@@ -9485,7 +9554,10 @@
     "dirt": [
      "Bamboo",
      "Bamboo Planks",
-     "Bamboo Raft",
+     [
+      "Bamboo Raft",
+      "Bamboo Boat"
+     ],
      "Block of Bamboo"
     ],
     "coal": [
@@ -9508,8 +9580,15 @@
      "Bamboo Mosaic Slab"
     ],
     "gold": [
-     "Bamboo Raft with Chest",
-     "Bamboo Shoot"
+     [
+      "Bamboo Raft with Chest",
+      "Bamboo Chest Raft",
+      "Bamboo Chest Boat"
+     ],
+     [
+      "Bamboo Shoot",
+      "Bamboo Sapling"
+     ]
     ],
     "diamond": [
      "Bamboo Shelf"
@@ -9526,7 +9605,11 @@
    "text": "Name an item a Cartographer villager buys or sells",
    "answers": {
     "dirt": [
-     "Empty Map",
+     [
+      "Empty Map",
+      "Map",
+      "Blank Map"
+     ],
      "Paper",
      "Emerald",
      "Compass",
@@ -9564,6 +9647,10 @@
      [
       "Trial Explorer Map",
       "Trial Chambers Map"
+     ],
+     [
+      "Explorer Map",
+      "Treasure Map"
      ]
     ],
     "iron": [
@@ -9580,10 +9667,16 @@
      [
       "Swamp Explorer Map",
       "Swamp Hut Map"
-     ]
+     ],
+     "Village Map"
     ],
     "diamond": [
-     "Globe Banner Pattern"
+     [
+      "Globe Banner Pattern",
+      "Banner Pattern",
+      "Globe Pattern",
+      "Globe"
+     ]
     ]
    }
   },
