@@ -9690,7 +9690,10 @@
    "text": "Name a block, item, mob or biome added in the Nether Update (1.16)",
    "answers": {
     "dirt": [
-     "Netherite Ingot",
+     [
+      "Netherite Ingot",
+      "Netherite"
+     ],
      "Ancient Debris",
      "Piglin",
      "Hoglin",
@@ -9701,7 +9704,10 @@
     ],
     "coal": [
      "Netherite Scrap",
-     "Block of Netherite",
+     [
+      "Block of Netherite",
+      "Netherite Block"
+     ],
      "Netherite Sword",
      "Netherite Pickaxe",
      "Netherite Helmet",
@@ -9734,7 +9740,11 @@
      "Pigstep",
      "Soul Speed",
      "Nether Gold Ore",
-     "Gilded Blackstone"
+     "Gilded Blackstone",
+     [
+      "Netherite Armor",
+      "Netherite Gear"
+     ]
     ],
     "iron": [
      "Ruined Portal",
@@ -9762,16 +9772,52 @@
      "Quartz Bricks",
      "Chiseled Nether Bricks",
      "Cracked Nether Bricks",
-     "Netherite Upgrade"
+     "Netherite Upgrade",
+     "Lodestone Compass",
+     "Stripped Crimson Stem",
+     "Stripped Warped Stem",
+     "Blackstone Stairs",
+     "Blackstone Slab",
+     "Blackstone Wall",
+     "Strider Spawn Egg"
     ],
     "gold": [
      "Crimson Door",
      "Warped Door",
      "Crimson Sign",
-     "Warped Sign"
+     "Warped Sign",
+     "Cracked Polished Blackstone Bricks",
+     "Polished Blackstone Button",
+     "Polished Blackstone Pressure Plate",
+     "Polished Blackstone Stairs",
+     "Polished Blackstone Slab",
+     "Polished Blackstone Wall",
+     "Polished Blackstone Brick Stairs",
+     "Polished Blackstone Brick Slab",
+     "Polished Blackstone Brick Wall",
+     "Stripped Crimson Hyphae",
+     "Stripped Warped Hyphae",
+     "Zombified Piglin",
+     "Piglin Spawn Egg",
+     "Hoglin Spawn Egg",
+     "Crimson Slab",
+     "Crimson Stairs",
+     "Crimson Fence",
+     "Crimson Fence Gate",
+     "Crimson Trapdoor",
+     "Crimson Button",
+     "Crimson Pressure Plate",
+     "Warped Slab",
+     "Warped Stairs",
+     "Warped Fence",
+     "Warped Fence Gate",
+     "Warped Trapdoor",
+     "Warped Button",
+     "Warped Pressure Plate"
     ],
     "diamond": [
-     "Snout Banner Pattern"
+     "Snout Banner Pattern",
+     "Nether Wastes"
     ]
    }
   },
@@ -9805,16 +9851,21 @@
      "Iron Door",
      "Iron Bars",
      "Iron Trapdoor",
-     "Deepslate Iron Ore"
+     "Deepslate Iron Ore",
+     "Iron Armor",
+     [
+      "Iron Chain",
+      "Chain"
+     ]
     ],
     "iron": [
      "Iron Horse Armor",
      "Block of Raw Iron",
-     "Iron Spear",
-     "Iron Chain"
+     "Iron Spear"
     ],
     "gold": [
-     "Iron Nautilus Armor"
+     "Iron Nautilus Armor",
+     "Iron Golem Spawn Egg"
     ],
     "diamond": [
      "Isn't It Iron Pick?"
@@ -9839,7 +9890,12 @@
     ],
     "coal": [
      "Rabbit",
-     "Mooshroom",
+     [
+      "Mooshroom",
+      "Mooshroom Cow",
+      "Brown Mooshroom",
+      "Red Mooshroom"
+     ],
      "Cod",
      "Salmon",
      "Hoglin",
@@ -9861,11 +9917,13 @@
     ],
     "gold": [
      "Elder Guardian",
-     "Zombie Horse"
+     "Zombie Horse",
+     "Fox"
     ],
     "diamond": [
      "Camel Husk",
-     "Zombie Nautilus"
+     "Zombie Nautilus",
+     "Chicken Jockey"
     ]
    }
   },
@@ -9883,7 +9941,10 @@
      "Goat",
      "Glow Squid",
      "Copper Ingot",
-     "Amethyst Shard",
+     [
+      "Amethyst Shard",
+      "Amethyst"
+     ],
      "Deepslate",
      "Lush Caves",
      "Dripstone Caves",
@@ -9905,9 +9966,15 @@
      "Azalea",
      "Flowering Azalea",
      "Spore Blossom",
-     "Big Dripleaf",
+     [
+      "Big Dripleaf",
+      "Dripleaf"
+     ],
      "Small Dripleaf",
-     "Glow Berries",
+     [
+      "Glow Berries",
+      "Glow Berry"
+     ],
      "Glow Lichen",
      "Glow Ink Sac",
      "Glow Item Frame",
@@ -9924,7 +9991,8 @@
      "Jagged Peaks",
      "Frozen Peaks",
      "Stony Peaks",
-     "Otherside"
+     "Otherside",
+     "Copper"
     ],
     "iron": [
      "Deepslate Diamond Ore",
@@ -9952,16 +10020,73 @@
      "Medium Amethyst Bud",
      "Large Amethyst Bud",
      "Block of Raw Iron",
-     "Block of Raw Gold"
+     "Block of Raw Gold",
+     [
+      "Waxed Block of Copper",
+      "Waxed Copper",
+      "Waxed Copper Block"
+     ],
+     [
+      "Cake with Candle",
+      "Candle Cake"
+     ],
+     "Block of Raw Copper"
     ],
     "gold": [
      "Exposed Copper",
      "Weathered Copper",
-     "Oxidized Copper"
+     "Oxidized Copper",
+     "Cave Vines",
+     [
+      "Amethyst Geode",
+      "Geode"
+     ],
+     "Cracked Deepslate Bricks",
+     "Cracked Deepslate Tiles",
+     "Cut Copper Stairs",
+     "Cut Copper Slab",
+     "Exposed Cut Copper",
+     "Weathered Cut Copper",
+     "Oxidized Cut Copper",
+     "Waxed Cut Copper",
+     "Axolotl Spawn Egg",
+     "Goat Spawn Egg",
+     "Glow Squid Spawn Egg",
+     "Cobbled Deepslate Stairs",
+     "Cobbled Deepslate Slab",
+     "Cobbled Deepslate Wall",
+     "Polished Deepslate Stairs",
+     "Polished Deepslate Slab",
+     "Polished Deepslate Wall",
+     "Deepslate Brick Stairs",
+     "Deepslate Brick Slab",
+     "Deepslate Brick Wall",
+     "Deepslate Tile Stairs",
+     "Deepslate Tile Slab",
+     "Deepslate Tile Wall",
+     "White Candle",
+     "Orange Candle",
+     "Magenta Candle",
+     "Light Blue Candle",
+     "Yellow Candle",
+     "Lime Candle",
+     "Pink Candle",
+     "Gray Candle",
+     "Light Gray Candle",
+     "Cyan Candle",
+     "Purple Candle",
+     "Blue Candle",
+     "Brown Candle",
+     "Green Candle",
+     "Red Candle",
+     "Black Candle"
     ],
     "diamond": [
      "Infested Deepslate",
-     "Block of Raw Copper"
+     [
+      "Light",
+      "Light Block"
+     ]
     ]
    }
   },
@@ -9996,7 +10121,8 @@
      "Pink Stained Glass",
      "Purple Stained Glass",
      "Tinted Glass",
-     "Yellow Stained Glass"
+     "Yellow Stained Glass",
+     "Stained Glass"
     ],
     "iron": [
      "Black Stained Glass Pane",
@@ -10008,17 +10134,19 @@
      "Purple Stained Glass Pane",
      "Red Stained Glass Pane",
      "White Stained Glass Pane",
-     "Yellow Stained Glass Pane"
+     "Yellow Stained Glass Pane",
+     "Stained Glass Pane"
     ],
     "gold": [
      "Gray Stained Glass Pane",
-     "Light Blue Stained Glass Pane"
+     "Light Blue Stained Glass Pane",
+     "Brown Stained Glass Pane",
+     "Cyan Stained Glass Pane"
     ],
     "diamond": [
-     "Brown Stained Glass Pane",
-     "Cyan Stained Glass Pane",
      "Light Gray Stained Glass Pane",
-     "Magenta Stained Glass Pane"
+     "Magenta Stained Glass Pane",
+     "Spyglass"
     ]
    }
   },
@@ -10032,29 +10160,45 @@
    "text": "Name an item a Fisherman villager buys or sells",
    "answers": {
     "dirt": [
-     "Raw Cod",
-     "Raw Salmon",
-     "Fishing Rod",
+     [
+      "Raw Cod",
+      "Cod"
+     ],
+     [
+      "Raw Salmon",
+      "Salmon"
+     ],
+     [
+      "Fishing Rod",
+      "Enchanted Fishing Rod"
+     ],
      "Emerald",
      "Cooked Cod"
     ],
     "coal": [
      "Cooked Salmon",
      "String",
-     "Bucket of Cod",
-     "Tropical Fish",
+     [
+      "Bucket of Cod",
+      "Cod Bucket"
+     ],
+     [
+      "Tropical Fish",
+      "Tropical Fish Bucket"
+     ],
      "Pufferfish",
      "Coal"
     ],
     "iron": [
-     "Campfire"
-    ],
-    "gold": [
+     "Campfire",
+     "Boat",
      "Oak Boat"
     ],
-    "diamond": [
+    "gold": [
      "Spruce Boat",
-     "Jungle Boat",
+     "Jungle Boat"
+    ],
+    "diamond": [
      "Acacia Boat",
      "Dark Oak Boat"
     ]
@@ -10103,19 +10247,39 @@
      "Shipwreck",
      "Ocean Ruins",
      "Buried Treasure",
-     "Coral Block",
-     "Coral Fan",
+     [
+      "Coral Block",
+      "Tube Coral Block",
+      "Brain Coral Block",
+      "Bubble Coral Block",
+      "Fire Coral Block",
+      "Horn Coral Block"
+     ],
+     [
+      "Coral Fan",
+      "Tube Coral Fan",
+      "Brain Coral Fan",
+      "Bubble Coral Fan",
+      "Fire Coral Fan",
+      "Horn Coral Fan"
+     ],
      "Riptide",
      "Loyalty",
      "Channeling",
      "Impaling"
     ],
     "iron": [
-     "Bucket of Cod",
+     [
+      "Bucket of Cod",
+      "Fish Bucket"
+     ],
      "Bucket of Salmon",
      "Bucket of Pufferfish",
      "Bucket of Tropical Fish",
-     "Turtle Scute",
+     [
+      "Turtle Scute",
+      "Scute"
+     ],
      [
       "Potion of Slow Falling",
       "Slow Falling"
@@ -10126,25 +10290,97 @@
      "Bubble Column",
      "Buried Treasure Map",
      "Tall Seagrass",
-     "Dead Coral"
+     [
+      "Dead Coral",
+      "Dead Tube Coral",
+      "Dead Brain Coral",
+      "Dead Bubble Coral",
+      "Dead Fire Coral",
+      "Dead Horn Coral"
+     ],
+     [
+      "Dead Coral Block",
+      "Dead Tube Coral Block",
+      "Dead Brain Coral Block",
+      "Dead Bubble Coral Block",
+      "Dead Fire Coral Block",
+      "Dead Horn Coral Block"
+     ],
+     [
+      "Dead Coral Fan",
+      "Dead Tube Coral Fan",
+      "Dead Brain Coral Fan",
+      "Dead Bubble Coral Fan",
+      "Dead Fire Coral Fan",
+      "Dead Horn Coral Fan"
+     ]
     ],
     "gold": [
      [
       "Stripped Oak Log",
-      "Stripped Log"
+      "Stripped Log",
+      "Stripped Spruce Log",
+      "Stripped Birch Log",
+      "Stripped Jungle Log",
+      "Stripped Acacia Log",
+      "Stripped Dark Oak Log"
      ],
      "Spruce Trapdoor",
      "Prismarine Stairs",
      "Prismarine Slab",
      "Spruce Button",
      "Spruce Pressure Plate",
-     "Carved Pumpkin"
+     "Carved Pumpkin",
+     [
+      "Oak Wood",
+      "Wood",
+      "Spruce Wood",
+      "Birch Wood",
+      "Jungle Wood",
+      "Acacia Wood",
+      "Dark Oak Wood"
+     ],
+     [
+      "Stripped Oak Wood",
+      "Stripped Wood",
+      "Stripped Spruce Wood",
+      "Stripped Birch Wood",
+      "Stripped Jungle Wood",
+      "Stripped Acacia Wood",
+      "Stripped Dark Oak Wood"
+     ],
+     "Prismarine Brick Stairs",
+     "Prismarine Brick Slab",
+     "Dark Prismarine Stairs",
+     "Dark Prismarine Slab",
+     [
+      "Smooth Quartz Block",
+      "Smooth Quartz"
+     ],
+     "Smooth Sandstone",
+     "Smooth Red Sandstone",
+     "Pufferfish Spawn Egg",
+     "Birch Trapdoor",
+     "Birch Button",
+     "Birch Pressure Plate",
+     "Jungle Trapdoor",
+     "Jungle Button",
+     "Jungle Pressure Plate",
+     "Acacia Trapdoor",
+     "Acacia Button",
+     "Acacia Pressure Plate",
+     "Dark Oak Trapdoor",
+     "Dark Oak Button",
+     "Dark Oak Pressure Plate"
     ],
     "diamond": [
      "Warm Ocean",
      "Lukewarm Ocean",
      "Cold Ocean",
-     "Deep Frozen Ocean"
+     "Deep Frozen Ocean",
+     "Debug Stick",
+     "Deep Lukewarm Ocean",
+     "Deep Cold Ocean"
     ]
    }
   },
@@ -10167,7 +10403,8 @@
      "Horn Coral",
      "Horn Coral Block",
      "Tube Coral",
-     "Tube Coral Block"
+     "Tube Coral Block",
+     "Coral Block"
     ],
     "coal": [
      "Brain Coral Fan",
@@ -10179,21 +10416,37 @@
      "Dead Tube Coral Block",
      "Fire Coral Fan",
      "Horn Coral Fan",
-     "Tube Coral Fan"
+     "Tube Coral Fan",
+     "Coral Fan",
+     "Dead Coral Block"
     ],
     "iron": [
      "Dead Brain Coral",
      "Dead Bubble Coral",
      "Dead Fire Coral",
      "Dead Horn Coral",
-     "Dead Tube Coral"
+     "Dead Tube Coral",
+     "Dead Coral"
+    ],
+    "gold": [
+     "Dead Coral Fan",
+     "Dead Tube Coral Fan",
+     "Tube Coral Wall Fan",
+     "Dead Brain Coral Fan",
+     "Brain Coral Wall Fan",
+     "Dead Bubble Coral Fan",
+     "Bubble Coral Wall Fan",
+     "Dead Fire Coral Fan",
+     "Fire Coral Wall Fan",
+     "Dead Horn Coral Fan",
+     "Horn Coral Wall Fan"
     ],
     "diamond": [
-     "Dead Brain Coral Fan",
-     "Dead Bubble Coral Fan",
-     "Dead Fire Coral Fan",
-     "Dead Horn Coral Fan",
-     "Dead Tube Coral Fan"
+     "Dead Tube Coral Wall Fan",
+     "Dead Brain Coral Wall Fan",
+     "Dead Bubble Coral Wall Fan",
+     "Dead Fire Coral Wall Fan",
+     "Dead Horn Coral Wall Fan"
     ]
    }
   },
@@ -10227,7 +10480,12 @@
      "Goat",
      "Polar Bear",
      "Ocelot",
-     "Mooshroom",
+     [
+      "Mooshroom",
+      "Mooshroom Cow",
+      "Brown Mooshroom",
+      "Red Mooshroom"
+     ],
      "Piglin",
      "Hoglin",
      "Axolotl",
@@ -10242,19 +10500,25 @@
      "Zombie Villager",
      "Zombified Piglin",
      "Strider",
-     "Happy Ghast"
+     [
+      "Happy Ghast",
+      "Ghastling"
+     ]
     ],
     "gold": [
      "Zoglin",
      "Trader Llama",
      "Squid",
-     "Dolphin"
+     "Dolphin",
+     "Frog",
+     "Tadpole"
     ],
     "diamond": [
      "Skeleton Horse",
      "Zombie Horse",
      "Glow Squid",
-     "Nautilus"
+     "Nautilus",
+     "Sulfur Cube"
     ]
    }
   },
@@ -10292,7 +10556,12 @@
      "Smithing Table",
      "Stonecutter",
      "Composter",
-     "Sweet Berries",
+     [
+      "Sweet Berries",
+      "Sweet Berry",
+      "Sweet Berry Bush",
+      "Berries"
+     ],
      "Bamboo",
      "Pillager Outpost",
      "Bad Omen",
@@ -10317,16 +10586,55 @@
      "Black Dye",
      "White Dye",
      "Bamboo Jungle",
-     "Cat"
+     "Cat",
+     [
+      "Banner Pattern",
+      "Mojang Banner Pattern",
+      "Thing Banner Pattern",
+      "Globe Banner Pattern",
+      "Creeper Charge Banner Pattern",
+      "Skull Charge Banner Pattern",
+      "Flower Charge Banner Pattern"
+     ]
     ],
     "gold": [
      "Stone Stairs",
      "Granite Stairs",
      "Andesite Wall",
-     "Jigsaw Block"
+     "Jigsaw Block",
+     "Smooth Stone",
+     "Raid",
+     "Polished Andesite Stairs",
+     "Polished Granite Stairs",
+     "Polished Diorite Stairs",
+     "Diorite Stairs",
+     "Andesite Stairs",
+     "Mossy Cobblestone Stairs",
+     "Mossy Stone Brick Stairs",
+     "End Stone Brick Stairs",
+     "Red Nether Brick Stairs",
+     "Smooth Quartz Stairs",
+     "Smooth Sandstone Stairs",
+     "Smooth Red Sandstone Stairs",
+     "Granite Slab",
+     "Mossy Stone Brick Slab",
+     "Brick Wall",
+     "Stone Brick Wall",
+     "Mossy Stone Brick Wall",
+     "Sandstone Wall",
+     "Red Sandstone Wall",
+     "Nether Brick Wall",
+     "Red Nether Brick Wall",
+     "Prismarine Wall",
+     "End Stone Brick Wall",
+     "Granite Wall",
+     "Diorite Wall"
     ],
     "diamond": [
-     "Ominous Banner"
+     [
+      "Ominous Banner",
+      "Illager Banner"
+     ]
     ]
    }
   },
@@ -10342,7 +10650,10 @@
     "dirt": [
      "Cut Copper",
      "Cut Sandstone",
-     "Smooth Quartz Block",
+     [
+      "Smooth Quartz Block",
+      "Smooth Quartz"
+     ],
      "Smooth Sandstone",
      "Smooth Stone"
     ],
@@ -10402,7 +10713,10 @@
    "answers": {
     "dirt": [
      "Enderman",
-     "Creeper",
+     [
+      "Creeper",
+      "Charged Creeper"
+     ],
      "Wither",
      "Ender Dragon",
      "Ghast"
@@ -10424,11 +10738,15 @@
      "Bee",
      "Turtle",
      "Frog",
-     "Blaze"
+     "Blaze",
+     "Sniffer"
     ],
     "gold": [
      "Breeze",
-     "Drowned"
+     "Drowned",
+     "Copper Golem",
+     "Sulfur Cube",
+     "Zombified Piglin"
     ],
     "diamond": [
      "Evoker"
