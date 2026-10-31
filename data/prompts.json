@@ -9764,14 +9764,10 @@
      "Warped Planks",
      "Crimson Hyphae",
      "Warped Hyphae",
-     "Target",
      [
       "Iron Chain",
       "Chain"
      ],
-     "Quartz Bricks",
-     "Chiseled Nether Bricks",
-     "Cracked Nether Bricks",
      "Netherite Upgrade",
      "Lodestone Compass",
      "Stripped Crimson Stem",
@@ -9813,7 +9809,11 @@
      "Warped Fence Gate",
      "Warped Trapdoor",
      "Warped Button",
-     "Warped Pressure Plate"
+     "Warped Pressure Plate",
+     "Target",
+     "Quartz Bricks",
+     "Chiseled Nether Bricks",
+     "Cracked Nether Bricks"
     ],
     "diamond": [
      "Snout Banner Pattern",
@@ -9852,16 +9852,16 @@
      "Iron Bars",
      "Iron Trapdoor",
      "Deepslate Iron Ore",
-     "Iron Armor",
-     [
-      "Iron Chain",
-      "Chain"
-     ]
+     "Iron Armor"
     ],
     "iron": [
      "Iron Horse Armor",
      "Block of Raw Iron",
-     "Iron Spear"
+     "Iron Spear",
+     [
+      "Iron Chain",
+      "Chain"
+     ]
     ],
     "gold": [
      "Iron Nautilus Armor",
@@ -9902,7 +9902,6 @@
      "Husk",
      "Drowned",
      "Zombified Piglin",
-     "Spider",
      "Pufferfish",
      "Tropical Fish"
     ],
@@ -9913,17 +9912,18 @@
      "Polar Bear",
      "Guardian",
      "Dolphin",
-     "Witch"
+     "Spider"
     ],
     "gold": [
      "Elder Guardian",
-     "Zombie Horse",
-     "Fox"
+     "Fox",
+     "Witch"
     ],
     "diamond": [
      "Camel Husk",
      "Zombie Nautilus",
-     "Chicken Jockey"
+     "Chicken Jockey",
+     "Zombie Horse"
     ]
    }
   },
@@ -10029,8 +10029,7 @@
      [
       "Cake with Candle",
       "Candle Cake"
-     ],
-     "Block of Raw Copper"
+     ]
     ],
     "gold": [
      "Exposed Copper",
@@ -10086,7 +10085,8 @@
      [
       "Light",
       "Light Block"
-     ]
+     ],
+     "Block of Raw Copper"
     ]
    }
   },
@@ -10139,14 +10139,14 @@
     ],
     "gold": [
      "Gray Stained Glass Pane",
-     "Light Blue Stained Glass Pane",
-     "Brown Stained Glass Pane",
-     "Cyan Stained Glass Pane"
+     "Light Blue Stained Glass Pane"
     ],
     "diamond": [
      "Light Gray Stained Glass Pane",
      "Magenta Stained Glass Pane",
-     "Spyglass"
+     "Spyglass",
+     "Brown Stained Glass Pane",
+     "Cyan Stained Glass Pane"
     ]
    }
   },
@@ -10191,16 +10191,16 @@
     ],
     "iron": [
      "Campfire",
-     "Boat",
-     "Oak Boat"
+     "Boat"
     ],
     "gold": [
-     "Spruce Boat",
-     "Jungle Boat"
+     "Oak Boat"
     ],
     "diamond": [
      "Acacia Boat",
-     "Dark Oak Boat"
+     "Dark Oak Boat",
+     "Spruce Boat",
+     "Jungle Boat"
     ]
    }
   },
@@ -10430,15 +10430,10 @@
     ],
     "gold": [
      "Dead Coral Fan",
-     "Dead Tube Coral Fan",
      "Tube Coral Wall Fan",
-     "Dead Brain Coral Fan",
      "Brain Coral Wall Fan",
-     "Dead Bubble Coral Fan",
      "Bubble Coral Wall Fan",
-     "Dead Fire Coral Fan",
      "Fire Coral Wall Fan",
-     "Dead Horn Coral Fan",
      "Horn Coral Wall Fan"
     ],
     "diamond": [
@@ -10446,7 +10441,12 @@
      "Dead Brain Coral Wall Fan",
      "Dead Bubble Coral Wall Fan",
      "Dead Fire Coral Wall Fan",
-     "Dead Horn Coral Wall Fan"
+     "Dead Horn Coral Wall Fan",
+     "Dead Tube Coral Fan",
+     "Dead Brain Coral Fan",
+     "Dead Bubble Coral Fan",
+     "Dead Fire Coral Fan",
+     "Dead Horn Coral Fan"
     ]
    }
   },
@@ -10572,7 +10572,6 @@
     ],
     "iron": [
      "Suspicious Stew",
-     "Leather Horse Armor",
      "Multishot",
      "Piercing",
      "Quick Charge",
@@ -10586,7 +10585,6 @@
      "Black Dye",
      "White Dye",
      "Bamboo Jungle",
-     "Cat",
      [
       "Banner Pattern",
       "Mojang Banner Pattern",
@@ -10628,7 +10626,9 @@
      "Prismarine Wall",
      "End Stone Brick Wall",
      "Granite Wall",
-     "Diorite Wall"
+     "Diorite Wall",
+     "Cat",
+     "Leather Horse Armor"
     ],
     "diamond": [
      [
@@ -10736,9 +10736,6 @@
      "Zombie Villager",
      "Fox",
      "Bee",
-     "Turtle",
-     "Frog",
-     "Blaze",
      "Sniffer"
     ],
     "gold": [
@@ -10746,7 +10743,10 @@
      "Drowned",
      "Copper Golem",
      "Sulfur Cube",
-     "Zombified Piglin"
+     "Zombified Piglin",
+     "Blaze",
+     "Turtle",
+     "Frog"
     ],
     "diamond": [
      "Evoker"
@@ -10859,7 +10859,6 @@
     ],
     "gold": [
      "Bamboo Raft with Chest",
-     "Stripped Cherry Log",
      "Stripped Cherry Wood",
      "Cherry Boat with Chest",
      "Bamboo Mosaic Stairs",
@@ -10885,7 +10884,8 @@
      "Bamboo Sign"
     ],
     "diamond": [
-     "Block of Stripped Bamboo"
+     "Block of Stripped Bamboo",
+     "Stripped Cherry Log"
     ]
    }
   },
@@ -10987,7 +10987,6 @@
      "Pitcher Pod",
      "Goat Horn",
      "Bucket of Tadpole",
-     "Carved Pumpkin",
      "Ochre Froglight",
      "Verdant Froglight",
      "Pearlescent Froglight",
@@ -11018,7 +11017,8 @@
      "Poppy",
      "Dragon's Breath",
      "Sniffer Egg",
-     "Turtle Egg"
+     "Turtle Egg",
+     "Carved Pumpkin"
     ],
     "diamond": [
      "Raw Chicken",
@@ -11172,8 +11172,7 @@
       "Spawner"
      ],
      "Barrier",
-     "Command Block",
-     "Budding Amethyst"
+     "Command Block"
     ],
     "coal": [
      "Farmland",
@@ -11187,7 +11186,8 @@
      "Fire",
      "Structure Block",
      "Trial Spawner",
-     "Vault"
+     "Vault",
+     "Budding Amethyst"
     ],
     "iron": [
      "Chorus Plant",
@@ -11453,8 +11453,7 @@
       "Sweet Berries",
       "Sweet Berry",
       "Berries"
-     ],
-     "Kelp"
+     ]
     ],
     "iron": [
      [
@@ -11489,7 +11488,8 @@
       "Pale Oak Sapling",
       "Poplar Sapling"
      ],
-     "Mushroom"
+     "Mushroom",
+     "Kelp"
     ],
     "gold": [
      "Twisting Vines",
@@ -11738,13 +11738,11 @@
       "Water Bottle",
       "Splash Water Bottle"
      ],
-     "Glowstone",
      [
       "Ink Sac",
       "Ink"
      ],
-     "Glow Ink Sac",
-     "Candle"
+     "Glow Ink Sac"
     ],
     "gold": [
      [
@@ -11769,7 +11767,9 @@
       "Ominous Trial Key"
      ],
      "Flower",
-     "Powder Snow Bucket"
+     "Powder Snow Bucket",
+     "Glowstone",
+     "Candle"
     ],
     "diamond": [
      "Wind Charge",
@@ -12112,8 +12112,7 @@
       "Fly into Wall",
       "Elytra",
       "Kinetic"
-     ],
-     "Campfire"
+     ]
     ],
     "gold": [
      [
@@ -12159,7 +12158,8 @@
       "Thrown",
       "Pummeled"
      ],
-     "Mob Projectile"
+     "Mob Projectile",
+     "Campfire"
     ],
     "diamond": [
      [
@@ -12233,11 +12233,7 @@
     ],
     "gold": [
      "Turtle Shell",
-     "Elytra",
-     "Copper Helmet",
-     "Copper Chestplate",
-     "Copper Leggings",
-     "Copper Boots"
+     "Elytra"
     ],
     "diamond": [
      [
@@ -12255,7 +12251,11 @@
       "Piglin Head",
       "Dragon Head",
       "Player Head"
-     ]
+     ],
+     "Copper Helmet",
+     "Copper Chestplate",
+     "Copper Leggings",
+     "Copper Boots"
     ]
    }
   },
@@ -12351,8 +12351,7 @@
       "Classic Flat",
       "Classic"
      ],
-     "The Void",
-     "Redstone Ready"
+     "The Void"
     ],
     "iron": [
      [
@@ -12361,7 +12360,8 @@
      ],
      "Water World",
      "Bottomless Pit",
-     "Snowy Kingdom"
+     "Snowy Kingdom",
+     "Redstone Ready"
     ],
     "gold": [
      "Tunnelers' Dream",
@@ -12759,15 +12759,15 @@
      "Cow",
      "Pig",
      "Sheep",
-     "Bat",
-     "Zombie Villager"
+     "Bat"
     ],
     "gold": [
      "Glow Squid",
      [
       "Cat",
       "Black Cat"
-     ]
+     ],
+     "Zombie Villager"
     ],
     "diamond": [
      "Tropical Fish"
@@ -12927,7 +12927,6 @@
      "Light Gray Carpet",
      "Spruce Stairs",
      "Spruce Slab",
-     "Polished Andesite",
      "Water"
     ],
     "gold": [
@@ -12936,7 +12935,8 @@
       "Cactus",
       "Flower Pot"
      ],
-     "Stone"
+     "Stone",
+     "Polished Andesite"
     ],
     "diamond": [
      "Structure Block"
@@ -13126,14 +13126,14 @@
      [
       "Pale Oak Boat with Chest",
       "Pale Oak Chest Boat"
-     ],
-     "Poplar Boat"
+     ]
     ],
     "diamond": [
      [
       "Poplar Boat with Chest",
       "Poplar Chest Boat"
-     ]
+     ],
+     "Poplar Boat"
     ]
    }
   },
@@ -13305,7 +13305,6 @@
      "Iron Axe",
      "Golden Axe",
      "Tipped Arrow",
-     "Clay",
      [
       "Wheat Seeds",
       "Seeds"
@@ -13334,6 +13333,9 @@
       "Chain Armor"
      ],
      "Stone Tools"
+    ],
+    "gold": [
+     "Clay"
     ],
     "diamond": [
      "Poppy"
@@ -13380,12 +13382,10 @@
      ],
      "Tall Dry Grass"
     ],
-    "gold": [
-     "Firefly Bush"
-    ],
     "diamond": [
      "Potted Fern",
-     "Potted Dead Bush"
+     "Potted Dead Bush",
+     "Firefly Bush"
     ]
    }
   },
@@ -14018,17 +14018,17 @@
      "Deepslate Coal Ore",
      "Deepslate Emerald Ore",
      "Deepslate Redstone Ore",
-     "Deepslate Lapis Lazuli Ore",
-     [
-      "Monster Spawner",
-      "Spawner"
-     ]
+     "Deepslate Lapis Lazuli Ore"
     ],
     "iron": [
      "Sculk",
      "Sculk Catalyst",
      "Sculk Sensor",
-     "Sculk Shrieker"
+     "Sculk Shrieker",
+     [
+      "Monster Spawner",
+      "Spawner"
+     ]
     ],
     "gold": [
      "Creaking Heart"
@@ -14087,7 +14087,6 @@
      "Dragon's Breath",
      "Purpur Block",
      "End Rod",
-     "Popped Chorus Fruit",
      "Chorus Flower",
      "End Stone Bricks"
     ],
@@ -14098,13 +14097,14 @@
      "End Stone Brick Stairs",
      "End Stone Brick Slab",
      "End Stone Brick Wall",
+     "Popped Chorus Fruit"
+    ],
+    "gold": [
+     "Tipped Arrow",
      [
       "Spire Armor Trim",
       "Spire Armor Trim Smithing Template"
      ]
-    ],
-    "gold": [
-     "Tipped Arrow"
     ],
     "diamond": [
      "Lingering Potion"
