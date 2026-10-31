@@ -10744,12 +10744,11 @@
      "Copper Golem",
      "Sulfur Cube",
      "Zombified Piglin",
-     "Blaze",
-     "Turtle",
-     "Frog"
+     "Blaze"
     ],
     "diamond": [
-     "Evoker"
+     "Turtle",
+     "Frog"
     ]
    }
   },
@@ -14100,7 +14099,6 @@
      "Popped Chorus Fruit"
     ],
     "gold": [
-     "Tipped Arrow",
      [
       "Spire Armor Trim",
       "Spire Armor Trim Smithing Template"
